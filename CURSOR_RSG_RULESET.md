@@ -9,6 +9,7 @@ Obiectiv: scripturile sa foloseasca doar logica, evenimentele, exporturile si st
 - Nu inventa alte flow-uri daca exista deja un flow RSG documentat.
 - Nu muta bani/iteme pe client.
 - Validarile critice sunt obligatoriu pe server.
+- Foloseste nativele in ordinea: `RSG_NATIVE_CATALOG.md` -> RSG docs -> completare minima strict necesara.
 
 ## 2) Allowlist de integrare (RSG-first)
 
