@@ -1,0 +1,4968 @@
+{
+  "file_count": 33,
+  "files": [
+    "MiscGuides.mdx",
+    "api-reference/endpoint/clienteventreference.mdx",
+    "api-reference/endpoint/clientfunctionreference.mdx",
+    "api-reference/endpoint/oxlibreference.mdx",
+    "api-reference/endpoint/oxtargetreference.mdx",
+    "api-reference/endpoint/playerinformationreference.mdx",
+    "api-reference/endpoint/servereventreference.mdx",
+    "api-reference/endpoint/serverfunctionreference.mdx",
+    "development.mdx",
+    "essentials/callbacks.mdx",
+    "essentials/commands.mdx",
+    "essentials/configuration.mdx",
+    "essentials/installation.mdx",
+    "essentials/linuxinstall.mdx",
+    "essentials/money-system.mdx",
+    "essentials/playerdata.mdx",
+    "essentials/prompts.mdx",
+    "essentials/reputation.mdx",
+    "essentials/reusable-snippets.mdx",
+    "essentials/shared.mdx",
+    "essentials/sharedexports.mdx",
+    "essentials/statebags.mdx",
+    "homepage.mdx",
+    "inventory/functions.mdx",
+    "inventory/item-decay.mdx",
+    "inventory/metaitems.mdx",
+    "inventory/overview.mdx",
+    "inventory/weapons.mdx",
+    "lua-reference/events.mdx",
+    "lua-reference/luabegining.mdx",
+    "lua-reference/patterns.mdx",
+    "lua-reference/threads.mdx",
+    "quickstart.mdx"
+  ],
+  "sections": {
+    "security": [
+      "MiscGuides.mdx",
+      "api-reference/endpoint/clienteventreference.mdx",
+      "api-reference/endpoint/oxlibreference.mdx",
+      "api-reference/endpoint/oxtargetreference.mdx",
+      "api-reference/endpoint/playerinformationreference.mdx",
+      "api-reference/endpoint/servereventreference.mdx",
+      "development.mdx",
+      "essentials/callbacks.mdx",
+      "essentials/commands.mdx",
+      "essentials/money-system.mdx",
+      "essentials/playerdata.mdx",
+      "inventory/functions.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/overview.mdx",
+      "lua-reference/events.mdx",
+      "lua-reference/patterns.mdx"
+    ],
+    "commands": [
+      "MiscGuides.mdx",
+      "api-reference/endpoint/clienteventreference.mdx",
+      "api-reference/endpoint/clientfunctionreference.mdx",
+      "api-reference/endpoint/oxlibreference.mdx",
+      "api-reference/endpoint/oxtargetreference.mdx",
+      "api-reference/endpoint/playerinformationreference.mdx",
+      "api-reference/endpoint/servereventreference.mdx",
+      "api-reference/endpoint/serverfunctionreference.mdx",
+      "essentials/callbacks.mdx",
+      "essentials/commands.mdx",
+      "essentials/configuration.mdx",
+      "essentials/installation.mdx",
+      "essentials/linuxinstall.mdx",
+      "essentials/money-system.mdx",
+      "essentials/playerdata.mdx",
+      "essentials/reputation.mdx",
+      "essentials/shared.mdx",
+      "essentials/statebags.mdx",
+      "inventory/functions.mdx",
+      "inventory/item-decay.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/overview.mdx",
+      "inventory/weapons.mdx",
+      "lua-reference/events.mdx",
+      "lua-reference/luabegining.mdx",
+      "lua-reference/patterns.mdx",
+      "lua-reference/threads.mdx",
+      "quickstart.mdx"
+    ],
+    "performance": [
+      "api-reference/endpoint/clienteventreference.mdx",
+      "api-reference/endpoint/clientfunctionreference.mdx",
+      "api-reference/endpoint/oxlibreference.mdx",
+      "api-reference/endpoint/oxtargetreference.mdx",
+      "api-reference/endpoint/playerinformationreference.mdx",
+      "api-reference/endpoint/servereventreference.mdx",
+      "api-reference/endpoint/serverfunctionreference.mdx",
+      "development.mdx",
+      "essentials/callbacks.mdx",
+      "essentials/configuration.mdx",
+      "essentials/playerdata.mdx",
+      "essentials/prompts.mdx",
+      "essentials/reputation.mdx",
+      "essentials/statebags.mdx",
+      "inventory/item-decay.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/overview.mdx",
+      "inventory/weapons.mdx",
+      "lua-reference/events.mdx",
+      "lua-reference/luabegining.mdx",
+      "lua-reference/patterns.mdx",
+      "lua-reference/threads.mdx"
+    ],
+    "events": [
+      "api-reference/endpoint/clienteventreference.mdx",
+      "api-reference/endpoint/clientfunctionreference.mdx",
+      "api-reference/endpoint/oxlibreference.mdx",
+      "api-reference/endpoint/oxtargetreference.mdx",
+      "api-reference/endpoint/playerinformationreference.mdx",
+      "api-reference/endpoint/servereventreference.mdx",
+      "development.mdx",
+      "essentials/callbacks.mdx",
+      "essentials/commands.mdx",
+      "essentials/money-system.mdx",
+      "essentials/playerdata.mdx",
+      "essentials/prompts.mdx",
+      "essentials/reputation.mdx",
+      "essentials/sharedexports.mdx",
+      "essentials/statebags.mdx",
+      "inventory/functions.mdx",
+      "inventory/item-decay.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/overview.mdx",
+      "inventory/weapons.mdx",
+      "lua-reference/events.mdx",
+      "lua-reference/luabegining.mdx",
+      "lua-reference/patterns.mdx",
+      "lua-reference/threads.mdx"
+    ],
+    "prompts": [
+      "api-reference/endpoint/clienteventreference.mdx",
+      "essentials/prompts.mdx",
+      "lua-reference/patterns.mdx"
+    ],
+    "callbacks": [
+      "api-reference/endpoint/clientfunctionreference.mdx",
+      "api-reference/endpoint/servereventreference.mdx",
+      "api-reference/endpoint/serverfunctionreference.mdx",
+      "essentials/callbacks.mdx",
+      "essentials/prompts.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/weapons.mdx",
+      "lua-reference/events.mdx"
+    ],
+    "money": [
+      "api-reference/endpoint/clientfunctionreference.mdx",
+      "api-reference/endpoint/playerinformationreference.mdx",
+      "api-reference/endpoint/servereventreference.mdx",
+      "essentials/callbacks.mdx",
+      "essentials/commands.mdx",
+      "essentials/configuration.mdx",
+      "essentials/money-system.mdx",
+      "essentials/playerdata.mdx",
+      "essentials/reputation.mdx",
+      "essentials/shared.mdx",
+      "inventory/functions.mdx",
+      "inventory/item-decay.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/weapons.mdx",
+      "lua-reference/events.mdx",
+      "lua-reference/patterns.mdx"
+    ],
+    "inventory": [
+      "api-reference/endpoint/clientfunctionreference.mdx",
+      "api-reference/endpoint/oxtargetreference.mdx",
+      "api-reference/endpoint/playerinformationreference.mdx",
+      "api-reference/endpoint/servereventreference.mdx",
+      "api-reference/endpoint/serverfunctionreference.mdx",
+      "essentials/callbacks.mdx",
+      "essentials/commands.mdx",
+      "essentials/configuration.mdx",
+      "essentials/money-system.mdx",
+      "essentials/playerdata.mdx",
+      "essentials/reputation.mdx",
+      "essentials/shared.mdx",
+      "essentials/sharedexports.mdx",
+      "essentials/statebags.mdx",
+      "inventory/functions.mdx",
+      "inventory/item-decay.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/overview.mdx",
+      "inventory/weapons.mdx",
+      "lua-reference/events.mdx",
+      "lua-reference/patterns.mdx",
+      "lua-reference/threads.mdx"
+    ],
+    "statebags": [
+      "api-reference/endpoint/serverfunctionreference.mdx",
+      "development.mdx",
+      "essentials/playerdata.mdx",
+      "essentials/reputation.mdx",
+      "essentials/statebags.mdx"
+    ],
+    "structure": [
+      "essentials/commands.mdx",
+      "essentials/configuration.mdx",
+      "essentials/money-system.mdx",
+      "essentials/prompts.mdx",
+      "essentials/shared.mdx",
+      "inventory/item-decay.mdx",
+      "inventory/metaitems.mdx",
+      "inventory/overview.mdx",
+      "inventory/weapons.mdx",
+      "lua-reference/luabegining.mdx",
+      "lua-reference/threads.mdx",
+      "quickstart.mdx"
+    ]
+  },
+  "rule_hits": [
+    {
+      "file": "MiscGuides.mdx",
+      "line": 34,
+      "text": "* Download the [latest build](https://github.com/overextended/oxmysql/releases/latest) of oxmysql (not the source code)."
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 36,
+      "text": "* Extract the contents of the archive to your resources folder."
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 38,
+      "text": "* Start the resource near the top of your resources in your `server.cfg`."
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 40,
+      "text": "* If you have a lot of streamed assets, load them first to prevent timing out the connection."
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 157,
+      "text": "* Visit the resource you would like to propose changes on"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 159,
+      "text": "* Navigate to the exact file within that resource"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 161,
+      "text": "* Click on the pencil icon and you will be able to make edits to the code"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 163,
+      "text": "* Once you are satisfied with your edits, scroll down to the box labeled \"Propose Changes\""
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 165,
+      "text": "* Write a title and short description of what the changes are"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 167,
+      "text": "* Once that's filled out, press the green \"Propose Changes\" button"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 169,
+      "text": "* You will see a screen showing your edits compared to the existing code"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 171,
+      "text": "* If you are satisfied with the edits shown, press the green \"Create Pull Request\" button"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 173,
+      "text": "* Fill in the title and description if necessary"
+    },
+    {
+      "file": "MiscGuides.mdx",
+      "line": 175,
+      "text": "* Click on the green \"Create Pull Request\" button and it's finished!"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 71,
+      "text": "- Initialize HUD elements"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 72,
+      "text": "- Start player status monitors"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 73,
+      "text": "- Load player-specific blips/markers"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 74,
+      "text": "- Set up keybinds"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 75,
+      "text": "- Initialize job-specific UI"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 76,
+      "text": "- Restore player settings"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 130,
+      "text": "- Stop running threads"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 131,
+      "text": "- Clear temporary blips/markers"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 132,
+      "text": "- Reset UI to default state"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 133,
+      "text": "- Save client-side settings"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 134,
+      "text": "- Clean up job-specific features"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 190,
+      "text": "- Update HUD when money changes"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 191,
+      "text": "- Refresh job display when job updates"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 192,
+      "text": "- Update status bars when metadata changes"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 193,
+      "text": "- Sync inventory UI"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 194,
+      "text": "- Update player name displays"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 782,
+      "text": "- [Server Events](/api-reference/endpoint/servereventreference) - Server-side event reference"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 783,
+      "text": "- [Client Functions](/api-reference/endpoint/clientfunctionreference) - Client function reference"
+    },
+    {
+      "file": "api-reference/endpoint/clienteventreference.mdx",
+      "line": 784,
+      "text": "- [Threads & Loops](/lua-reference/threads) - Learn about CreateThread"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 8,
+      "text": "* Perhaps the most used function in the framework. This function returns the players data of the current source which, since its used client side, is automatically the client or player. It can be used with modifiers on the end starting with a \".\" (period)"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 30,
+      "text": "* This function operates very similarly to how the native GetEntityCoords does, but it returns the heading as well"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 49,
+      "text": "* Returns whether a player has a certain item"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 62,
+      "text": "* Function used to cal from the client to the server anbd receive a value back"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 79,
+      "text": "* Returns a vehice game pool (for backwards compatibility) - Not worth"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 100,
+      "text": "* Returns the core object of the game"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 116,
+      "text": "* Returns a table of all players in the game - not worth using"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 136,
+      "text": "* Returns a model hash filtered ped game pool"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 163,
+      "text": "* Returns the closest ped to the player's position"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 198,
+      "text": "* Returns the closest vehicle to the player"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 232,
+      "text": "* Returns the closest player to the client"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 265,
+      "text": "* Returns a list of players within a certain radius from the given coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 298,
+      "text": "* Spawns a vehicle at the given coordinates with the given model and color"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 337,
+      "text": "* Deletes a vehicle at the given entity ID"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 382,
+      "text": "* Get the license plate of a vehicle"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 399,
+      "text": "* Get the display label/name of a vehicle"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 416,
+      "text": "* Get all properties of a vehicle (used for saving vehicle data)"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 445,
+      "text": "* Set all properties of a vehicle (used for loading saved vehicle data)"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 469,
+      "text": "* Make the player ped look at an entity"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 488,
+      "text": "* Play an animation on the player (deprecated - use ox_lib)"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 508,
+      "text": "* Check if the player is wearing gloves"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 538,
+      "text": "* Get all objects in the game world"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 556,
+      "text": "* Get the closest player to the local player or coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 573,
+      "text": "* Get all peds in the game world with optional ignore list"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 602,
+      "text": "* Get the closest ped to player or coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 619,
+      "text": "* Get the closest object to player or coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 637,
+      "text": "* Check if an area is clear of vehicles for spawning"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 671,
+      "text": "* Get the cardinal direction an entity is facing"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 700,
+      "text": "* Get street names at coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 718,
+      "text": "* Get the zone/area name at coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 734,
+      "text": "* Get the current in-game time"
+    },
+    {
+      "file": "api-reference/endpoint/clientfunctionreference.mdx",
+      "line": 761,
+      "text": "* Get the ground Z coordinate at given coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 28,
+      "text": "- **Ox_Lib Docs**: https://overextended.dev/ox_lib#building-the-ui"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 29,
+      "text": "- **UI Components**: https://overextended.dev/ox_lib/Interface/Client/context"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 30,
+      "text": "- **Input Dialogs**: https://overextended.dev/ox_lib/Modules/Interface/Client/input"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 91,
+      "text": "- **title** `string` - The display text for the option"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 92,
+      "text": "- **description** `string` (optional) - Additional information shown below the title"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 93,
+      "text": "- **icon** `string` (optional) - Font Awesome icon class (e.g., `'fa-solid fa-box'`)"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 94,
+      "text": "- **iconColor** `string` (optional) - Hex color for the icon (e.g., `'#C53030'`)"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 95,
+      "text": "- **event** `string` (optional) - Client event to trigger when selected"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 96,
+      "text": "- **serverEvent** `string` (optional) - Server event to trigger when selected"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 97,
+      "text": "- **onSelect** `function` (optional) - Function to execute when selected"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 98,
+      "text": "- **args** `any` (optional) - Arguments to pass to the event/function"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 99,
+      "text": "- **arrow** `boolean` (optional) - Shows an arrow indicator"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 100,
+      "text": "- **menu** `string` (optional) - ID of another menu to open"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 101,
+      "text": "- **disabled** `boolean` (optional) - Greys out and disables the option"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 102,
+      "text": "- **metadata** `table` (optional) - Additional data displayed on the right side"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 203,
+      "text": "- **title** `string` (optional) - The notification title"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 204,
+      "text": "- **description** `string` - The main notification message"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 205,
+      "text": "- **type** `string` - Type of notification: `'success'`, `'error'`, `'warning'`, `'info'`"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 206,
+      "text": "- **icon** `string` (optional) - Font Awesome icon class"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 207,
+      "text": "- **iconColor** `string` (optional) - Hex color for the icon"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 208,
+      "text": "- **iconAnimation** `string` (optional) - Animation: `'spin'`, `'shake'`, `'beat'`, `'fade'`, `'bounce'`"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 209,
+      "text": "- **duration** `number` (optional) - Duration in milliseconds (default: 5000)"
+    },
+    {
+      "file": "api-reference/endpoint/oxlibreference.mdx",
+      "line": 210,
+      "text": "- **position** `string` (optional) - Position: `'top'`, `'top-right'`, `'top-left'`, `'bottom'`, `'bottom-right'`, `'bottom-left'`, `'center-right'`, `'center-left'`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 8,
+      "text": "* label: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 9,
+      "text": "* name?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 10,
+      "text": "* * An identifier used when removing an option."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 11,
+      "text": "* icon?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 12,
+      "text": "* * Name of a Font Awesome icon."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 13,
+      "text": "* iconColor?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 14,
+      "text": "* distance?: `number`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 15,
+      "text": "* * The max distance to display the option."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 16,
+      "text": "* bones?: `string` or `string[]`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 17,
+      "text": "* * A bone name or array of bone names (see [GetEntityBoneIndexByName](https://rdr3natives.com/?_0xBACA8FE9C76C124E))."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 18,
+      "text": "* offset?: `vector3`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 19,
+      "text": "* * Offset the targetable area of an entity, relative to the model dimensions."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 20,
+      "text": "* offsetAbsolute?: `vector3`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 21,
+      "text": "* * Offset the targetable area of an entity, relative to the entity's world coords."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 22,
+      "text": "* offsetSize?: `number`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 23,
+      "text": "* * The radius of the targetable area for an entity offset."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 24,
+      "text": "* groups?: `string` or `string[]` or `table<string, number>`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 25,
+      "text": "* * A group, array of groups, or pairs of groups-grades required to show the option."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 26,
+      "text": "* * Groups are framework dependent, and may refer to jobs, gangs, etc."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 27,
+      "text": "* items?: `string` or `string[]` or `table<string, number>`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 28,
+      "text": "* * An item, array of items, or pairs of items-count required to show the option."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 29,
+      "text": "* * Items are framework dependent."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 30,
+      "text": "* anyItem?: `boolean`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 31,
+      "text": "* * Only require a single item from the items table to exist."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 32,
+      "text": "* canInteract?: `function(entity, distance, coords, name, bone)`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 33,
+      "text": "* * Options will always display if this is undefined."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 34,
+      "text": "* menuName?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 35,
+      "text": "* * The option is only displayed when a menu has been set with openMenu."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 36,
+      "text": "* openMenu?: string"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 37,
+      "text": "* * Sets the current menu name, displaying only options for the menuName."
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 38,
+      "text": "* onSelect?: `function(data)`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 39,
+      "text": "* export?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 40,
+      "text": "* event?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 41,
+      "text": "* serverEvent?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 42,
+      "text": "* command?: `string`"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 79,
+      "text": "- `entity` (number) - The entity handle"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 80,
+      "text": "- `options` (table) - Array of target options"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 123,
+      "text": "- `entity` (number) - The entity handle"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 124,
+      "text": "- `optionNames` (string|table|nil) - Specific option names to remove, or nil to remove all"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 148,
+      "text": "- `models` (string|number|table) - Model hash(es) or name(s)"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 149,
+      "text": "- `options` (table) - Array of target options"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 197,
+      "text": "- `models` (string|number|table) - Model hash(es) or name(s)"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 198,
+      "text": "- `optionNames` (string|table|nil) - Option names to remove, or nil for all"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 218,
+      "text": "- `name` (string) - Unique zone identifier"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 219,
+      "text": "- `coords` (vector3) - Center coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 220,
+      "text": "- `size` (vector3) - Box dimensions (length, width, height)"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 221,
+      "text": "- `rotation` (number) - Rotation in degrees"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 222,
+      "text": "- `options` (table) - Array of target options"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 223,
+      "text": "- `targetoptions` (table) - Additional zone settings"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 249,
+      "text": "- `name` (string) - Unique zone identifier"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 250,
+      "text": "- `coords` (vector3) - Center coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 251,
+      "text": "- `radius` (number) - Sphere radius"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 252,
+      "text": "- `options` (table) - Array of target options"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 253,
+      "text": "- `targetoptions` (table) - Additional zone settings"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 282,
+      "text": "- `name` (string) - Zone identifier"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 702,
+      "text": "- Check distance - are you close enough?"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 703,
+      "text": "- Verify canInteract function isn't returning false"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 704,
+      "text": "- Check job/gang/item requirements"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 705,
+      "text": "- Ensure ox_target is started before your resource"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 709,
+      "text": "- Verify the groups parameter is set correctly"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 710,
+      "text": "- Check player's actual job name (not label)"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 711,
+      "text": "- Ensure grade requirements are correct"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 715,
+      "text": "- Check zone coordinates are correct"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 716,
+      "text": "- Verify size/radius is appropriate"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 717,
+      "text": "- Make sure zone name is unique"
+    },
+    {
+      "file": "api-reference/endpoint/oxtargetreference.mdx",
+      "line": 718,
+      "text": "- Check for Lua errors in F8 console"
+    },
+    {
+      "file": "api-reference/endpoint/playerinformationreference.mdx",
+      "line": 662,
+      "text": "- [Player Data Structure](/essentials/playerdata) - Complete PlayerData documentation"
+    },
+    {
+      "file": "api-reference/endpoint/playerinformationreference.mdx",
+      "line": 663,
+      "text": "- [Server Functions](/api-reference/endpoint/serverfunctionreference) - Player manipulation functions"
+    },
+    {
+      "file": "api-reference/endpoint/playerinformationreference.mdx",
+      "line": 664,
+      "text": "- [Inventory Functions](/inventory/functions) - Inventory management"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 64,
+      "text": "- Initialize player-specific data"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 65,
+      "text": "- Load custom player stats"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 66,
+      "text": "- Trigger welcome messages"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 67,
+      "text": "- Set up player blips/markers"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 86,
+      "text": "- Clean up temporary data"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 87,
+      "text": "- Save custom player stats"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 88,
+      "text": "- Remove player from active lists"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 89,
+      "text": "- Stop player-specific threads"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 132,
+      "text": "- Emergency maintenance"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 133,
+      "text": "- Scheduled restarts"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 134,
+      "text": "- Server events preparation"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 135,
+      "text": "- Testing with limited players"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 254,
+      "text": "- Restore hunger after eating"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 255,
+      "text": "- Restore thirst after drinking"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 256,
+      "text": "- Restore cleanliness after bathing"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 257,
+      "text": "- Custom metadata updates"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 698,
+      "text": "- [Client Events](/api-reference/endpoint/clienteventreference) - Client-side event reference"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 699,
+      "text": "- [Server Functions](/api-reference/endpoint/serverfunctionreference) - Server function reference"
+    },
+    {
+      "file": "api-reference/endpoint/servereventreference.mdx",
+      "line": 700,
+      "text": "- [Callbacks](/essentials/callbacks) - Learn about the callback system"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 8,
+      "text": "* Get the coords of a passed entity"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 28,
+      "text": "* Get the identifier of a passed entity"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 51,
+      "text": "* Gets a players server id (source). Returns 0 if no player is found."
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 77,
+      "text": "* Get player with given server id (source)"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 103,
+      "text": "* Get player by citizen id"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 130,
+      "text": "* Get all players. Returns the server ids of all players."
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 150,
+      "text": "* Will return an array of RSG Player class instances unlike the GetPlayers() wrapper which only returns IDs"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 166,
+      "text": "* Create Server Callback."
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 184,
+      "text": "* Create a usable item"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 204,
+      "text": "* Check if a player can use an item"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 227,
+      "text": "* Use an item"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 246,
+      "text": "* Get offline player data by citizen id (pulls from database)"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 265,
+      "text": "* Get player by license (checks online players first, then database)"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 285,
+      "text": "* Get player by account number"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 309,
+      "text": "* Get player by any character info property"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 336,
+      "text": "* Get all players on duty for a specific job"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 366,
+      "text": "* Get the count of players on duty for a specific job"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 393,
+      "text": "* Get the closest player to a source player or coordinates"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 413,
+      "text": "* Set a player's routing bucket (for instancing)"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 439,
+      "text": "* Set an entity's routing bucket"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 463,
+      "text": "* Get all players in a specific routing bucket"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 494,
+      "text": "* Server-side vehicle spawning"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 515,
+      "text": "* Kick a player from the server"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 534,
+      "text": "* Check if a player is whitelisted"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 554,
+      "text": "* Add a permission to a player"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 573,
+      "text": "* Remove a permission from a player"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 594,
+      "text": "* Check if a player has a specific permission"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 625,
+      "text": "* Get all permissions for a player"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 650,
+      "text": "* Check if a player is banned"
+    },
+    {
+      "file": "api-reference/endpoint/serverfunctionreference.mdx",
+      "line": 678,
+      "text": "* Check if a license is currently in use (duplicate check)"
+    },
+    {
+      "file": "development.mdx",
+      "line": 8,
+      "text": "* **Localize as many functions and variables as possible. Lua can read them faster**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 23,
+      "text": "* **Instead of using `table.insert` use `tableName[#tableName+1] = data`**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 33,
+      "text": "* **Instead of using `if something ~= nil` use `if something then`. This method checks for nil and/or false at the same time**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 49,
+      "text": "* **If you are creating a function or an event, make it so that it can be used in different scenarios with different variables. Keep it universal basically**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 75,
+      "text": "* **When writing code use what's known as \"short returns\" for failed conditions**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 90,
+      "text": "* **Always replace `GetPlayerPed(-1)` with `PlayerPedId()`**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 99,
+      "text": "* **Always replace `GetDistanceBetweenCoords` with lua math aka `#(vector3 - vector3)`**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 118,
+      "text": "* [RedM Native Reference](https://rdr3natives.com/)"
+    },
+    {
+      "file": "development.mdx",
+      "line": 120,
+      "text": "* [Natives | RedLookup](https://redlookup.com/natives?v=2\\&p=1\\&pp=50)"
+    },
+    {
+      "file": "development.mdx",
+      "line": 122,
+      "text": "* [femga/rdr3\\_discoveries: Some interesting things from Red Dead Redemption 2.](https://github.com/femga/rdr3_discoveries)"
+    },
+    {
+      "file": "development.mdx",
+      "line": 124,
+      "text": "* [Halen84/RDR3-Native-Flags-And-Enums: Contains flags and enums for natives](https://github.com/Halen84/RDR3-Native-Flags-And-Enums)"
+    },
+    {
+      "file": "development.mdx",
+      "line": 128,
+      "text": "* **Control your while loops and when they run**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 157,
+      "text": "* **If you do have to create a thread that includes a \"while\" loop, always avoid using \"while true do\" if able. If you have to use this, follow the next tip, and it won\u2019t impact performance as much**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 159,
+      "text": "* **Control your thread times by using a variable that changes the wait time retroactively. So, you can set the thread wait time to say 1000ms which checks for your if statement every second and if it makes it into the statement, you can lower the wait time by just changing the variable value. Wait(sleep)**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 180,
+      "text": "* **If you have job specific loops, make sure they only apply to players with that job. There's no reason for someone who is not a cop to be running a loop on their machine that does not apply to them**"
+    },
+    {
+      "file": "development.mdx",
+      "line": 196,
+      "text": "* A surplus amount of security in a code is not a bad thing. Don't be afraid to add in multiple if checks or create random variables to pass through your events"
+    },
+    {
+      "file": "development.mdx",
+      "line": 198,
+      "text": "* Never do any type of transaction with the player regarding money or items on the client side of a resource"
+    },
+    {
+      "file": "development.mdx",
+      "line": 202,
+      "text": "* **When setting variables inside your resource, handlers come in especially handy due to not needing to constantly run checks**"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 22,
+      "text": "- **Server Callbacks**: Client requests data from server"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 23,
+      "text": "- **Client Callbacks**: Server requests data from specific client"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 24,
+      "text": "- **Multiple Arguments**: Pass any number of arguments"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 25,
+      "text": "- **Any Data Types**: Return tables, strings, numbers, booleans"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 29,
+      "text": "- **Server-side Validation**: All sensitive logic stays on server"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 30,
+      "text": "- **No Client Trust**: Client only receives processed results"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 31,
+      "text": "- **Source Tracking**: Always know which player triggered callback"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 35,
+      "text": "- **Async Processing**: Non-blocking operations"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 36,
+      "text": "- **Promise Support**: Await pattern for cleaner code"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 37,
+      "text": "- **No Event Spam**: Request-response pattern prevents loops"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 77,
+      "text": "- `source`: The player who triggered the callback"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 78,
+      "text": "- `cb`: The callback function to send data back"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 79,
+      "text": "- `...`: Any additional arguments passed from the client"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 335,
+      "text": "- Good: `'rsg-shop:server:purchaseItem'`"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 336,
+      "text": "- Bad: `'shop:buy'`"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 505,
+      "text": "- Player object is nil (player left server)"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 506,
+      "text": "- Database query returned no results"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 507,
+      "text": "- Logic error in callback function"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 552,
+      "text": "- **Server Callbacks**: Client requests data from server"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 553,
+      "text": "- `CreateCallback` on server"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 554,
+      "text": "- `TriggerCallback` on client"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 556,
+      "text": "- **Client Callbacks**: Server requests data from client"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 557,
+      "text": "- `CreateClientCallback` on client"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 558,
+      "text": "- `TriggerClientCallback` on server"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 560,
+      "text": "- **Always validate** data on the server"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 561,
+      "text": "- **Always handle** nil responses"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 562,
+      "text": "- **Use events** for one-way communication"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 563,
+      "text": "- **Cache data** when possible to avoid repeated callbacks"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 569,
+      "text": "- [Server Events Guide](/essentials/events) - One-way server-client communication"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 570,
+      "text": "- [Player Data](/essentials/playerdata) - Access and modify player data"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 571,
+      "text": "- [Server Functions Reference](/api-reference/endpoint/serverfunctionreference) - Complete function list"
+    },
+    {
+      "file": "essentials/callbacks.mdx",
+      "line": 572,
+      "text": "- [Inventory Functions](/inventory/functions) - Work with inventory items"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 22,
+      "text": "- **User**: Available to all players"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 23,
+      "text": "- **Mod**: Moderator-only commands"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 24,
+      "text": "- **Admin**: Administrator commands"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 25,
+      "text": "- **God**: Super admin commands"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 29,
+      "text": "- **Required/Optional**: Control if arguments are mandatory"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 30,
+      "text": "- **Help Text**: Descriptions shown in suggestions"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 31,
+      "text": "- **Type Validation**: Validate argument types in callbacks"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 35,
+      "text": "- **Dynamic Suggestions**: Commands show based on permissions"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 36,
+      "text": "- **Argument Hints**: Display help text for each argument"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 37,
+      "text": "- **Refresh System**: Update suggestions when permissions change"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 51,
+      "text": "* name: `string`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 53,
+      "text": "* help: `string`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 55,
+      "text": "* arguments: `table`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 57,
+      "text": "* argsrequired: `boolean`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 59,
+      "text": "* callback: `function`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 61,
+      "text": "* permission: `string`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 86,
+      "text": "* source: `number`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 200,
+      "text": "* **id or x** - (required) The player id or x coordinate"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 202,
+      "text": "* **y** - (optional) The y coordinate (required if using x for the first argument)"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 204,
+      "text": "* **z** - (optional) The z coordinate (required if using x for the first argument)"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 272,
+      "text": "* **id** - (required) The `id` of the player"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 274,
+      "text": "* **type** - (required) The money type \\[cash, bank etc...]"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 276,
+      "text": "* **amount** - (required) The amount to give"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 284,
+      "text": "* **id** - (required) The `id` of the player"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 286,
+      "text": "* **type** - (required) The money type \\[cash, bank etc...]"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 288,
+      "text": "* **amount** - (required) The amount to set"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 314,
+      "text": "* **id** - (required) The `id` of the player"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 316,
+      "text": "* **gang** - (required) The gang name"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 318,
+      "text": "* **grade** (required) The gang grade"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 326,
+      "text": "* **id** - (required) The `id` of the player"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 328,
+      "text": "* **gang** - (required) The gang name"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 330,
+      "text": "* **grade** (required) The gang grade"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 340,
+      "text": "* **id** - The id of a player"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 342,
+      "text": "* **item** - The itenm of shared/items.lua"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 344,
+      "text": "* **amount** - (optional) The amount item receive of a player"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 358,
+      "text": "* **type** - The type of stash / trunk / glovebox"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 360,
+      "text": "* **id** - The id of stash or license plate"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 420,
+      "text": "- Good: `giveitem`, `setjob`, `tpm`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 421,
+      "text": "- Bad: `gi`, `sj`, `thing`"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 466,
+      "text": "- [Server Functions Reference](/api-reference/endpoint/serverfunctionreference) - Complete function reference"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 467,
+      "text": "- [Player Data](/essentials/playerdata) - Access player data in commands"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 468,
+      "text": "- [Callbacks](/essentials/callbacks) - Client-server communication"
+    },
+    {
+      "file": "essentials/commands.mdx",
+      "line": 469,
+      "text": "- [Configuration](/essentials/configuration) - Configure permission levels"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 22,
+      "text": "* Gets the maximum players from your `server.cfg`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 23,
+      "text": "* Default: 48 players"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 24,
+      "text": "* Set in `server.cfg`: `sv_maxclients 48`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 32,
+      "text": "* The default spawn location for new players"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 33,
+      "text": "* Format: `vector4(x, y, z, heading)`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 34,
+      "text": "* This is used when a player has no saved position"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 42,
+      "text": "* How often (in minutes) player data is automatically saved to the database"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 43,
+      "text": "* Default: 5 minutes"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 44,
+      "text": "* Lower values = more frequent saves but more database load"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 52,
+      "text": "* Whether to hide player names above their heads"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 53,
+      "text": "* `true` = Names hidden (more immersive RP)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 54,
+      "text": "* `false` = Names visible"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 62,
+      "text": "* Whether the map is fully revealed for players"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 63,
+      "text": "* `true` = Full map revealed"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 64,
+      "text": "* `false` = Map fog of war enabled"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 84,
+      "text": "* Defines all money types and their starting amounts"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 85,
+      "text": "* **cash**: Physical money in player's pocket (can be dropped/stolen)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 86,
+      "text": "* **bank**: \u26a0\ufe0f **DEPRECATED** - Legacy bank account (set to 0, use location-specific banks)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 87,
+      "text": "* **valbank**: Valentine Bank account"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 88,
+      "text": "* **rhobank**: Rhodes Bank account"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 89,
+      "text": "* **blkbank**: Blackwater Bank account"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 90,
+      "text": "* **armbank**: Armadillo Bank account"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 91,
+      "text": "* **bloodmoney**: Illegal money for criminal activities (physical item when EnableMoneyItems is true)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 102,
+      "text": "- **Realism**: Players must travel to specific towns to access accounts"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 103,
+      "text": "- **Gameplay**: Creates opportunities for bank robberies and escorts"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 104,
+      "text": "- **Risk**: Traveling with cash adds danger and roleplay opportunities"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 112,
+      "text": "* Money types that cannot go below $0"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 113,
+      "text": "* These types will prevent transactions if the player doesn't have enough"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 114,
+      "text": "* Bank accounts can go negative (up to the minus limit)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 122,
+      "text": "* The maximum amount bank accounts can go into debt"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 123,
+      "text": "* Default: -$5000"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 124,
+      "text": "* Only affects money types NOT in `DontAllowMinus`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 132,
+      "text": "* How often (in minutes) players receive their job paycheck"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 133,
+      "text": "* Default: 10 minutes"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 134,
+      "text": "* Payment amount is defined in `shared/jobs.lua`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 142,
+      "text": "* If `true`: Paychecks come from the society/business account (requires rsg-banking)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 143,
+      "text": "* If `false`: Paychecks are generated (money printer)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 144,
+      "text": "* When true, businesses need funds to pay employees"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 152,
+      "text": "* If `true`: Cash and bloodmoney are physical inventory items"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 153,
+      "text": "* If `false`: Cash and bloodmoney are virtual (like GTA Online)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 154,
+      "text": "* When enabled, cash can be dropped, traded, stolen"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 172,
+      "text": "* Available blood types for players"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 173,
+      "text": "* Randomly assigned on character creation"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 174,
+      "text": "* Can be used for medical RP"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 193,
+      "text": "* **gender**: `0` = Male, `1` = Female"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 194,
+      "text": "* **account**: Automatically generated bank account number"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 213,
+      "text": "* New players start as unemployed civilians"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 214,
+      "text": "* Grade 0 with $10 payment per paycheck"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 230,
+      "text": "* New players have no gang affiliation by default"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 261,
+      "text": "- 100 = Full/Clean"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 262,
+      "text": "- 0 = Empty/Dirty"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 274,
+      "text": "* **weight**: Maximum carry weight for new players (35kg = 35000 grams)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 275,
+      "text": "* **slots**: Number of inventory slots for new players"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 279,
+      "text": "- `MaxWeight = 120000` (120kg maximum)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 280,
+      "text": "- `MaxSlots = 40` (40 slots maximum)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 306,
+      "text": "* `Closed = true`: Only players with admin permission can join"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 307,
+      "text": "* `ClosedReason`: Message shown to players when server is closed"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 308,
+      "text": "* Useful for maintenance or development"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 317,
+      "text": "* `Whitelist = true`: Only whitelisted players can join"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 318,
+      "text": "* `WhitelistPermission`: The ace permission required to join when whitelist is on"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 319,
+      "text": "* Players need the permission set in `server.cfg`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 328,
+      "text": "* Controls whether players can damage each other"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 329,
+      "text": "* `true` = PVP enabled"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 330,
+      "text": "* `false` = PVP disabled (players cannot hurt each other)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 338,
+      "text": "* Your Discord invite link"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 339,
+      "text": "* Shown in kick messages"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 340,
+      "text": "* Example: `'https://discord.gg/your-invite'`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 348,
+      "text": "* If `true`: Prevents players from connecting with duplicate Rockstar licenses"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 349,
+      "text": "* Prevents multi-boxing/multiple accounts"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 350,
+      "text": "* Recommended: keep as `true`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 358,
+      "text": "* Available permission levels for your server"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 359,
+      "text": "* You can add custom levels (e.g., `'helper'`, `'vip'`)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 360,
+      "text": "* Set in `server.cfg` using ace permissions:"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 380,
+      "text": "* RGB color code for Out-Of-Character (OOC) chat messages"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 381,
+      "text": "* Format: `{ Red, Green, Blue }` (0-255 for each)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 391,
+      "text": "* Default interaction distance for prompts (in meters)"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 392,
+      "text": "* Used by the prompt system in `rsg-core/client/prompts.lua`"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 393,
+      "text": "* Players must be within this distance to see/use prompts"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 453,
+      "text": "* **UpdateInterval**: Lower values increase database writes"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 454,
+      "text": "- 5 minutes is a good balance"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 455,
+      "text": "- Don't go below 3 minutes on busy servers"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 457,
+      "text": "* **PayCheckTimeOut**: More frequent paychecks = more economy velocity"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 458,
+      "text": "- 10 minutes is standard"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 459,
+      "text": "- Consider your server's economy when adjusting"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 463,
+      "text": "* **EnableMoneyItems**: Most RP servers keep this `true` for realism"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 464,
+      "text": "* **HidePlayerNames**: Set to `true` for immersive RP"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 465,
+      "text": "* **PVP**: Many RP servers disable this except in specific zones"
+    },
+    {
+      "file": "essentials/configuration.mdx",
+      "line": 466,
+      "text": "* **Whitelist**: Recommended for serious RP communities"
+    },
+    {
+      "file": "essentials/installation.mdx",
+      "line": 29,
+      "text": "* Open HeidiSQL, click the green circle with the plus sign and name it something"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 35,
+      "text": "- **cash** becomes a physical inventory item (`dollar`)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 36,
+      "text": "- **bloodmoney** becomes a physical inventory item (`blood_dollar`)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 37,
+      "text": "- Players can see, drop, and trade physical money"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 38,
+      "text": "- Money can be stolen from players when downed/robbed"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 43,
+      "text": "- Transactions over **$100,000** trigger special high-value logging"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 44,
+      "text": "- All AddMoney/RemoveMoney/SetMoney calls include reason tracking"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 45,
+      "text": "- Integration with `rsg-log` for audit trails"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 92,
+      "text": "- `cash` \u2192 `dollar` item (weight: 1g each)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 93,
+      "text": "- `bloodmoney` \u2192 `blood_dollar` item (weight: 1g each)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 137,
+      "text": "- `moneytype` (string) - Type of money ('cash', 'valbank', etc.)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 138,
+      "text": "- `amount` (number) - Amount to add"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 139,
+      "text": "- `reason` (string) - Reason for logging (optional)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 185,
+      "text": "- `moneytype` (string) - Type of money"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 186,
+      "text": "- `amount` (number) - Amount to remove"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 187,
+      "text": "- `reason` (string) - Reason for logging (optional)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 239,
+      "text": "- `moneytype` (string) - Type of money"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 240,
+      "text": "- `amount` (number) - New amount"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 241,
+      "text": "- `reason` (string) - Reason for logging (optional)"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 285,
+      "text": "- `moneytype` (string) - Type of money to check"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 352,
+      "text": "- When player receives cash \u2192 automatically converted to `dollar` item"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 353,
+      "text": "- When player spends cash \u2192 `dollar` items are removed"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 354,
+      "text": "- Can drop/trade dollar items like any other inventory item"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 355,
+      "text": "- Death/robbery can result in cash loss"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 449,
+      "text": "- Store/bank robberies"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 450,
+      "text": "- Drug sales"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 451,
+      "text": "- Gang activities"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 452,
+      "text": "- Stolen goods fencing"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 456,
+      "text": "- **Separate Currency**: Cannot be deposited in legitimate banks"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 457,
+      "text": "- **Physical Item**: Appears as `blood_dollar` when money items enabled"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 458,
+      "text": "- **Illegal Use**: Used for black market purchases"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 459,
+      "text": "- **Risk Factor**: Can be confiscated by law enforcement"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 778,
+      "text": "- [Player Data Reference](/essentials/playerdata) - Learn about PlayerData structure"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 779,
+      "text": "- [Configuration Guide](/essentials/configuration) - Configure money settings"
+    },
+    {
+      "file": "essentials/money-system.mdx",
+      "line": 780,
+      "text": "- [Server Functions](/api-reference/endpoint/serverfunctionreference) - All money-related functions"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 22,
+      "text": "- **Character Info**: Names, birthdate, gender, nationality"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 23,
+      "text": "- **Money System**: Multiple currency types with transaction logging"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 24,
+      "text": "- **Jobs & Gangs**: Full hierarchy system with grades and boss status"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 25,
+      "text": "- **Metadata**: Health, hunger, thirst, stress, and custom data"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 26,
+      "text": "- **Reputation**: Flexible reputation system for any activity"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 30,
+      "text": "- **StateBags**: Instant sync for frequently updated data"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 31,
+      "text": "- **Events**: Server and client events for data changes"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 32,
+      "text": "- **Auto-save**: Periodic database persistence"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 36,
+      "text": "- **Player Functions**: Comprehensive function set for data manipulation"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 37,
+      "text": "- **Direct Access**: Read player data directly from PlayerData table"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 38,
+      "text": "- **Extension**: Add custom methods and fields dynamically"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 46,
+      "text": "* On player login, gets their data or sets default values"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 79,
+      "text": "* Function called above on player join to gather player data (this is where you can add/remove additional player data)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 148,
+      "text": "* Saves player on logout and removes them from active players table"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 162,
+      "text": "* Creates a new character and sets default data (any function inside the self table can be called on the player after using the GetPlayer function)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 415,
+      "text": "* Saves the player's info to the database"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 445,
+      "text": "* Deletes a character and all corresponding data in the database"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 491,
+      "text": "* Sets a player's job and grade"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 509,
+      "text": "* Sets a player's gang and grade"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 527,
+      "text": "* Sets a player's on/off duty status for their job"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 543,
+      "text": "* Add money to a player's account"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 563,
+      "text": "* Remove money from a player's account"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 583,
+      "text": "* Set a player's money to a specific amount"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 599,
+      "text": "* Get the amount of money a player has in a specific account"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 615,
+      "text": "* Set metadata for a player"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 640,
+      "text": "* Get metadata for a player"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 658,
+      "text": "* Add reputation points for a specific reputation type"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 679,
+      "text": "* Remove reputation points for a specific reputation type"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 697,
+      "text": "* Get reputation points for a specific reputation type"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 722,
+      "text": "- `hunting` - Tracking, animal kills, perfect pelts"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 723,
+      "text": "- `fishing` - Fish caught, legendary fish"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 724,
+      "text": "- `crafting` - Items crafted, quality of work"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 725,
+      "text": "- `lawman` - Criminal arrests, bounties collected"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 726,
+      "text": "- `outlaw` - Crimes committed, bounties escaped"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 727,
+      "text": "- `trader` - Goods sold, trading reputation"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 728,
+      "text": "- `doctor` - Patients healed, medical services"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 729,
+      "text": "- Custom types as needed for your server"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 778,
+      "text": "* Check if player has a specific item"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 795,
+      "text": "* Set any player data field"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 811,
+      "text": "* Manually save a player's data to database"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 829,
+      "text": "* Log a player out (removes from active players)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 844,
+      "text": "* Trigger an update of player data to client"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 925,
+      "text": "- `hunger` (0-100)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 926,
+      "text": "- `thirst` (0-100)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 927,
+      "text": "- `cleanliness` (0-100)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 928,
+      "text": "- `stress` (0-100)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 929,
+      "text": "- `health` (0-600)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 930,
+      "text": "- `isLoggedIn` (boolean)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1053,
+      "text": "- Frequently updated data (hunger, thirst, health)"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1054,
+      "text": "- Data that needs instant client access"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1055,
+      "text": "- Simple value syncing"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1058,
+      "text": "- Complex data updates"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1059,
+      "text": "- Actions that need validation"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1060,
+      "text": "- One-time notifications"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1228,
+      "text": "- [Server Functions Reference](/api-reference/endpoint/serverfunctionreference) - Complete server function list"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1229,
+      "text": "- [Configuration Guide](/essentials/configuration) - Configure player defaults"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1230,
+      "text": "- [Money System](/essentials/money-system) - Complete money system guide"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1231,
+      "text": "- [StateBags System](/essentials/statebags) - Deep dive into state synchronization"
+    },
+    {
+      "file": "essentials/playerdata.mdx",
+      "line": 1232,
+      "text": "- [Reputation System](/essentials/reputation) - Detailed reputation guide"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 22,
+      "text": "- **Authentic Look**: Uses native RDR2 prompt system"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 23,
+      "text": "- **Consistent UX**: Same style as game prompts"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 24,
+      "text": "- **Visual Feedback**: Press-and-hold indicators"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 28,
+      "text": "- **Distance Checking**: Only shows when player is nearby"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 29,
+      "text": "- **Coordinates**: Precise 3D positioning"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 30,
+      "text": "- **Automatic Hide**: Disappears when player leaves area"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 34,
+      "text": "- **Client Events**: Trigger client-side events"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 35,
+      "text": "- **Server Events**: Trigger server-side events"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 36,
+      "text": "- **Arguments**: Pass custom data to events"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 503,
+      "text": "- Verify the event is properly registered"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 504,
+      "text": "- Check if it's 'client' or 'server' type"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 505,
+      "text": "- Ensure event name matches exactly (case-sensitive)"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 511,
+      "text": "- [Callbacks](/essentials/callbacks) - Learn about client-server communication"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 512,
+      "text": "- [Configuration](/essentials/configuration) - Configure prompt distance"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 513,
+      "text": "- [Shared Configuration](/essentials/shared) - Access keybinds and shared data"
+    },
+    {
+      "file": "essentials/prompts.mdx",
+      "line": 514,
+      "text": "- [Player Data](/essentials/playerdata) - Check player job/gang for conditional prompts"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 22,
+      "text": "- **Unlimited Types**: Create any reputation categories you need"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 23,
+      "text": "- **Server-Specific**: Define reputations that fit your gameplay"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 24,
+      "text": "- **Persistent Storage**: Saved in player metadata (database)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 25,
+      "text": "- **Integer-Based**: Whole numbers from 0 to unlimited"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 29,
+      "text": "- **Add Reputation**: Increase reputation points"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 30,
+      "text": "- **Remove Reputation**: Decrease reputation points (minimum 0)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 31,
+      "text": "- **Get Reputation**: Check current reputation level"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 32,
+      "text": "- **No Maximum**: Reputation can grow indefinitely"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 36,
+      "text": "- **Skill Tracking**: hunting, fishing, crafting, mining"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 37,
+      "text": "- **Faction Standing**: lawman, outlaw, trader reputation"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 38,
+      "text": "- **Activity Progress**: deliveries, arrests, bounties"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 39,
+      "text": "- **Social Standing**: town reputations, gang loyalty"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 40,
+      "text": "- **Achievement Systems**: milestones and progression"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 119,
+      "text": "- `rep` (string) - Reputation type name"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 120,
+      "text": "- `amount` (number) - Points to add"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 154,
+      "text": "- `rep` (string) - Reputation type name"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 155,
+      "text": "- `amount` (number) - Points to remove"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 197,
+      "text": "- `rep` (string) - Reputation type name"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 200,
+      "text": "- `number` - Current reputation points (returns 0 if type doesn't exist)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 720,
+      "text": "- Small tasks: 1-5 rep"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 721,
+      "text": "- Medium tasks: 5-15 rep"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 722,
+      "text": "- Large tasks: 15-50 rep"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 723,
+      "text": "- Milestones: 50+ rep"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 726,
+      "text": "- Tier 1: 0-49 (Novice)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 727,
+      "text": "- Tier 2: 50-99 (Apprentice)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 728,
+      "text": "- Tier 3: 100-199 (Skilled)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 729,
+      "text": "- Tier 4: 200-299 (Expert)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 730,
+      "text": "- Tier 5: 300-499 (Master)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 731,
+      "text": "- Tier 6: 500+ (Legendary)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 734,
+      "text": "- Easier to gain than lose (2:1 ratio recommended)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 735,
+      "text": "- Protect new players from excessive reputation loss"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 736,
+      "text": "- Consider reputation decay for inactive skills"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 739,
+      "text": "- Hunting: killing animals, selling pelts, completing challenges"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 740,
+      "text": "- Lawman: arrests, patrols, investigations"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 741,
+      "text": "- Trading: sales, deliveries, negotiations"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 750,
+      "text": "- Player data not saving to database"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 751,
+      "text": "- Metadata corruption"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 752,
+      "text": "- Server crash before save"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 755,
+      "text": "- Check auto-save interval (default: 5 minutes)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 756,
+      "text": "- Verify database connection"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 757,
+      "text": "- Manually trigger save: `Player.Functions.Save()`"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 762,
+      "text": "- `GetRep()` returns 0 for non-existent reputation types"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 763,
+      "text": "- Reputation types are created on first `AddRep()` call"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 764,
+      "text": "- No need to initialize reputation types"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 771,
+      "text": "- `RemoveRep()` clamps at 0 minimum"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 772,
+      "text": "- Even removing more than available sets it to 0"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 773,
+      "text": "- Negative reputation is not supported"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 780,
+      "text": "- Database not saving metadata properly"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 781,
+      "text": "- Metadata JSON corruption"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 782,
+      "text": "- Auto-save not running"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 785,
+      "text": "- Check `players` table `metadata` column"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 786,
+      "text": "- Verify JSON format is valid"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 787,
+      "text": "- Ensure RSGCore.Config.UpdateInterval is set"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 848,
+      "text": "- Reputation operations are O(1) - very fast"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 849,
+      "text": "- Changes saved to database every 5 minutes (auto-save)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 850,
+      "text": "- No network overhead (server-side only)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 851,
+      "text": "- Minimal memory footprint (integer storage)"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 857,
+      "text": "- [Player Data Reference](/essentials/playerdata) - Complete player data structure"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 858,
+      "text": "- [StateBags System](/essentials/statebags) - Real-time data synchronization"
+    },
+    {
+      "file": "essentials/reputation.mdx",
+      "line": 859,
+      "text": "- [Server Functions](/api-reference/endpoint/serverfunctionreference) - All server functions"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 22,
+      "text": "- **Jobs**: Define all server jobs with grades and payments"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 23,
+      "text": "- **Items**: Configure inventory items with properties and metadata"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 24,
+      "text": "- **Vehicles**: Set up vehicle shops and pricing"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 25,
+      "text": "- **Gangs**: Create gang hierarchies and structures"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 26,
+      "text": "- **Weapons**: Define weapon properties and ammo types"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 27,
+      "text": "- **Utilities**: Helper functions for common operations"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 31,
+      "text": "- **Client & Server**: Data available on both sides"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 32,
+      "text": "- **No Network Calls**: Instant access without events"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 33,
+      "text": "- **Consistent Data**: Single source of truth"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 34,
+      "text": "- **Easy Management**: Edit in one place, affects everywhere"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 38,
+      "text": "- **Add Custom Jobs**: Create new job types"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 39,
+      "text": "- **Define Items**: Add new items with decay, quality, etc."
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 40,
+      "text": "- **Vehicle Categories**: Organize vehicles by type"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 41,
+      "text": "- **Gang System**: Set up gang hierarchies"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 42,
+      "text": "- **Utility Functions**: String manipulation, math helpers"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 528,
+      "text": "- `vallaw` - Valentine Law Enforcement"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 529,
+      "text": "- `rholaw` - Rhodes Law Enforcement"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 530,
+      "text": "- `blklaw` - Blackwater Law Enforcement"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 531,
+      "text": "- `strlaw` - Strawberry Law Enforcement"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 532,
+      "text": "- `stdenlaw` - Saint Denis Law Enforcement"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 535,
+      "text": "- `valmedic` - Valentine Medic"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 536,
+      "text": "- `sdmedic` - Saint Denis Medic"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 539,
+      "text": "- `unemployed` - Default job for all players"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 639,
+      "text": "- `'horses'` - Horse mounts"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 640,
+      "text": "- `'carts'` - Wagons and carts"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 641,
+      "text": "- `'coaches'` - Stagecoaches"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 642,
+      "text": "- `'boats'` - Watercraft"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 678,
+      "text": "- `none` - No gang affiliation"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 679,
+      "text": "- `odriscoll` - O'Driscoll Boys"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 680,
+      "text": "- `lemoyne` - Lemoyne Raiders"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 681,
+      "text": "- `murfree` - Murfree Brood"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 682,
+      "text": "- `skinner` - Skinner Brothers"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 683,
+      "text": "- `laramie` - Laramie Gang"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 684,
+      "text": "- `dellobo` - Del Lobo Gang"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 685,
+      "text": "- `night` - Night Folk"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 686,
+      "text": "- `foreman` - Foreman Brothers"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 687,
+      "text": "- `anderson` - Anderson Boys"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 688,
+      "text": "- `watson` - Watson's Boys"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 799,
+      "text": "- [Item Decay System](/inventory/item-decay) - Configure item quality degradation"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 800,
+      "text": "- [Money System](/essentials/money-system) - Set up money types and banks"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 801,
+      "text": "- [Configuration Guide](/essentials/configuration) - Configure server settings"
+    },
+    {
+      "file": "essentials/shared.mdx",
+      "line": 802,
+      "text": "- [Inventory Functions](/inventory/functions) - Work with items programmatically"
+    },
+    {
+      "file": "essentials/sharedexports.mdx",
+      "line": 23,
+      "text": "* This method allows for any resource to insert job data into the shared file for the core. That means that you can make a resource, and on load, make those jobs available for use. This can be accomplished through one the ways shown below. Utilizing the function requires importing the core but using the export does not"
+    },
+    {
+      "file": "essentials/sharedexports.mdx",
+      "line": 121,
+      "text": "* This method allows for any resource to insert gang data into the shared file for the core. That means that you can make a resource, and on load, make those gangs available for use. This can be accomplished through one the ways shown below. Utilizing the function requires importing the core but using the export does not"
+    },
+    {
+      "file": "essentials/sharedexports.mdx",
+      "line": 209,
+      "text": "* This method allows for any resource to insert item data into the shared file for the core. That means that you can make a resource, and on load, make those items available for use. This can be accomplished through one the ways shown below. Utilizing the function requires importing the core but using the export does not"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 22,
+      "text": "- **Instant Updates**: Changes sync immediately without event delays"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 23,
+      "text": "- **Bidirectional**: Server \u2194 Client synchronization"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 24,
+      "text": "- **Automatic**: No manual event triggering needed"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 25,
+      "text": "- **Efficient**: Lower network overhead than events"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 42,
+      "text": "- **No Event Spam**: Eliminates constant event triggering"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 43,
+      "text": "- **Direct Access**: Read values directly without callbacks"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 44,
+      "text": "- **Reduced Latency**: Instant synchronization"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 45,
+      "text": "- **Cleaner Code**: No callback hell or event chains"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 501,
+      "text": "- Hunger, thirst, health changes"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 502,
+      "text": "- Real-time stat updates"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 503,
+      "text": "- Player status flags"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 506,
+      "text": "- HUD displays"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 507,
+      "text": "- Status effects"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 508,
+      "text": "- Proximity checks"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 511,
+      "text": "- Number values"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 512,
+      "text": "- Boolean flags"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 513,
+      "text": "- String identifiers"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 518,
+      "text": "- Nested table structures"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 519,
+      "text": "- Large data payloads"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 520,
+      "text": "- Multiple related changes"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 523,
+      "text": "- Money transactions"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 524,
+      "text": "- Inventory changes"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 525,
+      "text": "- Permission checks"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 528,
+      "text": "- Achievement unlocks"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 529,
+      "text": "- Quest completions"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 530,
+      "text": "- Single notifications"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 588,
+      "text": "- Ensure player is logged in (`isLoggedIn` should be true)"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 589,
+      "text": "- Check that InitializeStateBags was called on server"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 590,
+      "text": "- Provide fallback values: `LocalPlayer.state.hunger or 100`"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 594,
+      "text": "- Verify you're updating the correct player's state"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 595,
+      "text": "- Check that the state key is one of the synced keys"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 596,
+      "text": "- Ensure player is still connected"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 600,
+      "text": "- Always check if bagName matches the intended player"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 601,
+      "text": "- Use debouncing if needed for frequent updates"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 602,
+      "text": "- Remove handlers when no longer needed"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 606,
+      "text": "- Don't update states too frequently (< 100ms between updates)"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 607,
+      "text": "- Batch multiple state changes if possible"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 608,
+      "text": "- Use state change handlers instead of polling loops"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 632,
+      "text": "- `hunger`, `thirst`, `cleanliness`, `stress`, `health`"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 647,
+      "text": "- Changes replicate to all clients in range"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 648,
+      "text": "- Routing bucket aware"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 649,
+      "text": "- Automatic cleanup on player disconnect"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 655,
+      "text": "- [Player Data Reference](/essentials/playerdata) - Complete player data structure"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 656,
+      "text": "- [Configuration Guide](/essentials/configuration) - Configure default metadata values"
+    },
+    {
+      "file": "essentials/statebags.mdx",
+      "line": 657,
+      "text": "- [Server Functions](/api-reference/endpoint/serverfunctionreference) - All player functions"
+    },
+    {
+      "file": "homepage.mdx",
+      "line": 32,
+      "text": "* **QB Core** Team for a lot of info"
+    },
+    {
+      "file": "homepage.mdx",
+      "line": 34,
+      "text": "* **Ox Lib** Team for menu, notifications etc."
+    },
+    {
+      "file": "homepage.mdx",
+      "line": 36,
+      "text": "* **RexShack** for his awesome work on maintaining **RSG**"
+    },
+    {
+      "file": "homepage.mdx",
+      "line": 38,
+      "text": "* **RedM Community** For continuous support, feedback and contributions"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 27,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 28,
+      "text": "- `citizenid` (string) - Player's citizen ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 57,
+      "text": "- `source` (number|table) - Player's server ID or PlayerData table"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 58,
+      "text": "- `offline` (boolean) - If true, source parameter is PlayerData object"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 85,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 86,
+      "text": "- `items` (table) - Complete items table"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 124,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 125,
+      "text": "- `filterItems` (string|table|nil) - Items to keep (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 156,
+      "text": "- `identifier` (number|string) - Player source, stash ID, or drop ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 157,
+      "text": "- `item` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 158,
+      "text": "- `amount` (number) - Quantity to add"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 159,
+      "text": "- `slot` (number|nil) - Specific slot (optional, auto-finds if nil)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 160,
+      "text": "- `info` (table|nil) - Item metadata (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 161,
+      "text": "- `reason` (string|nil) - Reason for logging (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 203,
+      "text": "- `identifier` (number|string) - Player source, stash ID, or drop ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 204,
+      "text": "- `item` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 205,
+      "text": "- `amount` (number) - Quantity to remove"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 206,
+      "text": "- `slot` (number|nil) - Specific slot (optional, removes from any if nil)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 207,
+      "text": "- `reason` (string|nil) - Reason for logging (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 208,
+      "text": "- `isMove` (boolean|nil) - Internal flag for item moves (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 241,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 242,
+      "text": "- `items` (string|table) - Item name or array of items"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 243,
+      "text": "- `amount` (number|nil) - Required amount (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 289,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 290,
+      "text": "- `items` (string|table) - Item name or array of item names"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 316,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 317,
+      "text": "- `item` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 345,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 346,
+      "text": "- `item` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 376,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 377,
+      "text": "- `slot` (number) - Slot number"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 404,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 405,
+      "text": "- `itemName` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 406,
+      "text": "- `key` (string) - Data key to set"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 407,
+      "text": "- `val` (any) - Value to set"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 440,
+      "text": "- `identifier` (number|string) - Player source, stash ID, or drop ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 467,
+      "text": "- `items` (table) - Items table (PlayerData.items)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 468,
+      "text": "- `itemName` (string) - Item name to search for"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 493,
+      "text": "- `items` (table) - Items table (PlayerData.items)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 494,
+      "text": "- `itemName` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 521,
+      "text": "- `items` (table) - Items table"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 546,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 572,
+      "text": "- `itemName` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 596,
+      "text": "- `source` (number|string) - Player source or stash ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 597,
+      "text": "- `item` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 598,
+      "text": "- `amount` (number) - Quantity"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 634,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 635,
+      "text": "- `identifier` (string|nil) - Stash/drop ID (nil for player inventory)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 636,
+      "text": "- `data` (table|nil) - Stash configuration (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 683,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 684,
+      "text": "- `identifier` (string|nil) - Stash/drop ID (optional)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 705,
+      "text": "- `source` (number) - Viewer's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 706,
+      "text": "- `targetId` (number) - Target player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 733,
+      "text": "- `identifier` (string) - Unique stash ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 734,
+      "text": "- `data` (table) - Stash configuration"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 764,
+      "text": "- `identifier` (string) - Stash ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 793,
+      "text": "- `identifier` (string) - Stash ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 815,
+      "text": "- `identifier` (string) - Stash ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 838,
+      "text": "- `identifier` (string) - Stash ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 867,
+      "text": "- `itemName` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 868,
+      "text": "- `...` - Additional arguments passed to callback"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 887,
+      "text": "- `source` (number) - Player's server ID"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 888,
+      "text": "- `item` (string) - Item name"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 889,
+      "text": "- `amount` (number) - Quantity"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 890,
+      "text": "- `info` (table) - Item metadata"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 891,
+      "text": "- `reason` (string) - Reason for logging"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 1049,
+      "text": "- [Inventory Overview](/inventory/overview)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 1050,
+      "text": "- [Weapons System](/inventory/weapons)"
+    },
+    {
+      "file": "inventory/functions.mdx",
+      "line": 1051,
+      "text": "- [RSG Core Functions](/api-reference/endpoint/serverfunctionreference)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 26,
+      "text": "- **Quality Range**: 0-100 (100 = perfect condition, 0 = destroyed)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 27,
+      "text": "- **Linear Decay**: Predictable degradation over time"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 28,
+      "text": "- **Item-Specific Rates**: Each item defines its own decay speed"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 29,
+      "text": "- **Passive System**: Automatic calculation, no manual intervention needed"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 33,
+      "text": "- **Auto-Calculation**: Decay computed on inventory load and item use"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 34,
+      "text": "- **Auto-Deletion**: Items at 0% quality are automatically removed (optional)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 35,
+      "text": "- **Timestamp Tracking**: Uses Unix timestamps for accuracy"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 36,
+      "text": "- **Offline Decay Control**: NEW! Configure whether items decay while player is offline"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 40,
+      "text": "- **Per-Item Control**: Each item has its own decay rate"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 41,
+      "text": "- **Optional Deletion**: Choose whether items delete at 0% quality"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 42,
+      "text": "- **No Decay Option**: Items without `decay` property never degrade"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 43,
+      "text": "- **Quality Info**: Quality stored in item metadata for access"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 44,
+      "text": "- **Stash Decay Rates**: NEW! Custom decay rates for specific stashes (coolers, freezers, etc.)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 45,
+      "text": "- **Default Metadata**: NEW! Set default item info values in item definitions"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 69,
+      "text": "- `1.0` = Normal decay (100%)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 70,
+      "text": "- `0.3` = Slow decay (30% of normal) - refrigerator"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 71,
+      "text": "- `0.0` = No decay (0%) - freezer"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 72,
+      "text": "- `50.0` = Fast decay (5000% of normal) - composter"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 87,
+      "text": "- Decay rate: 100 / (300 * 60) = 0.00556% per second"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 88,
+      "text": "- After 1 hour (3600s): 100 - (3600 \u00d7 0.00556) = 80%"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 89,
+      "text": "- After 5 hours (18000s): 100 - (18000 \u00d7 0.00556) = 0%"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 139,
+      "text": "- Items only decay when player is online and playing"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 140,
+      "text": "- More forgiving for casual players"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 141,
+      "text": "- Prevents logging in to spoiled food after a few days offline"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 142,
+      "text": "- Decay timer pauses when player disconnects"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 145,
+      "text": "- Items decay based on real-world time"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 146,
+      "text": "- More realistic simulation"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 147,
+      "text": "- Encourages regular login to manage inventory"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 148,
+      "text": "- Food spoils even when offline"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 219,
+      "text": "- Base stash name"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 220,
+      "text": "- Followed by `-decay` or `_decay`"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 221,
+      "text": "- Followed by percentage number (0-100+ allowed)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 224,
+      "text": "- `basement69-decay30` \u2192 30% decay rate (slower)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 225,
+      "text": "- `freezer111_decay0` \u2192 0% decay rate (no decay)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 226,
+      "text": "- `refrigerator_decay20` \u2192 20% decay rate (very slow)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 227,
+      "text": "- `composter333decay5000` \u2192 5000% decay rate (50x faster!)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 292,
+      "text": "- Normal bread lasts 5 hours"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 293,
+      "text": "- Bread in fridge lasts 25 hours (5 \u00f7 0.20)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 316,
+      "text": "- Normal bread lasts 5 hours"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 317,
+      "text": "- Bread in cellar lasts 10 hours"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 340,
+      "text": "- Normal bread takes 5 hours to decay"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 341,
+      "text": "- Bread in composter decays in 6 minutes (5 hours \u00f7 50)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 342,
+      "text": "- Use for converting organic matter to compost quickly"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 604,
+      "text": "- `item` (table) - Item object with info table"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 605,
+      "text": "- `itemInfo` (table|nil) - Item definition from RSGCore.Shared.Items (optional)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 606,
+      "text": "- `currentTime` (number|nil) - Unix timestamp (optional, defaults to os.time())"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 607,
+      "text": "- `decayRateModifier` (number|nil) - Decay rate multiplier (optional, defaults to 1.0)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 610,
+      "text": "- `shouldUpdate` (boolean) - Whether item metadata was changed"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 611,
+      "text": "- `newQuality` (number|nil) - New quality value after decay"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 612,
+      "text": "- `shouldDelete` (boolean) - Whether item should be removed"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 644,
+      "text": "- `player` (table) - Player object from RSGCore.Functions.GetPlayer"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 676,
+      "text": "- `items` (table) - Table of items indexed by slot"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 677,
+      "text": "- `decayRateModifier` (number|nil) - Decay rate multiplier (optional, defaults to 1.0)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 680,
+      "text": "- `needsUpdate` (boolean) - Whether any items were updated"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 681,
+      "text": "- `removedItems` (table) - Table of items that should be deleted"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1166,
+      "text": "- Item doesn't have `decay` property in shared/items.lua"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1167,
+      "text": "- `info.lastUpdate` is missing (should auto-initialize)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1168,
+      "text": "- Decay check functions aren't being called"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1175,
+      "text": "- Incorrect `decay` value (remember: it's in minutes)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1176,
+      "text": "- Server time issues or clock skew"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1179,
+      "text": "- Review decay value: `decay = 60` means 1 hour"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1180,
+      "text": "- Use admin test command to verify decay rates"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1185,
+      "text": "- `delete = false` or missing in item definition"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1186,
+      "text": "- Items not being checked for decay"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1193,
+      "text": "- Quality stored as decimal but displayed incorrectly"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1194,
+      "text": "- lastUpdate timestamp is invalid"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1197,
+      "text": "- Use `math.floor(quality)` for display"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1198,
+      "text": "- Verify lastUpdate is a valid Unix timestamp (os.time())"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1205,
+      "text": "- Items decay based on real-world time"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1206,
+      "text": "- Decay calculated when player logs back in"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1207,
+      "text": "- Quality reflects total elapsed time"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1210,
+      "text": "- Items only decay when player is online"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1211,
+      "text": "- Decay timer pauses on disconnect"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1212,
+      "text": "- Prevents offline spoilage"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1217,
+      "text": "- Incorrect stash ID format (use `_decay30` or `-decay30`)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1218,
+      "text": "- Percentage value missing or malformed"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1219,
+      "text": "- Using old inventory version (requires v2.7.3+)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1222,
+      "text": "- Verify stash ID format: `stashname_decay{NUMBER}`"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1223,
+      "text": "- Check inventory version in fxmanifest.lua"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1224,
+      "text": "- Examples: `freezer_decay0`, `fridge-decay20`"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1229,
+      "text": "- Item definition missing `info` table"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1230,
+      "text": "- Using old rsg-core/rsg-inventory version"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1231,
+      "text": "- Manually providing info that overrides defaults"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1234,
+      "text": "- Add `info = { key = value }` to item definition"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1235,
+      "text": "- Update to rsg-inventory v2.7.3+"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1236,
+      "text": "- Remember: Provided info merges with defaults"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1247,
+      "text": "- `rsg-inventory/server/functions.lua` - Core decay calculation logic"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1248,
+      "text": "- `rsg-inventory/shared/helpers.lua` - `Helpers.ParseDecayRate()` function"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1249,
+      "text": "- `rsg-inventory/server/exports.lua` - Default metadata merging"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1250,
+      "text": "- `rsg-inventory/shared/config.lua` - `ItemsDecayWhileOffline` setting"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1300,
+      "text": "- Decay calculations are O(1) per item"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1301,
+      "text": "- Only calculated when needed (not every frame)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1302,
+      "text": "- Minimal performance impact even with many items"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1303,
+      "text": "- Database writes only on player save (every 5 minutes)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1304,
+      "text": "- Stash decay rate parsing is cached (no repeated regex)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1320,
+      "text": "- [Inventory Overview](/inventory/overview) - Complete inventory system guide"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1321,
+      "text": "- [Inventory Functions](/inventory/functions) - All inventory management functions"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1322,
+      "text": "- [Weapons System](/inventory/weapons) - Weapon durability (different from item decay)"
+    },
+    {
+      "file": "inventory/item-decay.mdx",
+      "line": 1323,
+      "text": "- [Item Configuration](/essentials/shared) - How to define items"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 74,
+      "text": "- **100**: Perfect condition"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 75,
+      "text": "- **75-99**: Good condition"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 76,
+      "text": "- **50-74**: Decent condition"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 77,
+      "text": "- **25-49**: Poor condition"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 78,
+      "text": "- **0-24**: Very poor condition"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 79,
+      "text": "- **0**: Item is destroyed (deleted on next inventory load)"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 131,
+      "text": "- `source` - Player server ID or stash identifier"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 132,
+      "text": "- `item_name` - Name of the item (from shared/items.lua)"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 133,
+      "text": "- `amount` - Quantity to add"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 134,
+      "text": "- `slot` - (optional) Specific slot number, or nil for auto-slot"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 135,
+      "text": "- `info` - **The metadata table**"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 136,
+      "text": "- `reason` - Reason for logging"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 736,
+      "text": "- Only stack if metadata (`info`) is **identical**"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 737,
+      "text": "- Different metadata = different stacks"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 752,
+      "text": "- **Always** take individual slots"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 753,
+      "text": "- Even if metadata is identical"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 1011,
+      "text": "- [Inventory Functions Reference](/inventory/functions) - Complete list of all inventory exports"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 1012,
+      "text": "- [Inventory Overview](/inventory/overview) - Learn about the inventory system"
+    },
+    {
+      "file": "inventory/metaitems.mdx",
+      "line": 1013,
+      "text": "- [Weapons System](/inventory/weapons) - Weapon-specific metadata"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 21,
+      "text": "- **Weight-Based**: Every item has a weight value, and players have a maximum carry capacity"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 22,
+      "text": "- **Slot-Based**: Inventory is divided into slots (default: 25 slots)"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 23,
+      "text": "- **Configurable**: Weight and slots can be adjusted per player via `PlayerData`"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 34,
+      "text": "- **Add/Remove Items**: Server-side functions to modify inventory"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 35,
+      "text": "- **Item Transfer**: Move items between inventories"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 36,
+      "text": "- **Item Info**: Custom metadata for items (serial numbers, quality, etc.)"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 37,
+      "text": "- **Item Decay**: Time-based item quality degradation"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 40,
+      "text": "- Weapons are stored as inventory items with type `'weapon'`"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 41,
+      "text": "- Weapon-specific data (serial number, quality, ammo) stored in item `info`"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 42,
+      "text": "- Seamless integration with rsg-weapons for durability and repair"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 102,
+      "text": "- Items have a base `weight` value (in grams)"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 103,
+      "text": "- Total weight = `item.weight * item.amount`"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 104,
+      "text": "- Player carry capacity defined in `PlayerData.weight` (default: 35000g = 35kg)"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 135,
+      "text": "- Each inventory has a maximum number of slots"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 136,
+      "text": "- Each item occupies one slot, regardless of quantity"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 137,
+      "text": "- **Exception**: Unique items always take one slot each"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 185,
+      "text": "- **Quality**: Ranges from 0-100"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 186,
+      "text": "- **Decay Rate**: Time it takes for quality to reach 0"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 187,
+      "text": "- **Auto-Remove**: Items at 0 quality are automatically removed on inventory load"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 191,
+      "text": "- **100-75%**: Fresh/Good condition"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 192,
+      "text": "- **74-50%**: Decent condition"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 193,
+      "text": "- **49-25%**: Poor condition"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 194,
+      "text": "- **24-1%**: Very poor condition"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 195,
+      "text": "- **0%**: Item is destroyed/unusable"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 210,
+      "text": "- **Visual Object**: A physical bag/satchel spawns at the location"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 211,
+      "text": "- **Persistence**: Drops remain until picked up or server restart"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 212,
+      "text": "- **Network Synced**: All players can see and interact with drops"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 213,
+      "text": "- **Weight Limit**: Drops can hold multiple items up to weight limit"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 285,
+      "text": "- **Item Pricing**: Each item has a defined price"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 286,
+      "text": "- **Stock Management**: Items can have limited or unlimited stock"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 287,
+      "text": "- **Job Restrictions**: Shops can be restricted to specific jobs"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 288,
+      "text": "- **Gang Restrictions**: Shops can be restricted to specific gangs"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 498,
+      "text": "- Item quality reached 0% (decay)"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 499,
+      "text": "- Item not defined in shared items"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 500,
+      "text": "- Database not saving properly"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 501,
+      "text": "- Server crash before save"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 506,
+      "text": "- Items are automatically dropped on the ground"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 507,
+      "text": "- Check ground drops near player"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 508,
+      "text": "- Increase player weight/slots if needed"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 514,
+      "text": "- [Inventory Functions Reference](/inventory/functions) - Complete list of all inventory exports"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 515,
+      "text": "- [Weapons System](/inventory/weapons) - Integration with rsg-weapons"
+    },
+    {
+      "file": "inventory/overview.mdx",
+      "line": 516,
+      "text": "- [Item Configuration](/essentials/shared) - How to define items in rsg-core"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 21,
+      "text": "- Weapons degrade with use (each shot reduces quality)"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 22,
+      "text": "- Quality ranges from 0-100%"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 23,
+      "text": "- Weapons at 0% quality become unusable"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 24,
+      "text": "- Can be repaired using weapon repair kits"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 27,
+      "text": "- Each weapon has configurable damage multipliers"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 28,
+      "text": "- Separate from native RedM damage values"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 29,
+      "text": "- Critical hits can be disabled server-wide"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 32,
+      "text": "- Toggle system for weapon components/attachments"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 33,
+      "text": "- Supports custom weapon loading"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 36,
+      "text": "- Useable repair kits restore weapon quality to 100%"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 37,
+      "text": "- Repair time configurable (default: 30 seconds)"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 84,
+      "text": "- Revolver with 6 shots = 0.06 quality lost per full cylinder"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 85,
+      "text": "- Takes approximately 1,667 shots to degrade from 100% to 0%"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 138,
+      "text": "- `1.0` = Normal damage"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 139,
+      "text": "- `1.5` = 50% more damage"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 140,
+      "text": "- `0.5` = 50% less damage"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 169,
+      "text": "- **100-75%**: Excellent Condition (Green)"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 170,
+      "text": "- **74-50%**: Good Condition (Yellow)"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 171,
+      "text": "- **49-25%**: Poor Condition (Orange)"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 172,
+      "text": "- **24-1%**: Very Poor Condition (Red)"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 173,
+      "text": "- **0%**: Broken - Weapon Unusable"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 650,
+      "text": "- Ensure item is defined as useable in shared/items.lua"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 651,
+      "text": "- Check that weapon has a valid serial number"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 652,
+      "text": "- Verify player actually has a weapon to repair"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 656,
+      "text": "- Check if quality reached 0% (broken weapons stay in inventory but are unusable)"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 657,
+      "text": "- Verify weapon items are defined correctly in shared/items.lua"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 658,
+      "text": "- Check for inventory saving errors"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 664,
+      "text": "- [Inventory Overview](/inventory/overview) - Learn about the inventory system"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 665,
+      "text": "- [Inventory Functions](/inventory/functions) - Complete inventory function reference"
+    },
+    {
+      "file": "inventory/weapons.mdx",
+      "line": 666,
+      "text": "- [RSG Core Configuration](/essentials/configuration) - Configure your server"
+    },
+    {
+      "file": "lua-reference/events.mdx",
+      "line": 501,
+      "text": "- `rsg-inventory:server:AddItem`"
+    },
+    {
+      "file": "lua-reference/events.mdx",
+      "line": 502,
+      "text": "- `rsg-banking:client:updateBalance`"
+    },
+    {
+      "file": "lua-reference/events.mdx",
+      "line": 503,
+      "text": "- `police:server:cuffPlayer`"
+    },
+    {
+      "file": "lua-reference/events.mdx",
+      "line": 504,
+      "text": "- `hospital:client:revive`"
+    },
+    {
+      "file": "lua-reference/events.mdx",
+      "line": 638,
+      "text": "- [Threads & Loops](/lua-reference/threads) - Creating continuous processes"
+    },
+    {
+      "file": "lua-reference/events.mdx",
+      "line": 639,
+      "text": "- [Common Patterns](/lua-reference/patterns) - RSG Framework best practices"
+    },
+    {
+      "file": "lua-reference/events.mdx",
+      "line": 640,
+      "text": "- [Performance Tips](/lua-reference/performance) - Optimize your code"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 21,
+      "text": "- Run on **each player's machine** independently"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 22,
+      "text": "- Handle visual effects, UI, local player actions"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 23,
+      "text": "- **Cannot** directly access server data or other players"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 24,
+      "text": "- File location: `client/` folder or defined as `client_script` in fxmanifest.lua"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 27,
+      "text": "- Run **once on the server**"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 28,
+      "text": "- Handle game logic, database operations, player data"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 29,
+      "text": "- Manage communication between players"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 30,
+      "text": "- File location: `server/` folder or defined as `server_script` in fxmanifest.lua"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 33,
+      "text": "- Run on **both** client and server"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 34,
+      "text": "- Used for shared configurations, item definitions, etc."
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 35,
+      "text": "- File location: `shared/` folder or defined as `shared_script` in fxmanifest.lua"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 529,
+      "text": "- [Events & Callbacks](/lua-reference/events) - Communication between client and server"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 530,
+      "text": "- [Threads & Loops](/lua-reference/threads) - Creating continuous processes"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 531,
+      "text": "- [Table Operations](/lua-reference/tables) - Advanced table manipulation"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 532,
+      "text": "- [Common Patterns](/lua-reference/patterns) - RSG Framework patterns and best practices"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 533,
+      "text": "- [Performance Tips](/lua-reference/performance) - Optimize your code"
+    },
+    {
+      "file": "lua-reference/luabegining.mdx",
+      "line": 534,
+      "text": "- [Debugging](/lua-reference/debugging) - Find and fix errors"
+    },
+    {
+      "file": "lua-reference/patterns.mdx",
+      "line": 729,
+      "text": "- [Table Operations](/lua-reference/tables) - Advanced table manipulation"
+    },
+    {
+      "file": "lua-reference/patterns.mdx",
+      "line": 730,
+      "text": "- [Performance Tips](/lua-reference/performance) - Optimize your code"
+    },
+    {
+      "file": "lua-reference/patterns.mdx",
+      "line": 731,
+      "text": "- [Debugging](/lua-reference/debugging) - Find and fix errors"
+    },
+    {
+      "file": "lua-reference/threads.mdx",
+      "line": 704,
+      "text": "- [Table Operations](/lua-reference/tables) - Advanced table manipulation"
+    },
+    {
+      "file": "lua-reference/threads.mdx",
+      "line": 705,
+      "text": "- [Common Patterns](/lua-reference/patterns) - RSG Framework best practices"
+    },
+    {
+      "file": "lua-reference/threads.mdx",
+      "line": 706,
+      "text": "- [Performance Tips](/lua-reference/performance) - Optimize your code"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 22,
+      "text": "* At the bottom of your server.cfg file you will see a permissions section"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 45,
+      "text": "* **FiveM ID**"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 47,
+      "text": "* **Rockstar license (what rsgcore uses)**"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 49,
+      "text": "* **Discord ID**"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 69,
+      "text": "* While in the server type in the command `/addpermission [id] [addpermissions]`"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 71,
+      "text": "* It will look something like this `/addpermission 1 god`"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 75,
+      "text": "* In chat enter the command `/admin`"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 77,
+      "text": "* Access the \"Player Management\" tab and select the player you want to give permissions to"
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 79,
+      "text": "* Locate a menu item called \"Permissions\""
+    },
+    {
+      "file": "quickstart.mdx",
+      "line": 81,
+      "text": "* Set the user group for that user then press \"submit\""
+    }
+  ]
+}

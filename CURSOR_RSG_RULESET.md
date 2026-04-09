@@ -217,3 +217,32 @@ Transforma regulamentul in validari tehnice server-side, logs si restrictii de g
   5. acest fisier (`CURSOR_RSG_RULESET.md`)
 
 Regula: daca exista deja model functional in repo-urile RSG scanate, se copiaza/adapteaza acel model in loc sa se inventeze flow nou.
+
+## 9) Completare din documentatia oficiala rsg-docs (fara a inlocui regulile vechi)
+
+- Foloseste suplimentar:
+  - `RSG_DOCS_REGULAMENT_SUPLIMENTAR.md` (reguli consolidate din docs oficiale)
+  - `RSG_DOCS_AUDIT_INDEX.json` (index complet al fisierelor/sectiunilor analizate)
+- Aceste fisiere completeaza regulile existente; nu anuleaza reguli anterioare.
+
+Reguli adaugate din rsg-docs:
+
+1. Pentru flux request-response foloseste callbacks; pentru one-way foloseste events.
+2. Pentru status live si UI frecvent actualizat prefera StateBags in loc de event spam.
+3. Respecta lifecycle standard:
+   - `RSGCore:Client:OnPlayerLoaded` pentru init
+   - `RSGCore:Client:OnPlayerUnload` pentru cleanup
+4. Pentru economy foloseste money types moderne:
+   - `cash`, `valbank`, `rhobank`, `blkbank`, `armbank`, `bloodmoney`
+   - evita `bank` (legacy/deprecated)
+5. Pentru inventory flow aplica ordinea:
+   - validate -> `HasItem` / `CanAddItem` -> tranzactie -> notify/log
+6. Performance:
+   - local vars/functions
+   - loops cu `Wait(...)` controlat
+   - evita polling agresiv si callback spam
+7. Security:
+   - validari sensibile pe server
+   - nu avea incredere in date client fara verificare
+8. Logging:
+   - foloseste reasons clare la tranzactii/actiuni sensibile pentru audit.

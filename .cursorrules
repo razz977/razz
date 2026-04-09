@@ -4,9 +4,11 @@ Always follow these files in this exact order before generating code:
 1) RSG_ORG_FUNCTION_INDEX.json
 2) RSG_ORG_REGULAMENT_ABSOLUT_COMPLET.md
 3) RSG_ORG_REGULAMENT_COMPLET.md
-4) RSG_NATIVE_CATALOG.md
-5) CURSOR_RSG_RULESET.md
-6) RSG_ZERO_TO_SCRIPT_PLAYBOOK.md
+4) RSG_DOCS_REGULAMENT_SUPLIMENTAR.md
+5) RSG_DOCS_AUDIT_INDEX.json
+6) RSG_NATIVE_CATALOG.md
+7) CURSOR_RSG_RULESET.md
+8) RSG_ZERO_TO_SCRIPT_PLAYBOOK.md
 
 Mandatory behavior:
 - Reuse existing RSG patterns/functions/events from the indexed files when available.
@@ -16,6 +18,9 @@ Mandatory behavior:
 - Prefer RSG APIs and exports (rsg-core, rsg-inventory, callbacks, prompts, statebags).
 - Use only native patterns allowed by RSG_NATIVE_CATALOG.md.
 - Respect deprecated/forbidden patterns documented in CURSOR_RSG_RULESET.md.
+- Prefer callbacks for request-response flows and events for one-way flows.
+- Respect lifecycle patterns: OnPlayerLoaded for init and OnPlayerUnload for cleanup.
+- Use StateBags for frequently-read live status sync; avoid event/callback spam in loops.
 - Use mandatory resource file structure:
   - `fxmanifest.lua` (root)
   - `config.lua` (root)
