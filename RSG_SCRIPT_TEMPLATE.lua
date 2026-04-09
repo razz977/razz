@@ -1,6 +1,6 @@
 -- RSG SCRIPT TEMPLATE (official-style)
 -- Copy the sections below into your resource files:
---   fxmanifest.lua, config.lua, client/main.lua, server/main.lua
+--   fxmanifest.lua, config.lua, client/client.lua, server/server.lua, locales/ro.lua
 -- This template follows CURSOR_RSG_RULESET.md + RSG_NATIVE_CATALOG.md
 
 -----------------------------------------------------------------------
@@ -18,16 +18,17 @@ version '1.0.0'
 
 shared_scripts {
     '@ox_lib/init.lua',
-    'config.lua'
+    'config.lua',
+    'locales/ro.lua'
 }
 
 client_scripts {
-    'client/main.lua'
+    'client/client.lua'
 }
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    'server/main.lua'
+    'server/server.lua'
 }
 
 dependencies {
@@ -61,14 +62,46 @@ Config.Prompt = {
     label = 'Run Template Action',
     key = 'E'
 }
+
+Locales = Locales or {}
+Locales['ro'] = {
+    ['template_title'] = 'Template',
+    ['invalid_keybind'] = 'Keybind invalid in config',
+    ['on_cooldown'] = 'Esti in cooldown',
+    ['too_far'] = 'Esti prea departe',
+    ['missing_job'] = 'Nu ai jobul necesar',
+    ['inventory_full'] = 'Inventar plin',
+    ['invalid_player'] = 'Player invalid',
+    ['missing_item'] = 'Lipseste itemul necesar',
+    ['action_done'] = 'Actiune completata'
+}
 ]]
 
 -----------------------------------------------------------------------
--- FILE: client/main.lua
+-- FILE: locales/ro.lua
+-----------------------------------------------------------------------
+--[[
+Locales = Locales or {}
+Locales['ro'] = Locales['ro'] or {
+    ['template_title'] = 'Template',
+    ['invalid_keybind'] = 'Keybind invalid in config',
+    ['on_cooldown'] = 'Esti in cooldown',
+    ['too_far'] = 'Esti prea departe',
+    ['missing_job'] = 'Nu ai jobul necesar',
+    ['inventory_full'] = 'Inventar plin',
+    ['invalid_player'] = 'Player invalid',
+    ['missing_item'] = 'Lipseste itemul necesar',
+    ['action_done'] = 'Actiune completata'
+}
+]]
+
+-----------------------------------------------------------------------
+-- FILE: client/client.lua
 -----------------------------------------------------------------------
 --[[
 local RSGCore = exports['rsg-core']:GetCoreObject()
 local promptHandle
+local Lang = Locales['ro'] or {}
 
 RegisterNetEvent('RSGCore:Client:UpdateObject', function()
     RSGCore = exports['rsg-core']:GetCoreObject()
@@ -76,7 +109,7 @@ end)
 
 local function notify(msg, ntype)
     lib.notify({
-        title = 'Template',
+        title = Lang['template_title'] or 'Template',
         description = msg,
         type = ntype or 'inform'
     })
@@ -86,7 +119,7 @@ local function createActionPrompt()
     if promptHandle then return end
     local keyHash = RSGCore.Shared.Keybinds[Config.Prompt.key]
     if not keyHash then
-        notify('Invalid keybind in config', 'error')
+        notify(Lang['invalid_keybind'] or 'Keybind invalid in config', 'error')
         return
     end
 
@@ -137,11 +170,12 @@ end)
 ]]
 
 -----------------------------------------------------------------------
--- FILE: server/main.lua
+-- FILE: server/server.lua
 -----------------------------------------------------------------------
 --[[
 local RSGCore = exports['rsg-core']:GetCoreObject()
 local playerCooldowns = {}
+local Lang = Locales['ro'] or {}
 
 RegisterNetEvent('RSGCore:Server:UpdateObject', function()
     if source ~= '' then return false end
@@ -182,27 +216,27 @@ RegisterNetEvent('rsg-template:server:attemptAction', function()
     if not Player then return end
 
     if isOnCooldown(src) then
-        fail(src, 'You are on cooldown')
+        fail(src, Lang['on_cooldown'] or 'Esti in cooldown')
         return
     end
 
     if not isNearActionPoint(src) then
-        fail(src, 'You are too far away')
+        fail(src, Lang['too_far'] or 'Esti prea departe')
         return
     end
 
     if Config.RequiredJob ~= 'unemployed' and Player.PlayerData.job.name ~= Config.RequiredJob then
-        fail(src, 'You do not have the required job')
+        fail(src, Lang['missing_job'] or 'Nu ai jobul necesar')
         return
     end
 
     if not exports['rsg-inventory']:HasItem(src, Config.RequiredItem, Config.RequiredItemAmount) then
-        fail(src, ('Missing required item: %s x%s'):format(Config.RequiredItem, Config.RequiredItemAmount))
+        fail(src, (Lang['missing_item'] or 'Lipseste itemul necesar') .. (': %s x%s'):format(Config.RequiredItem, Config.RequiredItemAmount))
         return
     end
 
     if not exports['rsg-inventory']:CanAddItem(src, 'water', 1) then
-        fail(src, 'Inventory full')
+        fail(src, Lang['inventory_full'] or 'Inventar plin')
         return
     end
 
@@ -233,19 +267,19 @@ RegisterNetEvent('rsg-template:server:attemptAction', function()
         return
     end
 
-    succeed(src, ('Action complete! +1 water +$%s %s'):format(Config.RewardMoneyAmount, Config.RewardMoneyType))
+    succeed(src, (Lang['action_done'] or 'Actiune completata') .. (' +1 water +$%s %s'):format(Config.RewardMoneyAmount, Config.RewardMoneyType))
 end)
 
 -- Example callback pattern
 RSGCore.Functions.CreateCallback('rsg-template:server:canDoAction', function(source, cb)
     local Player = RSGCore.Functions.GetPlayer(source)
     if not Player then
-        cb(false, 'Invalid player')
+        cb(false, Lang['invalid_player'] or 'Player invalid')
         return
     end
 
     if isOnCooldown(source) then
-        cb(false, 'On cooldown')
+        cb(false, Lang['on_cooldown'] or 'Esti in cooldown')
         return
     end
 

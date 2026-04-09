@@ -16,6 +16,14 @@ Mandatory behavior:
 - Prefer RSG APIs and exports (rsg-core, rsg-inventory, callbacks, prompts, statebags).
 - Use only native patterns allowed by RSG_NATIVE_CATALOG.md.
 - Respect deprecated/forbidden patterns documented in CURSOR_RSG_RULESET.md.
+- Use mandatory resource file structure:
+  - `fxmanifest.lua` (root)
+  - `config.lua` (root)
+  - `client/client.lua`
+  - `server/server.lua`
+  - `locales/ro.lua`
+- All user-facing texts must be centralized in `locales/ro.lua`.
+- Romanian locale text must be written without Romanian diacritics.
 
 When user provides server rules/regulation:
 - Convert each rule into technical checks (permission, distance, item/money validation, cooldown, logs).

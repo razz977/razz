@@ -11,6 +11,30 @@ Obiectiv: scripturile sa foloseasca doar logica, evenimentele, exporturile si st
 - Validarile critice sunt obligatoriu pe server.
 - Foloseste nativele in ordinea: `RSG_NATIVE_CATALOG.md` -> RSG docs -> completare minima strict necesara.
 
+## 1.1) Structura obligatorie de resource
+
+Orice resource nou trebuie sa aiba structura fixa:
+
+- `fxmanifest.lua` (root)
+- `config.lua` (root)
+- `client/client.lua`
+- `server/server.lua`
+- `locales/ro.lua`
+
+Reguli locale:
+
+- Toate textele pentru player se tin in `locales/ro.lua`.
+- Textele din `locales/ro.lua` se scriu in limba romana fara diacritice.
+- Nu se hardcodeaza mesaje direct in `client/client.lua` sau `server/server.lua` daca pot fi mutate in locale.
+- Structura obligatorie de resource:
+  - `fxmanifest.lua` (root)
+  - `config.lua` (root)
+  - `client/client.lua`
+  - `server/server.lua`
+  - `locales/ro.lua`
+- Toate textele user-facing trebuie centralizate in `locales/ro.lua`.
+- In `locales/ro.lua`, textele in romana se scriu fara diacritice.
+
 ## 2) Allowlist de integrare (RSG-first)
 
 ### Core object
@@ -157,7 +181,7 @@ Conditii obligatorii:
 - Input validation + permission checks + distance checks + cooldown + logs
 - Nu folosi bank (deprecated), nu folosi GetPlayerPed(-1), nu folosi GetDistanceBetweenCoords
 
-Returneaza fisiere complete: fxmanifest.lua, config.lua, client/main.lua, server/main.lua, README.md.
+Returneaza fisiere complete: fxmanifest.lua, config.lua, client/client.lua, server/server.lua, locales/ro.lua, README.md.
 ```
 
 ## 7) Optiune regulament server

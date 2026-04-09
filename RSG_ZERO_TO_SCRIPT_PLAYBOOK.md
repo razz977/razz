@@ -8,6 +8,24 @@ Se foloseste impreuna cu:
 
 ---
 
+## 0) Structura obligatorie de resource
+
+Cand creezi script nou de la zero, structura este fixa:
+
+- `fxmanifest.lua` (root)
+- `config.lua` (root)
+- `client/client.lua`
+- `server/server.lua`
+- `locales/ro.lua`
+
+Reguli locale:
+
+- Toate textele pentru player se tin in `locales/ro.lua`.
+- Textele din `locales/ro.lua` trebuie scrise in romana fara diacritice.
+- In `client/client.lua` si `server/server.lua` nu se hardcodeaza texte user-facing daca exista deja cheia in locale.
+
+---
+
 ## 1) Regula principala (cand generezi cod)
 
 Ordinea obligatorie:
@@ -107,8 +125,11 @@ end)
 ## Etapa 0 - Setup fisier + config
 
 Fa intai:
-- `fxmanifest.lua`
-- `config.lua`
+- `fxmanifest.lua` (root)
+- `config.lua` (root)
+- `client/client.lua`
+- `server/server.lua`
+- `locales/ro.lua` (toate textele user-facing, fara diacritice romanesti)
 - init `RSGCore` in client + server
 
 Nu implementa gameplay in etapa asta.
