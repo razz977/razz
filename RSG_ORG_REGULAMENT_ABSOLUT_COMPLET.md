@@ -1,0 +1,8552 @@
+# RSG ORG REGULAMENT ABSOLUT COMPLET (fara truncare)
+
+Acest fisier contine lista completa extrasa automat din repo-urile publice Rexshack-RedM scanate.
+
+Repo-uri scanate: **49**
+
+Sursa de adevar machine-readable: `RSG_ORG_FUNCTION_INDEX.json`
+
+## A) Reguli obligatorii de implementare (cand creezi script nou)
+
+1. Server-first validation (`RSGCore.Functions.GetPlayer`, input/access checks).
+2. Distance checks cu vector math (`#(coordsA - coordsB)`).
+3. Cooldown anti-spam per player/source.
+4. Inventory checks inainte de tranzactii (`HasItem`, `CanAddItem`).
+5. Money doar prin `Player.Functions.AddMoney/RemoveMoney/SetMoney/GetMoney` cu reason.
+6. Prompt lifecycle corect (`createPrompt`/`deletePrompt`) sau target equivalent.
+7. State sync prin evenimente oficiale si/sau StateBags unde e cazul.
+8. Rollback pentru tranzactii multi-step (cost/reward).
+
+## B) Toate functiile detectate (aggregate)
+
+- `Action(name, animscene, town, cam)`
+  - repos (1): rsg-bathing
+- `ActionCleanup()`
+  - repos (1): progressbar
+- `ActionStart()`
+  - repos (1): progressbar
+- `ActivateInteriorEntitySets(interior, name, sets)`
+  - repos (1): redm-ipls
+- `AddGang(gangName, gang)`
+  - repos (1): rsg-core
+- `AddGangMoney(account, amount)`
+  - repos (1): rsg-gangmenu
+- `AddGangs(gangs)`
+  - repos (1): rsg-core
+- `AddItem(item, amount, slot, info)`
+  - repos (1): rsg-inventory
+- `AddItem(item, amount, slot, info, reason)`
+  - repos (1): rsg-inventory
+- `AddItem(itemName, item)`
+  - repos (1): rsg-core
+- `AddItems(items)`
+  - repos (1): rsg-core
+- `AddJob(jobName, job)`
+  - repos (1): rsg-core
+- `AddJobs(jobs)`
+  - repos (1): rsg-core
+- `AddMoney(account, amount)`
+  - repos (1): rsg-bossmenu
+- `AddOption(data, id)`
+  - repos (1): rsg-radialmenu
+- `AddToDegradationQueue(serial)`
+  - repos (1): rsg-weapons
+- `AdjustZoom(increase)`
+  - repos (1): rsg-weaponcomp
+- `Anim(animDict, animName, duration, flags, introtiming, exittiming)`
+  - repos (1): rsg-animations
+- `ApplyOverlays(overlayTarget)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `ApplySkin()`
+  - repos (1): rsg-appearance
+- `ApplySkinMultiChar(SkinData, Target, ClothesData)`
+  - repos (1): rsg-appearance
+- `BanPlayer(src)`
+  - repos (1): rsg-adminmenu
+- `BondingLevels()`
+  - repos (1): rsg-horses
+- `BuildHashLookup()`
+  - repos (1): rsg-appearance
+- `CalculateHorseLevel(xp)`
+  - repos (1): rsg-horses
+- `CalculateHorseMovePrice(fromCoords, toCoords)`
+  - repos (1): rsg-horses
+- `CalculatePrice(comp, initial)`
+  - repos (1): rsg-horses
+- `CalculatePrice(newClothes, currentClothes, isMale)`
+  - repos (1): rsg-appearance
+- `CalculatePrice(selection)`
+  - repos (1): rsg-weaponcomp
+- `CameraPromptHorse(horses)`
+  - repos (1): rsg-horses
+- `CanPlacePropHere(pos)`
+  - repos (1): rsg-weaponcomp
+- `CanSetJob(cid, jobName)`
+  - repos (1): rsg-multijob
+- `Cancel()`
+  - repos (1): progressbar
+- `Change(id, category, change_type)`
+  - repos (1): rsg-appearance
+- `ChangeOverlays(name, visibility, tx_id, tx_normal, tx_material, tx_color_type, tx_opacity, tx_unk, palette_id,
+    palette_color_primary, palette_color_secondary, palette_color_tertiary, var, opacity)`
+  - repos (1): rsg-appearance
+- `ChangeOverlays(name, visibility, tx_id, tx_normal, tx_material, tx_color_type, tx_opacity, tx_unk, palette_id, palette_color_primary, palette_color_secondary, palette_color_tertiary, var, opacity)`
+  - repos (1): rsg-barbers
+- `CheckVersion()`
+  - repos (37): interact-sound, ox_doorlock, ox_target, redm-ipls, rsg-adminmenu, rsg-ammo, rsg-animations, rsg-appearance, rsg-banking, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-canteen, rsg-consume, rsg-core, rsg-doorlock, rsg-essentials, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-hud, rsg-inventory, rsg-lawman, rsg-medic, rsg-menubase, rsg-multicharacter, rsg-multijob, rsg-npcs, rsg-playerinfo, rsg-prison, rsg-radialmenu, rsg-shops, rsg-spawn, rsg-telegram, rsg-wardrobe, rsg-weaponcomp, rsg-weapons
+- `ClampValue(value, min, max)`
+  - repos (1): rsg-horses
+- `CleanupAnimalInfoHud()`
+  - repos (1): rsg-horses
+- `ClearCameraPrompts()`
+  - repos (1): rsg-weaponcomp
+- `ClearInterval(id)`
+  - repos (1): ox_lib
+- `ClearInventory(filterItems)`
+  - repos (1): rsg-inventory
+- `CloseBathDoors()`
+  - repos (1): rsg-bathing
+- `ClothingLight()`
+  - repos (1): rsg-appearance
+- `ConvertCacheToHash(ClothesCache)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `ConvertHashToCache(hashBasedClothes, isMale)`
+  - repos (1): rsg-appearance
+- `CopyCoords(data)`
+  - repos (1): rsg-adminmenu
+- `CreateBlips()`
+  - repos (2): rsg-appearance, rsg-bathing
+- `CreateGangBlips()`
+  - repos (1): rsg-gangmenu
+- `CreateItemDrop(coords, itemData, shouldRemoveFromInventory, source)`
+  - repos (1): rsg-inventory
+- `CreatePedAtCoords(model, coords, isNetworked)`
+  - repos (1): rsg-appearance
+- `CreatePropId()`
+  - repos (1): rsg-weaponcomp
+- `CreategunsiteId()`
+  - repos (1): rsg-weaponcomp
+- `CustomHorse(horses, data)`
+  - repos (1): rsg-horses
+- `DHMSToTime(day, hour, minute, second)`
+  - repos (1): weathersync
+- `DataStream.New(view)`
+  - repos (1): rsg-essentials
+- `DataView.ArrayBuffer(length)`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `DataView.Wrap(blob)`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `DataView:Buffer()`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `DataView:ByteLength()`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `DataView:ByteOffset()`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `DataView:SubView(offset)`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `Debug(args1, args2)`
+  - repos (1): rsg-telegram
+- `Del()`
+  - repos (1): rsg-weaponcomp
+- `DisableActions(ped)`
+  - repos (1): progressbar
+- `DoesPlayerHaveItem(player, items, removeItem)`
+  - repos (1): ox_doorlock
+- `Draw3DText(coords, str)`
+  - repos (1): rsg-core
+- `DrawPropAxes(prop)`
+  - repos (1): rsg-weaponcomp
+- `DrawText3D(x, y, z, text)`
+  - repos (1): rsg-adminmenu
+- `DrawText3D(x, y, z, text, color)`
+  - repos (1): rsg-appearance
+- `DressCharacter()`
+  - repos (1): rsg-bathing
+- `DrinkPrompt()`
+  - repos (1): rsg-essentials
+- `Drops.GetDrops()`
+  - repos (1): rsg-inventory
+- `Drops.ResetPlayerState()`
+  - repos (1): rsg-inventory
+- `EnableEagleeye(player, enable)`
+  - repos (1): rsg-essentials
+- `EndCharacterCreatorCam(anim, anim1)`
+  - repos (1): rsg-appearance
+- `ExitBathing(animscene, town, cam)`
+  - repos (1): rsg-bathing
+- `ExitPremiumBath(animscene, town, cam, disableScrub)`
+  - repos (1): rsg-bathing
+- `ExploitBan(playerId, origin)`
+  - repos (1): rsg-core
+- `FISHING_GET_BOBBER_HANDLE()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_CALCULATED_FISH_WEIGHT()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_FISH_HANDLE()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_F_(f)`
+  - repos (1): rsg-fishing
+- `FISHING_GET_F_9()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_HOOK_HANDLE()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_LINE_DISTANCE()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_MAX_THROWING_DISTANCE()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_MINIGAME_STATE()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_SCRIPT_TIMER()`
+  - repos (1): rsg-fishing
+- `FISHING_GET_TRANSITION_FLAG()`
+  - repos (1): rsg-fishing
+- `FISHING_HAS_MINIGAME_ON()`
+  - repos (1): rsg-fishing
+- `FISHING_SET_CALCULATED_FISH_WEIGHT(v)`
+  - repos (1): rsg-fishing
+- `FISHING_SET_FISH_HANDLE(v)`
+  - repos (1): rsg-fishing
+- `FISHING_SET_F_(f, v)`
+  - repos (1): rsg-fishing
+- `FISHING_SET_LINE_DISTANCE(v)`
+  - repos (1): rsg-fishing
+- `FISHING_SET_ROD_POSITION_LR(v)`
+  - repos (1): rsg-fishing
+- `FISHING_SET_ROD_POSITION_UD(v)`
+  - repos (1): rsg-fishing
+- `FISHING_SET_ROD_WEIGHT(v)`
+  - repos (1): rsg-fishing
+- `FISHING_SET_TRANSITION_FLAG(v)`
+  - repos (1): rsg-fishing
+- `Finish()`
+  - repos (1): progressbar
+- `FirstMenu()`
+  - repos (1): rsg-appearance
+- `FishModelToSomeSortOfWeightIndex(fishModel)`
+  - repos (1): rsg-fishing
+- `FixIssues(target)`
+  - repos (1): rsg-appearance
+- `Flee()`
+  - repos (1): rsg-horses
+- `FotoMugshots()`
+  - repos (1): rsg-appearance
+- `FreezePlayer()`
+  - repos (1): rsg-weaponcomp
+- `GET_TASK_FISHING_DATA()`
+  - repos (1): rsg-fishing
+- `GenerateCSRFToken()`
+  - repos (1): rsg-core
+- `GenerateHorseid()`
+  - repos (2): rsg-horses, rsg-multicharacter
+- `GenerateMenu()`
+  - repos (1): rsg-appearance
+- `GetAccount(account)`
+  - repos (1): rsg-bossmenu
+- `GetActivePlayers()`
+  - repos (1): ox_lib
+- `GetAvailableComponents(weaponName, wHash)`
+  - repos (1): rsg-weaponcomp
+- `GetCardinalDirection(h)`
+  - repos (1): weathersync
+- `GetCharacterId(player)`
+  - repos (1): ox_doorlock
+- `GetClosestConsumer()`
+  - repos (2): rsg-appearance, rsg-bathing
+- `GetClosestPlayerWithin(maxDistance)`
+  - repos (1): rsg-inventory
+- `GetClosestTown(coords)`
+  - repos (1): rsg-lawman
+- `GetCoreVersion(InvokingResource)`
+  - repos (1): rsg-core
+- `GetDayOfWeek(day)`
+  - repos (1): weathersync
+- `GetDescriptionLayout(value, price)`
+  - repos (1): rsg-appearance
+- `GetEffectInterval(stresslevel)`
+  - repos (1): rsg-hud
+- `GetGamePool(poolName)`
+  - repos (1): ox_lib
+- `GetGangAccount(account)`
+  - repos (1): rsg-gangmenu
+- `GetGender()`
+  - repos (1): rsg-appearance
+- `GetHashHead(aMale,num,color)`
+  - repos (1): rsg-appearance
+- `GetHeadIndex(ped)`
+  - repos (1): rsg-appearance
+- `GetHorseCoatFromModel(hModel)`
+  - repos (1): rsg-horses
+- `GetItemByName(item)`
+  - repos (1): rsg-inventory
+- `GetItemBySlot(slot)`
+  - repos (1): rsg-inventory
+- `GetItemsByName(item)`
+  - repos (1): rsg-inventory
+- `GetJobCount(cid)`
+  - repos (1): rsg-multijob
+- `GetLedHorseFromPed(ped)`
+  - repos (1): rsg-horses
+- `GetLevelProgress(xp)`
+  - repos (1): rsg-horses
+- `GetLocationName(coords)`
+  - repos (1): rsg-lawman
+- `GetMaxTexturesForModel(category, model)`
+  - repos (1): rsg-barbers
+- `GetMaxTexturesForModel(category, model, isClothing)`
+  - repos (1): rsg-appearance
+- `GetMetaPedAssetGuids(ped, index)`
+  - repos (1): rsg-appearance
+- `GetMinMaxWeightForWeightIndex(index)`
+  - repos (1): rsg-fishing
+- `GetNearbyFishs(coords, radius)`
+  - repos (1): rsg-fishing
+- `GetNearbyPlayers(maxDistance)`
+  - repos (1): rsg-inventory
+- `GetNearbyPlayers(source)`
+  - repos (1): rsg-adminmenu
+- `GetNearestInteractableObject(forward)`
+  - repos (1): rsg-horses
+- `GetOverlayData()`
+  - repos (1): rsg-barbers
+- `GetPedModel(sex)`
+  - repos (1): rsg-appearance
+- `GetPlayer(_)`
+  - repos (1): ox_doorlock
+- `GetPlayerDiscord(src)`
+  - repos (1): rsg-adminmenu
+- `GetPlayerFromServerID(serverId)`
+  - repos (1): rsg-inventory
+- `GetRandomFishWeightForWeightIndex(index)`
+  - repos (1): rsg-fishing
+- `GetShakeIntensity(stresslevel)`
+  - repos (1): rsg-hud
+- `GetSkinColorFromBodySize(body, color)`
+  - repos (1): rsg-appearance
+- `GetWeaponItemEntry(Player, serial)`
+  - repos (1): rsg-weaponcomp
+- `GetWeaponType(hash)`
+  - repos (1): rsg-weaponcomp
+- `GiveStarterItems(source)`
+  - repos (1): rsg-multicharacter
+- `HandleEagleEyeAccess()`
+  - repos (1): rsg-essentials
+- `HandleObjectInteraction(thorse)`
+  - repos (1): rsg-horses
+- `HandleWaterInteraction(thorse)`
+  - repos (1): rsg-horses
+- `HasBodyComponentsLoaded(target, hair, beard)`
+  - repos (1): rsg-appearance
+- `HasItem(items, amount)`
+  - repos (1): rsg-inventory
+- `Helpers.CreateDropId(dropId)`
+  - repos (1): rsg-inventory
+- `Helpers.ParseDecayRate(name)`
+  - repos (1): rsg-inventory
+- `HorseActions(target, dict, anim)`
+  - repos (1): rsg-horses
+- `HorseOptions(data)`
+  - repos (1): rsg-horses
+- `InitializeAllCategories(cache, isMale)`
+  - repos (1): rsg-appearance
+- `Inventory.AddItem(identifier, item, amount, slot, info, reason)`
+  - repos (1): rsg-inventory
+- `Inventory.CanAddItem(source, item, amount)`
+  - repos (1): rsg-inventory
+- `Inventory.CanPlayerUseInventory()`
+  - repos (1): rsg-inventory
+- `Inventory.CheckItemDecay(item, itemInfo, currentTime, decayRateModifier)`
+  - repos (1): rsg-inventory
+- `Inventory.CheckItemsDecay(items, decayRateModifier)`
+  - repos (1): rsg-inventory
+- `Inventory.CheckPlayerItemDecay(player, item)`
+  - repos (1): rsg-inventory
+- `Inventory.CheckPlayerItemsDecay(player)`
+  - repos (1): rsg-inventory
+- `Inventory.CheckWeapon(source, item)`
+  - repos (1): rsg-inventory
+- `Inventory.ClearInventory(source, filterItems)`
+  - repos (1): rsg-inventory
+- `Inventory.ClearStash(identifier)`
+  - repos (1): rsg-inventory
+- `Inventory.CloseInventory(source, identifier)`
+  - repos (1): rsg-inventory
+- `Inventory.CreateInventory(identifier, data)`
+  - repos (1): rsg-inventory
+- `Inventory.DeleteInventory(identifier)`
+  - repos (1): rsg-inventory
+- `Inventory.ForceDropItem(source, item, amount, info, reason)`
+  - repos (1): rsg-inventory
+- `Inventory.GetCoords(inventoryId, src)`
+  - repos (1): rsg-inventory
+- `Inventory.GetFirstFreeSlot(items, maxSlots)`
+  - repos (1): rsg-inventory
+- `Inventory.GetFirstSlotByItem(items, itemName)`
+  - repos (1): rsg-inventory
+- `Inventory.GetFirstSlotByItemWithQuality(items, itemName, quality)`
+  - repos (1): rsg-inventory
+- `Inventory.GetFreeWeight(source)`
+  - repos (1): rsg-inventory
+- `Inventory.GetIdentifier(inventoryId, src)`
+  - repos (1): rsg-inventory
+- `Inventory.GetInventory(identifier)`
+  - repos (1): rsg-inventory
+- `Inventory.GetItem(inventoryId, src, slot)`
+  - repos (1): rsg-inventory
+- `Inventory.GetItemByName(source, item)`
+  - repos (1): rsg-inventory
+- `Inventory.GetItemBySlot(source, slot)`
+  - repos (1): rsg-inventory
+- `Inventory.GetItemCount(source, items)`
+  - repos (1): rsg-inventory
+- `Inventory.GetItemWeight(itemName)`
+  - repos (1): rsg-inventory
+- `Inventory.GetItemsByName(source, item)`
+  - repos (1): rsg-inventory
+- `Inventory.GetSlots(identifier)`
+  - repos (1): rsg-inventory
+- `Inventory.GetSlotsByItem(items, itemName)`
+  - repos (1): rsg-inventory
+- `Inventory.GetTotalWeight(items)`
+  - repos (1): rsg-inventory
+- `Inventory.HasItem(source, items, amount)`
+  - repos (1): rsg-inventory
+- `Inventory.InitializeInventory(inventoryId, data)`
+  - repos (1): rsg-inventory
+- `Inventory.LoadInventory(source, citizenid)`
+  - repos (1): rsg-inventory
+- `Inventory.OpenInventory(source, identifier, data)`
+  - repos (1): rsg-inventory
+- `Inventory.OpenInventoryById(source, targetId)`
+  - repos (1): rsg-inventory
+- `Inventory.RemoveItem(identifier, item, amount, slot, reason, isMove)`
+  - repos (1): rsg-inventory
+- `Inventory.SaveInventory(source, offline)`
+  - repos (1): rsg-inventory
+- `Inventory.SaveStash(identifier)`
+  - repos (1): rsg-inventory
+- `Inventory.SetInventory(source, items)`
+  - repos (1): rsg-inventory
+- `Inventory.SetItemData(source, itemName, key, val)`
+  - repos (1): rsg-inventory
+- `Inventory.UseHotbarItem(slot)`
+  - repos (1): rsg-inventory
+- `Inventory.UseItem(itemName, ...)`
+  - repos (1): rsg-inventory
+- `IsAuthorized(jobName, doorID)`
+  - repos (1): rsg-doorlock
+- `IsEntityAnimal(entity)`
+  - repos (1): rsg-lawman
+- `IsPedLeadingHorse(ped)`
+  - repos (1): rsg-horses
+- `IsPedReadyToRender(...)`
+  - repos (1): rsg-horses
+- `IsPlayerAtPostOffice()`
+  - repos (1): rsg-telegram
+- `IsPlayerInGroup(player, filter)`
+  - repos (1): ox_doorlock
+- `IsPromptCompleted(name)`
+  - repos (2): rsg-appearance, rsg-bathing
+- `IsPromptEnabled(name)`
+  - repos (1): rsg-bathing
+- `L(k, d)`
+  - repos (1): rsg-inventory
+- `ListenForPromptEvent(iEventGroup, hWhichEvent, iEventDataSize, tOutTable)`
+  - repos (1): rsg-horses
+- `LoadAllStreamings()`
+  - repos (1): rsg-bathing
+- `LoadAnim(dic)`
+  - repos (1): rsg-essentials
+- `LoadAnimationDic(dict)`
+  - repos (1): rsg-adminmenu
+- `LoadBeard(target, data)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `LoadBodyFeature(target, data, bodyFeatureTable)`
+  - repos (1): rsg-appearance
+- `LoadBoody(target, data)`
+  - repos (1): rsg-appearance
+- `LoadEyes(target, data)`
+  - repos (1): rsg-appearance
+- `LoadFeatures(target, data)`
+  - repos (1): rsg-appearance
+- `LoadHair(target, data)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `LoadHead(target, data)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `LoadHeight(target, data)`
+  - repos (1): rsg-appearance
+- `LoadModel(model)`
+  - repos (1): rsg-bathing
+- `LoadModel(modelHash)`
+  - repos (1): rsg-canteen
+- `LoadModel(target, model)`
+  - repos (1): rsg-appearance
+- `LoadOverlays(target, data)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `LoadPlayer(model)`
+  - repos (1): rsg-appearance
+- `Locale.new(_, opts)`
+  - repos (1): rsg-core
+- `Locale:clear()`
+  - repos (1): rsg-core
+- `Locale:delete(phraseTarget, prefix)`
+  - repos (1): rsg-core
+- `Locale:extend(phrases, prefix)`
+  - repos (1): rsg-core
+- `Locale:has(key)`
+  - repos (1): rsg-core
+- `Locale:locale(newLocale)`
+  - repos (1): rsg-core
+- `Locale:replace(phrases)`
+  - repos (1): rsg-core
+- `Locale:t(key, subs)`
+  - repos (1): rsg-core
+- `MainMenu()`
+  - repos (1): rsg-appearance
+- `MainMenu(Target)`
+  - repos (1): rsg-barbers
+- `MainMenu(horses, horsedata)`
+  - repos (1): rsg-horses
+- `MainWeaponMenu(wname, wHash, serial, propid)`
+  - repos (1): rsg-weaponcomp
+- `MenuData.Close(type, namespace, name)`
+  - repos (2): menu_base, rsg-menubase
+- `MenuData.CloseAll()`
+  - repos (2): menu_base, rsg-menubase
+- `MenuData.GetOpened(type, namespace, name)`
+  - repos (2): menu_base, rsg-menubase
+- `MenuData.GetOpenedMenus()`
+  - repos (2): menu_base, rsg-menubase
+- `MenuData.IsOpen(type, namespace, name)`
+  - repos (2): menu_base, rsg-menubase
+- `MenuData.Open(type, namespace, name, data, submit, cancel, change, close)`
+  - repos (2): menu_base, rsg-menubase
+- `MenuData.ReOpen(oldMenu)`
+  - repos (2): menu_base, rsg-menubase
+- `MenuUpdateClothes(data, menu)`
+  - repos (1): rsg-appearance
+- `NativeFixMeshIssues(ped, categoryHash)`
+  - repos (1): rsg-appearance
+- `NativeGetPedComponentCategory(isFemale, componentHash)`
+  - repos (1): rsg-appearance
+- `NativeHasPedComponentLoaded(ped)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `NativeSetPedComponentEnabled(ped, componentHash, immediately, isMp)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `NativeSetPedComponentEnabledClothes(ped, componentHash, immediately, isMp)`
+  - repos (1): rsg-appearance
+- `NativeSetPedFaceFeature(ped, index, value)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `NativeSetTextureOutfitTints(ped,category,palette,tint0,tint1,tint2)`
+  - repos (1): rsg-appearance
+- `NativeUpdatePedVariation(ped)`
+  - repos (2): rsg-appearance, rsg-barbers
+- `NearNPC(npcmodel, npccoords, heading)`
+  - repos (2): rsg-horses, rsg-prison
+- `NearPed(model, coords, pedData)`
+  - repos (1): rsg-npcs
+- `NearPed(npcmodel, npccoords, barberid)`
+  - repos (1): rsg-barbers
+- `NearPed(npcmodel, npccoords, moneytype)`
+  - repos (1): rsg-banking
+- `OpenBodyMenu()`
+  - repos (1): rsg-appearance
+- `OpenCateogry(menu_catagory)`
+  - repos (1): rsg-appearance
+- `OpenCheekbonesMenu()`
+  - repos (1): rsg-appearance
+- `OpenChinMenu()`
+  - repos (1): rsg-appearance
+- `OpenCloakroom()`
+  - repos (1): rsg-appearance
+- `OpenClothingMenu()`
+  - repos (1): rsg-appearance
+- `OpenComponentMenu(wname, wHash, serial, propid)`
+  - repos (1): rsg-weaponcomp
+- `OpenDefectsMenu()`
+  - repos (1): rsg-appearance
+- `OpenEarsMenu()`
+  - repos (1): rsg-appearance
+- `OpenEngravingMenu(wname, wHash, serial, propid)`
+  - repos (1): rsg-weaponcomp
+- `OpenEyebrowsMenu()`
+  - repos (1): rsg-appearance
+- `OpenEyelidsMenu()`
+  - repos (1): rsg-appearance
+- `OpenEyesMenu()`
+  - repos (1): rsg-appearance
+- `OpenFaceMenu()`
+  - repos (1): rsg-appearance
+- `OpenGiveMoneyMenu(targetPlayerId)`
+  - repos (1): rsg-banking
+- `OpenHairMenu()`
+  - repos (2): rsg-appearance, rsg-barbers
+- `OpenJawMenu()`
+  - repos (1): rsg-appearance
+- `OpenMakeupMenu()`
+  - repos (2): rsg-appearance, rsg-barbers
+- `OpenMaterialMenu(wname, wHash, serial, propid)`
+  - repos (1): rsg-weaponcomp
+- `OpenMouthMenu()`
+  - repos (1): rsg-appearance
+- `OpenNoseMenu()`
+  - repos (1): rsg-appearance
+- `OpenTintsMenu(wname, wHash, serial, propid)`
+  - repos (1): rsg-weaponcomp
+- `Outfits()`
+  - repos (1): rsg-appearance
+- `OutfitsManage(outfit, id)`
+  - repos (1): rsg-appearance
+- `OxSelector:addSet(setName, items)`
+  - repos (1): ox_lib
+- `OxSelector:constructor(sets)`
+  - repos (1): ox_lib
+- `OxSelector:getAllSets()`
+  - repos (1): ox_lib
+- `OxSelector:getRandom(setName)`
+  - repos (1): ox_lib
+- `OxSelector:getRandomAmount(setName, count)`
+  - repos (1): ox_lib
+- `OxSelector:getRandomWeighted(setName)`
+  - repos (1): ox_lib
+- `OxSelector:getRandomWeightedAmount(setName, count)`
+  - repos (1): ox_lib
+- `OxSelector:getSet(setName)`
+  - repos (1): ox_lib
+- `OxSelector:removeSet(setName)`
+  - repos (1): ox_lib
+- `OxSelector:updateSet(setName, newItems)`
+  - repos (1): ox_lib
+- `OxTask:getAbsoluteNextTime()`
+  - repos (1): ox_lib
+- `OxTask:getNextTime()`
+  - repos (1): ox_lib
+- `OxTask:getTimeAsString(timestamp)`
+  - repos (1): ox_lib
+- `OxTask:run()`
+  - repos (1): ox_lib
+- `OxTask:scheduleTask()`
+  - repos (1): ox_lib
+- `OxTask:stop(msg)`
+  - repos (1): ox_lib
+- `PaycheckInterval()`
+  - repos (1): rsg-core
+- `PerformHorseAction(thorse, anim, obj, forward)`
+  - repos (1): rsg-horses
+- `PlacePedOnGroundProperly(hPed)`
+  - repos (1): rsg-horses
+- `PlacePedOnGroundProperly(ped, coord)`
+  - repos (1): rsg-core
+- `PlayerDeath()`
+  - repos (1): rsg-medic
+- `PopulateClothingCache(loadedClothes, isMale)`
+  - repos (1): rsg-appearance
+- `PrepareCreatorMusic()`
+  - repos (1): rsg-appearance
+- `Process(action, start, tick, finish)`
+  - repos (1): progressbar
+- `Progress(action, finish)`
+  - repos (1): progressbar
+- `ProgressWithStartAndTick(action, start, tick, finish)`
+  - repos (1): progressbar
+- `ProgressWithStartEvent(action, start, finish)`
+  - repos (1): progressbar
+- `ProgressWithTickEvent(action, tick, finish)`
+  - repos (1): progressbar
+- `PromptCustom()`
+  - repos (1): rsg-horses
+- `Prompts()`
+  - repos (1): rsg-telegram
+- `RSGCore.Commands.Add(name, help, arguments, argsrequired, callback, permission, ...)`
+  - repos (1): rsg-core
+- `RSGCore.Commands.Refresh(source)`
+  - repos (1): rsg-core
+- `RSGCore.Debug(resource, obj, depth)`
+  - repos (1): rsg-core
+- `RSGCore.Debug(tbl, indent)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.AddPermission(source, permission)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.AddPlayerField(ids, fieldName, data)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.AddPlayerMethod(ids, methodName, handler)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.AttachProp(ped, model, boneId, x, y, z, xR, yR, zR, vertex)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.CanUseItem(item)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.ChangeSlots(source, slots)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.ChangeWeight(source, weight)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.CreateAccountNumber()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.CreateCallback(name, cb)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.CreateClientCallback(name, cb)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.CreateUseableItem(item, data)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.CreateVehicle(source, model, vehtype, coords, warp)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.DeleteVehicle(vehicle)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.DrawText(x, y, width, height, scale, r, g, b, a, text)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.DrawText3D(x, y, z, text)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetBoneDistance(entity, boneType, boneIndex)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetBucketObjects()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetCardinalDirection(entity)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestBone(entity, list)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestObject(coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestObject(source, coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestPed(coords, ignoreList)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestPed(source, coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestPlayer(coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestPlayer(source, coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestVehicle(coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetClosestVehicle(source, coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetCoords(entity)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetCurrentTime()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetDatabaseInfo()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetDutyCount(job)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetEntitiesInBucket(bucket)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetGroundHash(entity)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetGroundZCoord(coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetIdentifier(source, idtype)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetObjects()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetOfflinePlayerByCitizenId(citizenid)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPeds(ignoreList)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPermission(source)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlate(vehicle)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayer(source)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayerByAccount(account)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayerByCharInfo(property, value)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayerByCitizenId(citizenid)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayerByLicense(license)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayerData(cb)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayers()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayersFromCoords(coords, distance)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayersInBucket(bucket)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetPlayersOnDuty(job)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetRSGPlayers()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetSource(identifier)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetStreetNametAtCoords(coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetVehicleLabel(vehicle)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetVehicleProperties(vehicle)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetVehicles()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.GetZoneAtCoords(coords)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.HasItem(items, amount)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.HasItem(source, items, amount)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.HasPermission(source, permission)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.IsLicenseInUse(license)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.IsOptin(source)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.IsPlayerBanned(source)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.IsWearingGloves()`
+  - repos (1): rsg-core
+- `RSGCore.Functions.IsWhitelisted(source)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.Kick(source, reason, setKickReason, deferrals)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.LookAtEntity(entity, timeout, speed)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.PlayAnim(animDict, animName, upperbodyOnly, duration)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.PrepForSQL(source, data, pattern)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.RemovePermission(source, permission)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.SetEntityBucket(entity, bucket)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.SetPlayerBucket(source, bucket)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.SetVehicleProperties(vehicle, props)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.SpawnClear(coords, radius)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.SpawnVehicle(model, cb, coords, isnetworked, teleportInto)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.SpawnVehicle(source, model, coords, warp)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.StartParticleAtCoord(dict, ptName, looped, coords, rot, scale, alpha, color, duration)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.StartParticleOnEntity(dict, ptName, looped, entity, bone, offset, rot, scale, alpha, color, evolution, duration)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.ToggleOptin(source)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.TriggerCallback(name, cb, ...)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.TriggerCallback(name, source, cb, ...)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.TriggerClientCallback(name, cb, ...)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.TriggerClientCallback(name, source, cb, ...)`
+  - repos (1): rsg-core
+- `RSGCore.Functions.UseItem(source, item)`
+  - repos (1): rsg-core
+- `RSGCore.Player.CheckPlayerData(source, PlayerData)`
+  - repos (1): rsg-core
+- `RSGCore.Player.CreateCitizenId()`
+  - repos (1): rsg-core
+- `RSGCore.Player.CreateFingerId()`
+  - repos (1): rsg-core
+- `RSGCore.Player.CreatePlayer(PlayerData, Offline)`
+  - repos (1): rsg-core
+- `RSGCore.Player.CreateSerialNumber()`
+  - repos (1): rsg-core
+- `RSGCore.Player.CreateWalletId()`
+  - repos (1): rsg-core
+- `RSGCore.Player.DeleteCharacter(source, citizenid)`
+  - repos (1): rsg-core
+- `RSGCore.Player.ForceDeleteCharacter(citizenid)`
+  - repos (1): rsg-core
+- `RSGCore.Player.GetFirstSlotByItem(items, itemName)`
+  - repos (1): rsg-core
+- `RSGCore.Player.GetOfflinePlayer(citizenid)`
+  - repos (1): rsg-core
+- `RSGCore.Player.GetOfflinePlayerByLicense(license)`
+  - repos (1): rsg-core
+- `RSGCore.Player.GetPlayerByLicense(license)`
+  - repos (1): rsg-core
+- `RSGCore.Player.GetSlotsByItem(items, itemName)`
+  - repos (1): rsg-core
+- `RSGCore.Player.GetTotalWeight(items)`
+  - repos (1): rsg-core
+- `RSGCore.Player.Login(source, citizenid, newData)`
+  - repos (1): rsg-core
+- `RSGCore.Player.Logout(source)`
+  - repos (1): rsg-core
+- `RSGCore.Player.Save(source)`
+  - repos (1): rsg-core
+- `RSGCore.Player.SaveInventory(source)`
+  - repos (1): rsg-core
+- `RSGCore.Player.SaveOffline(PlayerData)`
+  - repos (1): rsg-core
+- `RSGCore.Player.SaveOfflineInventory(PlayerData)`
+  - repos (1): rsg-core
+- `RSGCore.ShowError(resource, msg)`
+  - repos (1): rsg-core
+- `RSGCore.ShowSuccess(resource, msg)`
+  - repos (1): rsg-core
+- `RSGShared.ChangeVehicleExtra(vehicle, extra, enable)`
+  - repos (1): rsg-core
+- `RSGShared.FirstToUpper(value)`
+  - repos (1): rsg-core
+- `RSGShared.RandomInt(length)`
+  - repos (1): rsg-core
+- `RSGShared.RandomStr(length)`
+  - repos (1): rsg-core
+- `RSGShared.Round(value, numDecimalPlaces)`
+  - repos (1): rsg-core
+- `RSGShared.SetDefaultVehicleExtras(vehicle, config)`
+  - repos (1): rsg-core
+- `RSGShared.SplitStr(str, delimiter)`
+  - repos (1): rsg-core
+- `RSGShared.Trim(value)`
+  - repos (1): rsg-core
+- `RayCastGamePlayCamera(distance)`
+  - repos (1): rsg-weaponcomp
+- `RefillCanteen(src, fromItem)`
+  - repos (1): rsg-canteen
+- `RegisterCameraPrompts()`
+  - repos (1): rsg-weaponcomp
+- `RegisterCommand(commandName, callback, restricted)`
+  - repos (1): ox_lib
+- `RegisterPrompt(control, textKey, group, hold)`
+  - repos (1): rsg-weaponcomp
+- `RegisterPrompts()`
+  - repos (2): rsg-appearance, rsg-bathing
+- `RemoveGang(gangName)`
+  - repos (1): rsg-core
+- `RemoveGangMoney(account, amount)`
+  - repos (1): rsg-gangmenu
+- `RemoveImaps()`
+  - repos (1): rsg-appearance
+- `RemoveItem(item, amount, slot)`
+  - repos (1): rsg-inventory
+- `RemoveItem(item, amount, slot, reason)`
+  - repos (1): rsg-inventory
+- `RemoveItem(itemName)`
+  - repos (1): rsg-core
+- `RemoveItem(playerId, item, slot)`
+  - repos (1): ox_doorlock
+- `RemoveJob(jobName)`
+  - repos (1): rsg-core
+- `RemoveMoney(account, amount)`
+  - repos (1): rsg-bossmenu
+- `RemoveOption(id)`
+  - repos (1): rsg-radialmenu
+- `RemoveWeapon(weaponName)`
+  - repos (1): rsg-essentials
+- `ResetCameraToDefault()`
+  - repos (1): rsg-weaponcomp
+- `RotateCameraAroundWeapon(clockwise)`
+  - repos (1): rsg-weaponcomp
+- `RotateLeft()`
+  - repos (1): rsg-weaponcomp
+- `RotateRight()`
+  - repos (1): rsg-weaponcomp
+- `RotationToDirection(rotation)`
+  - repos (1): rsg-weaponcomp
+- `SET_TASK_FISHING_DATA()`
+  - repos (1): rsg-fishing
+- `SelectDestinationStable(horseId, currentStableId)`
+  - repos (1): rsg-horses
+- `SendDiscordWebhook(playerName, targetName, amount, transactionType)`
+  - repos (1): rsg-banking
+- `SendDiscordWebhook(webhookUrl, embed, includeMention)`
+  - repos (1): rsg-adminmenu
+- `Set()`
+  - repos (1): rsg-weaponcomp
+- `SetAnimalInfoCardActive(b, iEntity)`
+  - repos (1): rsg-horses
+- `SetCamFocusDistance(cam, focus)`
+  - repos (1): rsg-appearance
+- `SetClosestRespawn()`
+  - repos (1): rsg-medic
+- `SetClosestStableLocation()`
+  - repos (1): rsg-horses
+- `SetCurrentCleaniest(rag, value)`
+  - repos (1): rsg-bathing
+- `SetField(fieldName, data)`
+  - repos (1): rsg-core
+- `SetFixed(self, offset, value, code)`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `SetInterval(callback, interval, ...)`
+  - repos (1): ox_lib
+- `SetInventory(items)`
+  - repos (1): rsg-inventory
+- `SetMethod(methodName, handler)`
+  - repos (1): rsg-core
+- `SetPetBehavior(entity)`
+  - repos (1): rsg-telegram
+- `SetRandomCameraAroundWeapon()`
+  - repos (1): rsg-weaponcomp
+- `SetSnowCoverageType(type)`
+  - repos (1): weathersync
+- `Setup()`
+  - repos (1): rsg-appearance
+- `SetupActionPrompt()`
+  - repos (1): rsg-horses
+- `SetupHorsePrompts()`
+  - repos (1): rsg-horses
+- `SetupJobMenu()`
+  - repos (1): rsg-radialmenu
+- `SetupNPCTarget(npc, shopData)`
+  - repos (1): rsg-shops
+- `SetupRadialMenu()`
+  - repos (1): rsg-radialmenu
+- `SetupScenes(string)`
+  - repos (1): rsg-appearance
+- `SetupSubItems()`
+  - repos (1): rsg-radialmenu
+- `Shops.CreateShop(shopData)`
+  - repos (1): rsg-inventory
+- `Shops.DoesShopExist(shopName)`
+  - repos (1): rsg-inventory
+- `Shops.LoadItemsInStock()`
+  - repos (1): rsg-inventory
+- `Shops.OpenShop(source, name)`
+  - repos (1): rsg-inventory
+- `Shops.RestockShop(shopName, percentage)`
+  - repos (1): rsg-inventory
+- `Shops.SaveItemsInStock()`
+  - repos (1): rsg-inventory
+- `Shops.SetupShopItems(shopItems, shopData)`
+  - repos (1): rsg-inventory
+- `ShouldEnableEagleEye(job)`
+  - repos (1): rsg-essentials
+- `ShowAnimalDetailsOnCard(iEntity)`
+  - repos (1): rsg-horses
+- `ShowBusyspinnerWithText(text)`
+  - repos (1): rsg-appearance
+- `ShowHorseDetailsOnCard(iEntity, hModel)`
+  - repos (1): rsg-horses
+- `SpawnHorse()`
+  - repos (1): rsg-horses
+- `SpawnHorses(horsemodel, horsecoords, heading)`
+  - repos (1): rsg-horses
+- `SpawnPeds()`
+  - repos (1): rsg-appearance
+- `SpawnShopNPC(shopData)`
+  - repos (1): rsg-shops
+- `StartCamClean(zoom, offset)`
+  - repos (1): rsg-weaponcomp
+- `StartCamOnWeapon(obj, fov)`
+  - repos (1): rsg-weaponcomp
+- `StartCharacterCreatorCamera(selected, camera)`
+  - repos (1): rsg-appearance
+- `StartCreator()`
+  - repos (1): rsg-appearance
+- `StartPromptThread()`
+  - repos (1): rsg-weaponcomp
+- `StartPrompts()`
+  - repos (1): rsg-appearance
+- `StartSelectCam()`
+  - repos (1): rsg-appearance
+- `StartWash(dic, anim)`
+  - repos (1): rsg-essentials
+- `SynchronizeMoneyItems(playerData)`
+  - repos (1): rsg-core
+- `TakePhoto()`
+  - repos (1): rsg-appearance
+- `TaskStopLeadingHorse(ped)`
+  - repos (1): rsg-horses
+- `TeleportAndFade(coords4, resetCoords)`
+  - repos (1): rsg-appearance
+- `TimeToDHMS(time)`
+  - repos (1): weathersync
+- `TogglePrompts(data, state)`
+  - repos (2): rsg-appearance, rsg-bathing
+- `TradeHorse()`
+  - repos (1): rsg-horses
+- `UndressCharacter()`
+  - repos (1): rsg-bathing
+- `UnfreezePlayer()`
+  - repos (1): rsg-weaponcomp
+- `UnloadAllStreamings()`
+  - repos (1): rsg-bathing
+- `UpdateAnimalInfoThisFrame()`
+  - repos (1): rsg-horses
+- `UpdateGang(gangName, gang)`
+  - repos (1): rsg-core
+- `UpdateItem(itemName, item)`
+  - repos (1): rsg-core
+- `UpdateJob(jobName, job)`
+  - repos (1): rsg-core
+- `UpdatePedVariation(ped)`
+  - repos (1): rsg-horses
+- `UpkeepInterval()`
+  - repos (1): rsg-horses
+- `ValidateComponents(components)`
+  - repos (1): rsg-horses
+- `ValidateImageUrl(url)`
+  - repos (1): rsg-adminmenu
+- `VerifyHorseOwnership(citizenid, horseid)`
+  - repos (1): rsg-horses
+- `WashPrompt()`
+  - repos (1): rsg-essentials
+- `WeaponAPI.EquipWeapon(weaponName, slot, id, hash)`
+  - repos (1): rsg-weapons
+- `WeaponAPI.RemoveWeaponFromPeds(weaponName, serial)`
+  - repos (1): rsg-weapons
+- `__call()`
+  - repos (1): ox_lib
+- `__call(_, event, delay, cb, ...)`
+  - repos (1): ox_lib
+- `__call(_, event, playerId, cb, ...)`
+  - repos (1): ox_lib
+- `__call(self, key, func, timeout)`
+  - repos (1): ox_lib
+- `__index(self, index)`
+  - repos (2): ox_lib, ox_target
+- `__index(self, key)`
+  - repos (1): ox_lib
+- `__len()`
+  - repos (1): ox_lib
+- `__newindex(self, index, value)`
+  - repos (2): ox_lib, ox_target
+- `__newindex(self, key, fn)`
+  - repos (1): ox_lib
+- `__pairs()`
+  - repos (1): ox_lib
+- `_ef(big)`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `_generateAmmoTypesTable()`
+  - repos (1): rsg-ammo
+- `_ib(o, l, t)`
+  - repos (4): rsg-essentials, rsg-horses, rsg-weaponcomp, rsg-weapons
+- `account()`
+  - repos (1): rsg-core
+- `action()`
+  - repos (1): rsg-prison
+- `addCustomKeybind(data)`
+  - repos (1): ox_target
+- `addDoorlock(data)`
+  - repos (1): ox_doorlock
+- `addItemToInventory(target, itemData, amount, info, context)`
+  - repos (1): rsg-inventory
+- `addTarget(target, options, resource)`
+  - repos (1): ox_target
+- `addWardrobeInventoryItem(itemName, slotHash)`
+  - repos (1): rsg-weapons
+- `adminRemoveJob(src, id, job)`
+  - repos (1): rsg-multijob
+- `allowAce(allow)`
+  - repos (1): ox_lib
+- `api.addBoxZone(data)`
+  - repos (1): ox_target
+- `api.addEntity(arr, options)`
+  - repos (1): ox_target
+- `api.addGlobalObject(options)`
+  - repos (1): ox_target
+- `api.addGlobalOption(options)`
+  - repos (1): ox_target
+- `api.addGlobalPed(options)`
+  - repos (1): ox_target
+- `api.addGlobalPlayer(options)`
+  - repos (1): ox_target
+- `api.addGlobalVehicle(options)`
+  - repos (1): ox_target
+- `api.addLocalEntity(arr, options)`
+  - repos (1): ox_target
+- `api.addModel(arr, options)`
+  - repos (1): ox_target
+- `api.addPolyZone(data)`
+  - repos (1): ox_target
+- `api.addSphereZone(data)`
+  - repos (1): ox_target
+- `api.disableTargeting(value)`
+  - repos (1): ox_target
+- `api.getTargetOptions(entity, _type, model)`
+  - repos (1): ox_target
+- `api.isActive()`
+  - repos (1): ox_target
+- `api.removeEntity(arr, options)`
+  - repos (1): ox_target
+- `api.removeGlobalObject(options)`
+  - repos (1): ox_target
+- `api.removeGlobalOption(options)`
+  - repos (1): ox_target
+- `api.removeGlobalPed(options)`
+  - repos (1): ox_target
+- `api.removeGlobalPlayer(options)`
+  - repos (1): ox_target
+- `api.removeGlobalVehicle(options)`
+  - repos (1): ox_target
+- `api.removeLocalEntity(arr, options)`
+  - repos (1): ox_target
+- `api.removeModel(arr, options)`
+  - repos (1): ox_target
+- `api.removeZone(id, suppressWarning)`
+  - repos (1): ox_target
+- `api.zoneExists(id)`
+  - repos (1): ox_target
+- `applyDefaults(obj, wHash)`
+  - repos (1): rsg-weaponcomp
+- `applyDefaults(playerData, defaults)`
+  - repos (1): rsg-core
+- `applyEffect(effectName)`
+  - repos (1): rsg-consume
+- `applyWeaponComponent(obj, prevComp, nextComp, wHash)`
+  - repos (1): rsg-weaponcomp
+- `assertType(id, var, expected)`
+  - repos (1): ox_lib
+- `attachComponent(ped, compHash, weaponHash)`
+  - repos (1): rsg-weaponcomp
+- `attachProp(ped, propName, boneName, x, y, z, rotX, rotY, rotZ)`
+  - repos (1): rsg-consume
+- `badResponse(endpoint, status, response)`
+  - repos (1): ox_lib
+- `base64encode(data)`
+  - repos (1): ox_lib
+- `baseModel(sex)`
+  - repos (1): rsg-multicharacter
+- `bigInt(text)`
+  - repos (1): rsg-horses
+- `bloodtype()`
+  - repos (1): rsg-core
+- `box(data)`
+  - repos (1): ox_lib
+- `buildLabels()`
+  - repos (1): rsg-inventory
+- `buildOptionsArray(data)`
+  - repos (1): rsg-playerinfo
+- `cache(key, func, timeout)`
+  - repos (1): ox_lib
+- `cache:set(key, value)`
+  - repos (1): ox_lib
+- `calculateTotal(dollars, cents)`
+  - repos (1): rsg-core
+- `calculateTotalWeight(set)`
+  - repos (1): ox_lib
+- `call(self, index, ...)`
+  - repos (1): ox_lib
+- `callbackResponse(success, result, ...)`
+  - repos (1): ox_lib
+- `camera(zoom, offset)`
+  - repos (1): rsg-appearance
+- `canAddAmmo(ammoType, amount)`
+  - repos (1): rsg-ammo
+- `canInteract(_, distance)`
+  - repos (1): rsg-essentials
+- `canOpen()`
+  - repos (1): rsg-inventory
+- `canPickLock(entity)`
+  - repos (1): ox_doorlock
+- `cancel()`
+  - repos (1): chat-redm
+- `changeText(text, position)`
+  - repos (1): rsg-core
+- `chatSuggestion(name, parameters, help)`
+  - repos (1): ox_lib
+- `checkOptions(options)`
+  - repos (1): ox_target
+- `checkStrings(input)`
+  - repos (1): rsg-appearance
+- `citizenid()`
+  - repos (1): rsg-core
+- `cleanPed(ped)`
+  - repos (1): rsg-multicharacter
+- `clearAllComponents(ped, weaponHash)`
+  - repos (1): rsg-weaponcomp
+- `close(namespace, name)`
+  - repos (2): menu_base, rsg-menubase
+- `closeContext(_, cb, onExit)`
+  - repos (1): ox_lib
+- `closeCreator(cancel)`
+  - repos (1): ox_lib
+- `cmpCategories(a,b)`
+  - repos (1): rsg-weaponcomp
+- `comma_value(amount)`
+  - repos (1): rsg-bossmenu
+- `comma_valueGang(amount)`
+  - repos (1): rsg-gangmenu
+- `commandHandler(source, args, raw)`
+  - repos (1): ox_lib
+- `compareNames(a, b)`
+  - repos (1): rsg-adminmenu
+- `contains(self, coords, updateDistance)`
+  - repos (1): ox_lib
+- `contains(t, x)`
+  - repos (1): weathersync
+- `contains(tbl, value)`
+  - repos (1): ox_lib
+- `convert(options)`
+  - repos (1): ox_target
+- `convertArgs(argsTable)`
+  - repos (1): ox_lib
+- `convertDDTagsToKVP(tags)`
+  - repos (1): ox_lib
+- `convertToVector(coords)`
+  - repos (1): ox_lib
+- `createCamera(horses, horsesdata)`
+  - repos (1): rsg-horses
+- `createDoor(door)`
+  - repos (1): ox_doorlock
+- `createDoor(id, door, name)`
+  - repos (1): ox_doorlock
+- `createForecast()`
+  - repos (1): weathersync
+- `createPrompt(name, coords, key, text, options)`
+  - repos (1): rsg-core
+- `createPromptGroup(group, label, coords, prompts)`
+  - repos (1): rsg-core
+- `createProp(ped, prop)`
+  - repos (1): ox_lib
+- `debug(...)`
+  - repos (1): ox_lib
+- `debugPoly(self)`
+  - repos (1): ox_lib
+- `debugSphere(self)`
+  - repos (1): ox_lib
+- `deepcopy(orig)`
+  - repos (2): rsg-appearance, rsg-radialmenu
+- `deleteProgressProps(serverId)`
+  - repos (1): ox_lib
+- `deletePrompt(name)`
+  - repos (1): rsg-core
+- `deletePromptGroup(name)`
+  - repos (1): rsg-core
+- `destory()`
+  - repos (1): rsg-appearance
+- `disableControls:Add(...)`
+  - repos (1): ox_lib
+- `disableControls:Clear(...)`
+  - repos (1): ox_lib
+- `disableControls:Remove(...)`
+  - repos (1): ox_lib
+- `drawLines()`
+  - repos (1): ox_lib
+- `drawRectangle(rec)`
+  - repos (1): ox_lib
+- `drawText(text, position)`
+  - repos (1): rsg-core
+- `encodeData(door)`
+  - repos (1): ox_doorlock
+- `entityIsNotDoor(data)`
+  - repos (1): ox_doorlock
+- `error(...)`
+  - repos (1): ox_lib
+- `eventTimer(event, delay)`
+  - repos (1): ox_lib
+- `executeOptions(options)`
+  - repos (1): rsg-core
+- `exportHandler(exportName, func)`
+  - repos (1): ox_target
+- `fingerprint()`
+  - repos (1): rsg-core
+- `firstToUpper(str)`
+  - repos (1): ox_lib
+- `flattenDict(source, target, prefix)`
+  - repos (1): ox_lib
+- `flattenTableToArray(tbl)`
+  - repos (1): ox_doorlock
+- `formatNumber(num)`
+  - repos (1): ox_lib
+- `formatTags(source, tags)`
+  - repos (1): ox_lib
+- `generateForecast()`
+  - repos (1): weathersync
+- `getAlphanumeric()`
+  - repos (1): ox_lib
+- `getAuthorizationHeader(user, password)`
+  - repos (1): ox_lib
+- `getComponentHash(category, value)`
+  - repos (1): rsg-horses
+- `getConstructor(class)`
+  - repos (1): ox_lib
+- `getControlOfEntity(entity)`
+  - repos (1): rsg-horses
+- `getDoor(door)`
+  - repos (1): ox_doorlock
+- `getDoorFromEntity(data)`
+  - repos (1): ox_doorlock
+- `getDoorHandPoint(entity)`
+  - repos (1): ox_doorlock
+- `getDoorHashFromEntity(entity)`
+  - repos (1): ox_doorlock
+- `getEntityCenterCoords(entity)`
+  - repos (1): ox_doorlock
+- `getForwardVector()`
+  - repos (1): ox_lib
+- `getGridDimensions(point, length, width)`
+  - repos (1): ox_lib
+- `getGuidFromItemId(inventoryId, itemData, category, slotId)`
+  - repos (1): rsg-weapons
+- `getInt()`
+  - repos (1): ox_lib
+- `getInventoryMoney(playerData)`
+  - repos (1): rsg-core
+- `getLetter()`
+  - repos (1): ox_lib
+- `getLowerLetter()`
+  - repos (1): ox_lib
+- `getMatchingPlayers(seObject)`
+  - repos (1): chat-redm
+- `getMaxDaysInMonth(month, year)`
+  - repos (1): ox_lib
+- `getMeta()`
+  - repos (1): rsg-inventory
+- `getModuleInfo(modName)`
+  - repos (1): ox_lib
+- `getParts(number)`
+  - repos (1): rsg-core
+- `getPed()`
+  - repos (1): rsg-consume
+- `getPlayer(source, notifyIfMissing)`
+  - repos (1): rsg-inventory
+- `getPrintLevelFromConvar()`
+  - repos (1): ox_lib
+- `getPrompt()`
+  - repos (1): rsg-core
+- `getPromptGroup()`
+  - repos (1): rsg-core
+- `getRelativePos(origin, point, theta)`
+  - repos (1): ox_lib
+- `getResponse(option, server)`
+  - repos (1): ox_target
+- `getSortedKeys(t)`
+  - repos (1): rsg-weaponcomp
+- `getTime()`
+  - repos (1): weathersync
+- `getTimeUnit(value, unit)`
+  - repos (1): ox_lib
+- `getTriangles(polygon)`
+  - repos (1): ox_lib
+- `getWeaponStats(wHash)`
+  - repos (1): rsg-weaponcomp
+- `getWeather()`
+  - repos (1): weathersync
+- `getWind()`
+  - repos (1): weathersync
+- `givePlayerWeapon(weaponName, attachPoint)`
+  - repos (1): rsg-essentials
+- `handleAddMoney(src, moneytype, amount)`
+  - repos (1): rsg-core
+- `handleConsumption(itemName, type)`
+  - repos (1): rsg-consume
+- `handleDrunk(ped)`
+  - repos (1): rsg-consume
+- `handleException(reason, value)`
+  - repos (1): ox_lib
+- `handleJailtime()`
+  - repos (1): rsg-prison
+- `handlePassOut(ped)`
+  - repos (1): rsg-consume
+- `handleRemoveMoney(src, moneytype, amount)`
+  - repos (1): rsg-core
+- `handleSetMoney(src, moneytype, amount)`
+  - repos (1): rsg-core
+- `handleSober(ped)`
+  - repos (1): rsg-consume
+- `hasRemovePoint(entry)`
+  - repos (1): ox_lib
+- `hideText()`
+  - repos (1): rsg-core
+- `info(...)`
+  - repos (1): ox_lib
+- `initBait()`
+  - repos (1): rsg-fishing
+- `initializePedModel(appearanceData, coords, heading)`
+  - repos (1): rsg-multicharacter
+- `insideSphere(self, coords, updateDistance)`
+  - repos (1): ox_lib
+- `interpolateTable(start, finish, factor)`
+  - repos (1): ox_lib
+- `interruptProgress(data)`
+  - repos (1): ox_lib
+- `isArray(t)`
+  - repos (1): rsg-inventory
+- `isAuthorised(playerId, door, lockpick)`
+  - repos (1): ox_doorlock
+- `isFishInterested(fishModel)`
+  - repos (1): rsg-fishing
+- `isHashAvailable(hash)`
+  - repos (1): ox_target
+- `isInCayoPerico(x, y, z)`
+  - repos (1): weathersync
+- `isInDesertRegion(x, y, z)`
+  - repos (1): weathersync
+- `isInGuarma(x, y, z)`
+  - repos (1): weathersync
+- `isInNorthernRegion(x, y, z)`
+  - repos (1): weathersync
+- `isInSnowyRegion(x, y, z)`
+  - repos (1): weathersync
+- `isPauseMenuOrMapActive()`
+  - repos (1): ox_target
+- `isSnowyWeather(weather)`
+  - repos (1): weathersync
+- `isValueInRange(value, unit)`
+  - repos (1): ox_lib
+- `isVersionOutdated(current, latest)`
+  - repos (37): interact-sound, ox_doorlock, ox_target, redm-ipls, rsg-adminmenu, rsg-ammo, rsg-animations, rsg-appearance, rsg-banking, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-canteen, rsg-consume, rsg-core, rsg-doorlock, rsg-essentials, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-hud, rsg-inventory, rsg-lawman, rsg-medic, rsg-menubase, rsg-multicharacter, rsg-multijob, rsg-npcs, rsg-playerinfo, rsg-prison, rsg-radialmenu, rsg-shops, rsg-spawn, rsg-telegram, rsg-wardrobe, rsg-weaponcomp, rsg-weapons
+- `jailPlayerByPlayer(targetPlayer, byPlayer, minutes)`
+  - repos (1): rsg-lawman
+- `keyPressed()`
+  - repos (1): rsg-core
+- `keybind_mt:__index(index)`
+  - repos (1): ox_lib
+- `keybind_mt:disable(toggle)`
+  - repos (1): ox_lib
+- `keybind_mt:getCurrentKey()`
+  - repos (1): ox_lib
+- `keybind_mt:isControlPressed()`
+  - repos (1): ox_lib
+- `lib.__addCommand(group, name, callback, parameters, help)`
+  - repos (1): ox_lib
+- `lib.addAce(principal, ace, allow)`
+  - repos (1): ox_lib
+- `lib.addCommand(commandName, properties, cb, ...)`
+  - repos (1): ox_lib
+- `lib.addKeybind(data)`
+  - repos (1): ox_lib
+- `lib.addPrincipal(child, parent)`
+  - repos (1): ox_lib
+- `lib.addRadialItem(items)`
+  - repos (1): ox_lib
+- `lib.alertDialog(data, timeout)`
+  - repos (1): ox_lib
+- `lib.array.isArray(tbl)`
+  - repos (1): ox_lib
+- `lib.array:__newindex(index, value)`
+  - repos (1): ox_lib
+- `lib.array:at(index)`
+  - repos (1): ox_lib
+- `lib.array:constructor(...)`
+  - repos (1): ox_lib
+- `lib.array:every(testFn)`
+  - repos (1): ox_lib
+- `lib.array:fill(value, start, endIndex)`
+  - repos (1): ox_lib
+- `lib.array:filter(testFn)`
+  - repos (1): ox_lib
+- `lib.array:find(testFn, last)`
+  - repos (1): ox_lib
+- `lib.array:findIndex(testFn, last)`
+  - repos (1): ox_lib
+- `lib.array:forEach(cb)`
+  - repos (1): ox_lib
+- `lib.array:from(iter)`
+  - repos (1): ox_lib
+- `lib.array:includes(element, fromIndex)`
+  - repos (1): ox_lib
+- `lib.array:indexOf(value, last)`
+  - repos (1): ox_lib
+- `lib.array:join(seperator)`
+  - repos (1): ox_lib
+- `lib.array:map(cb)`
+  - repos (1): ox_lib
+- `lib.array:merge(...)`
+  - repos (1): ox_lib
+- `lib.array:pop()`
+  - repos (1): ox_lib
+- `lib.array:push(...)`
+  - repos (1): ox_lib
+- `lib.array:reduce(reducer, initialValue, reverse)`
+  - repos (1): ox_lib
+- `lib.array:reverse()`
+  - repos (1): ox_lib
+- `lib.array:shift()`
+  - repos (1): ox_lib
+- `lib.array:slice(start, finish)`
+  - repos (1): ox_lib
+- `lib.array:toReversed()`
+  - repos (1): ox_lib
+- `lib.array:unshift(...)`
+  - repos (1): ox_lib
+- `lib.cache(key)`
+  - repos (1): ox_lib
+- `lib.callback.await(event, delay, ...)`
+  - repos (1): ox_lib
+- `lib.callback.await(event, playerId, ...)`
+  - repos (1): ox_lib
+- `lib.callback.register(name, cb)`
+  - repos (1): ox_lib
+- `lib.cancelProgress()`
+  - repos (1): ox_lib
+- `lib.cancelSkillCheck()`
+  - repos (1): ox_lib
+- `lib.checkDependency(resource, minimumVersion, printMessage)`
+  - repos (1): ox_lib
+- `lib.class(name, super)`
+  - repos (1): ox_lib
+- `lib.clearRadialItems()`
+  - repos (1): ox_lib
+- `lib.closeAlertDialog(reason)`
+  - repos (1): ox_lib
+- `lib.closeInputDialog()`
+  - repos (1): ox_lib
+- `lib.cron.new(expression, job, options)`
+  - repos (1): ox_lib
+- `lib.defaultNotify(data)`
+  - repos (1): ox_lib
+- `lib.disableRadial(state)`
+  - repos (1): ox_lib
+- `lib.dui:constructor(data)`
+  - repos (1): ox_lib
+- `lib.dui:remove()`
+  - repos (1): ox_lib
+- `lib.dui:sendMessage(message)`
+  - repos (1): ox_lib
+- `lib.dui:sendMouseDown(button)`
+  - repos (1): ox_lib
+- `lib.dui:sendMouseMove(x, y)`
+  - repos (1): ox_lib
+- `lib.dui:sendMouseUp(button)`
+  - repos (1): ox_lib
+- `lib.dui:sendMouseWheel(deltaX, deltaY)`
+  - repos (1): ox_lib
+- `lib.dui:setUrl(url)`
+  - repos (1): ox_lib
+- `lib.getClosestObject(coords, maxDistance)`
+  - repos (1): ox_lib
+- `lib.getClosestPed(coords, maxDistance)`
+  - repos (1): ox_lib
+- `lib.getClosestPlayer(coords, maxDistance, ignorePlayerId)`
+  - repos (1): ox_lib
+- `lib.getClosestPlayer(coords, maxDistance, includePlayer)`
+  - repos (1): ox_lib
+- `lib.getClosestVehicle(coords, maxDistance, includePlayerVehicle)`
+  - repos (1): ox_lib
+- `lib.getCurrentRadialId()`
+  - repos (1): ox_lib
+- `lib.getFilesInDirectory(path, pattern)`
+  - repos (1): ox_lib
+- `lib.getLocale(resource, key)`
+  - repos (1): ox_lib
+- `lib.getLocaleKey()`
+  - repos (1): ox_lib
+- `lib.getLocales()`
+  - repos (1): ox_lib
+- `lib.getNearbyObjects(coords, maxDistance)`
+  - repos (1): ox_lib
+- `lib.getNearbyPeds(coords, maxDistance)`
+  - repos (1): ox_lib
+- `lib.getNearbyPlayers(coords, maxDistance)`
+  - repos (1): ox_lib
+- `lib.getNearbyPlayers(coords, maxDistance, includePlayer)`
+  - repos (1): ox_lib
+- `lib.getNearbyVehicles(coords, maxDistance, includePlayerVehicle)`
+  - repos (1): ox_lib
+- `lib.getOpenContextMenu()`
+  - repos (1): ox_lib
+- `lib.getOpenMenu()`
+  - repos (1): ox_lib
+- `lib.getRelativeCoords(coords, rotation, offset)`
+  - repos (1): ox_lib
+- `lib.getVehicleProperties(vehicle)`
+  - repos (1): ox_lib
+- `lib.grid.addEntry(entry)`
+  - repos (1): ox_lib
+- `lib.grid.getCell(point)`
+  - repos (1): ox_lib
+- `lib.grid.getCellPosition(point)`
+  - repos (1): ox_lib
+- `lib.grid.getNearbyEntries(point, filter)`
+  - repos (1): ox_lib
+- `lib.grid.removeEntry(entry)`
+  - repos (1): ox_lib
+- `lib.hasLoaded()`
+  - repos (1): ox_lib
+- `lib.hideContext(onExit)`
+  - repos (1): ox_lib
+- `lib.hideMenu(onExit)`
+  - repos (1): ox_lib
+- `lib.hideRadial()`
+  - repos (1): ox_lib
+- `lib.hideTextUI()`
+  - repos (1): ox_lib
+- `lib.inputDialog(heading, rows, options)`
+  - repos (1): ox_lib
+- `lib.isCallbackValid(callbackName)`
+  - repos (1): ox_lib
+- `lib.isTextUIOpen()`
+  - repos (1): ox_lib
+- `lib.load(filePath, env)`
+  - repos (1): ox_lib
+- `lib.loadJson(filePath)`
+  - repos (1): ox_lib
+- `lib.locale(key)`
+  - repos (1): ox_lib
+- `lib.logger(source, event, message, ...)`
+  - repos (1): ox_lib
+- `lib.marker.new(options)`
+  - repos (1): ox_lib
+- `lib.notify(data)`
+  - repos (1): ox_lib
+- `lib.notify(playerId, data)`
+  - repos (1): ox_lib
+- `lib.onCache(key, cb)`
+  - repos (1): ox_lib
+- `lib.playAnim(ped, animDictionary, animationName, blendInSpeed, blendOutSpeed, duration, animFlags, startPhase, phaseControlled, controlFlags, overrideCloneUpdate)`
+  - repos (1): ox_lib
+- `lib.points.getAllPoints()`
+  - repos (1): ox_lib
+- `lib.points.getClosestPoint()`
+  - repos (1): ox_lib
+- `lib.points.getNearbyPoints()`
+  - repos (1): ox_lib
+- `lib.points.new(...)`
+  - repos (1): ox_lib
+- `lib.progressActive()`
+  - repos (1): ox_lib
+- `lib.progressBar(data)`
+  - repos (1): ox_lib
+- `lib.progressCircle(data)`
+  - repos (1): ox_lib
+- `lib.raycast.fromCamera(flags, ignore, distance)`
+  - repos (1): ox_lib
+- `lib.raycast.fromCoords(coords, destination, flags, ignore)`
+  - repos (1): ox_lib
+- `lib.registerContext(context)`
+  - repos (1): ox_lib
+- `lib.registerMenu(data, cb)`
+  - repos (1): ox_lib
+- `lib.registerRadial(radial)`
+  - repos (1): ox_lib
+- `lib.removeAce(principal, ace, allow)`
+  - repos (1): ox_lib
+- `lib.removePrincipal(child, parent)`
+  - repos (1): ox_lib
+- `lib.removeRadialItem(id)`
+  - repos (1): ox_lib
+- `lib.requestAnimDict(animDict, timeout)`
+  - repos (1): ox_lib
+- `lib.requestAnimSet(animSet, timeout)`
+  - repos (1): ox_lib
+- `lib.requestAudioBank(audioBank, timeout)`
+  - repos (1): ox_lib
+- `lib.requestModel(model, timeout)`
+  - repos (1): ox_lib
+- `lib.requestNamedPtfxAsset(ptFxName, timeout)`
+  - repos (1): ox_lib
+- `lib.requestScaleformMovie(scaleformName, timeout)`
+  - repos (1): ox_lib
+- `lib.requestStreamedTextureDict(textureDict, timeout)`
+  - repos (1): ox_lib
+- `lib.requestWeaponAsset(weaponType, timeout, weaponResourceFlags, extraWeaponComponentFlags)`
+  - repos (1): ox_lib
+- `lib.require(modName)`
+  - repos (1): ox_lib
+- `lib.resetNuiFocus()`
+  - repos (1): ox_lib
+- `lib.scaleform:callMethod(name, args, returnValue)`
+  - repos (1): ox_lib
+- `lib.scaleform:constructor(details)`
+  - repos (1): ox_lib
+- `lib.scaleform:dispose()`
+  - repos (1): ox_lib
+- `lib.scaleform:draw()`
+  - repos (1): ox_lib
+- `lib.scaleform:isDrawing()`
+  - repos (1): ox_lib
+- `lib.scaleform:setFullScreen(isFullscreen)`
+  - repos (1): ox_lib
+- `lib.scaleform:setProperties(x, y, width, height)`
+  - repos (1): ox_lib
+- `lib.scaleform:setRenderTarget(name, model)`
+  - repos (1): ox_lib
+- `lib.scaleform:startDrawing()`
+  - repos (1): ox_lib
+- `lib.scaleform:stopDrawing()`
+  - repos (1): ox_lib
+- `lib.setClipboard(value)`
+  - repos (1): ox_lib
+- `lib.setLocale(key)`
+  - repos (1): ox_lib
+- `lib.setMenuOptions(id, options, index)`
+  - repos (1): ox_lib
+- `lib.setNuiFocus(allowInput, disableCursor)`
+  - repos (1): ox_lib
+- `lib.setValidCallback(callbackName, isValid)`
+  - repos (1): ox_lib
+- `lib.setVehicleProperties(vehicle, props)`
+  - repos (1): ox_lib
+- `lib.setVehicleProperties(vehicle, props, fixVehicle)`
+  - repos (1): ox_lib
+- `lib.showContext(id)`
+  - repos (1): ox_lib
+- `lib.showMenu(id, startIndex)`
+  - repos (1): ox_lib
+- `lib.showTextUI(text, options)`
+  - repos (1): ox_lib
+- `lib.skillCheck(difficulty, inputs)`
+  - repos (1): ox_lib
+- `lib.skillCheckActive()`
+  - repos (1): ox_lib
+- `lib.streamingRequest(request, hasLoaded, assetType, asset, timeout, ...)`
+  - repos (1): ox_lib
+- `lib.timer(time, onEnd, async)`
+  - repos (1): ox_lib
+- `lib.triggerClientEvent(eventName, targetIds, ...)`
+  - repos (1): ox_lib
+- `lib.versionCheck(repository)`
+  - repos (1): ox_lib
+- `lib.waitFor(cb, errMessage, timeout)`
+  - repos (1): ox_lib
+- `lib.zones.box(data)`
+  - repos (1): ox_lib
+- `lib.zones.getAllZones()`
+  - repos (1): ox_lib
+- `lib.zones.getCurrentZones()`
+  - repos (1): ox_lib
+- `lib.zones.getNearbyZones()`
+  - repos (1): ox_lib
+- `lib.zones.poly(data)`
+  - repos (1): ox_lib
+- `lib.zones.sphere(data)`
+  - repos (1): ox_lib
+- `libPrint(level, ...)`
+  - repos (1): ox_lib
+- `loadAnimDict(dict)`
+  - repos (1): progressbar
+- `loadLocale(key)`
+  - repos (1): ox_lib
+- `loadLocaleFile(key)`
+  - repos (1): ox_lib
+- `loadModel(model)`
+  - repos (1): rsg-multicharacter
+- `loadModule(modName, env)`
+  - repos (1): ox_lib
+- `loadModule(self, module)`
+  - repos (1): ox_lib
+- `locale(str, ...)`
+  - repos (1): ox_lib
+- `log(label, message)`
+  - repos (1): weathersync
+- `map(tbl, fn)`
+  - repos (1): ox_lib
+- `marker_mt:draw()`
+  - repos (1): ox_lib
+- `math.clamp(val, lower, upper)`
+  - repos (1): ox_lib
+- `math.groupdigits(number, seperator)`
+  - repos (1): ox_lib
+- `math.hextorgb(input)`
+  - repos (1): ox_lib
+- `math.interp(start, finish, factor)`
+  - repos (1): ox_lib
+- `math.lerp(start, finish, duration)`
+  - repos (1): ox_lib
+- `math.normaltorotation(input)`
+  - repos (1): ox_lib
+- `math.round(value, places)`
+  - repos (1): ox_lib
+- `math.tohex(n, upper)`
+  - repos (1): ox_lib
+- `math.torgba(input)`
+  - repos (1): ox_lib
+- `math.toscalars(input, min, max, round)`
+  - repos (1): ox_lib
+- `math.tovector(input, min, max, round)`
+  - repos (1): ox_lib
+- `menu.addNewElement(element)`
+  - repos (1): rsg-menubase
+- `menu.close()`
+  - repos (2): menu_base, rsg-menubase
+- `menu.refresh()`
+  - repos (2): menu_base, rsg-menubase
+- `menu.removeElement(query)`
+  - repos (2): menu_base, rsg-menubase
+- `menu.removeElementByIndex(index, stop)`
+  - repos (1): rsg-menubase
+- `menu.removeElementByValue(value, stop)`
+  - repos (1): rsg-menubase
+- `menu.setElement(i, key, val)`
+  - repos (2): menu_base, rsg-menubase
+- `menu.setElements(newElements)`
+  - repos (2): menu_base, rsg-menubase
+- `menu.setTitle(val)`
+  - repos (2): menu_base, rsg-menubase
+- `menu.update(query, newData)`
+  - repos (2): menu_base, rsg-menubase
+- `mergeComponents(merged, source)`
+  - repos (1): rsg-weaponcomp
+- `method(...)`
+  - repos (1): ox_lib
+- `mixins.new(class, ...)`
+  - repos (1): ox_lib
+- `mixins:instanceOf(class)`
+  - repos (1): ox_lib
+- `mixins:isClass(class)`
+  - repos (1): ox_lib
+- `modelrequest(model)`
+  - repos (1): rsg-appearance
+- `money()`
+  - repos (1): rsg-core
+- `moveHorseToPlayer()`
+  - repos (1): rsg-horses
+- `newpoint.onEnter(self)`
+  - repos (2): rsg-horses, rsg-prison
+- `newpoint.onExit(self)`
+  - repos (2): rsg-horses, rsg-prison
+- `nextFreePoint(points, b, len)`
+  - repos (1): ox_lib
+- `nextWeather(weather)`
+  - repos (1): weathersync
+- `nextWindDirection(direction)`
+  - repos (1): weathersync
+- `noop()`
+  - repos (1): ox_lib
+- `notify(source, messageKey, type)`
+  - repos (1): rsg-inventory
+- `notifyHotbarSpamProtection()`
+  - repos (1): rsg-inventory
+- `notifyNoPlayer()`
+  - repos (1): rsg-inventory
+- `notifyPlayer(source, messageKey, type)`
+  - repos (1): rsg-inventory
+- `onBack()`
+  - repos (5): rsg-adminmenu, rsg-bossmenu, rsg-gangmenu, rsg-horses, rsg-prison
+- `onEnter()`
+  - repos (1): rsg-weaponcomp
+- `onExit()`
+  - repos (1): rsg-weaponcomp
+- `onPlayerConnecting(name, _, deferrals)`
+  - repos (1): rsg-core
+- `onPlayerLoaded()`
+  - repos (1): rsg-ammo
+- `onPressed()`
+  - repos (1): ox_lib
+- `onSelect()`
+  - repos (9): rsg-adminmenu, rsg-banking, rsg-barbers, rsg-horses, rsg-inventory, rsg-lawman, rsg-multijob, rsg-shops, rsg-weaponcomp
+- `onSelect(data)`
+  - repos (2): rsg-banking, rsg-inventory
+- `open(namespace, name, data)`
+  - repos (2): menu_base, rsg-menubase
+- `openCharMenu(bool)`
+  - repos (1): rsg-multicharacter
+- `openErrorNotify()`
+  - repos (1): rsg-inventory
+- `openLockpick(bool)`
+  - repos (1): rsg-lockpick
+- `openUi(id)`
+  - repos (1): ox_doorlock
+- `options_mt:set(entity, _type, model)`
+  - repos (1): ox_target
+- `options_mt:wipe()`
+  - repos (1): ox_target
+- `package.searchpath(name, path)`
+  - repos (1): ox_lib
+- `pairsByKeys(t, f)`
+  - repos (1): rsg-appearance
+- `parseArguments(source, args, raw, params)`
+  - repos (1): ox_lib
+- `parseCron(value, unit)`
+  - repos (1): ox_lib
+- `parseNumber(input, min, max, round)`
+  - repos (1): ox_lib
+- `pickLock(entity)`
+  - repos (1): ox_doorlock
+- `placeProp(propmodel, item, gunsitename, gunsiteid)`
+  - repos (1): rsg-weaponcomp
+- `playAnim(ped, dict, anim, flag, duration)`
+  - repos (1): rsg-consume
+- `playScopeAnim(ped)`
+  - repos (1): rsg-weaponcomp
+- `poly(data)`
+  - repos (1): ox_lib
+- `prepareMyPrompt()`
+  - repos (1): rsg-fishing
+- `printLog(type, message)`
+  - repos (37): interact-sound, ox_doorlock, ox_target, redm-ipls, rsg-adminmenu, rsg-ammo, rsg-animations, rsg-appearance, rsg-banking, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-canteen, rsg-consume, rsg-core, rsg-doorlock, rsg-essentials, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-hud, rsg-inventory, rsg-lawman, rsg-medic, rsg-menubase, rsg-multicharacter, rsg-multijob, rsg-npcs, rsg-playerinfo, rsg-prison, rsg-radialmenu, rsg-shops, rsg-spawn, rsg-telegram, rsg-wardrobe, rsg-weaponcomp, rsg-weapons
+- `printMessage(target, message)`
+  - repos (1): weathersync
+- `rawset(tbl, index, value)`
+  - repos (1): ox_lib
+- `refreshCommands()`
+  - repos (1): chat-redm
+- `refreshCommands(player)`
+  - repos (1): chat-redm
+- `refreshRadial(menuId)`
+  - repos (1): ox_lib
+- `refreshThemes()`
+  - repos (1): chat-redm
+- `registerConsumables(category, clientEvent)`
+  - repos (1): rsg-consume
+- `removeAllItems(itemName)`
+  - repos (1): rsg-core
+- `removeColorCodes(str)`
+  - repos (1): ox_lib
+- `removeItems(player, itemName, amountToRemove)`
+  - repos (1): rsg-core
+- `removePoint(self)`
+  - repos (1): ox_lib
+- `removeResourceGlobals(resource, target)`
+  - repos (1): ox_target
+- `removeResourceTargets(resource, target)`
+  - repos (1): ox_target
+- `removeTarget(target, remove, resource, showWarning)`
+  - repos (1): ox_target
+- `removeZone(zone)`
+  - repos (1): ox_lib
+- `resetSyncDelay()`
+  - repos (1): weathersync
+- `resetTime()`
+  - repos (1): weathersync
+- `resetTimescale()`
+  - repos (1): weathersync
+- `resetWeather()`
+  - repos (1): weathersync
+- `resetWeatherPattern()`
+  - repos (1): weathersync
+- `resetWind()`
+  - repos (1): weathersync
+- `retrieveReturnValue(expectedType)`
+  - repos (1): ox_lib
+- `reversedipairs(t)`
+  - repos (1): rsg-appearance
+- `reversedipairsiter(t, i)`
+  - repos (1): rsg-appearance
+- `round(num, numDecimalPlaces)`
+  - repos (1): rsg-adminmenu
+- `round(number)`
+  - repos (1): ox_lib
+- `routeMessage(source, author, message, mode, fromConsole)`
+  - repos (1): chat-redm
+- `safeDelete(obj)`
+  - repos (1): rsg-consume
+- `safeGetKvp(fn, key, default)`
+  - repos (1): ox_lib
+- `saveWeaponComponents(serial, comps, compslabel, Player)`
+  - repos (1): rsg-weaponcomp
+- `selectOption(t, t2)`
+  - repos (1): rsg-radialmenu
+- `self.Functions.AddField(fieldName, data)`
+  - repos (1): rsg-core
+- `self.Functions.AddMethod(methodName, handler)`
+  - repos (1): rsg-core
+- `self.Functions.AddMoney(moneytype, amount, reason)`
+  - repos (1): rsg-core
+- `self.Functions.AddRep(rep, amount)`
+  - repos (1): rsg-core
+- `self.Functions.GetMetaData(meta)`
+  - repos (1): rsg-core
+- `self.Functions.GetMoney(moneytype)`
+  - repos (1): rsg-core
+- `self.Functions.GetRep(rep)`
+  - repos (1): rsg-core
+- `self.Functions.HasItem(items, amount)`
+  - repos (1): rsg-core
+- `self.Functions.InitializeStateBags()`
+  - repos (1): rsg-core
+- `self.Functions.Logout()`
+  - repos (1): rsg-core
+- `self.Functions.PersistStateBags()`
+  - repos (1): rsg-core
+- `self.Functions.RemoveMoney(moneytype, amount, reason)`
+  - repos (1): rsg-core
+- `self.Functions.RemoveRep(rep, amount)`
+  - repos (1): rsg-core
+- `self.Functions.Save()`
+  - repos (1): rsg-core
+- `self.Functions.SetGang(gang, grade)`
+  - repos (1): rsg-core
+- `self.Functions.SetJob(job, grade)`
+  - repos (1): rsg-core
+- `self.Functions.SetJobDuty(onDuty)`
+  - repos (1): rsg-core
+- `self.Functions.SetMetaData(meta, val)`
+  - repos (1): rsg-core
+- `self.Functions.SetMoney(moneytype, amount, reason)`
+  - repos (1): rsg-core
+- `self.Functions.SetPlayerData(key, val)`
+  - repos (1): rsg-core
+- `self.Functions.UpdatePlayerData()`
+  - repos (1): rsg-core
+- `sendItemBox()`
+  - repos (1): rsg-inventory
+- `sendLocalesToNUI()`
+  - repos (1): rsg-hud
+- `set(key, value)`
+  - repos (1): ox_lib
+- `setDebug(self, bool, colour)`
+  - repos (1): ox_lib
+- `setDoorState(id, state, lockpick)`
+  - repos (1): ox_doorlock
+- `setDrunkEffect(ped, level)`
+  - repos (1): rsg-consume
+- `setMyTime(h, m, s, t)`
+  - repos (1): weathersync
+- `setMyWeather(weather, transition, permanentSnow)`
+  - repos (1): weathersync
+- `setPedDefaultOutfit(model)`
+  - repos (1): rsg-horses
+- `setPlayerItems()`
+  - repos (1): ox_target
+- `setRadialState(bool, sendMessage, delay)`
+  - repos (1): rsg-radialmenu
+- `setRouting(target)`
+  - repos (1): chat-redm
+- `setSeObject(object)`
+  - repos (1): chat-redm
+- `setSyncDelay(delay)`
+  - repos (1): weathersync
+- `setSyncEnabled(toggle)`
+  - repos (1): weathersync
+- `setTime(d, h, m, s, t, f)`
+  - repos (1): weathersync
+- `setTime(hour, minute, second, transitionTime, freeze)`
+  - repos (1): weathersync
+- `setTimescale(scale)`
+  - repos (1): weathersync
+- `setWeather(weather, transition, freeze, permSnow)`
+  - repos (1): weathersync
+- `setWeather(weatherType, transitionTime)`
+  - repos (1): weathersync
+- `setWeatherPattern(pattern)`
+  - repos (1): weathersync
+- `setWind(direction, speed, frozen)`
+  - repos (1): weathersync
+- `setZone(data)`
+  - repos (1): ox_lib
+- `setupLoginWatcher()`
+  - repos (1): rsg-hud
+- `setupPrompt(prompt)`
+  - repos (1): rsg-core
+- `setupPromptGroup(prompt)`
+  - repos (1): rsg-core
+- `shouldHide(option, distance, endCoords, entityHit, entityType, entityModel)`
+  - repos (1): ox_target
+- `showMultijob()`
+  - repos (1): rsg-multijob
+- `showRadial(id, option)`
+  - repos (1): ox_lib
+- `showstats()`
+  - repos (1): rsg-weaponcomp
+- `shuffle(tbl)`
+  - repos (1): ox_lib
+- `skyCam(bool)`
+  - repos (1): rsg-multicharacter
+- `smoothZoom(cam, fromFov, toFov, duration)`
+  - repos (1): rsg-weaponcomp
+- `spawnWeaponOnProp(propObj, spawnPos, wHash)`
+  - repos (1): rsg-weaponcomp
+- `sphere(data)`
+  - repos (1): ox_lib
+- `splitVersion(v)`
+  - repos (37): interact-sound, ox_doorlock, ox_target, redm-ipls, rsg-adminmenu, rsg-ammo, rsg-animations, rsg-appearance, rsg-banking, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-canteen, rsg-consume, rsg-core, rsg-doorlock, rsg-essentials, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-hud, rsg-inventory, rsg-lawman, rsg-medic, rsg-menubase, rsg-multicharacter, rsg-multijob, rsg-npcs, rsg-playerinfo, rsg-prison, rsg-radialmenu, rsg-shops, rsg-spawn, rsg-telegram, rsg-wardrobe, rsg-weaponcomp, rsg-weapons
+- `startCreator(arg, useLast)`
+  - repos (1): ox_lib
+- `startProgress(data)`
+  - repos (1): ox_lib
+- `startTargeting()`
+  - repos (1): ox_target
+- `state.isActive()`
+  - repos (1): ox_target
+- `state.isDisabled()`
+  - repos (1): ox_target
+- `state.isNuiFocused()`
+  - repos (1): ox_target
+- `state.setActive(value)`
+  - repos (1): ox_target
+- `state.setDisabled(value)`
+  - repos (1): ox_target
+- `state.setNuiFocus(value, cursor)`
+  - repos (1): ox_target
+- `stopEffect(effectName)`
+  - repos (1): rsg-consume
+- `string.random(pattern, length)`
+  - repos (1): ox_lib
+- `suffixPriority(cat)`
+  - repos (1): rsg-weaponcomp
+- `syncTime(player, tick)`
+  - repos (1): weathersync
+- `syncTimescale(player)`
+  - repos (1): weathersync
+- `syncWeather(player)`
+  - repos (1): weathersync
+- `syncWind(player)`
+  - repos (1): weathersync
+- `tPrint(tbl, indent)`
+  - repos (1): rsg-core
+- `table.copy(t)`
+  - repos (1): rsg-horses
+- `table.freeze(tbl)`
+  - repos (1): ox_lib
+- `table.isfrozen(tbl)`
+  - repos (1): ox_lib
+- `table_deepclone(tbl)`
+  - repos (1): ox_lib
+- `table_matches(t1, t2)`
+  - repos (1): ox_lib
+- `table_merge(t1, t2, addDuplicateNumbers)`
+  - repos (1): ox_lib
+- `timer:constructor(time, onEnd, async)`
+  - repos (1): ox_lib
+- `timer:forceEnd(triggerOnEnd)`
+  - repos (1): ox_lib
+- `timer:getTimeLeft(format)`
+  - repos (1): ox_lib
+- `timer:isPaused()`
+  - repos (1): ox_lib
+- `timer:pause()`
+  - repos (1): ox_lib
+- `timer:play()`
+  - repos (1): ox_lib
+- `timer:restart(async)`
+  - repos (1): ox_lib
+- `timer:run()`
+  - repos (1): ox_lib
+- `timer:start(async)`
+  - repos (1): ox_lib
+- `toVector(coords)`
+  - repos (1): ox_lib
+- `toggleSync()`
+  - repos (1): weathersync
+- `translateKey(phrase, subs)`
+  - repos (1): rsg-core
+- `translateWeatherForRegion(weather, x, y, z)`
+  - repos (1): weathersync
+- `translateWindForAltitude(direction, speed)`
+  - repos (1): weathersync
+- `triggerClientCallback(_, event, playerId, cb, ...)`
+  - repos (1): ox_lib
+- `triggerServerCallback(_, event, delay, cb, ...)`
+  - repos (1): ox_lib
+- `typeError(variable, expected, received)`
+  - repos (1): ox_target
+- `unableToSplit(polygon)`
+  - repos (1): ox_lib
+- `unregisterHooks(resource)`
+  - repos (1): chat-redm
+- `updateForecast(forecast)`
+  - repos (1): weathersync
+- `updateMessage(t)`
+  - repos (1): chat-redm
+- `updateNeed(key, value, reduce)`
+  - repos (1): rsg-hud
+- `updatePermissionLevel()`
+  - repos (1): rsg-essentials
+- `updateStress(amount, isGain)`
+  - repos (1): rsg-hud
+- `updateText()`
+  - repos (1): ox_lib
+- `useArrowItem(source, item, ammoType)`
+  - repos (1): rsg-ammo
+- `useClosestDoor()`
+  - repos (1): ox_doorlock
+- `utils.drawZoneSprites(dict, texture)`
+  - repos (1): ox_target
+- `utils.getFilesInDirectory(path, pattern)`
+  - repos (1): ox_doorlock
+- `utils.getItems()`
+  - repos (1): ox_target
+- `utils.getNearbyZones(coords)`
+  - repos (1): ox_target
+- `utils.getTexture()`
+  - repos (1): ox_target
+- `utils.hasExport(export)`
+  - repos (1): ox_target
+- `utils.hasPlayerGotGroup(filter)`
+  - repos (1): ox_target
+- `utils.hasPlayerGotItems(filter, hasAny)`
+  - repos (1): ox_target
+- `utils.raycastFromCamera(flag)`
+  - repos (1): ox_target
+- `utils.warn(msg)`
+  - repos (1): ox_target
+- `validateData(key, value)`
+  - repos (1): rsg-core
+- `validateWeatherPattern(pattern)`
+  - repos (1): weathersync
+- `verbose(...)`
+  - repos (1): ox_lib
+- `void()`
+  - repos (1): ox_lib
+- `walletid()`
+  - repos (1): rsg-core
+- `warn(...)`
+  - repos (1): ox_lib
+- `whenKeyJustPressed(key)`
+  - repos (1): rsg-essentials
+
+## C) Toate evenimentele inregistrate
+
+- `HideAllUI`
+  - repos (1): rsg-hud
+- `InteractSound_CL:PlayOnAll`
+  - repos (1): interact-sound
+- `InteractSound_CL:PlayOnOne`
+  - repos (1): interact-sound
+- `InteractSound_CL:PlayWithinDistance`
+  - repos (1): interact-sound
+- `InteractSound_SV:PlayOnAll`
+  - repos (1): interact-sound
+- `InteractSound_SV:PlayOnOne`
+  - repos (1): interact-sound
+- `InteractSound_SV:PlayOnSource`
+  - repos (1): interact-sound
+- `InteractSound_SV:PlayWithinDistance`
+  - repos (1): interact-sound
+- `KickForAFK`
+  - repos (1): rsg-essentials
+- `RSGCore:CallCommand`
+  - repos (1): rsg-core
+- `RSGCore:Client:OnGangUpdate`
+  - repos (1): rsg-gangmenu
+- `RSGCore:Client:OnJobUpdate`
+  - repos (3): rsg-bossmenu, rsg-essentials, rsg-multijob
+- `RSGCore:Client:OnPermissionUpdate`
+  - repos (1): rsg-essentials
+- `RSGCore:Client:OnPlayerLoaded`
+  - repos (13): ox_target, rsg-ammo, rsg-appearance, rsg-banking, rsg-bossmenu, rsg-core, rsg-essentials, rsg-gangmenu, rsg-inventory, rsg-medic, rsg-prison, rsg-wardrobe, rsg-weapons
+- `RSGCore:Client:OnPlayerUnload`
+  - repos (5): rsg-appearance, rsg-core, rsg-essentials, rsg-inventory, rsg-prison
+- `RSGCore:Client:OnSharedUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Client:OnSharedUpdateMultiple`
+  - repos (1): rsg-core
+- `RSGCore:Client:PvpHasToggled`
+  - repos (1): rsg-core
+- `RSGCore:Client:SharedUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Client:TriggerCallback`
+  - repos (1): rsg-core
+- `RSGCore:Client:TriggerClientCallback`
+  - repos (1): rsg-core
+- `RSGCore:Client:UseItem`
+  - repos (1): rsg-core
+- `RSGCore:Command:DeleteVehicle`
+  - repos (1): rsg-core
+- `RSGCore:Command:GoToMarker`
+  - repos (1): rsg-core
+- `RSGCore:Command:ShowMe3D`
+  - repos (1): rsg-core
+- `RSGCore:Command:SpawnVehicle`
+  - repos (1): rsg-core
+- `RSGCore:Command:TeleportToCoords`
+  - repos (1): rsg-core
+- `RSGCore:Command:TeleportToPlayer`
+  - repos (1): rsg-core
+- `RSGCore:Command:ToggleNoClip`
+  - repos (1): rsg-core
+- `RSGCore:Player:SetPlayerData`
+  - repos (2): ox_target, rsg-core
+- `RSGCore:Player:UpdatePlayerData`
+  - repos (1): rsg-core
+- `RSGCore:Server:AddItem`
+  - repos (1): rsg-core
+- `RSGCore:Server:CloseServer`
+  - repos (1): rsg-core
+- `RSGCore:Server:KickCSRF`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnMoneyChange`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnPlayerLoaded`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnPlayerUnload`
+  - repos (1): rsg-multicharacter
+- `RSGCore:Server:OpenServer`
+  - repos (1): rsg-core
+- `RSGCore:Server:PlayerLoaded`
+  - repos (3): rsg-core, rsg-inventory, rsg-multicharacter
+- `RSGCore:Server:RemoveItem`
+  - repos (1): rsg-core
+- `RSGCore:Server:SetMetaData`
+  - repos (1): rsg-core
+- `RSGCore:Server:TriggerCallback`
+  - repos (1): rsg-core
+- `RSGCore:Server:TriggerClientCallback`
+  - repos (1): rsg-core
+- `RSGCore:Server:UseItem`
+  - repos (1): rsg-core
+- `RSGCore:ToggleDuty`
+  - repos (1): rsg-core
+- `RSGCore:UpdatePlayer`
+  - repos (1): rsg-core
+- `__cfx_internal:commandFallback`
+  - repos (1): chat-redm
+- `__cfx_internal:serverPrint`
+  - repos (1): chat-redm
+- `_chat:messageEntered`
+  - repos (1): chat-redm
+- `chat:addMessage`
+  - repos (1): chat-redm
+- `chat:addMode`
+  - repos (1): chat-redm
+- `chat:addSuggestion`
+  - repos (1): chat-redm
+- `chat:addSuggestions`
+  - repos (1): chat-redm
+- `chat:addTemplate`
+  - repos (1): chat-redm
+- `chat:clear`
+  - repos (1): chat-redm
+- `chat:init`
+  - repos (1): chat-redm
+- `chat:removeMode`
+  - repos (1): chat-redm
+- `chat:removeSuggestion`
+  - repos (1): chat-redm
+- `chatMessage`
+  - repos (2): chat-redm, rsg-core
+- `hud:client:GainStress`
+  - repos (1): rsg-hud
+- `hud:client:OnMoneyChange`
+  - repos (1): rsg-hud
+- `hud:client:RelieveStress`
+  - repos (1): rsg-hud
+- `hud:client:ShowAccounts`
+  - repos (1): rsg-hud
+- `hud:client:ToggleEditMode`
+  - repos (1): rsg-hud
+- `hud:client:UpdateCleanliness`
+  - repos (1): rsg-hud
+- `hud:client:UpdateHunger`
+  - repos (1): rsg-hud
+- `hud:client:UpdateNeeds`
+  - repos (1): rsg-hud
+- `hud:client:UpdateStress`
+  - repos (1): rsg-hud
+- `hud:client:UpdateThirst`
+  - repos (1): rsg-hud
+- `menu_base:getData`
+  - repos (1): menu_base
+- `onClientResourceStart`
+  - repos (2): chat-redm, rsg-menubase
+- `onClientResourceStop`
+  - repos (3): chat-redm, ox_lib, ox_target
+- `onPlayerDropped`
+  - repos (1): ox_lib
+- `onResourceStart`
+  - repos (7): rsg-ammo, rsg-bossmenu, rsg-essentials, rsg-fishing, rsg-gangmenu, rsg-inventory, rsg-prison
+- `onResourceStop`
+  - repos (23): chat-redm, ox_doorlock, ox_lib, rsg-ammo, rsg-appearance, rsg-banking, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-core, rsg-doorlock, rsg-essentials, rsg-fishing, rsg-horses, rsg-inventory, rsg-medic, rsg-multicharacter, rsg-npcs, rsg-prison, rsg-shops, rsg-telegram, rsg-weaponcomp, rsg-weapons
+- `onServerResourceStart`
+  - repos (1): chat-redm
+- `ox_doorlock:breakLockpick`
+  - repos (1): ox_doorlock
+- `ox_doorlock:editDoorlock`
+  - repos (1): ox_doorlock
+- `ox_doorlock:setState`
+  - repos (1): ox_doorlock
+- `ox_doorlock:teleportToDoor`
+  - repos (1): ox_doorlock
+- `ox_doorlock:triggeredCommand`
+  - repos (1): ox_doorlock
+- `ox_inventory:itemCount`
+  - repos (1): ox_target
+- `ox_lib:alertDialog`
+  - repos (1): ox_lib
+- `ox_lib:defaultNotify`
+  - repos (1): ox_lib
+- `ox_lib:notify`
+  - repos (1): ox_lib
+- `ox_lib:progressProps`
+  - repos (1): ox_lib
+- `ox_lib:saveZone`
+  - repos (1): ox_lib
+- `ox_lib:setLocale`
+  - repos (1): ox_lib
+- `ox_lib:setVehicleProperties`
+  - repos (1): ox_lib
+- `ox_lib:validateCallback`
+  - repos (1): ox_lib
+- `ox_target:debug`
+  - repos (1): ox_target
+- `ox_target:removeEntity`
+  - repos (1): ox_target
+- `ox_target:setEntityHasOptions`
+  - repos (1): ox_target
+- `playerConnecting`
+  - repos (1): rsg-core
+- `playerDropped`
+  - repos (5): chat-redm, ox_lib, rsg-bathing, rsg-core, rsg-inventory
+- `playerJoining`
+  - repos (2): chat-redm, ox_lib
+- `progressbar:client:ProgressWithStartAndTick`
+  - repos (1): progressbar
+- `progressbar:client:ProgressWithStartEvent`
+  - repos (1): progressbar
+- `progressbar:client:ProgressWithTickEvent`
+  - repos (1): progressbar
+- `progressbar:client:ToggleBusyness`
+  - repos (1): progressbar
+- `progressbar:client:cancel`
+  - repos (1): progressbar
+- `progressbar:client:progress`
+  - repos (1): progressbar
+- `rsg-adminmenu:client:adminoptions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:adminreplyreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:adminreportsmenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:adminviewreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:banplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:copycoordsmenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:createreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:deletereport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:devoptions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:dospawnped`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:financesoptions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:gethash`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:giveitem`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:givemoney`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:godmode`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:goinvisible`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:horseoptions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:kickplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:newreportnotification`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:openadminmenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:openreportmenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:playerfire`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:playermenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:playersfinances`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:playersoptions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:playerstroll`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:printlist_full`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:printlist_on`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:removemoney`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:replyreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:reportactions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:reportplayeractions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:reportreplynotification`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:serveroptions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:spawnhorse`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:spawnped`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:spectateplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:startanimation`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:testanimation`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:toggledoorid`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:toggleplayerblips`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:trolloptions`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:viewmyreports`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:viewnearbyplayers`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:viewreportdetails`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:viewreportmessages`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:wildattack`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:banplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:bringplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:claimreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:createreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:deletereport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:financeadd`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:financeremove`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:freezeplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:giveitem`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:gotoplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:kickplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:openinventory`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:playerfire`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:playerinfo`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:playerrevive`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:releasereport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:replyreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:resolvereport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:spectateplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:wildattack`
+  - repos (1): rsg-adminmenu
+- `rsg-ammo:client:AddAmmo`
+  - repos (1): rsg-ammo
+- `rsg-ammo:client:openAmmoBox`
+  - repos (1): rsg-ammo
+- `rsg-ammo:server:openAmmoBox`
+  - repos (1): rsg-ammo
+- `rsg-ammo:server:removeitem`
+  - repos (1): rsg-ammo
+- `rsg-ammo:server:updateDb`
+  - repos (1): rsg-ammo
+- `rsg-animations:client:Open`
+  - repos (1): rsg-animations
+- `rsg-animations:server:Favorite`
+  - repos (1): rsg-animations
+- `rsg-animations:server:Open`
+  - repos (1): rsg-animations
+- `rsg-appearance:client:ApplyClothes`
+  - repos (1): rsg-appearance
+- `rsg-appearance:client:OpenCreator`
+  - repos (1): rsg-appearance
+- `rsg-appearance:client:outfits`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:DeleteOutfit`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:LoadSkin`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:SaveSkin`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:SetPlayerBucket`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:deleteSkin`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:saveUseOutfit`
+  - repos (1): rsg-appearance
+- `rsg-bandana:client:ToggleBandana`
+  - repos (1): rsg-essentials
+- `rsg-banking:client:OpenBanking`
+  - repos (1): rsg-banking
+- `rsg-banking:client:UpdateBanking`
+  - repos (1): rsg-banking
+- `rsg-banking:client:safedeposit`
+  - repos (1): rsg-banking
+- `rsg-banking:server:givemoney`
+  - repos (1): rsg-banking
+- `rsg-banking:server:opensafedeposit`
+  - repos (1): rsg-banking
+- `rsg-banking:server:transact`
+  - repos (1): rsg-banking
+- `rsg-barber:client:menu`
+  - repos (1): rsg-barbers
+- `rsg-barber:server:SaveSkin`
+  - repos (1): rsg-barbers
+- `rsg-bathing:client:HideDeluxePrompt`
+  - repos (1): rsg-bathing
+- `rsg-bathing:client:StartBath`
+  - repos (1): rsg-bathing
+- `rsg-bathing:client:StartDeluxeBath`
+  - repos (1): rsg-bathing
+- `rsg-bathing:server:canEnterBath`
+  - repos (1): rsg-bathing
+- `rsg-bathing:server:canEnterDeluxeBath`
+  - repos (1): rsg-bathing
+- `rsg-bathing:server:setBathAsFree`
+  - repos (1): rsg-bathing
+- `rsg-bossmenu:client:HireMenu`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:client:ManageEmployee`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:client:SocetyDeposit`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:client:SocetyWithDraw`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:client:SocietyMenu`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:client:Stash`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:client:employeelist`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:client:mainmenu`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:FireEmployee`
+  - repos (2): rsg-bossmenu, rsg-multijob
+- `rsg-bossmenu:server:GradeUpdate`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:HireEmployee`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:depositMoney`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:openinventory`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:withdrawMoney`
+  - repos (1): rsg-bossmenu
+- `rsg-canteen:client:drink`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:degradecanteen`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:givefullcanteen`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:givefullcanteen25`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:givefullcanteen50`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:givefullcanteen75`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:refillcanteen`
+  - repos (1): rsg-canteen
+- `rsg-consume:client:drink`
+  - repos (1): rsg-consume
+- `rsg-consume:client:drinkcoffee`
+  - repos (1): rsg-consume
+- `rsg-consume:client:eat`
+  - repos (1): rsg-consume
+- `rsg-consume:client:eatcanned`
+  - repos (1): rsg-consume
+- `rsg-consume:client:stew`
+  - repos (1): rsg-consume
+- `rsg-consume:server:removeitem`
+  - repos (1): rsg-consume
+- `rsg-core:client:ChangeText`
+  - repos (1): rsg-core
+- `rsg-core:client:DrawText`
+  - repos (1): rsg-core
+- `rsg-core:client:HideText`
+  - repos (1): rsg-core
+- `rsg-core:client:KeyPressed`
+  - repos (1): rsg-core
+- `rsg-core:client:RemoveWeaponFromTab`
+  - repos (1): rsg-essentials
+- `rsg-discord:getdata`
+  - repos (1): rsg-essentials
+- `rsg-discord:receivedata`
+  - repos (1): rsg-essentials
+- `rsg-doorlock:changedoor`
+  - repos (1): rsg-doorlock
+- `rsg-doorlock:setState`
+  - repos (1): rsg-doorlock
+- `rsg-doorlock:updateState`
+  - repos (1): rsg-doorlock
+- `rsg-doorlock:updatedoorsv`
+  - repos (1): rsg-doorlock
+- `rsg-essentials:client:pvpToggle`
+  - repos (1): rsg-essentials
+- `rsg-fishing:FishToInventory`
+  - repos (1): rsg-fishing
+- `rsg-fishing:client:usebait`
+  - repos (1): rsg-fishing
+- `rsg-fishing:server:removeBaitItem`
+  - repos (1): rsg-fishing
+- `rsg-gangmenu:client:HireMenu`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:ManageEmployee`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:SocetyDeposit`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:SocetyWithDraw`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:SocietyMenu`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:Stash`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:commandmenu`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:employeelist`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:client:mainmenu`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:FireMember`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:GradeUpdate`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:HireMember`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:depositMoney`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:openinventory`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:withdrawMoney`
+  - repos (1): rsg-gangmenu
+- `rsg-horses:client:FleeHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:MenuDel`
+  - repos (1): rsg-horses
+- `rsg-horses:client:OpenHorseShop`
+  - repos (1): rsg-horses
+- `rsg-horses:client:SpawnHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:custShop`
+  - repos (1): rsg-horses
+- `rsg-horses:client:equipHorseLantern`
+  - repos (1): rsg-horses
+- `rsg-horses:client:gethorselocation`
+  - repos (1): rsg-horses
+- `rsg-horses:client:inventoryHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:menu`
+  - repos (1): rsg-horses
+- `rsg-horses:client:movehorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:playerbrushhorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:playerfeedhorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:revivehorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:stablemenu`
+  - repos (1): rsg-horses
+- `rsg-horses:client:storehorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:tradehorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:AcceptTrade`
+  - repos (1): rsg-horses
+- `rsg-horses:server:SaveComponents`
+  - repos (1): rsg-horses
+- `rsg-horses:server:TradeHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:openShop`
+  - repos (1): rsg-horses
+- `rsg-horses:server:openhorseinventory`
+  - repos (1): rsg-horses
+- `rsg-inventory:client:ItemBox`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:closeInv`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:giveAnim`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:hotbar`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:openInventory`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:removeDropTarget`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:setupDropTarget`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:updateHotbar`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:updateInventory`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:SetInventoryData`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:closeInventory`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:openDrop`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:openPlayerInventory`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:openStash`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:openVending`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:updateHotbar`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:useItem`
+  - repos (1): rsg-inventory
+- `rsg-lawman:client:ToggleDuty`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:cuffplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:escortplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:getcuffed`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:getescorted`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:jailplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:lawbadge`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:lawmanAlert`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:mainmenu`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:openarmoury`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:openstorage`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:searchplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:sendtojail`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:SearchPlayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:cuffplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:escortplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:jailplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:lawmanAlert`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:setescortstatus`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:sethandcuffstatus`
+  - repos (1): rsg-lawman
+- `rsg-lockpick:client:openLockpick`
+  - repos (1): rsg-lockpick
+- `rsg-log:server:CreateLog`
+  - repos (1): rsg-essentials
+- `rsg-medic:client:DeathCam`
+  - repos (1): rsg-medic
+- `rsg-medic:client:GetMedicsOnDuty`
+  - repos (1): rsg-medic
+- `rsg-medic:client:HealInjuries`
+  - repos (1): rsg-medic
+- `rsg-medic:client:KillPlayer`
+  - repos (1): rsg-medic
+- `rsg-medic:client:OpenMedicSupplies`
+  - repos (1): rsg-medic
+- `rsg-medic:client:RevivePlayer`
+  - repos (1): rsg-medic
+- `rsg-medic:client:ToggleDuty`
+  - repos (1): rsg-medic
+- `rsg-medic:client:TreatWounds`
+  - repos (1): rsg-medic
+- `rsg-medic:client:adminHeal`
+  - repos (1): rsg-medic
+- `rsg-medic:client:adminRevive`
+  - repos (1): rsg-medic
+- `rsg-medic:client:mainmenu`
+  - repos (1): rsg-medic
+- `rsg-medic:client:medicAlert`
+  - repos (1): rsg-medic
+- `rsg-medic:client:playerRevive`
+  - repos (1): rsg-medic
+- `rsg-medic:client:revive`
+  - repos (1): rsg-medic
+- `rsg-medic:client:storage`
+  - repos (1): rsg-medic
+- `rsg-medic:client:usebandage`
+  - repos (1): rsg-medic
+- `rsg-medic:server:RevivePlayer`
+  - repos (1): rsg-medic
+- `rsg-medic:server:TreatWounds`
+  - repos (1): rsg-medic
+- `rsg-medic:server:deathactions`
+  - repos (1): rsg-medic
+- `rsg-medic:server:medicAlert`
+  - repos (1): rsg-medic
+- `rsg-medic:server:openstash`
+  - repos (1): rsg-medic
+- `rsg-menubase:getData`
+  - repos (1): rsg-menubase
+- `rsg-multicharacter:client:chooseChar`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:client:closeNUI`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:client:unstick`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:createCharacter`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:deleteCharacter`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:disconnect`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:loadUserData`
+  - repos (1): rsg-multicharacter
+- `rsg-multijob:client:choiceMenu`
+  - repos (1): rsg-multijob
+- `rsg-multijob:client:openmenu`
+  - repos (1): rsg-multijob
+- `rsg-multijob:server:changeJob`
+  - repos (1): rsg-multijob
+- `rsg-multijob:server:deleteJob`
+  - repos (1): rsg-multijob
+- `rsg-multijob:server:newJob`
+  - repos (1): rsg-multijob
+- `rsg-playerstats:client:openPlayerStats`
+  - repos (1): rsg-playerinfo
+- `rsg-prison:client:Enter`
+  - repos (1): rsg-prison
+- `rsg-prison:client:freedom`
+  - repos (1): rsg-prison
+- `rsg-prison:client:jailZoneInOut`
+  - repos (1): rsg-prison
+- `rsg-prison:client:menu`
+  - repos (1): rsg-prison
+- `rsg-prison:client:prisonclothes`
+  - repos (1): rsg-prison
+- `rsg-prison:client:shop`
+  - repos (1): rsg-prison
+- `rsg-prison:client:telegrammenu`
+  - repos (1): rsg-prison
+- `rsg-prison:server:CheckRecordStatus`
+  - repos (1): rsg-prison
+- `rsg-prison:server:FreePlayer`
+  - repos (1): rsg-prison
+- `rsg-prison:server:GiveJailItems`
+  - repos (1): rsg-prison
+- `rsg-prison:server:RemovePlayerJob`
+  - repos (1): rsg-prison
+- `rsg-prison:server:SaveJailItems`
+  - repos (1): rsg-prison
+- `rsg-prison:server:resetoutlawstatus`
+  - repos (1): rsg-prison
+- `rsg-prison:server:updateSentance`
+  - repos (1): rsg-prison
+- `rsg-radialmenu:client:SendLawmanEmergencyAlert`
+  - repos (1): rsg-radialmenu
+- `rsg-radialmenu:client:SendMedicEmergencyAlert`
+  - repos (1): rsg-radialmenu
+- `rsg-radialmenu:client:noPlayers`
+  - repos (1): rsg-radialmenu
+- `rsg-river:client:drink`
+  - repos (1): rsg-essentials
+- `rsg-river:client:lavati`
+  - repos (1): rsg-essentials
+- `rsg-shops:server:openstore`
+  - repos (1): rsg-shops
+- `rsg-spawn:client:existingplayer`
+  - repos (1): rsg-spawn
+- `rsg-spawn:client:newplayer`
+  - repos (1): rsg-spawn
+- `rsg-spawn:client:setupSpawnUI`
+  - repos (1): rsg-spawn
+- `rsg-telegram:client:AddPersonMenu`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:InboxList`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:MessageData`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:OpenAddressbook`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:OpenTelegram`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:PickupMessages`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:ReadMessages`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:ReceiveMessage`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:RemovePersonMenu`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:SpawnBirdForSend`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:StartBirdDelivery`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:ViewAddressBook`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:WriteMessage`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:CheckInbox`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:DeleteMessage`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:DeliverySuccess`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:GetMessages`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:MarkAsRead`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:RemovePerson`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:SavePerson`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:SendMessage`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:SendMessagePostOffice`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:SendMessageWithBirdPost`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:ValidateBirdPostSend`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:pickupMessages`
+  - repos (1): rsg-telegram
+- `rsg-wardrobe:client:OnOffClothing`
+  - repos (1): rsg-wardrobe
+- `rsg-wardrobe:client:removeAllClothing`
+  - repos (1): rsg-wardrobe
+- `rsg-waterpump:client:canteenfill`
+  - repos (1): rsg-essentials
+- `rsg-waterpump:client:drinking`
+  - repos (1): rsg-essentials
+- `rsg-weaponcomp:client:ExitCam`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:InspectionWeapon`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:animationSaved`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:confirmpackup`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:createprop`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:equipScope`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:packupgunsite`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:reloadWeapon`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:setupgunzone`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:startcustom`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:unequipScope`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:updatePropData`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:additem`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:check_comps`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:createnewprop`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:getProps`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:removeComponents`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:removegunsiteprops`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:removeitem`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:updateProps`
+  - repos (1): rsg-weaponcomp
+- `rsg-weapons:client:UseEquipment`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:UseThrownWeapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:UseWeapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:brokenweapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:repairbrokenweapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:repairweapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:requestToggle`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:degradeWeapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:removeitem`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:repairweapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:saveEquippedKnife`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:saveEquippedWeapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:toggle`
+  - repos (1): rsg-weapons
+- `txAdmin:events:announcement`
+  - repos (1): ox_lib
+- `txAdmin:events:playerDirectMessage`
+  - repos (1): ox_lib
+- `txAdmin:events:playerWarned`
+  - repos (1): ox_lib
+- `txAdmin:events:scheduledRestart`
+  - repos (2): ox_lib, rsg-essentials
+- `txAdmin:events:serverShuttingDown`
+  - repos (1): rsg-inventory
+- `walkstyles:client:angry`
+  - repos (1): rsg-radialmenu
+- `walkstyles:client:gold_panner`
+  - repos (1): rsg-radialmenu
+- `walkstyles:client:lost_Man`
+  - repos (1): rsg-radialmenu
+- `walkstyles:client:murfree`
+  - repos (1): rsg-radialmenu
+- `walkstyles:client:normal`
+  - repos (1): rsg-radialmenu
+- `walkstyles:client:primate`
+  - repos (1): rsg-radialmenu
+- `walkstyles:client:war_veteran`
+  - repos (1): rsg-radialmenu
+- `weathersync:changeTime`
+  - repos (1): weathersync
+- `weathersync:changeTimescale`
+  - repos (1): weathersync
+- `weathersync:changeWeather`
+  - repos (1): weathersync
+- `weathersync:changeWind`
+  - repos (1): weathersync
+- `weathersync:init`
+  - repos (1): weathersync
+- `weathersync:openAdminUi`
+  - repos (1): weathersync
+- `weathersync:requestUpdatedAdminUi`
+  - repos (1): weathersync
+- `weathersync:requestUpdatedForecast`
+  - repos (1): weathersync
+- `weathersync:resetSyncDelay`
+  - repos (1): weathersync
+- `weathersync:resetTime`
+  - repos (1): weathersync
+- `weathersync:resetTimescale`
+  - repos (1): weathersync
+- `weathersync:resetWeather`
+  - repos (1): weathersync
+- `weathersync:resetWeatherPattern`
+  - repos (1): weathersync
+- `weathersync:resetWind`
+  - repos (1): weathersync
+- `weathersync:setMyTime`
+  - repos (1): weathersync
+- `weathersync:setMyWeather`
+  - repos (1): weathersync
+- `weathersync:setSyncDelay`
+  - repos (1): weathersync
+- `weathersync:setSyncEnabled`
+  - repos (1): weathersync
+- `weathersync:setTime`
+  - repos (1): weathersync
+- `weathersync:setTimescale`
+  - repos (1): weathersync
+- `weathersync:setWeather`
+  - repos (1): weathersync
+- `weathersync:setWeatherPattern`
+  - repos (1): weathersync
+- `weathersync:setWind`
+  - repos (1): weathersync
+- `weathersync:toggleForecast`
+  - repos (1): weathersync
+- `weathersync:toggleSync`
+  - repos (1): weathersync
+- `weathersync:updateAdminUi`
+  - repos (1): weathersync
+- `weathersync:updateForecast`
+  - repos (1): weathersync
+
+## D) Toate TriggerEvent
+
+- `HideAllUI`
+  - repos (2): rsg-essentials, rsg-weaponcomp
+- `RSGCore:Client:OnPlayerLoaded`
+  - repos (1): rsg-spawn
+- `RSGCore:Client:UpdateObject`
+  - repos (1): rsg-core
+- `RSGCore:DebugSomething`
+  - repos (1): rsg-core
+- `RSGCore:Notify`
+  - repos (1): progressbar
+- `RSGCore:Player:SetPlayerData`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnGangUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnJobUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnMoneyChange`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnPlayerUnload`
+  - repos (1): rsg-core
+- `RSGCore:Server:PlayerDropped`
+  - repos (1): rsg-core
+- `RSGCore:Server:PlayerLoaded`
+  - repos (1): rsg-core
+- `RSGCore:Server:SetDuty`
+  - repos (1): rsg-core
+- `RSGCore:Server:UpdateObject`
+  - repos (1): rsg-core
+- `chat:addMessage`
+  - repos (1): weathersync
+- `chat:addSuggestion`
+  - repos (3): ox_lib, rsg-essentials, weathersync
+- `chat:addSuggestions`
+  - repos (1): chat-redm
+- `chat:removeSuggestion`
+  - repos (1): ox_lib
+- `chatMessage`
+  - repos (1): chat-redm
+- `hospital:client:isEscorted`
+  - repos (1): rsg-lawman
+- `hud:client:GainStress`
+  - repos (1): rsg-hud
+- `hud:client:RelieveStress`
+  - repos (1): rsg-consume
+- `hud:client:ToggleEditMode`
+  - repos (1): rsg-hud
+- `hud:client:UpdateCleanliness`
+  - repos (2): rsg-bathing, rsg-essentials
+- `hud:client:UpdateHunger`
+  - repos (1): rsg-consume
+- `hud:client:UpdateNeeds`
+  - repos (1): rsg-medic
+- `hud:client:UpdateStress`
+  - repos (1): rsg-medic
+- `hud:client:UpdateThirst`
+  - repos (3): rsg-canteen, rsg-consume, rsg-essentials
+- `menu_base:closemenu`
+  - repos (1): menu_base
+- `menuapi:closemenu`
+  - repos (1): rsg-menubase
+- `ox_doorlock:loaded`
+  - repos (1): ox_doorlock
+- `ox_doorlock:stateChanged`
+  - repos (1): ox_doorlock
+- `ox_lib:setLocale`
+  - repos (1): ox_lib
+- `progressbar:client:cancel`
+  - repos (1): progressbar
+- `rsg-adminmenu:client:dospawnped`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:playermenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:spawnhorse`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:startanimation`
+  - repos (1): rsg-adminmenu
+- `rsg-appearance:client:ApplyClothes`
+  - repos (1): rsg-appearance
+- `rsg-appearance:client:OpenCreator`
+  - repos (1): rsg-multicharacter
+- `rsg-banking:client:OpenBanking`
+  - repos (1): rsg-banking
+- `rsg-banking:client:safedeposit`
+  - repos (1): rsg-banking
+- `rsg-barber:client:menu`
+  - repos (1): rsg-barbers
+- `rsg-bathing:TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS`
+  - repos (1): rsg-bathing
+- `rsg-consume:client:onConsume`
+  - repos (1): rsg-consume
+- `rsg-gangmenu:client:commandmenu`
+  - repos (1): rsg-gangmenu
+- `rsg-horses:client:FleeHorse`
+  - repos (1): rsg-appearance
+- `rsg-horses:client:inventoryHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:stablemenu`
+  - repos (1): rsg-horses
+- `rsg-inventory:server:itemRemovedFromPlayerInventory`
+  - repos (1): rsg-inventory
+- `rsg-lawman:client:openarmoury`
+  - repos (1): rsg-lawman
+- `rsg-log:server:CreateLog`
+  - repos (10): rsg-adminmenu, rsg-bossmenu, rsg-core, rsg-essentials, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-inventory, rsg-multicharacter, rsg-weaponcomp
+- `rsg-medic:client:DeathCam`
+  - repos (1): rsg-medic
+- `rsg-medic:client:GetMedicsOnDuty`
+  - repos (1): rsg-medic
+- `rsg-medic:client:revive`
+  - repos (1): rsg-medic
+- `rsg-menubase:getData`
+  - repos (4): rsg-appearance, rsg-barbers, rsg-horses, rsg-weaponcomp
+- `rsg-multicharacter:client:chooseChar`
+  - repos (1): rsg-multicharacter
+- `rsg-multijob:client:openmenu`
+  - repos (1): rsg-multijob
+- `rsg-prison:client:Enter`
+  - repos (2): rsg-lawman, rsg-prison
+- `rsg-prison:client:freedom`
+  - repos (1): rsg-prison
+- `rsg-prison:client:jailZoneInOut`
+  - repos (1): rsg-prison
+- `rsg-prison:client:menu`
+  - repos (1): rsg-prison
+- `rsg-prison:client:prisonclothes`
+  - repos (1): rsg-prison
+- `rsg-radialmenu:client:onRadialmenuClose`
+  - repos (1): rsg-radialmenu
+- `rsg-radialmenu:client:onRadialmenuOpen`
+  - repos (1): rsg-radialmenu
+- `rsg-river:client:drink`
+  - repos (1): rsg-essentials
+- `rsg-spawn:client:existingplayer`
+  - repos (1): rsg-spawn
+- `rsg-spawn:client:newplayer`
+  - repos (1): rsg-spawn
+- `rsg-telegram:client:OpenTelegram`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:SpawnBirdForSend`
+  - repos (1): rsg-telegram
+- `rsg-wardrobe:client:removeAllClothing`
+  - repos (1): rsg-bathing
+- `rsg-weaponcomp:client:ExitCam`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:confirmpackup`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:equipScope`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:packupgunsite`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:placegunsiteitem`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:setupgunzone`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:startcustom`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:unequipScope`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:check_comps`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:getProps`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:updateProps`
+  - repos (1): rsg-weaponcomp
+- `rsg-weapons:client:AutoDualWield`
+  - repos (1): rsg-spawn
+- `rsg-weapons:client:UseEquipment`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:UseWeapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:brokenweapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:client:repairbrokenweapon`
+  - repos (1): rsg-weapons
+
+## E) Toate TriggerServerEvent
+
+- `InteractSound_SV:PlayWithinDistance`
+  - repos (2): rsg-lawman, rsg-prison
+- `KickForAFK`
+  - repos (1): rsg-essentials
+- `RSGCore:CallCommand`
+  - repos (1): rsg-radialmenu
+- `RSGCore:DebugSomething`
+  - repos (1): rsg-core
+- `RSGCore:Server:KickCSRF`
+  - repos (1): rsg-core
+- `RSGCore:Server:OnPlayerLoaded`
+  - repos (1): rsg-spawn
+- `RSGCore:Server:SetMetaData`
+  - repos (3): rsg-bathing, rsg-canteen, rsg-medic
+- `RSGCore:Server:TriggerCallback`
+  - repos (1): rsg-core
+- `RSGCore:Server:TriggerClientCallback`
+  - repos (1): rsg-core
+- `RSGCore:ToggleDuty`
+  - repos (3): rsg-lawman, rsg-medic, rsg-multijob
+- `RSGCore:UpdatePlayer`
+  - repos (1): rsg-core
+- `_chat:messageEntered`
+  - repos (1): chat-redm
+- `chat:init`
+  - repos (1): chat-redm
+- `ox_doorlock:breakLockpick`
+  - repos (1): ox_doorlock
+- `ox_doorlock:editDoorlock`
+  - repos (1): ox_doorlock
+- `ox_doorlock:setState`
+  - repos (1): ox_doorlock
+- `ox_doorlock:teleportToDoor`
+  - repos (1): ox_doorlock
+- `ox_lib:progressProps`
+  - repos (1): ox_lib
+- `ox_lib:saveZone`
+  - repos (1): ox_lib
+- `ox_lib:validateCallback`
+  - repos (1): ox_lib
+- `ox_target:setEntityHasOptions`
+  - repos (1): ox_target
+- `rsg-adminmenu:server:banplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:createreport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:deletereport`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:financeadd`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:financeremove`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:giveitem`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:kickplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:replyreport`
+  - repos (1): rsg-adminmenu
+- `rsg-ammo:server:openAmmoBox`
+  - repos (1): rsg-ammo
+- `rsg-ammo:server:updateDb`
+  - repos (1): rsg-ammo
+- `rsg-animations:server:Favorite`
+  - repos (1): rsg-animations
+- `rsg-animations:server:Open`
+  - repos (1): rsg-animations
+- `rsg-appearance:server:DeleteOutfit`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:LoadClothes`
+  - repos (1): rsg-multicharacter
+- `rsg-appearance:server:LoadSkin`
+  - repos (2): rsg-barbers, rsg-multicharacter
+- `rsg-appearance:server:SaveSkin`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:SetPlayerBucket`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:saveOutfit`
+  - repos (1): rsg-appearance
+- `rsg-appearance:server:saveUseOutfit`
+  - repos (1): rsg-appearance
+- `rsg-banking:server:givemoney`
+  - repos (1): rsg-banking
+- `rsg-banking:server:opensafedeposit`
+  - repos (1): rsg-banking
+- `rsg-banking:server:transact`
+  - repos (1): rsg-banking
+- `rsg-barber:server:SaveSkin`
+  - repos (1): rsg-barbers
+- `rsg-bathing:server:canEnterBath`
+  - repos (1): rsg-bathing
+- `rsg-bathing:server:canEnterDeluxeBath`
+  - repos (1): rsg-bathing
+- `rsg-bathing:server:setBathAsFree`
+  - repos (1): rsg-bathing
+- `rsg-bossmenu:server:depositMoney`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:openinventory`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:withdrawMoney`
+  - repos (1): rsg-bossmenu
+- `rsg-canteen:server:degradecanteen`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:givefullcanteen`
+  - repos (2): rsg-canteen, rsg-essentials
+- `rsg-canteen:server:givefullcanteen25`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:givefullcanteen50`
+  - repos (1): rsg-canteen
+- `rsg-canteen:server:givefullcanteen75`
+  - repos (1): rsg-canteen
+- `rsg-consume:server:removeitem`
+  - repos (1): rsg-consume
+- `rsg-discord:getdata`
+  - repos (1): rsg-essentials
+- `rsg-doorlock:updateState`
+  - repos (1): rsg-doorlock
+- `rsg-doorlock:updatedoorsv`
+  - repos (1): rsg-doorlock
+- `rsg-fishing:FishToInventory`
+  - repos (1): rsg-fishing
+- `rsg-fishing:server:removeBaitItem`
+  - repos (1): rsg-fishing
+- `rsg-gangmenu:server:depositMoney`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:openinventory`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:withdrawMoney`
+  - repos (1): rsg-gangmenu
+- `rsg-horses:renameHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:AcceptTrade`
+  - repos (1): rsg-horses
+- `rsg-horses:server:BuyHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:HorseDied`
+  - repos (1): rsg-horses
+- `rsg-horses:server:MoveHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:SaveComponents`
+  - repos (1): rsg-horses
+- `rsg-horses:server:SetHoresActive`
+  - repos (1): rsg-horses
+- `rsg-horses:server:SetHoresUnActive`
+  - repos (1): rsg-horses
+- `rsg-horses:server:SetPlayerBucket`
+  - repos (1): rsg-horses
+- `rsg-horses:server:TradeHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:deletehorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:fleeStoreHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:openShop`
+  - repos (1): rsg-horses
+- `rsg-horses:server:openhorseinventory`
+  - repos (1): rsg-horses
+- `rsg-horses:server:revivehorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:sethorseAttributes`
+  - repos (1): rsg-horses
+- `rsg-inventory:server:SetInventoryData`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:closeInventory`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:openDrop`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:openVending`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:updateHotbar`
+  - repos (1): rsg-inventory
+- `rsg-inventory:server:useItem`
+  - repos (1): rsg-inventory
+- `rsg-lawman:server:SearchPlayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:cuffplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:escortplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:jailplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:lawmanAlert`
+  - repos (2): rsg-lawman, rsg-radialmenu
+- `rsg-lawman:server:setescortstatus`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:sethandcuffstatus`
+  - repos (1): rsg-lawman
+- `rsg-lawman:server:storage`
+  - repos (1): rsg-lawman
+- `rsg-log:server:CreateLog`
+  - repos (2): rsg-adminmenu, rsg-medic
+- `rsg-medic:server:RevivePlayer`
+  - repos (1): rsg-medic
+- `rsg-medic:server:TreatWounds`
+  - repos (1): rsg-medic
+- `rsg-medic:server:deathactions`
+  - repos (1): rsg-medic
+- `rsg-medic:server:medicAlert`
+  - repos (2): rsg-medic, rsg-radialmenu
+- `rsg-medic:server:openstash`
+  - repos (1): rsg-medic
+- `rsg-medic:server:removeitem`
+  - repos (1): rsg-medic
+- `rsg-multicharacter:server:createCharacter`
+  - repos (1): rsg-appearance
+- `rsg-multicharacter:server:deleteCharacter`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:disconnect`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:loadUserData`
+  - repos (1): rsg-multicharacter
+- `rsg-multijob:server:changeJob`
+  - repos (1): rsg-multijob
+- `rsg-multijob:server:deleteJob`
+  - repos (1): rsg-multijob
+- `rsg-multijob:server:newJob`
+  - repos (1): rsg-multijob
+- `rsg-prison:server:FreePlayer`
+  - repos (1): rsg-prison
+- `rsg-prison:server:GiveJailItems`
+  - repos (1): rsg-prison
+- `rsg-prison:server:RemovePlayerJob`
+  - repos (1): rsg-prison
+- `rsg-prison:server:SaveJailItems`
+  - repos (1): rsg-prison
+- `rsg-prison:server:resetoutlawstatus`
+  - repos (2): rsg-medic, rsg-prison
+- `rsg-prison:server:updateSentance`
+  - repos (1): rsg-prison
+- `rsg-shops:server:openstore`
+  - repos (4): rsg-lawman, rsg-medic, rsg-prison, rsg-shops
+- `rsg-telegram:server:CheckInbox`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:DeleteMessage`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:DeliverySuccess`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:GetMessages`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:MarkAsRead`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:ReadMessage`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:RemovePerson`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:SavePerson`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:SendMessagePostOffice`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:ValidateBirdPostSend`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:pickupMessages`
+  - repos (1): rsg-telegram
+- `rsg-weaponcomp:server:additem`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:check_comps`
+  - repos (2): rsg-weaponcomp, rsg-weapons
+- `rsg-weaponcomp:server:createnewprop`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:inspectkitConsume`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:removeComponents`
+  - repos (2): rsg-weaponcomp, rsg-weapons
+- `rsg-weaponcomp:server:removegunsiteprops`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:setComponents`
+  - repos (1): rsg-weaponcomp
+- `rsg-weapons:requestToggle`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:RemoveAllObjects`
+  - repos (1): rsg-wardrobe
+- `rsg-weapons:server:degradeWeapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:removeitem`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:repairweapon`
+  - repos (2): rsg-weaponcomp, rsg-weapons
+- `rsg-weapons:server:saveEquippedKnife`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:saveEquippedWeapon`
+  - repos (1): rsg-weapons
+- `weathersync:init`
+  - repos (1): weathersync
+- `weathersync:requestUpdatedAdminUi`
+  - repos (1): weathersync
+- `weathersync:requestUpdatedForecast`
+  - repos (1): weathersync
+- `weathersync:setSyncDelay`
+  - repos (1): weathersync
+- `weathersync:setTime`
+  - repos (1): weathersync
+- `weathersync:setTimescale`
+  - repos (1): weathersync
+- `weathersync:setWeather`
+  - repos (1): weathersync
+- `weathersync:setWind`
+  - repos (1): weathersync
+
+## F) Toate TriggerClientEvent
+
+- `InteractSound_CL:PlayOnAll`
+  - repos (1): interact-sound
+- `InteractSound_CL:PlayOnOne`
+  - repos (1): interact-sound
+- `InteractSound_CL:PlayWithinDistance`
+  - repos (1): interact-sound
+- `InteractSound_CL:PlayWithinDistanceOS`
+  - repos (1): interact-sound
+- `RSGCore:Client:OnGangUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Client:OnJobUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Client:OnMoneyChange`
+  - repos (1): rsg-core
+- `RSGCore:Client:OnPlayerUnload`
+  - repos (1): rsg-core
+- `RSGCore:Client:OnSharedUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Client:OnSharedUpdateMultiple`
+  - repos (1): rsg-core
+- `RSGCore:Client:PvpHasToggled`
+  - repos (1): rsg-core
+- `RSGCore:Client:SetDuty`
+  - repos (2): rsg-core, rsg-multijob
+- `RSGCore:Client:SharedUpdate`
+  - repos (1): rsg-core
+- `RSGCore:Client:TriggerCallback`
+  - repos (1): rsg-core
+- `RSGCore:Client:TriggerClientCallback`
+  - repos (1): rsg-core
+- `RSGCore:Command:DeleteVehicle`
+  - repos (1): rsg-core
+- `RSGCore:Command:GoToMarker`
+  - repos (1): rsg-core
+- `RSGCore:Command:ShowMe3D`
+  - repos (1): rsg-core
+- `RSGCore:Command:SpawnVehicle`
+  - repos (1): rsg-core
+- `RSGCore:Command:TeleportToCoords`
+  - repos (1): rsg-core
+- `RSGCore:Command:TeleportToPlayer`
+  - repos (1): rsg-core
+- `RSGCore:Command:ToggleNoClip`
+  - repos (1): rsg-core
+- `RSGCore:Player:SetPlayerData`
+  - repos (1): rsg-core
+- `RSGCore:Player:UpdatePlayerData`
+  - repos (1): rsg-core
+- `chat:addMessage`
+  - repos (5): chat-redm, ox_lib, rsg-adminmenu, rsg-core, weathersync
+- `chat:addMode`
+  - repos (1): chat-redm
+- `chat:addSuggestions`
+  - repos (3): chat-redm, ox_lib, rsg-core
+- `chat:removeMode`
+  - repos (1): chat-redm
+- `chat:removeSuggestion`
+  - repos (1): rsg-core
+- `chatMessage`
+  - repos (1): chat-redm
+- `hud:client:OnMoneyChange`
+  - repos (1): rsg-core
+- `hud:client:ShowAccounts`
+  - repos (1): rsg-hud
+- `inventory:client:ItemBox`
+  - repos (1): ox_doorlock
+- `lib.notify`
+  - repos (1): rsg-banking
+- `lib:notify`
+  - repos (1): rsg-inventory
+- `ox_doorlock:editDoorlock`
+  - repos (1): ox_doorlock
+- `ox_doorlock:setState`
+  - repos (1): ox_doorlock
+- `ox_doorlock:triggeredCommand`
+  - repos (1): ox_doorlock
+- `ox_lib:alertDialog`
+  - repos (1): ox_lib
+- `ox_lib:notify`
+  - repos (18): ox_lib, rsg-adminmenu, rsg-appearance, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-core, rsg-doorlock, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-inventory, rsg-lawman, rsg-medic, rsg-multijob, rsg-telegram, rsg-weaponcomp, rsg-weapons
+- `ox_lib:validateCallback`
+  - repos (1): ox_lib
+- `ox_target:removeEntity`
+  - repos (1): ox_target
+- `rNotify:ShowAdvancedRightNotification`
+  - repos (1): rsg-weaponcomp
+- `rsg-adminmenu:client:newreportnotification`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:openadminmenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:openreportmenu`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:playerfire`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:reportreplynotification`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:spectateplayer`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:client:wildattack`
+  - repos (1): rsg-adminmenu
+- `rsg-ammo:client:AddAmmo`
+  - repos (1): rsg-ammo
+- `rsg-ammo:client:openAmmoBox`
+  - repos (1): rsg-ammo
+- `rsg-animations:client:Open`
+  - repos (1): rsg-animations
+- `rsg-appearance:client:ApplyClothes`
+  - repos (1): rsg-wardrobe
+- `rsg-appearance:client:ApplySkin`
+  - repos (1): rsg-appearance
+- `rsg-appearance:client:OpenCreator`
+  - repos (2): rsg-appearance, rsg-multicharacter
+- `rsg-bandana:client:ToggleBandana`
+  - repos (1): rsg-essentials
+- `rsg-banking:client:UpdateBanking`
+  - repos (1): rsg-banking
+- `rsg-bathing:client:HideDeluxePrompt`
+  - repos (1): rsg-bathing
+- `rsg-bathing:client:StartBath`
+  - repos (1): rsg-bathing
+- `rsg-bathing:client:StartDeluxeBath`
+  - repos (1): rsg-bathing
+- `rsg-bossmenu:client:OpenMenu`
+  - repos (1): rsg-bossmenu
+- `rsg-canteen:client:drink`
+  - repos (1): rsg-canteen
+- `rsg-canteen:client:fillupcanteen`
+  - repos (1): rsg-canteen
+- `rsg-core:client:RemoveWeaponFromTab`
+  - repos (1): rsg-inventory
+- `rsg-discord:receivedata`
+  - repos (1): rsg-essentials
+- `rsg-doorlock:changedoor`
+  - repos (1): rsg-doorlock
+- `rsg-doorlock:setState`
+  - repos (1): rsg-doorlock
+- `rsg-fishing:client:usebait`
+  - repos (1): rsg-fishing
+- `rsg-horses:client:equipHorseLantern`
+  - repos (1): rsg-horses
+- `rsg-horses:client:gethorselocation`
+  - repos (1): rsg-horses
+- `rsg-horses:client:playerbrushhorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:playerfeedhorse`
+  - repos (1): rsg-horses
+- `rsg-horses:client:revivehorse`
+  - repos (1): rsg-horses
+- `rsg-inventory:client:ItemBox`
+  - repos (10): rsg-ammo, rsg-canteen, rsg-consume, rsg-fishing, rsg-horses, rsg-inventory, rsg-medic, rsg-telegram, rsg-weaponcomp, rsg-weapons
+- `rsg-inventory:client:closeInv`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:giveAnim`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:hotbar`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:openInventory`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:removeDropTarget`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:setupDropTarget`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:updateHotbar`
+  - repos (1): rsg-inventory
+- `rsg-inventory:client:updateInventory`
+  - repos (2): rsg-core, rsg-inventory
+- `rsg-lawman:client:cuffplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:escortplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:getcuffed`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:getescorted`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:lawbadge`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:lawmanAlert`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:searchplayer`
+  - repos (1): rsg-lawman
+- `rsg-lawman:client:sendtojail`
+  - repos (1): rsg-lawman
+- `rsg-medic:client:HealInjuries`
+  - repos (1): rsg-medic
+- `rsg-medic:client:KillPlayer`
+  - repos (1): rsg-medic
+- `rsg-medic:client:adminHeal`
+  - repos (1): rsg-medic
+- `rsg-medic:client:adminRevive`
+  - repos (2): rsg-adminmenu, rsg-medic
+- `rsg-medic:client:medicAlert`
+  - repos (1): rsg-medic
+- `rsg-medic:client:playerRevive`
+  - repos (1): rsg-medic
+- `rsg-medic:client:usebandage`
+  - repos (1): rsg-medic
+- `rsg-multicharacter:client:chooseChar`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:client:closeNUI`
+  - repos (1): rsg-multicharacter
+- `rsg-multijob:client:openmenu`
+  - repos (1): rsg-multijob
+- `rsg-playerstats:client:openPlayerStats`
+  - repos (1): rsg-playerinfo
+- `rsg-prison:client:freedom`
+  - repos (1): rsg-lawman
+- `rsg-spawn:client:setupSpawnUI`
+  - repos (2): rsg-appearance, rsg-multicharacter
+- `rsg-telegram:client:InboxList`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:MessageData`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:OpenAddressbook`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:OpenTelegram`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:ReadMessages`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:ReceiveMessage`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:StartBirdDelivery`
+  - repos (1): rsg-telegram
+- `rsg-telegram:client:WriteMessage`
+  - repos (1): rsg-telegram
+- `rsg-wardrobe:client:OnOffClothing`
+  - repos (1): rsg-wardrobe
+- `rsg-wardrobe:client:removeAllClothing`
+  - repos (1): rsg-wardrobe
+- `rsg-weaponcomp:client:ExitCam`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:InspectionWeapon`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:animationSaved`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:createprop`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:reloadWeapon`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:client:updatePropData`
+  - repos (1): rsg-weaponcomp
+- `rsg-weapons:client:UseEquipment`
+  - repos (1): rsg-inventory
+- `rsg-weapons:client:UseThrownWeapon`
+  - repos (1): rsg-inventory
+- `rsg-weapons:client:UseWeapon`
+  - repos (2): rsg-inventory, rsg-weapons
+- `rsg-weapons:client:repairweapon`
+  - repos (1): rsg-weapons
+- `rsg-weapons:toggle`
+  - repos (1): rsg-weapons
+- `weathersync:changeTime`
+  - repos (1): weathersync
+- `weathersync:changeTimescale`
+  - repos (1): weathersync
+- `weathersync:changeWeather`
+  - repos (1): weathersync
+- `weathersync:changeWind`
+  - repos (1): weathersync
+- `weathersync:openAdminUi`
+  - repos (1): weathersync
+- `weathersync:setMyTime`
+  - repos (1): weathersync
+- `weathersync:setMyWeather`
+  - repos (1): weathersync
+- `weathersync:toggleForecast`
+  - repos (1): weathersync
+- `weathersync:toggleSync`
+  - repos (1): weathersync
+- `weathersync:updateAdminUi`
+  - repos (1): weathersync
+- `weathersync:updateForecast`
+  - repos (1): weathersync
+
+## G) Toate comenzile RSGCore.Commands.Add
+
+- `accepttrade`
+  - repos (1): rsg-horses
+- `accessories`
+  - repos (1): rsg-wardrobe
+- `addpermission`
+  - repos (1): rsg-core
+- `addressbook`
+  - repos (1): rsg-telegram
+- `adminmenu`
+  - repos (1): rsg-adminmenu
+- `armor`
+  - repos (1): rsg-wardrobe
+- `bandana`
+  - repos (1): rsg-essentials
+- `belt`
+  - repos (1): rsg-wardrobe
+- `bloodmoney`
+  - repos (1): rsg-hud
+- `bloodmoneyclip`
+  - repos (1): rsg-banking
+- `boots`
+  - repos (1): rsg-wardrobe
+- `buckle`
+  - repos (1): rsg-wardrobe
+- `cash`
+  - repos (1): rsg-hud
+- `chaps`
+  - repos (1): rsg-wardrobe
+- `cid`
+  - repos (1): rsg-core
+- `cloak`
+  - repos (1): rsg-wardrobe
+- `closeNUI`
+  - repos (1): rsg-multicharacter
+- `closedcoat`
+  - repos (1): rsg-wardrobe
+- `closeserver`
+  - repos (1): rsg-core
+- `coat`
+  - repos (1): rsg-wardrobe
+- `collar1`
+  - repos (1): rsg-wardrobe
+- `collar2`
+  - repos (1): rsg-wardrobe
+- `cuff`
+  - repos (1): rsg-lawman
+- `dress`
+  - repos (1): rsg-wardrobe
+- `dv`
+  - repos (1): rsg-core
+- `dvall`
+  - repos (1): rsg-core
+- `dvo`
+  - repos (1): rsg-core
+- `dvp`
+  - repos (1): rsg-core
+- `escort`
+  - repos (1): rsg-lawman
+- `eyewear`
+  - repos (1): rsg-wardrobe
+- `findhorse`
+  - repos (1): rsg-horses
+- `gang`
+  - repos (1): rsg-core
+- `gauntlets`
+  - repos (1): rsg-wardrobe
+- `givemoney`
+  - repos (1): rsg-core
+- `gloves`
+  - repos (1): rsg-wardrobe
+- `gunbelt`
+  - repos (1): rsg-wardrobe
+- `hairaccessories`
+  - repos (1): rsg-wardrobe
+- `hat`
+  - repos (1): rsg-wardrobe
+- `heal`
+  - repos (1): rsg-medic
+- `id`
+  - repos (1): rsg-core
+- `info`
+  - repos (1): rsg-playerinfo
+- `jail`
+  - repos (1): rsg-lawman
+- `job`
+  - repos (1): rsg-core
+- `kill`
+  - repos (1): rsg-medic
+- `lawbadge`
+  - repos (1): rsg-lawman
+- `leftholster`
+  - repos (1): rsg-wardrobe
+- `leftring`
+  - repos (1): rsg-wardrobe
+- `loadouts`
+  - repos (1): rsg-wardrobe
+- `logout`
+  - repos (1): rsg-multicharacter
+- `mask`
+  - repos (1): rsg-wardrobe
+- `me`
+  - repos (1): rsg-core
+- `moneyclip`
+  - repos (1): rsg-banking
+- `myjobs`
+  - repos (1): rsg-multijob
+- `neckties`
+  - repos (1): rsg-wardrobe
+- `neckwear`
+  - repos (1): rsg-wardrobe
+- `noclip`
+  - repos (1): rsg-core
+- `ooc`
+  - repos (1): rsg-core
+- `openserver`
+  - repos (1): rsg-core
+- `pants`
+  - repos (1): rsg-wardrobe
+- `poncho`
+  - repos (1): rsg-wardrobe
+- `removegang`
+  - repos (1): rsg-gangmenu
+- `removejob`
+  - repos (1): rsg-multijob
+- `removepermission`
+  - repos (1): rsg-core
+- `report`
+  - repos (1): rsg-adminmenu
+- `revive`
+  - repos (1): rsg-medic
+- `rightring`
+  - repos (1): rsg-wardrobe
+- `satchels`
+  - repos (1): rsg-wardrobe
+- `searchplayer`
+  - repos (1): rsg-lawman
+- `setgang`
+  - repos (1): rsg-core
+- `setjob`
+  - repos (1): rsg-core
+- `setmoney`
+  - repos (1): rsg-core
+- `shirt`
+  - repos (1): rsg-wardrobe
+- `skirt`
+  - repos (1): rsg-wardrobe
+- `sleeve`
+  - repos (1): rsg-wardrobe
+- `suspenders`
+  - repos (1): rsg-wardrobe
+- `telegram`
+  - repos (1): rsg-telegram
+- `testalert`
+  - repos (1): rsg-lawman
+- `testwebhook`
+  - repos (1): rsg-essentials
+- `togglepvp`
+  - repos (1): rsg-core
+- `tp`
+  - repos (1): rsg-core
+- `tpm`
+  - repos (1): rsg-core
+- `undress`
+  - repos (1): rsg-wardrobe
+- `unjail`
+  - repos (1): rsg-lawman
+- `vehicle`
+  - repos (1): rsg-core
+- `vest`
+  - repos (1): rsg-wardrobe
+
+## H) Toate RegisterCommand
+
+- `+`
+  - repos (1): ox_lib
+- `-`
+  - repos (1): ox_lib
+- `cancelprogress`
+  - repos (1): ox_lib
+- `edithud`
+  - repos (1): rsg-hud
+- `forecast`
+  - repos (1): weathersync
+- `gangmenu`
+  - repos (1): rsg-gangmenu
+- `hideui`
+  - repos (1): rsg-essentials
+- `infinityammo`
+  - repos (1): rsg-weapons
+- `loadskin`
+  - repos (1): rsg-appearance
+- `mytime`
+  - repos (1): weathersync
+- `myweather`
+  - repos (1): weathersync
+- `ox_lib`
+  - repos (1): ox_lib
+- `resethud`
+  - repos (1): rsg-hud
+- `say`
+  - repos (1): chat-redm
+- `serversidehotbar`
+  - repos (1): rsg-inventory
+- `sethorsename`
+  - repos (1): rsg-horses
+- `slot_`
+  - repos (1): rsg-inventory
+- `syncdelay`
+  - repos (1): weathersync
+- `time`
+  - repos (1): weathersync
+- `timescale`
+  - repos (1): weathersync
+- `toggleChat`
+  - repos (1): chat-redm
+- `weather`
+  - repos (1): weathersync
+- `weathersync`
+  - repos (1): weathersync
+- `weatherui`
+  - repos (1): weathersync
+- `wind`
+  - repos (1): weathersync
+- `zone`
+  - repos (1): ox_lib
+
+## I) Toate CreateCallback
+
+- `RSGCore:Server:SpawnVehicle`
+  - repos (1): rsg-core
+- `hud:server:getoutlawstatus`
+  - repos (1): rsg-hud
+- `rsg-adminmenu:server:getPlayerData`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:getallreports`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:getmyreports`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:getplayerinfo`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:getplayers`
+  - repos (1): rsg-adminmenu
+- `rsg-adminmenu:server:getreportdetails`
+  - repos (1): rsg-adminmenu
+- `rsg-afkkick:server:GetPermissions`
+  - repos (1): rsg-essentials
+- `rsg-ammo:server:initializeDb`
+  - repos (1): rsg-ammo
+- `rsg-banking:getBankingInformation`
+  - repos (1): rsg-banking
+- `rsg-bossmenu:getplayers`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:GetAccount`
+  - repos (1): rsg-bossmenu
+- `rsg-bossmenu:server:GetEmployees`
+  - repos (1): rsg-bossmenu
+- `rsg-gangmenu:getplayers`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:GetAccount`
+  - repos (1): rsg-gangmenu
+- `rsg-gangmenu:server:GetEmployees`
+  - repos (1): rsg-gangmenu
+- `rsg-horses:server:CheckComponents`
+  - repos (1): rsg-horses
+- `rsg-horses:server:GetActiveHorse`
+  - repos (1): rsg-horses
+- `rsg-horses:server:GetAllHorses`
+  - repos (1): rsg-horses
+- `rsg-lawman:server:getlaw`
+  - repos (1): rsg-lawman
+- `rsg-medic:server:getmedics`
+  - repos (1): rsg-medic
+- `rsg-multicharacter:server:GetNumberOfCharacters`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:getAppearance`
+  - repos (1): rsg-multicharacter
+- `rsg-multicharacter:server:setupCharacters`
+  - repos (1): rsg-multicharacter
+- `rsg-multijob:server:checkjobs`
+  - repos (1): rsg-multijob
+- `rsg-playerstats:server:getPlayerData`
+  - repos (1): rsg-playerinfo
+- `rsg-telegram:server:GetPlayers`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:GetPlayersPostOffice`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:checkWaitingMessages`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:getAddressbook`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:getInbox`
+  - repos (1): rsg-telegram
+- `rsg-telegram:server:getTelegramsAmount`
+  - repos (1): rsg-telegram
+- `rsg-wardrobe:server:getPlayerSkin`
+  - repos (1): rsg-wardrobe
+- `rsg-weaponcomp:server:countprop`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:equipScope`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:getItemBySerial`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:getPlayerWeaponComponents`
+  - repos (1): rsg-weaponcomp
+- `rsg-weaponcomp:server:unequipScope`
+  - repos (1): rsg-weaponcomp
+- `rsg-weapons:server:getEquippedKnives`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:getEquippedWeapons`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:getWeaponBySerial`
+  - repos (1): rsg-weapons
+- `rsg-weapons:server:getweaponinfo`
+  - repos (1): rsg-weapons
+
+## J) Toate CreateClientCallback
+
+
+## K) Toate CreateUseableItem
+
+- `bandage`
+  - repos (1): rsg-medic
+- `blood_money_clip`
+  - repos (1): rsg-banking
+- `canteen0`
+  - repos (1): rsg-canteen
+- `canteen100`
+  - repos (1): rsg-canteen
+- `canteen25`
+  - repos (1): rsg-canteen
+- `canteen50`
+  - repos (1): rsg-canteen
+- `canteen75`
+  - repos (1): rsg-canteen
+- `handcuffs`
+  - repos (1): rsg-lawman
+- `haysnack`
+  - repos (1): rsg-horses
+- `horse_apple`
+  - repos (1): rsg-horses
+- `horse_brush`
+  - repos (1): rsg-horses
+- `horse_carrot`
+  - repos (1): rsg-horses
+- `horse_lantern`
+  - repos (1): rsg-horses
+- `horse_reviver`
+  - repos (1): rsg-horses
+- `horse_stimulant`
+  - repos (1): rsg-horses
+- `horsemeal`
+  - repos (1): rsg-horses
+- `money_clip`
+  - repos (1): rsg-banking
+- `sugarcube`
+  - repos (1): rsg-horses
+- `weapon_repair_kit`
+  - repos (1): rsg-weapons
+
+## L) Toate exports declarate
+
+- `AddGang`
+  - repos (1): rsg-core
+- `AddGangs`
+  - repos (1): rsg-core
+- `AddItem`
+  - repos (2): rsg-core, rsg-inventory
+- `AddItems`
+  - repos (1): rsg-core
+- `AddJob`
+  - repos (1): rsg-core
+- `AddJobToPlayer`
+  - repos (1): rsg-multijob
+- `AddJobs`
+  - repos (1): rsg-core
+- `AddOption`
+  - repos (1): rsg-radialmenu
+- `ApplySkin`
+  - repos (1): rsg-appearance
+- `ApplySkinMultiChar`
+  - repos (1): rsg-appearance
+- `CanAddItem`
+  - repos (1): rsg-inventory
+- `CanTakeNewJob`
+  - repos (1): rsg-multijob
+- `ChangeText`
+  - repos (1): rsg-core
+- `CheckActiveHorse`
+  - repos (1): rsg-horses
+- `CheckHorseBondingLevel`
+  - repos (1): rsg-horses
+- `CheckHorseLevel`
+  - repos (1): rsg-horses
+- `CheckWeaponSerial`
+  - repos (1): rsg-weapons
+- `ClearInventory`
+  - repos (1): rsg-inventory
+- `ClearStash`
+  - repos (1): rsg-inventory
+- `CloseInventory`
+  - repos (1): rsg-inventory
+- `CreateInventory`
+  - repos (1): rsg-inventory
+- `CreateShop`
+  - repos (1): rsg-inventory
+- `DeleteInventory`
+  - repos (1): rsg-inventory
+- `DoesShopExist`
+  - repos (1): rsg-inventory
+- `DrawText`
+  - repos (1): rsg-core
+- `EquippedWeapons`
+  - repos (1): rsg-weapons
+- `ExploitBan`
+  - repos (1): rsg-core
+- `ForceDropItem`
+  - repos (1): rsg-inventory
+- `GenerateCSRFToken`
+  - repos (1): rsg-core
+- `GetAmmoTypes`
+  - repos (1): rsg-ammo
+- `GetBodyComponents`
+  - repos (1): rsg-appearance
+- `GetBodyCurrentComponentHash`
+  - repos (1): rsg-appearance
+- `GetClothesCache`
+  - repos (1): rsg-appearance
+- `GetClothesComponentId`
+  - repos (1): rsg-appearance
+- `GetClothesComponents`
+  - repos (1): rsg-appearance
+- `GetClothesCurrentComponentHash`
+  - repos (1): rsg-appearance
+- `GetComponentId`
+  - repos (1): rsg-appearance
+- `GetComponentsMax`
+  - repos (1): rsg-appearance
+- `GetCoreObject`
+  - repos (1): rsg-core
+- `GetCoreVersion`
+  - repos (1): rsg-core
+- `GetCurrentTemperature`
+  - repos (1): rsg-hud
+- `GetFirstSlotByItem`
+  - repos (1): rsg-inventory
+- `GetFreeWeight`
+  - repos (1): rsg-inventory
+- `GetInventory`
+  - repos (1): rsg-inventory
+- `GetItemByName`
+  - repos (1): rsg-inventory
+- `GetItemBySlot`
+  - repos (1): rsg-inventory
+- `GetItemCount`
+  - repos (1): rsg-inventory
+- `GetItemWeight`
+  - repos (1): rsg-inventory
+- `GetItemsByName`
+  - repos (1): rsg-inventory
+- `GetJobCount`
+  - repos (1): rsg-multijob
+- `GetMaxJobs`
+  - repos (1): rsg-multijob
+- `GetMaxTexturesForModel`
+  - repos (1): rsg-appearance
+- `GetMenuData`
+  - repos (1): rsg-menubase
+- `GetOutlawStatus`
+  - repos (1): rsg-hud
+- `GetPlayerJobs`
+  - repos (1): rsg-multijob
+- `GetSlots`
+  - repos (1): rsg-inventory
+- `GetSlotsByItem`
+  - repos (1): rsg-inventory
+- `GetTotalWeight`
+  - repos (1): rsg-inventory
+- `GetUsedWeapons`
+  - repos (1): rsg-weapons
+- `GetWeapons`
+  - repos (1): rsg-core
+- `HasItem`
+  - repos (1): rsg-inventory
+- `HasJob`
+  - repos (1): rsg-multijob
+- `HideText`
+  - repos (1): rsg-core
+- `IsBathingActive`
+  - repos (1): rsg-bathing
+- `IsBirdPostApproaching`
+  - repos (1): rsg-telegram
+- `IsCothingActive`
+  - repos (1): rsg-appearance
+- `KeyPressed`
+  - repos (1): rsg-core
+- `LoadInventory`
+  - repos (1): rsg-inventory
+- `OpenInventory`
+  - repos (1): rsg-inventory
+- `OpenInventoryById`
+  - repos (1): rsg-inventory
+- `OpenMultijobMenu`
+  - repos (1): rsg-multijob
+- `OpenShop`
+  - repos (1): rsg-inventory
+- `RemoveGang`
+  - repos (1): rsg-core
+- `RemoveItem`
+  - repos (2): rsg-core, rsg-inventory
+- `RemoveJob`
+  - repos (1): rsg-core
+- `RemoveJobFromPlayer`
+  - repos (1): rsg-multijob
+- `RemoveOption`
+  - repos (1): rsg-radialmenu
+- `RemoveWeaponFromPeds`
+  - repos (1): rsg-weapons
+- `RestockShop`
+  - repos (1): rsg-inventory
+- `SaveInventory`
+  - repos (1): rsg-inventory
+- `SaveStash`
+  - repos (1): rsg-inventory
+- `SetBeard`
+  - repos (1): rsg-appearance
+- `SetFaceOverlays`
+  - repos (1): rsg-appearance
+- `SetField`
+  - repos (1): rsg-core
+- `SetHair`
+  - repos (1): rsg-appearance
+- `SetInventory`
+  - repos (1): rsg-inventory
+- `SetItemData`
+  - repos (1): rsg-inventory
+- `SetMethod`
+  - repos (1): rsg-core
+- `UpdateGang`
+  - repos (1): rsg-core
+- `UpdateItem`
+  - repos (1): rsg-core
+- `UpdateJob`
+  - repos (1): rsg-core
+- `UseItem`
+  - repos (1): rsg-inventory
+- `UsedWeapons`
+  - repos (1): rsg-weapons
+- `addMessage`
+  - repos (1): chat-redm
+- `addSuggestion`
+  - repos (1): chat-redm
+- `createPrompt`
+  - repos (1): rsg-core
+- `createPromptGroup`
+  - repos (1): rsg-core
+- `deletePrompt`
+  - repos (1): rsg-core
+- `deletePromptGroup`
+  - repos (1): rsg-core
+- `editDoor`
+  - repos (1): ox_doorlock
+- `getAllDoors`
+  - repos (1): ox_doorlock
+- `getClosestDoor`
+  - repos (1): ox_doorlock
+- `getClosestDoorId`
+  - repos (1): ox_doorlock
+- `getDoor`
+  - repos (1): ox_doorlock
+- `getDoorFromName`
+  - repos (1): ox_doorlock
+- `getDoorIdFromEntity`
+  - repos (1): ox_doorlock
+- `getForecast`
+  - repos (1): weathersync
+- `getLocale`
+  - repos (1): ox_lib
+- `getPrompt`
+  - repos (1): rsg-core
+- `getPromptGroup`
+  - repos (1): rsg-core
+- `getTime`
+  - repos (1): weathersync
+- `getWeather`
+  - repos (1): weathersync
+- `getWind`
+  - repos (1): weathersync
+- `isSnowOnGround`
+  - repos (1): weathersync
+- `pickClosestDoor`
+  - repos (1): ox_doorlock
+- `registerMessageHook`
+  - repos (1): chat-redm
+- `registerMode`
+  - repos (1): chat-redm
+- `resetSyncDelay`
+  - repos (1): weathersync
+- `resetTime`
+  - repos (1): weathersync
+- `resetTimescale`
+  - repos (1): weathersync
+- `resetWeather`
+  - repos (1): weathersync
+- `resetWeatherPattern`
+  - repos (1): weathersync
+- `resetWind`
+  - repos (1): weathersync
+- `setDoorState`
+  - repos (1): ox_doorlock
+- `setMyTime`
+  - repos (1): weathersync
+- `setMyWeather`
+  - repos (1): weathersync
+- `setSyncDelay`
+  - repos (1): weathersync
+- `setSyncEnabled`
+  - repos (1): weathersync
+- `setTime`
+  - repos (1): weathersync
+- `setTimescale`
+  - repos (1): weathersync
+- `setWeather`
+  - repos (1): weathersync
+- `setWeatherPattern`
+  - repos (1): weathersync
+- `setWind`
+  - repos (1): weathersync
+- `toggleSync`
+  - repos (1): weathersync
+- `useClosestDoor`
+  - repos (1): ox_doorlock
+- `weaponInHands`
+  - repos (1): rsg-weapons
+
+## M) Pattern-uri logice detectate (repo-uri)
+
+- `callbacks` -> 19 repo-uri: rsg-adminmenu, rsg-ammo, rsg-appearance, rsg-banking, rsg-bossmenu, rsg-core, rsg-essentials, rsg-gangmenu, rsg-horses, rsg-hud, rsg-lawman, rsg-medic, rsg-multicharacter, rsg-multijob, rsg-playerinfo, rsg-telegram, rsg-wardrobe, rsg-weaponcomp, rsg-weapons
+- `cooldown_table` -> 5 repo-uri: rsg-adminmenu, rsg-doorlock, rsg-fishing, rsg-inventory, rsg-lawman
+- `distance_vector_math` -> 21 repo-uri: interact-sound, ox_doorlock, ox_lib, ox_target, rsg-adminmenu, rsg-appearance, rsg-banking, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-core, rsg-doorlock, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-inventory, rsg-lawman, rsg-medic, rsg-npcs, rsg-telegram, rsg-weaponcomp
+- `inventory_hasitem` -> 7 repo-uri: rsg-core, rsg-essentials, rsg-horses, rsg-lawman, rsg-medic, rsg-weaponcomp, rsg-weapons
+- `money_add_remove` -> 13 repo-uri: rsg-adminmenu, rsg-appearance, rsg-banking, rsg-bathing, rsg-bossmenu, rsg-core, rsg-gangmenu, rsg-horses, rsg-inventory, rsg-medic, rsg-prison, rsg-telegram, rsg-weaponcomp
+- `prompts` -> 10 repo-uri: rsg-banking, rsg-barbers, rsg-bossmenu, rsg-gangmenu, rsg-horses, rsg-lawman, rsg-medic, rsg-multicharacter, rsg-shops, rsg-telegram
+- `statebags` -> 20 repo-uri: ox_lib, ox_target, progressbar, rsg-ammo, rsg-appearance, rsg-bathing, rsg-canteen, rsg-consume, rsg-core, rsg-essentials, rsg-horses, rsg-hud, rsg-inventory, rsg-medic, rsg-menubase, rsg-multicharacter, rsg-prison, rsg-telegram, rsg-weaponcomp, rsg-weapons
+- `validate_player` -> 28 repo-uri: rsg-adminmenu, rsg-ammo, rsg-animations, rsg-appearance, rsg-banking, rsg-barbers, rsg-bathing, rsg-bossmenu, rsg-canteen, rsg-consume, rsg-core, rsg-doorlock, rsg-fishing, rsg-gangmenu, rsg-horses, rsg-hud, rsg-inventory, rsg-lawman, rsg-medic, rsg-multicharacter, rsg-multijob, rsg-playerinfo, rsg-prison, rsg-shops, rsg-telegram, rsg-wardrobe, rsg-weaponcomp, rsg-weapons
+
+## N) Index complet repo-cu-repo
+
+### chat-redm
+
+- URL: https://github.com/Rexshack-RedM/chat-redm
+- Lua files: 3
+
+- functions (10):
+  - `cancel()`
+  - `getMatchingPlayers(seObject)`
+  - `refreshCommands()`
+  - `refreshCommands(player)`
+  - `refreshThemes()`
+  - `routeMessage(source, author, message, mode, fromConsole)`
+  - `setRouting(target)`
+  - `setSeObject(object)`
+  - `unregisterHooks(resource)`
+  - `updateMessage(t)`
+- events_registered (19):
+  - `__cfx_internal:commandFallback`
+  - `__cfx_internal:serverPrint`
+  - `_chat:messageEntered`
+  - `chat:addMessage`
+  - `chat:addMode`
+  - `chat:addSuggestion`
+  - `chat:addSuggestions`
+  - `chat:addTemplate`
+  - `chat:clear`
+  - `chat:init`
+  - `chat:removeMode`
+  - `chat:removeSuggestion`
+  - `chatMessage`
+  - `onClientResourceStart`
+  - `onClientResourceStop`
+  - `onResourceStop`
+  - `onServerResourceStart`
+  - `playerDropped`
+  - `playerJoining`
+- events_triggered (2):
+  - `chat:addSuggestions`
+  - `chatMessage`
+- server_events_triggered (2):
+  - `_chat:messageEntered`
+  - `chat:init`
+- client_events_triggered (5):
+  - `chat:addMessage`
+  - `chat:addMode`
+  - `chat:addSuggestions`
+  - `chat:removeMode`
+  - `chatMessage`
+- commands (0):
+  - (none)
+- register_commands (2):
+  - `say`
+  - `toggleChat`
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (4):
+  - `addMessage`
+  - `addSuggestion`
+  - `registerMessageHook`
+  - `registerMode`
+- logic_patterns (0):
+  - (none)
+
+### interact-sound
+
+- URL: https://github.com/Rexshack-RedM/interact-sound
+- Lua files: 4
+
+- functions (4):
+  - `CheckVersion()`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (7):
+  - `InteractSound_CL:PlayOnAll`
+  - `InteractSound_CL:PlayOnOne`
+  - `InteractSound_CL:PlayWithinDistance`
+  - `InteractSound_SV:PlayOnAll`
+  - `InteractSound_SV:PlayOnOne`
+  - `InteractSound_SV:PlayOnSource`
+  - `InteractSound_SV:PlayWithinDistance`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (4):
+  - `InteractSound_CL:PlayOnAll`
+  - `InteractSound_CL:PlayOnOne`
+  - `InteractSound_CL:PlayWithinDistance`
+  - `InteractSound_CL:PlayWithinDistanceOS`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (1):
+  - `distance_vector_math`
+
+### menu_base
+
+- URL: https://github.com/Rexshack-RedM/menu_base
+- Lua files: 2
+
+- functions (16):
+  - `MenuData.Close(type, namespace, name)`
+  - `MenuData.CloseAll()`
+  - `MenuData.GetOpened(type, namespace, name)`
+  - `MenuData.GetOpenedMenus()`
+  - `MenuData.IsOpen(type, namespace, name)`
+  - `MenuData.Open(type, namespace, name, data, submit, cancel, change, close)`
+  - `MenuData.ReOpen(oldMenu)`
+  - `close(namespace, name)`
+  - `menu.close()`
+  - `menu.refresh()`
+  - `menu.removeElement(query)`
+  - `menu.setElement(i, key, val)`
+  - `menu.setElements(newElements)`
+  - `menu.setTitle(val)`
+  - `menu.update(query, newData)`
+  - `open(namespace, name, data)`
+- events_registered (1):
+  - `menu_base:getData`
+- events_triggered (1):
+  - `menu_base:closemenu`
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### ox_doorlock
+
+- URL: https://github.com/Rexshack-RedM/ox_doorlock
+- Lua files: 10
+
+- functions (27):
+  - `CheckVersion()`
+  - `DoesPlayerHaveItem(player, items, removeItem)`
+  - `GetCharacterId(player)`
+  - `GetPlayer(_)`
+  - `IsPlayerInGroup(player, filter)`
+  - `RemoveItem(playerId, item, slot)`
+  - `addDoorlock(data)`
+  - `canPickLock(entity)`
+  - `createDoor(door)`
+  - `createDoor(id, door, name)`
+  - `encodeData(door)`
+  - `entityIsNotDoor(data)`
+  - `flattenTableToArray(tbl)`
+  - `getDoor(door)`
+  - `getDoorFromEntity(data)`
+  - `getDoorHandPoint(entity)`
+  - `getDoorHashFromEntity(entity)`
+  - `getEntityCenterCoords(entity)`
+  - `isAuthorised(playerId, door, lockpick)`
+  - `isVersionOutdated(current, latest)`
+  - `openUi(id)`
+  - `pickLock(entity)`
+  - `printLog(type, message)`
+  - `setDoorState(id, state, lockpick)`
+  - `splitVersion(v)`
+  - `useClosestDoor()`
+  - `utils.getFilesInDirectory(path, pattern)`
+- events_registered (6):
+  - `onResourceStop`
+  - `ox_doorlock:breakLockpick`
+  - `ox_doorlock:editDoorlock`
+  - `ox_doorlock:setState`
+  - `ox_doorlock:teleportToDoor`
+  - `ox_doorlock:triggeredCommand`
+- events_triggered (2):
+  - `ox_doorlock:loaded`
+  - `ox_doorlock:stateChanged`
+- server_events_triggered (4):
+  - `ox_doorlock:breakLockpick`
+  - `ox_doorlock:editDoorlock`
+  - `ox_doorlock:setState`
+  - `ox_doorlock:teleportToDoor`
+- client_events_triggered (4):
+  - `inventory:client:ItemBox`
+  - `ox_doorlock:editDoorlock`
+  - `ox_doorlock:setState`
+  - `ox_doorlock:triggeredCommand`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (10):
+  - `editDoor`
+  - `getAllDoors`
+  - `getClosestDoor`
+  - `getClosestDoorId`
+  - `getDoor`
+  - `getDoorFromName`
+  - `getDoorIdFromEntity`
+  - `pickClosestDoor`
+  - `setDoorState`
+  - `useClosestDoor`
+- logic_patterns (1):
+  - `distance_vector_math`
+
+### ox_lib
+
+- URL: https://github.com/Rexshack-RedM/ox_lib
+- Lua files: 79
+
+- functions (313):
+  - `ClearInterval(id)`
+  - `GetActivePlayers()`
+  - `GetGamePool(poolName)`
+  - `OxSelector:addSet(setName, items)`
+  - `OxSelector:constructor(sets)`
+  - `OxSelector:getAllSets()`
+  - `OxSelector:getRandom(setName)`
+  - `OxSelector:getRandomAmount(setName, count)`
+  - `OxSelector:getRandomWeighted(setName)`
+  - `OxSelector:getRandomWeightedAmount(setName, count)`
+  - `OxSelector:getSet(setName)`
+  - `OxSelector:removeSet(setName)`
+  - `OxSelector:updateSet(setName, newItems)`
+  - `OxTask:getAbsoluteNextTime()`
+  - `OxTask:getNextTime()`
+  - `OxTask:getTimeAsString(timestamp)`
+  - `OxTask:run()`
+  - `OxTask:scheduleTask()`
+  - `OxTask:stop(msg)`
+  - `RegisterCommand(commandName, callback, restricted)`
+  - `SetInterval(callback, interval, ...)`
+  - `__call()`
+  - `__call(_, event, delay, cb, ...)`
+  - `__call(_, event, playerId, cb, ...)`
+  - `__call(self, key, func, timeout)`
+  - `__index(self, index)`
+  - `__index(self, key)`
+  - `__len()`
+  - `__newindex(self, index, value)`
+  - `__newindex(self, key, fn)`
+  - `__pairs()`
+  - `allowAce(allow)`
+  - `assertType(id, var, expected)`
+  - `badResponse(endpoint, status, response)`
+  - `base64encode(data)`
+  - `box(data)`
+  - `cache(key, func, timeout)`
+  - `cache:set(key, value)`
+  - `calculateTotalWeight(set)`
+  - `call(self, index, ...)`
+  - `callbackResponse(success, result, ...)`
+  - `chatSuggestion(name, parameters, help)`
+  - `closeContext(_, cb, onExit)`
+  - `closeCreator(cancel)`
+  - `commandHandler(source, args, raw)`
+  - `contains(self, coords, updateDistance)`
+  - `contains(tbl, value)`
+  - `convertArgs(argsTable)`
+  - `convertDDTagsToKVP(tags)`
+  - `convertToVector(coords)`
+  - `createProp(ped, prop)`
+  - `debug(...)`
+  - `debugPoly(self)`
+  - `debugSphere(self)`
+  - `deleteProgressProps(serverId)`
+  - `disableControls:Add(...)`
+  - `disableControls:Clear(...)`
+  - `disableControls:Remove(...)`
+  - `drawLines()`
+  - `drawRectangle(rec)`
+  - `error(...)`
+  - `eventTimer(event, delay)`
+  - `firstToUpper(str)`
+  - `flattenDict(source, target, prefix)`
+  - `formatNumber(num)`
+  - `formatTags(source, tags)`
+  - `getAlphanumeric()`
+  - `getAuthorizationHeader(user, password)`
+  - `getConstructor(class)`
+  - `getForwardVector()`
+  - `getGridDimensions(point, length, width)`
+  - `getInt()`
+  - `getLetter()`
+  - `getLowerLetter()`
+  - `getMaxDaysInMonth(month, year)`
+  - `getModuleInfo(modName)`
+  - `getPrintLevelFromConvar()`
+  - `getRelativePos(origin, point, theta)`
+  - `getTimeUnit(value, unit)`
+  - `getTriangles(polygon)`
+  - `handleException(reason, value)`
+  - `hasRemovePoint(entry)`
+  - `info(...)`
+  - `insideSphere(self, coords, updateDistance)`
+  - `interpolateTable(start, finish, factor)`
+  - `interruptProgress(data)`
+  - `isValueInRange(value, unit)`
+  - `keybind_mt:__index(index)`
+  - `keybind_mt:disable(toggle)`
+  - `keybind_mt:getCurrentKey()`
+  - `keybind_mt:isControlPressed()`
+  - `lib.__addCommand(group, name, callback, parameters, help)`
+  - `lib.addAce(principal, ace, allow)`
+  - `lib.addCommand(commandName, properties, cb, ...)`
+  - `lib.addKeybind(data)`
+  - `lib.addPrincipal(child, parent)`
+  - `lib.addRadialItem(items)`
+  - `lib.alertDialog(data, timeout)`
+  - `lib.array.isArray(tbl)`
+  - `lib.array:__newindex(index, value)`
+  - `lib.array:at(index)`
+  - `lib.array:constructor(...)`
+  - `lib.array:every(testFn)`
+  - `lib.array:fill(value, start, endIndex)`
+  - `lib.array:filter(testFn)`
+  - `lib.array:find(testFn, last)`
+  - `lib.array:findIndex(testFn, last)`
+  - `lib.array:forEach(cb)`
+  - `lib.array:from(iter)`
+  - `lib.array:includes(element, fromIndex)`
+  - `lib.array:indexOf(value, last)`
+  - `lib.array:join(seperator)`
+  - `lib.array:map(cb)`
+  - `lib.array:merge(...)`
+  - `lib.array:pop()`
+  - `lib.array:push(...)`
+  - `lib.array:reduce(reducer, initialValue, reverse)`
+  - `lib.array:reverse()`
+  - `lib.array:shift()`
+  - `lib.array:slice(start, finish)`
+  - `lib.array:toReversed()`
+  - `lib.array:unshift(...)`
+  - `lib.cache(key)`
+  - `lib.callback.await(event, delay, ...)`
+  - `lib.callback.await(event, playerId, ...)`
+  - `lib.callback.register(name, cb)`
+  - `lib.cancelProgress()`
+  - `lib.cancelSkillCheck()`
+  - `lib.checkDependency(resource, minimumVersion, printMessage)`
+  - `lib.class(name, super)`
+  - `lib.clearRadialItems()`
+  - `lib.closeAlertDialog(reason)`
+  - `lib.closeInputDialog()`
+  - `lib.cron.new(expression, job, options)`
+  - `lib.defaultNotify(data)`
+  - `lib.disableRadial(state)`
+  - `lib.dui:constructor(data)`
+  - `lib.dui:remove()`
+  - `lib.dui:sendMessage(message)`
+  - `lib.dui:sendMouseDown(button)`
+  - `lib.dui:sendMouseMove(x, y)`
+  - `lib.dui:sendMouseUp(button)`
+  - `lib.dui:sendMouseWheel(deltaX, deltaY)`
+  - `lib.dui:setUrl(url)`
+  - `lib.getClosestObject(coords, maxDistance)`
+  - `lib.getClosestPed(coords, maxDistance)`
+  - `lib.getClosestPlayer(coords, maxDistance, ignorePlayerId)`
+  - `lib.getClosestPlayer(coords, maxDistance, includePlayer)`
+  - `lib.getClosestVehicle(coords, maxDistance, includePlayerVehicle)`
+  - `lib.getCurrentRadialId()`
+  - `lib.getFilesInDirectory(path, pattern)`
+  - `lib.getLocale(resource, key)`
+  - `lib.getLocaleKey()`
+  - `lib.getLocales()`
+  - `lib.getNearbyObjects(coords, maxDistance)`
+  - `lib.getNearbyPeds(coords, maxDistance)`
+  - `lib.getNearbyPlayers(coords, maxDistance)`
+  - `lib.getNearbyPlayers(coords, maxDistance, includePlayer)`
+  - `lib.getNearbyVehicles(coords, maxDistance, includePlayerVehicle)`
+  - `lib.getOpenContextMenu()`
+  - `lib.getOpenMenu()`
+  - `lib.getRelativeCoords(coords, rotation, offset)`
+  - `lib.getVehicleProperties(vehicle)`
+  - `lib.grid.addEntry(entry)`
+  - `lib.grid.getCell(point)`
+  - `lib.grid.getCellPosition(point)`
+  - `lib.grid.getNearbyEntries(point, filter)`
+  - `lib.grid.removeEntry(entry)`
+  - `lib.hasLoaded()`
+  - `lib.hideContext(onExit)`
+  - `lib.hideMenu(onExit)`
+  - `lib.hideRadial()`
+  - `lib.hideTextUI()`
+  - `lib.inputDialog(heading, rows, options)`
+  - `lib.isCallbackValid(callbackName)`
+  - `lib.isTextUIOpen()`
+  - `lib.load(filePath, env)`
+  - `lib.loadJson(filePath)`
+  - `lib.locale(key)`
+  - `lib.logger(source, event, message, ...)`
+  - `lib.marker.new(options)`
+  - `lib.notify(data)`
+  - `lib.notify(playerId, data)`
+  - `lib.onCache(key, cb)`
+  - `lib.playAnim(ped, animDictionary, animationName, blendInSpeed, blendOutSpeed, duration, animFlags, startPhase, phaseControlled, controlFlags, overrideCloneUpdate)`
+  - `lib.points.getAllPoints()`
+  - `lib.points.getClosestPoint()`
+  - `lib.points.getNearbyPoints()`
+  - `lib.points.new(...)`
+  - `lib.progressActive()`
+  - `lib.progressBar(data)`
+  - `lib.progressCircle(data)`
+  - `lib.raycast.fromCamera(flags, ignore, distance)`
+  - `lib.raycast.fromCoords(coords, destination, flags, ignore)`
+  - `lib.registerContext(context)`
+  - `lib.registerMenu(data, cb)`
+  - `lib.registerRadial(radial)`
+  - `lib.removeAce(principal, ace, allow)`
+  - `lib.removePrincipal(child, parent)`
+  - `lib.removeRadialItem(id)`
+  - `lib.requestAnimDict(animDict, timeout)`
+  - `lib.requestAnimSet(animSet, timeout)`
+  - `lib.requestAudioBank(audioBank, timeout)`
+  - `lib.requestModel(model, timeout)`
+  - `lib.requestNamedPtfxAsset(ptFxName, timeout)`
+  - `lib.requestScaleformMovie(scaleformName, timeout)`
+  - `lib.requestStreamedTextureDict(textureDict, timeout)`
+  - `lib.requestWeaponAsset(weaponType, timeout, weaponResourceFlags, extraWeaponComponentFlags)`
+  - `lib.require(modName)`
+  - `lib.resetNuiFocus()`
+  - `lib.scaleform:callMethod(name, args, returnValue)`
+  - `lib.scaleform:constructor(details)`
+  - `lib.scaleform:dispose()`
+  - `lib.scaleform:draw()`
+  - `lib.scaleform:isDrawing()`
+  - `lib.scaleform:setFullScreen(isFullscreen)`
+  - `lib.scaleform:setProperties(x, y, width, height)`
+  - `lib.scaleform:setRenderTarget(name, model)`
+  - `lib.scaleform:startDrawing()`
+  - `lib.scaleform:stopDrawing()`
+  - `lib.setClipboard(value)`
+  - `lib.setLocale(key)`
+  - `lib.setMenuOptions(id, options, index)`
+  - `lib.setNuiFocus(allowInput, disableCursor)`
+  - `lib.setValidCallback(callbackName, isValid)`
+  - `lib.setVehicleProperties(vehicle, props)`
+  - `lib.setVehicleProperties(vehicle, props, fixVehicle)`
+  - `lib.showContext(id)`
+  - `lib.showMenu(id, startIndex)`
+  - `lib.showTextUI(text, options)`
+  - `lib.skillCheck(difficulty, inputs)`
+  - `lib.skillCheckActive()`
+  - `lib.streamingRequest(request, hasLoaded, assetType, asset, timeout, ...)`
+  - `lib.timer(time, onEnd, async)`
+  - `lib.triggerClientEvent(eventName, targetIds, ...)`
+  - `lib.versionCheck(repository)`
+  - `lib.waitFor(cb, errMessage, timeout)`
+  - `lib.zones.box(data)`
+  - `lib.zones.getAllZones()`
+  - `lib.zones.getCurrentZones()`
+  - `lib.zones.getNearbyZones()`
+  - `lib.zones.poly(data)`
+  - `lib.zones.sphere(data)`
+  - `libPrint(level, ...)`
+  - `loadLocale(key)`
+  - `loadLocaleFile(key)`
+  - `loadModule(modName, env)`
+  - `loadModule(self, module)`
+  - `locale(str, ...)`
+  - `map(tbl, fn)`
+  - `marker_mt:draw()`
+  - `math.clamp(val, lower, upper)`
+  - `math.groupdigits(number, seperator)`
+  - `math.hextorgb(input)`
+  - `math.interp(start, finish, factor)`
+  - `math.lerp(start, finish, duration)`
+  - `math.normaltorotation(input)`
+  - `math.round(value, places)`
+  - `math.tohex(n, upper)`
+  - `math.torgba(input)`
+  - `math.toscalars(input, min, max, round)`
+  - `math.tovector(input, min, max, round)`
+  - `method(...)`
+  - `mixins.new(class, ...)`
+  - `mixins:instanceOf(class)`
+  - `mixins:isClass(class)`
+  - `nextFreePoint(points, b, len)`
+  - `noop()`
+  - `onPressed()`
+  - `package.searchpath(name, path)`
+  - `parseArguments(source, args, raw, params)`
+  - `parseCron(value, unit)`
+  - `parseNumber(input, min, max, round)`
+  - `poly(data)`
+  - `rawset(tbl, index, value)`
+  - `refreshRadial(menuId)`
+  - `removeColorCodes(str)`
+  - `removePoint(self)`
+  - `removeZone(zone)`
+  - `retrieveReturnValue(expectedType)`
+  - `round(number)`
+  - `safeGetKvp(fn, key, default)`
+  - `set(key, value)`
+  - `setDebug(self, bool, colour)`
+  - `setZone(data)`
+  - `showRadial(id, option)`
+  - `shuffle(tbl)`
+  - `sphere(data)`
+  - `startCreator(arg, useLast)`
+  - `startProgress(data)`
+  - `string.random(pattern, length)`
+  - `table.freeze(tbl)`
+  - `table.isfrozen(tbl)`
+  - `table_deepclone(tbl)`
+  - `table_matches(t1, t2)`
+  - `table_merge(t1, t2, addDuplicateNumbers)`
+  - `timer:constructor(time, onEnd, async)`
+  - `timer:forceEnd(triggerOnEnd)`
+  - `timer:getTimeLeft(format)`
+  - `timer:isPaused()`
+  - `timer:pause()`
+  - `timer:play()`
+  - `timer:restart(async)`
+  - `timer:run()`
+  - `timer:start(async)`
+  - `toVector(coords)`
+  - `triggerClientCallback(_, event, playerId, cb, ...)`
+  - `triggerServerCallback(_, event, delay, cb, ...)`
+  - `unableToSplit(polygon)`
+  - `updateText()`
+  - `verbose(...)`
+  - `void()`
+  - `warn(...)`
+- events_registered (17):
+  - `onClientResourceStop`
+  - `onPlayerDropped`
+  - `onResourceStop`
+  - `ox_lib:alertDialog`
+  - `ox_lib:defaultNotify`
+  - `ox_lib:notify`
+  - `ox_lib:progressProps`
+  - `ox_lib:saveZone`
+  - `ox_lib:setLocale`
+  - `ox_lib:setVehicleProperties`
+  - `ox_lib:validateCallback`
+  - `playerDropped`
+  - `playerJoining`
+  - `txAdmin:events:announcement`
+  - `txAdmin:events:playerDirectMessage`
+  - `txAdmin:events:playerWarned`
+  - `txAdmin:events:scheduledRestart`
+- events_triggered (3):
+  - `chat:addSuggestion`
+  - `chat:removeSuggestion`
+  - `ox_lib:setLocale`
+- server_events_triggered (3):
+  - `ox_lib:progressProps`
+  - `ox_lib:saveZone`
+  - `ox_lib:validateCallback`
+- client_events_triggered (5):
+  - `chat:addMessage`
+  - `chat:addSuggestions`
+  - `ox_lib:alertDialog`
+  - `ox_lib:notify`
+  - `ox_lib:validateCallback`
+- commands (0):
+  - (none)
+- register_commands (5):
+  - `+`
+  - `-`
+  - `cancelprogress`
+  - `ox_lib`
+  - `zone`
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (1):
+  - `getLocale`
+- logic_patterns (2):
+  - `distance_vector_math`
+  - `statebags`
+
+### ox_target
+
+- URL: https://github.com/Rexshack-RedM/ox_target
+- Lua files: 11
+
+- functions (62):
+  - `CheckVersion()`
+  - `__index(self, index)`
+  - `__newindex(self, index, value)`
+  - `addCustomKeybind(data)`
+  - `addTarget(target, options, resource)`
+  - `api.addBoxZone(data)`
+  - `api.addEntity(arr, options)`
+  - `api.addGlobalObject(options)`
+  - `api.addGlobalOption(options)`
+  - `api.addGlobalPed(options)`
+  - `api.addGlobalPlayer(options)`
+  - `api.addGlobalVehicle(options)`
+  - `api.addLocalEntity(arr, options)`
+  - `api.addModel(arr, options)`
+  - `api.addPolyZone(data)`
+  - `api.addSphereZone(data)`
+  - `api.disableTargeting(value)`
+  - `api.getTargetOptions(entity, _type, model)`
+  - `api.isActive()`
+  - `api.removeEntity(arr, options)`
+  - `api.removeGlobalObject(options)`
+  - `api.removeGlobalOption(options)`
+  - `api.removeGlobalPed(options)`
+  - `api.removeGlobalPlayer(options)`
+  - `api.removeGlobalVehicle(options)`
+  - `api.removeLocalEntity(arr, options)`
+  - `api.removeModel(arr, options)`
+  - `api.removeZone(id, suppressWarning)`
+  - `api.zoneExists(id)`
+  - `checkOptions(options)`
+  - `convert(options)`
+  - `exportHandler(exportName, func)`
+  - `getResponse(option, server)`
+  - `isHashAvailable(hash)`
+  - `isPauseMenuOrMapActive()`
+  - `isVersionOutdated(current, latest)`
+  - `options_mt:set(entity, _type, model)`
+  - `options_mt:wipe()`
+  - `printLog(type, message)`
+  - `removeResourceGlobals(resource, target)`
+  - `removeResourceTargets(resource, target)`
+  - `removeTarget(target, remove, resource, showWarning)`
+  - `setPlayerItems()`
+  - `shouldHide(option, distance, endCoords, entityHit, entityType, entityModel)`
+  - `splitVersion(v)`
+  - `startTargeting()`
+  - `state.isActive()`
+  - `state.isDisabled()`
+  - `state.isNuiFocused()`
+  - `state.setActive(value)`
+  - `state.setDisabled(value)`
+  - `state.setNuiFocus(value, cursor)`
+  - `typeError(variable, expected, received)`
+  - `utils.drawZoneSprites(dict, texture)`
+  - `utils.getItems()`
+  - `utils.getNearbyZones(coords)`
+  - `utils.getTexture()`
+  - `utils.hasExport(export)`
+  - `utils.hasPlayerGotGroup(filter)`
+  - `utils.hasPlayerGotItems(filter, hasAny)`
+  - `utils.raycastFromCamera(flag)`
+  - `utils.warn(msg)`
+- events_registered (7):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `RSGCore:Player:SetPlayerData`
+  - `onClientResourceStop`
+  - `ox_inventory:itemCount`
+  - `ox_target:debug`
+  - `ox_target:removeEntity`
+  - `ox_target:setEntityHasOptions`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (1):
+  - `ox_target:setEntityHasOptions`
+- client_events_triggered (1):
+  - `ox_target:removeEntity`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (2):
+  - `distance_vector_math`
+  - `statebags`
+
+### progressbar
+
+- URL: https://github.com/Rexshack-RedM/progressbar
+- Lua files: 2
+
+- functions (11):
+  - `ActionCleanup()`
+  - `ActionStart()`
+  - `Cancel()`
+  - `DisableActions(ped)`
+  - `Finish()`
+  - `Process(action, start, tick, finish)`
+  - `Progress(action, finish)`
+  - `ProgressWithStartAndTick(action, start, tick, finish)`
+  - `ProgressWithStartEvent(action, start, finish)`
+  - `ProgressWithTickEvent(action, tick, finish)`
+  - `loadAnimDict(dict)`
+- events_registered (6):
+  - `progressbar:client:ProgressWithStartAndTick`
+  - `progressbar:client:ProgressWithStartEvent`
+  - `progressbar:client:ProgressWithTickEvent`
+  - `progressbar:client:ToggleBusyness`
+  - `progressbar:client:cancel`
+  - `progressbar:client:progress`
+- events_triggered (2):
+  - `RSGCore:Notify`
+  - `progressbar:client:cancel`
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (1):
+  - `statebags`
+
+### redm-ipls
+
+- URL: https://github.com/Rexshack-RedM/redm-ipls
+- Lua files: 5
+
+- functions (5):
+  - `ActivateInteriorEntitySets(interior, name, sets)`
+  - `CheckVersion()`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (0):
+  - (none)
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### redm-ymaps
+
+- URL: https://github.com/Rexshack-RedM/redm-ymaps
+- Lua files: 1
+
+- functions (0):
+  - (none)
+- events_registered (0):
+  - (none)
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### rsg-adminmenu
+
+- URL: https://github.com/Rexshack-RedM/rsg-adminmenu
+- Lua files: 14
+
+- functions (16):
+  - `BanPlayer(src)`
+  - `CheckVersion()`
+  - `CopyCoords(data)`
+  - `DrawText3D(x, y, z, text)`
+  - `GetNearbyPlayers(source)`
+  - `GetPlayerDiscord(src)`
+  - `LoadAnimationDic(dict)`
+  - `SendDiscordWebhook(webhookUrl, embed, includeMention)`
+  - `ValidateImageUrl(url)`
+  - `compareNames(a, b)`
+  - `isVersionOutdated(current, latest)`
+  - `onBack()`
+  - `onSelect()`
+  - `printLog(type, message)`
+  - `round(num, numDecimalPlaces)`
+  - `splitVersion(v)`
+- events_registered (67):
+  - `rsg-adminmenu:client:adminoptions`
+  - `rsg-adminmenu:client:adminreplyreport`
+  - `rsg-adminmenu:client:adminreportsmenu`
+  - `rsg-adminmenu:client:adminviewreport`
+  - `rsg-adminmenu:client:banplayer`
+  - `rsg-adminmenu:client:copycoordsmenu`
+  - `rsg-adminmenu:client:createreport`
+  - `rsg-adminmenu:client:deletereport`
+  - `rsg-adminmenu:client:devoptions`
+  - `rsg-adminmenu:client:dospawnped`
+  - `rsg-adminmenu:client:financesoptions`
+  - `rsg-adminmenu:client:gethash`
+  - `rsg-adminmenu:client:giveitem`
+  - `rsg-adminmenu:client:givemoney`
+  - `rsg-adminmenu:client:godmode`
+  - `rsg-adminmenu:client:goinvisible`
+  - `rsg-adminmenu:client:horseoptions`
+  - `rsg-adminmenu:client:kickplayer`
+  - `rsg-adminmenu:client:newreportnotification`
+  - `rsg-adminmenu:client:openadminmenu`
+  - `rsg-adminmenu:client:openreportmenu`
+  - `rsg-adminmenu:client:playerfire`
+  - `rsg-adminmenu:client:playermenu`
+  - `rsg-adminmenu:client:playersfinances`
+  - `rsg-adminmenu:client:playersoptions`
+  - `rsg-adminmenu:client:playerstroll`
+  - `rsg-adminmenu:client:printlist_full`
+  - `rsg-adminmenu:client:printlist_on`
+  - `rsg-adminmenu:client:removemoney`
+  - `rsg-adminmenu:client:replyreport`
+  - `rsg-adminmenu:client:reportactions`
+  - `rsg-adminmenu:client:reportplayeractions`
+  - `rsg-adminmenu:client:reportreplynotification`
+  - `rsg-adminmenu:client:serveroptions`
+  - `rsg-adminmenu:client:spawnhorse`
+  - `rsg-adminmenu:client:spawnped`
+  - `rsg-adminmenu:client:spectateplayer`
+  - `rsg-adminmenu:client:startanimation`
+  - `rsg-adminmenu:client:testanimation`
+  - `rsg-adminmenu:client:toggledoorid`
+  - `rsg-adminmenu:client:toggleplayerblips`
+  - `rsg-adminmenu:client:trolloptions`
+  - `rsg-adminmenu:client:viewmyreports`
+  - `rsg-adminmenu:client:viewnearbyplayers`
+  - `rsg-adminmenu:client:viewreportdetails`
+  - `rsg-adminmenu:client:viewreportmessages`
+  - `rsg-adminmenu:client:wildattack`
+  - `rsg-adminmenu:server:banplayer`
+  - `rsg-adminmenu:server:bringplayer`
+  - `rsg-adminmenu:server:claimreport`
+  - `rsg-adminmenu:server:createreport`
+  - `rsg-adminmenu:server:deletereport`
+  - `rsg-adminmenu:server:financeadd`
+  - `rsg-adminmenu:server:financeremove`
+  - `rsg-adminmenu:server:freezeplayer`
+  - `rsg-adminmenu:server:giveitem`
+  - `rsg-adminmenu:server:gotoplayer`
+  - `rsg-adminmenu:server:kickplayer`
+  - `rsg-adminmenu:server:openinventory`
+  - `rsg-adminmenu:server:playerfire`
+  - `rsg-adminmenu:server:playerinfo`
+  - `rsg-adminmenu:server:playerrevive`
+  - `rsg-adminmenu:server:releasereport`
+  - `rsg-adminmenu:server:replyreport`
+  - `rsg-adminmenu:server:resolvereport`
+  - `rsg-adminmenu:server:spectateplayer`
+  - `rsg-adminmenu:server:wildattack`
+- events_triggered (5):
+  - `rsg-adminmenu:client:dospawnped`
+  - `rsg-adminmenu:client:playermenu`
+  - `rsg-adminmenu:client:spawnhorse`
+  - `rsg-adminmenu:client:startanimation`
+  - `rsg-log:server:CreateLog`
+- server_events_triggered (9):
+  - `rsg-adminmenu:server:banplayer`
+  - `rsg-adminmenu:server:createreport`
+  - `rsg-adminmenu:server:deletereport`
+  - `rsg-adminmenu:server:financeadd`
+  - `rsg-adminmenu:server:financeremove`
+  - `rsg-adminmenu:server:giveitem`
+  - `rsg-adminmenu:server:kickplayer`
+  - `rsg-adminmenu:server:replyreport`
+  - `rsg-log:server:CreateLog`
+- client_events_triggered (10):
+  - `chat:addMessage`
+  - `ox_lib:notify`
+  - `rsg-adminmenu:client:newreportnotification`
+  - `rsg-adminmenu:client:openadminmenu`
+  - `rsg-adminmenu:client:openreportmenu`
+  - `rsg-adminmenu:client:playerfire`
+  - `rsg-adminmenu:client:reportreplynotification`
+  - `rsg-adminmenu:client:spectateplayer`
+  - `rsg-adminmenu:client:wildattack`
+  - `rsg-medic:client:adminRevive`
+- commands (2):
+  - `adminmenu`
+  - `report`
+- register_commands (0):
+  - (none)
+- callbacks (6):
+  - `rsg-adminmenu:server:getPlayerData`
+  - `rsg-adminmenu:server:getallreports`
+  - `rsg-adminmenu:server:getmyreports`
+  - `rsg-adminmenu:server:getplayerinfo`
+  - `rsg-adminmenu:server:getplayers`
+  - `rsg-adminmenu:server:getreportdetails`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (5):
+  - `callbacks`
+  - `cooldown_table`
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `validate_player`
+
+### rsg-ammo
+
+- URL: https://github.com/Rexshack-RedM/rsg-ammo
+- Lua files: 5
+
+- functions (8):
+  - `CheckVersion()`
+  - `_generateAmmoTypesTable()`
+  - `canAddAmmo(ammoType, amount)`
+  - `isVersionOutdated(current, latest)`
+  - `onPlayerLoaded()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+  - `useArrowItem(source, item, ammoType)`
+- events_registered (8):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `onResourceStart`
+  - `onResourceStop`
+  - `rsg-ammo:client:AddAmmo`
+  - `rsg-ammo:client:openAmmoBox`
+  - `rsg-ammo:server:openAmmoBox`
+  - `rsg-ammo:server:removeitem`
+  - `rsg-ammo:server:updateDb`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (2):
+  - `rsg-ammo:server:openAmmoBox`
+  - `rsg-ammo:server:updateDb`
+- client_events_triggered (3):
+  - `rsg-ammo:client:AddAmmo`
+  - `rsg-ammo:client:openAmmoBox`
+  - `rsg-inventory:client:ItemBox`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `rsg-ammo:server:initializeDb`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (1):
+  - `GetAmmoTypes`
+- logic_patterns (3):
+  - `callbacks`
+  - `statebags`
+  - `validate_player`
+
+### rsg-animations
+
+- URL: https://github.com/Rexshack-RedM/rsg-animations
+- Lua files: 8
+
+- functions (5):
+  - `Anim(animDict, animName, duration, flags, introtiming, exittiming)`
+  - `CheckVersion()`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (3):
+  - `rsg-animations:client:Open`
+  - `rsg-animations:server:Favorite`
+  - `rsg-animations:server:Open`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (2):
+  - `rsg-animations:server:Favorite`
+  - `rsg-animations:server:Open`
+- client_events_triggered (1):
+  - `rsg-animations:client:Open`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (1):
+  - `validate_player`
+
+### rsg-appearance
+
+- URL: https://github.com/Rexshack-RedM/rsg-appearance
+- Lua files: 15
+
+- functions (98):
+  - `ApplyOverlays(overlayTarget)`
+  - `ApplySkin()`
+  - `ApplySkinMultiChar(SkinData, Target, ClothesData)`
+  - `BuildHashLookup()`
+  - `CalculatePrice(newClothes, currentClothes, isMale)`
+  - `Change(id, category, change_type)`
+  - `ChangeOverlays(name, visibility, tx_id, tx_normal, tx_material, tx_color_type, tx_opacity, tx_unk, palette_id,
+    palette_color_primary, palette_color_secondary, palette_color_tertiary, var, opacity)`
+  - `CheckVersion()`
+  - `ClothingLight()`
+  - `ConvertCacheToHash(ClothesCache)`
+  - `ConvertHashToCache(hashBasedClothes, isMale)`
+  - `CreateBlips()`
+  - `CreatePedAtCoords(model, coords, isNetworked)`
+  - `DrawText3D(x, y, z, text, color)`
+  - `EndCharacterCreatorCam(anim, anim1)`
+  - `FirstMenu()`
+  - `FixIssues(target)`
+  - `FotoMugshots()`
+  - `GenerateMenu()`
+  - `GetClosestConsumer()`
+  - `GetDescriptionLayout(value, price)`
+  - `GetGender()`
+  - `GetHashHead(aMale,num,color)`
+  - `GetHeadIndex(ped)`
+  - `GetMaxTexturesForModel(category, model, isClothing)`
+  - `GetMetaPedAssetGuids(ped, index)`
+  - `GetPedModel(sex)`
+  - `GetSkinColorFromBodySize(body, color)`
+  - `HasBodyComponentsLoaded(target, hair, beard)`
+  - `InitializeAllCategories(cache, isMale)`
+  - `IsPromptCompleted(name)`
+  - `LoadBeard(target, data)`
+  - `LoadBodyFeature(target, data, bodyFeatureTable)`
+  - `LoadBoody(target, data)`
+  - `LoadEyes(target, data)`
+  - `LoadFeatures(target, data)`
+  - `LoadHair(target, data)`
+  - `LoadHead(target, data)`
+  - `LoadHeight(target, data)`
+  - `LoadModel(target, model)`
+  - `LoadOverlays(target, data)`
+  - `LoadPlayer(model)`
+  - `MainMenu()`
+  - `MenuUpdateClothes(data, menu)`
+  - `NativeFixMeshIssues(ped, categoryHash)`
+  - `NativeGetPedComponentCategory(isFemale, componentHash)`
+  - `NativeHasPedComponentLoaded(ped)`
+  - `NativeSetPedComponentEnabled(ped, componentHash, immediately, isMp)`
+  - `NativeSetPedComponentEnabledClothes(ped, componentHash, immediately, isMp)`
+  - `NativeSetPedFaceFeature(ped, index, value)`
+  - `NativeSetTextureOutfitTints(ped,category,palette,tint0,tint1,tint2)`
+  - `NativeUpdatePedVariation(ped)`
+  - `OpenBodyMenu()`
+  - `OpenCateogry(menu_catagory)`
+  - `OpenCheekbonesMenu()`
+  - `OpenChinMenu()`
+  - `OpenCloakroom()`
+  - `OpenClothingMenu()`
+  - `OpenDefectsMenu()`
+  - `OpenEarsMenu()`
+  - `OpenEyebrowsMenu()`
+  - `OpenEyelidsMenu()`
+  - `OpenEyesMenu()`
+  - `OpenFaceMenu()`
+  - `OpenHairMenu()`
+  - `OpenJawMenu()`
+  - `OpenMakeupMenu()`
+  - `OpenMouthMenu()`
+  - `OpenNoseMenu()`
+  - `Outfits()`
+  - `OutfitsManage(outfit, id)`
+  - `PopulateClothingCache(loadedClothes, isMale)`
+  - `PrepareCreatorMusic()`
+  - `RegisterPrompts()`
+  - `RemoveImaps()`
+  - `SetCamFocusDistance(cam, focus)`
+  - `Setup()`
+  - `SetupScenes(string)`
+  - `ShowBusyspinnerWithText(text)`
+  - `SpawnPeds()`
+  - `StartCharacterCreatorCamera(selected, camera)`
+  - `StartCreator()`
+  - `StartPrompts()`
+  - `StartSelectCam()`
+  - `TakePhoto()`
+  - `TeleportAndFade(coords4, resetCoords)`
+  - `TogglePrompts(data, state)`
+  - `camera(zoom, offset)`
+  - `checkStrings(input)`
+  - `deepcopy(orig)`
+  - `destory()`
+  - `isVersionOutdated(current, latest)`
+  - `modelrequest(model)`
+  - `pairsByKeys(t, f)`
+  - `printLog(type, message)`
+  - `reversedipairs(t)`
+  - `reversedipairsiter(t, i)`
+  - `splitVersion(v)`
+- events_registered (12):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `RSGCore:Client:OnPlayerUnload`
+  - `onResourceStop`
+  - `rsg-appearance:client:ApplyClothes`
+  - `rsg-appearance:client:OpenCreator`
+  - `rsg-appearance:client:outfits`
+  - `rsg-appearance:server:DeleteOutfit`
+  - `rsg-appearance:server:LoadSkin`
+  - `rsg-appearance:server:SaveSkin`
+  - `rsg-appearance:server:SetPlayerBucket`
+  - `rsg-appearance:server:deleteSkin`
+  - `rsg-appearance:server:saveUseOutfit`
+- events_triggered (3):
+  - `rsg-appearance:client:ApplyClothes`
+  - `rsg-horses:client:FleeHorse`
+  - `rsg-menubase:getData`
+- server_events_triggered (6):
+  - `rsg-appearance:server:DeleteOutfit`
+  - `rsg-appearance:server:SaveSkin`
+  - `rsg-appearance:server:SetPlayerBucket`
+  - `rsg-appearance:server:saveOutfit`
+  - `rsg-appearance:server:saveUseOutfit`
+  - `rsg-multicharacter:server:createCharacter`
+- client_events_triggered (4):
+  - `ox_lib:notify`
+  - `rsg-appearance:client:ApplySkin`
+  - `rsg-appearance:client:OpenCreator`
+  - `rsg-spawn:client:setupSpawnUI`
+- commands (0):
+  - (none)
+- register_commands (1):
+  - `loadskin`
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (15):
+  - `ApplySkin`
+  - `ApplySkinMultiChar`
+  - `GetBodyComponents`
+  - `GetBodyCurrentComponentHash`
+  - `GetClothesCache`
+  - `GetClothesComponentId`
+  - `GetClothesComponents`
+  - `GetClothesCurrentComponentHash`
+  - `GetComponentId`
+  - `GetComponentsMax`
+  - `GetMaxTexturesForModel`
+  - `IsCothingActive`
+  - `SetBeard`
+  - `SetFaceOverlays`
+  - `SetHair`
+- logic_patterns (5):
+  - `callbacks`
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `statebags`
+  - `validate_player`
+
+### rsg-banking
+
+- URL: https://github.com/Rexshack-RedM/rsg-banking
+- Lua files: 7
+
+- functions (9):
+  - `CheckVersion()`
+  - `NearPed(npcmodel, npccoords, moneytype)`
+  - `OpenGiveMoneyMenu(targetPlayerId)`
+  - `SendDiscordWebhook(playerName, targetName, amount, transactionType)`
+  - `isVersionOutdated(current, latest)`
+  - `onSelect()`
+  - `onSelect(data)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (8):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `onResourceStop`
+  - `rsg-banking:client:OpenBanking`
+  - `rsg-banking:client:UpdateBanking`
+  - `rsg-banking:client:safedeposit`
+  - `rsg-banking:server:givemoney`
+  - `rsg-banking:server:opensafedeposit`
+  - `rsg-banking:server:transact`
+- events_triggered (2):
+  - `rsg-banking:client:OpenBanking`
+  - `rsg-banking:client:safedeposit`
+- server_events_triggered (3):
+  - `rsg-banking:server:givemoney`
+  - `rsg-banking:server:opensafedeposit`
+  - `rsg-banking:server:transact`
+- client_events_triggered (2):
+  - `lib.notify`
+  - `rsg-banking:client:UpdateBanking`
+- commands (2):
+  - `bloodmoneyclip`
+  - `moneyclip`
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `rsg-banking:getBankingInformation`
+- client_callbacks (0):
+  - (none)
+- useable_items (2):
+  - `blood_money_clip`
+  - `money_clip`
+- exports (0):
+  - (none)
+- logic_patterns (5):
+  - `callbacks`
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `prompts`
+  - `validate_player`
+
+### rsg-barbers
+
+- URL: https://github.com/Rexshack-RedM/rsg-barbers
+- Lua files: 8
+
+- functions (22):
+  - `ApplyOverlays(overlayTarget)`
+  - `ChangeOverlays(name, visibility, tx_id, tx_normal, tx_material, tx_color_type, tx_opacity, tx_unk, palette_id, palette_color_primary, palette_color_secondary, palette_color_tertiary, var, opacity)`
+  - `CheckVersion()`
+  - `ConvertCacheToHash(ClothesCache)`
+  - `GetMaxTexturesForModel(category, model)`
+  - `GetOverlayData()`
+  - `LoadBeard(target, data)`
+  - `LoadHair(target, data)`
+  - `LoadHead(target, data)`
+  - `LoadOverlays(target, data)`
+  - `MainMenu(Target)`
+  - `NativeHasPedComponentLoaded(ped)`
+  - `NativeSetPedComponentEnabled(ped, componentHash, immediately, isMp)`
+  - `NativeSetPedFaceFeature(ped, index, value)`
+  - `NativeUpdatePedVariation(ped)`
+  - `NearPed(npcmodel, npccoords, barberid)`
+  - `OpenHairMenu()`
+  - `OpenMakeupMenu()`
+  - `isVersionOutdated(current, latest)`
+  - `onSelect()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (3):
+  - `onResourceStop`
+  - `rsg-barber:client:menu`
+  - `rsg-barber:server:SaveSkin`
+- events_triggered (2):
+  - `rsg-barber:client:menu`
+  - `rsg-menubase:getData`
+- server_events_triggered (2):
+  - `rsg-appearance:server:LoadSkin`
+  - `rsg-barber:server:SaveSkin`
+- client_events_triggered (1):
+  - `ox_lib:notify`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (3):
+  - `distance_vector_math`
+  - `prompts`
+  - `validate_player`
+
+### rsg-bathing
+
+- URL: https://github.com/Rexshack-RedM/rsg-bathing
+- Lua files: 5
+
+- functions (20):
+  - `Action(name, animscene, town, cam)`
+  - `CheckVersion()`
+  - `CloseBathDoors()`
+  - `CreateBlips()`
+  - `DressCharacter()`
+  - `ExitBathing(animscene, town, cam)`
+  - `ExitPremiumBath(animscene, town, cam, disableScrub)`
+  - `GetClosestConsumer()`
+  - `IsPromptCompleted(name)`
+  - `IsPromptEnabled(name)`
+  - `LoadAllStreamings()`
+  - `LoadModel(model)`
+  - `RegisterPrompts()`
+  - `SetCurrentCleaniest(rag, value)`
+  - `TogglePrompts(data, state)`
+  - `UndressCharacter()`
+  - `UnloadAllStreamings()`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (8):
+  - `onResourceStop`
+  - `playerDropped`
+  - `rsg-bathing:client:HideDeluxePrompt`
+  - `rsg-bathing:client:StartBath`
+  - `rsg-bathing:client:StartDeluxeBath`
+  - `rsg-bathing:server:canEnterBath`
+  - `rsg-bathing:server:canEnterDeluxeBath`
+  - `rsg-bathing:server:setBathAsFree`
+- events_triggered (3):
+  - `hud:client:UpdateCleanliness`
+  - `rsg-bathing:TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS`
+  - `rsg-wardrobe:client:removeAllClothing`
+- server_events_triggered (4):
+  - `RSGCore:Server:SetMetaData`
+  - `rsg-bathing:server:canEnterBath`
+  - `rsg-bathing:server:canEnterDeluxeBath`
+  - `rsg-bathing:server:setBathAsFree`
+- client_events_triggered (4):
+  - `ox_lib:notify`
+  - `rsg-bathing:client:HideDeluxePrompt`
+  - `rsg-bathing:client:StartBath`
+  - `rsg-bathing:client:StartDeluxeBath`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (1):
+  - `IsBathingActive`
+- logic_patterns (4):
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `statebags`
+  - `validate_player`
+
+### rsg-bossmenu
+
+- URL: https://github.com/Rexshack-RedM/rsg-bossmenu
+- Lua files: 5
+
+- functions (9):
+  - `AddMoney(account, amount)`
+  - `CheckVersion()`
+  - `GetAccount(account)`
+  - `RemoveMoney(account, amount)`
+  - `comma_value(amount)`
+  - `isVersionOutdated(current, latest)`
+  - `onBack()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (18):
+  - `RSGCore:Client:OnJobUpdate`
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `onResourceStart`
+  - `onResourceStop`
+  - `rsg-bossmenu:client:HireMenu`
+  - `rsg-bossmenu:client:ManageEmployee`
+  - `rsg-bossmenu:client:SocetyDeposit`
+  - `rsg-bossmenu:client:SocetyWithDraw`
+  - `rsg-bossmenu:client:SocietyMenu`
+  - `rsg-bossmenu:client:Stash`
+  - `rsg-bossmenu:client:employeelist`
+  - `rsg-bossmenu:client:mainmenu`
+  - `rsg-bossmenu:server:FireEmployee`
+  - `rsg-bossmenu:server:GradeUpdate`
+  - `rsg-bossmenu:server:HireEmployee`
+  - `rsg-bossmenu:server:depositMoney`
+  - `rsg-bossmenu:server:openinventory`
+  - `rsg-bossmenu:server:withdrawMoney`
+- events_triggered (1):
+  - `rsg-log:server:CreateLog`
+- server_events_triggered (3):
+  - `rsg-bossmenu:server:depositMoney`
+  - `rsg-bossmenu:server:openinventory`
+  - `rsg-bossmenu:server:withdrawMoney`
+- client_events_triggered (2):
+  - `ox_lib:notify`
+  - `rsg-bossmenu:client:OpenMenu`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (3):
+  - `rsg-bossmenu:getplayers`
+  - `rsg-bossmenu:server:GetAccount`
+  - `rsg-bossmenu:server:GetEmployees`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (5):
+  - `callbacks`
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `prompts`
+  - `validate_player`
+
+### rsg-canteen
+
+- URL: https://github.com/Rexshack-RedM/rsg-canteen
+- Lua files: 5
+
+- functions (6):
+  - `CheckVersion()`
+  - `LoadModel(modelHash)`
+  - `RefillCanteen(src, fromItem)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (7):
+  - `rsg-canteen:client:drink`
+  - `rsg-canteen:server:degradecanteen`
+  - `rsg-canteen:server:givefullcanteen`
+  - `rsg-canteen:server:givefullcanteen25`
+  - `rsg-canteen:server:givefullcanteen50`
+  - `rsg-canteen:server:givefullcanteen75`
+  - `rsg-canteen:server:refillcanteen`
+- events_triggered (1):
+  - `hud:client:UpdateThirst`
+- server_events_triggered (6):
+  - `RSGCore:Server:SetMetaData`
+  - `rsg-canteen:server:degradecanteen`
+  - `rsg-canteen:server:givefullcanteen`
+  - `rsg-canteen:server:givefullcanteen25`
+  - `rsg-canteen:server:givefullcanteen50`
+  - `rsg-canteen:server:givefullcanteen75`
+- client_events_triggered (3):
+  - `rsg-canteen:client:drink`
+  - `rsg-canteen:client:fillupcanteen`
+  - `rsg-inventory:client:ItemBox`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (5):
+  - `canteen0`
+  - `canteen100`
+  - `canteen25`
+  - `canteen50`
+  - `canteen75`
+- exports (0):
+  - (none)
+- logic_patterns (2):
+  - `statebags`
+  - `validate_player`
+
+### rsg-consume
+
+- URL: https://github.com/Rexshack-RedM/rsg-consume
+- Lua files: 5
+
+- functions (16):
+  - `CheckVersion()`
+  - `applyEffect(effectName)`
+  - `attachProp(ped, propName, boneName, x, y, z, rotX, rotY, rotZ)`
+  - `getPed()`
+  - `handleConsumption(itemName, type)`
+  - `handleDrunk(ped)`
+  - `handlePassOut(ped)`
+  - `handleSober(ped)`
+  - `isVersionOutdated(current, latest)`
+  - `playAnim(ped, dict, anim, flag, duration)`
+  - `printLog(type, message)`
+  - `registerConsumables(category, clientEvent)`
+  - `safeDelete(obj)`
+  - `setDrunkEffect(ped, level)`
+  - `splitVersion(v)`
+  - `stopEffect(effectName)`
+- events_registered (6):
+  - `rsg-consume:client:drink`
+  - `rsg-consume:client:drinkcoffee`
+  - `rsg-consume:client:eat`
+  - `rsg-consume:client:eatcanned`
+  - `rsg-consume:client:stew`
+  - `rsg-consume:server:removeitem`
+- events_triggered (4):
+  - `hud:client:RelieveStress`
+  - `hud:client:UpdateHunger`
+  - `hud:client:UpdateThirst`
+  - `rsg-consume:client:onConsume`
+- server_events_triggered (1):
+  - `rsg-consume:server:removeitem`
+- client_events_triggered (1):
+  - `rsg-inventory:client:ItemBox`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (2):
+  - `statebags`
+  - `validate_player`
+
+### rsg-core
+
+- URL: https://github.com/Rexshack-RedM/rsg-core
+- Lua files: 65
+
+- functions (204):
+  - `AddGang(gangName, gang)`
+  - `AddGangs(gangs)`
+  - `AddItem(itemName, item)`
+  - `AddItems(items)`
+  - `AddJob(jobName, job)`
+  - `AddJobs(jobs)`
+  - `CheckVersion()`
+  - `Draw3DText(coords, str)`
+  - `ExploitBan(playerId, origin)`
+  - `GenerateCSRFToken()`
+  - `GetCoreVersion(InvokingResource)`
+  - `Locale.new(_, opts)`
+  - `Locale:clear()`
+  - `Locale:delete(phraseTarget, prefix)`
+  - `Locale:extend(phrases, prefix)`
+  - `Locale:has(key)`
+  - `Locale:locale(newLocale)`
+  - `Locale:replace(phrases)`
+  - `Locale:t(key, subs)`
+  - `PaycheckInterval()`
+  - `PlacePedOnGroundProperly(ped, coord)`
+  - `RSGCore.Commands.Add(name, help, arguments, argsrequired, callback, permission, ...)`
+  - `RSGCore.Commands.Refresh(source)`
+  - `RSGCore.Debug(resource, obj, depth)`
+  - `RSGCore.Debug(tbl, indent)`
+  - `RSGCore.Functions.AddPermission(source, permission)`
+  - `RSGCore.Functions.AddPlayerField(ids, fieldName, data)`
+  - `RSGCore.Functions.AddPlayerMethod(ids, methodName, handler)`
+  - `RSGCore.Functions.AttachProp(ped, model, boneId, x, y, z, xR, yR, zR, vertex)`
+  - `RSGCore.Functions.CanUseItem(item)`
+  - `RSGCore.Functions.ChangeSlots(source, slots)`
+  - `RSGCore.Functions.ChangeWeight(source, weight)`
+  - `RSGCore.Functions.CreateAccountNumber()`
+  - `RSGCore.Functions.CreateCallback(name, cb)`
+  - `RSGCore.Functions.CreateClientCallback(name, cb)`
+  - `RSGCore.Functions.CreateUseableItem(item, data)`
+  - `RSGCore.Functions.CreateVehicle(source, model, vehtype, coords, warp)`
+  - `RSGCore.Functions.DeleteVehicle(vehicle)`
+  - `RSGCore.Functions.DrawText(x, y, width, height, scale, r, g, b, a, text)`
+  - `RSGCore.Functions.DrawText3D(x, y, z, text)`
+  - `RSGCore.Functions.GetBoneDistance(entity, boneType, boneIndex)`
+  - `RSGCore.Functions.GetBucketObjects()`
+  - `RSGCore.Functions.GetCardinalDirection(entity)`
+  - `RSGCore.Functions.GetClosestBone(entity, list)`
+  - `RSGCore.Functions.GetClosestObject(coords)`
+  - `RSGCore.Functions.GetClosestObject(source, coords)`
+  - `RSGCore.Functions.GetClosestPed(coords, ignoreList)`
+  - `RSGCore.Functions.GetClosestPed(source, coords)`
+  - `RSGCore.Functions.GetClosestPlayer(coords)`
+  - `RSGCore.Functions.GetClosestPlayer(source, coords)`
+  - `RSGCore.Functions.GetClosestVehicle(coords)`
+  - `RSGCore.Functions.GetClosestVehicle(source, coords)`
+  - `RSGCore.Functions.GetCoords(entity)`
+  - `RSGCore.Functions.GetCurrentTime()`
+  - `RSGCore.Functions.GetDatabaseInfo()`
+  - `RSGCore.Functions.GetDutyCount(job)`
+  - `RSGCore.Functions.GetEntitiesInBucket(bucket)`
+  - `RSGCore.Functions.GetGroundHash(entity)`
+  - `RSGCore.Functions.GetGroundZCoord(coords)`
+  - `RSGCore.Functions.GetIdentifier(source, idtype)`
+  - `RSGCore.Functions.GetObjects()`
+  - `RSGCore.Functions.GetOfflinePlayerByCitizenId(citizenid)`
+  - `RSGCore.Functions.GetPeds(ignoreList)`
+  - `RSGCore.Functions.GetPermission(source)`
+  - `RSGCore.Functions.GetPlate(vehicle)`
+  - `RSGCore.Functions.GetPlayer(source)`
+  - `RSGCore.Functions.GetPlayerByAccount(account)`
+  - `RSGCore.Functions.GetPlayerByCharInfo(property, value)`
+  - `RSGCore.Functions.GetPlayerByCitizenId(citizenid)`
+  - `RSGCore.Functions.GetPlayerByLicense(license)`
+  - `RSGCore.Functions.GetPlayerData(cb)`
+  - `RSGCore.Functions.GetPlayers()`
+  - `RSGCore.Functions.GetPlayersFromCoords(coords, distance)`
+  - `RSGCore.Functions.GetPlayersInBucket(bucket)`
+  - `RSGCore.Functions.GetPlayersOnDuty(job)`
+  - `RSGCore.Functions.GetRSGPlayers()`
+  - `RSGCore.Functions.GetSource(identifier)`
+  - `RSGCore.Functions.GetStreetNametAtCoords(coords)`
+  - `RSGCore.Functions.GetVehicleLabel(vehicle)`
+  - `RSGCore.Functions.GetVehicleProperties(vehicle)`
+  - `RSGCore.Functions.GetVehicles()`
+  - `RSGCore.Functions.GetZoneAtCoords(coords)`
+  - `RSGCore.Functions.HasItem(items, amount)`
+  - `RSGCore.Functions.HasItem(source, items, amount)`
+  - `RSGCore.Functions.HasPermission(source, permission)`
+  - `RSGCore.Functions.IsLicenseInUse(license)`
+  - `RSGCore.Functions.IsOptin(source)`
+  - `RSGCore.Functions.IsPlayerBanned(source)`
+  - `RSGCore.Functions.IsWearingGloves()`
+  - `RSGCore.Functions.IsWhitelisted(source)`
+  - `RSGCore.Functions.Kick(source, reason, setKickReason, deferrals)`
+  - `RSGCore.Functions.LookAtEntity(entity, timeout, speed)`
+  - `RSGCore.Functions.PlayAnim(animDict, animName, upperbodyOnly, duration)`
+  - `RSGCore.Functions.PrepForSQL(source, data, pattern)`
+  - `RSGCore.Functions.RemovePermission(source, permission)`
+  - `RSGCore.Functions.SetEntityBucket(entity, bucket)`
+  - `RSGCore.Functions.SetPlayerBucket(source, bucket)`
+  - `RSGCore.Functions.SetVehicleProperties(vehicle, props)`
+  - `RSGCore.Functions.SpawnClear(coords, radius)`
+  - `RSGCore.Functions.SpawnVehicle(model, cb, coords, isnetworked, teleportInto)`
+  - `RSGCore.Functions.SpawnVehicle(source, model, coords, warp)`
+  - `RSGCore.Functions.StartParticleAtCoord(dict, ptName, looped, coords, rot, scale, alpha, color, duration)`
+  - `RSGCore.Functions.StartParticleOnEntity(dict, ptName, looped, entity, bone, offset, rot, scale, alpha, color, evolution, duration)`
+  - `RSGCore.Functions.ToggleOptin(source)`
+  - `RSGCore.Functions.TriggerCallback(name, cb, ...)`
+  - `RSGCore.Functions.TriggerCallback(name, source, cb, ...)`
+  - `RSGCore.Functions.TriggerClientCallback(name, cb, ...)`
+  - `RSGCore.Functions.TriggerClientCallback(name, source, cb, ...)`
+  - `RSGCore.Functions.UseItem(source, item)`
+  - `RSGCore.Player.CheckPlayerData(source, PlayerData)`
+  - `RSGCore.Player.CreateCitizenId()`
+  - `RSGCore.Player.CreateFingerId()`
+  - `RSGCore.Player.CreatePlayer(PlayerData, Offline)`
+  - `RSGCore.Player.CreateSerialNumber()`
+  - `RSGCore.Player.CreateWalletId()`
+  - `RSGCore.Player.DeleteCharacter(source, citizenid)`
+  - `RSGCore.Player.ForceDeleteCharacter(citizenid)`
+  - `RSGCore.Player.GetFirstSlotByItem(items, itemName)`
+  - `RSGCore.Player.GetOfflinePlayer(citizenid)`
+  - `RSGCore.Player.GetOfflinePlayerByLicense(license)`
+  - `RSGCore.Player.GetPlayerByLicense(license)`
+  - `RSGCore.Player.GetSlotsByItem(items, itemName)`
+  - `RSGCore.Player.GetTotalWeight(items)`
+  - `RSGCore.Player.Login(source, citizenid, newData)`
+  - `RSGCore.Player.Logout(source)`
+  - `RSGCore.Player.Save(source)`
+  - `RSGCore.Player.SaveInventory(source)`
+  - `RSGCore.Player.SaveOffline(PlayerData)`
+  - `RSGCore.Player.SaveOfflineInventory(PlayerData)`
+  - `RSGCore.ShowError(resource, msg)`
+  - `RSGCore.ShowSuccess(resource, msg)`
+  - `RSGShared.ChangeVehicleExtra(vehicle, extra, enable)`
+  - `RSGShared.FirstToUpper(value)`
+  - `RSGShared.RandomInt(length)`
+  - `RSGShared.RandomStr(length)`
+  - `RSGShared.Round(value, numDecimalPlaces)`
+  - `RSGShared.SetDefaultVehicleExtras(vehicle, config)`
+  - `RSGShared.SplitStr(str, delimiter)`
+  - `RSGShared.Trim(value)`
+  - `RemoveGang(gangName)`
+  - `RemoveItem(itemName)`
+  - `RemoveJob(jobName)`
+  - `SetField(fieldName, data)`
+  - `SetMethod(methodName, handler)`
+  - `SynchronizeMoneyItems(playerData)`
+  - `UpdateGang(gangName, gang)`
+  - `UpdateItem(itemName, item)`
+  - `UpdateJob(jobName, job)`
+  - `account()`
+  - `applyDefaults(playerData, defaults)`
+  - `bloodtype()`
+  - `calculateTotal(dollars, cents)`
+  - `changeText(text, position)`
+  - `citizenid()`
+  - `createPrompt(name, coords, key, text, options)`
+  - `createPromptGroup(group, label, coords, prompts)`
+  - `deletePrompt(name)`
+  - `deletePromptGroup(name)`
+  - `drawText(text, position)`
+  - `executeOptions(options)`
+  - `fingerprint()`
+  - `getInventoryMoney(playerData)`
+  - `getParts(number)`
+  - `getPrompt()`
+  - `getPromptGroup()`
+  - `handleAddMoney(src, moneytype, amount)`
+  - `handleRemoveMoney(src, moneytype, amount)`
+  - `handleSetMoney(src, moneytype, amount)`
+  - `hideText()`
+  - `isVersionOutdated(current, latest)`
+  - `keyPressed()`
+  - `money()`
+  - `onPlayerConnecting(name, _, deferrals)`
+  - `printLog(type, message)`
+  - `removeAllItems(itemName)`
+  - `removeItems(player, itemName, amountToRemove)`
+  - `self.Functions.AddField(fieldName, data)`
+  - `self.Functions.AddMethod(methodName, handler)`
+  - `self.Functions.AddMoney(moneytype, amount, reason)`
+  - `self.Functions.AddRep(rep, amount)`
+  - `self.Functions.GetMetaData(meta)`
+  - `self.Functions.GetMoney(moneytype)`
+  - `self.Functions.GetRep(rep)`
+  - `self.Functions.HasItem(items, amount)`
+  - `self.Functions.InitializeStateBags()`
+  - `self.Functions.Logout()`
+  - `self.Functions.PersistStateBags()`
+  - `self.Functions.RemoveMoney(moneytype, amount, reason)`
+  - `self.Functions.RemoveRep(rep, amount)`
+  - `self.Functions.Save()`
+  - `self.Functions.SetGang(gang, grade)`
+  - `self.Functions.SetJob(job, grade)`
+  - `self.Functions.SetJobDuty(onDuty)`
+  - `self.Functions.SetMetaData(meta, val)`
+  - `self.Functions.SetMoney(moneytype, amount, reason)`
+  - `self.Functions.SetPlayerData(key, val)`
+  - `self.Functions.UpdatePlayerData()`
+  - `setupPrompt(prompt)`
+  - `setupPromptGroup(prompt)`
+  - `splitVersion(v)`
+  - `tPrint(tbl, indent)`
+  - `translateKey(phrase, subs)`
+  - `validateData(key, value)`
+  - `walletid()`
+- events_registered (41):
+  - `RSGCore:CallCommand`
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `RSGCore:Client:OnPlayerUnload`
+  - `RSGCore:Client:OnSharedUpdate`
+  - `RSGCore:Client:OnSharedUpdateMultiple`
+  - `RSGCore:Client:PvpHasToggled`
+  - `RSGCore:Client:SharedUpdate`
+  - `RSGCore:Client:TriggerCallback`
+  - `RSGCore:Client:TriggerClientCallback`
+  - `RSGCore:Client:UseItem`
+  - `RSGCore:Command:DeleteVehicle`
+  - `RSGCore:Command:GoToMarker`
+  - `RSGCore:Command:ShowMe3D`
+  - `RSGCore:Command:SpawnVehicle`
+  - `RSGCore:Command:TeleportToCoords`
+  - `RSGCore:Command:TeleportToPlayer`
+  - `RSGCore:Command:ToggleNoClip`
+  - `RSGCore:Player:SetPlayerData`
+  - `RSGCore:Player:UpdatePlayerData`
+  - `RSGCore:Server:AddItem`
+  - `RSGCore:Server:CloseServer`
+  - `RSGCore:Server:KickCSRF`
+  - `RSGCore:Server:OnMoneyChange`
+  - `RSGCore:Server:OnPlayerLoaded`
+  - `RSGCore:Server:OpenServer`
+  - `RSGCore:Server:PlayerLoaded`
+  - `RSGCore:Server:RemoveItem`
+  - `RSGCore:Server:SetMetaData`
+  - `RSGCore:Server:TriggerCallback`
+  - `RSGCore:Server:TriggerClientCallback`
+  - `RSGCore:Server:UseItem`
+  - `RSGCore:ToggleDuty`
+  - `RSGCore:UpdatePlayer`
+  - `chatMessage`
+  - `onResourceStop`
+  - `playerConnecting`
+  - `playerDropped`
+  - `rsg-core:client:ChangeText`
+  - `rsg-core:client:DrawText`
+  - `rsg-core:client:HideText`
+  - `rsg-core:client:KeyPressed`
+- events_triggered (12):
+  - `RSGCore:Client:UpdateObject`
+  - `RSGCore:DebugSomething`
+  - `RSGCore:Player:SetPlayerData`
+  - `RSGCore:Server:OnGangUpdate`
+  - `RSGCore:Server:OnJobUpdate`
+  - `RSGCore:Server:OnMoneyChange`
+  - `RSGCore:Server:OnPlayerUnload`
+  - `RSGCore:Server:PlayerDropped`
+  - `RSGCore:Server:PlayerLoaded`
+  - `RSGCore:Server:SetDuty`
+  - `RSGCore:Server:UpdateObject`
+  - `rsg-log:server:CreateLog`
+- server_events_triggered (5):
+  - `RSGCore:DebugSomething`
+  - `RSGCore:Server:KickCSRF`
+  - `RSGCore:Server:TriggerCallback`
+  - `RSGCore:Server:TriggerClientCallback`
+  - `RSGCore:UpdatePlayer`
+- client_events_triggered (26):
+  - `RSGCore:Client:OnGangUpdate`
+  - `RSGCore:Client:OnJobUpdate`
+  - `RSGCore:Client:OnMoneyChange`
+  - `RSGCore:Client:OnPlayerUnload`
+  - `RSGCore:Client:OnSharedUpdate`
+  - `RSGCore:Client:OnSharedUpdateMultiple`
+  - `RSGCore:Client:PvpHasToggled`
+  - `RSGCore:Client:SetDuty`
+  - `RSGCore:Client:SharedUpdate`
+  - `RSGCore:Client:TriggerCallback`
+  - `RSGCore:Client:TriggerClientCallback`
+  - `RSGCore:Command:DeleteVehicle`
+  - `RSGCore:Command:GoToMarker`
+  - `RSGCore:Command:ShowMe3D`
+  - `RSGCore:Command:SpawnVehicle`
+  - `RSGCore:Command:TeleportToCoords`
+  - `RSGCore:Command:TeleportToPlayer`
+  - `RSGCore:Command:ToggleNoClip`
+  - `RSGCore:Player:SetPlayerData`
+  - `RSGCore:Player:UpdatePlayerData`
+  - `chat:addMessage`
+  - `chat:addSuggestions`
+  - `chat:removeSuggestion`
+  - `hud:client:OnMoneyChange`
+  - `ox_lib:notify`
+  - `rsg-inventory:client:updateInventory`
+- commands (23):
+  - `addpermission`
+  - `cid`
+  - `closeserver`
+  - `dv`
+  - `dvall`
+  - `dvo`
+  - `dvp`
+  - `gang`
+  - `givemoney`
+  - `id`
+  - `job`
+  - `me`
+  - `noclip`
+  - `ooc`
+  - `openserver`
+  - `removepermission`
+  - `setgang`
+  - `setjob`
+  - `setmoney`
+  - `togglepvp`
+  - `tp`
+  - `tpm`
+  - `vehicle`
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `RSGCore:Server:SpawnVehicle`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (29):
+  - `AddGang`
+  - `AddGangs`
+  - `AddItem`
+  - `AddItems`
+  - `AddJob`
+  - `AddJobs`
+  - `ChangeText`
+  - `DrawText`
+  - `ExploitBan`
+  - `GenerateCSRFToken`
+  - `GetCoreObject`
+  - `GetCoreVersion`
+  - `GetWeapons`
+  - `HideText`
+  - `KeyPressed`
+  - `RemoveGang`
+  - `RemoveItem`
+  - `RemoveJob`
+  - `SetField`
+  - `SetMethod`
+  - `UpdateGang`
+  - `UpdateItem`
+  - `UpdateJob`
+  - `createPrompt`
+  - `createPromptGroup`
+  - `deletePrompt`
+  - `deletePromptGroup`
+  - `getPrompt`
+  - `getPromptGroup`
+- logic_patterns (6):
+  - `callbacks`
+  - `distance_vector_math`
+  - `inventory_hasitem`
+  - `money_add_remove`
+  - `statebags`
+  - `validate_player`
+
+### rsg-discord
+
+- URL: https://github.com/Rexshack-RedM/rsg-discord
+- Lua files: 2
+
+- functions (0):
+  - (none)
+- events_registered (0):
+  - (none)
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### rsg-docs
+
+- URL: https://github.com/Rexshack-RedM/rsg-docs
+- Lua files: 0
+
+- functions (0):
+  - (none)
+- events_registered (0):
+  - (none)
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### rsg-doorlock
+
+- URL: https://github.com/Rexshack-RedM/rsg-doorlock
+- Lua files: 5
+
+- functions (5):
+  - `CheckVersion()`
+  - `IsAuthorized(jobName, doorID)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (5):
+  - `onResourceStop`
+  - `rsg-doorlock:changedoor`
+  - `rsg-doorlock:setState`
+  - `rsg-doorlock:updateState`
+  - `rsg-doorlock:updatedoorsv`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (2):
+  - `rsg-doorlock:updateState`
+  - `rsg-doorlock:updatedoorsv`
+- client_events_triggered (3):
+  - `ox_lib:notify`
+  - `rsg-doorlock:changedoor`
+  - `rsg-doorlock:setState`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (3):
+  - `cooldown_table`
+  - `distance_vector_math`
+  - `validate_player`
+
+### rsg-essentials
+
+- URL: https://github.com/Rexshack-RedM/rsg-essentials
+- Lua files: 27
+
+- functions (26):
+  - `CheckVersion()`
+  - `DataStream.New(view)`
+  - `DataView.ArrayBuffer(length)`
+  - `DataView.Wrap(blob)`
+  - `DataView:Buffer()`
+  - `DataView:ByteLength()`
+  - `DataView:ByteOffset()`
+  - `DataView:SubView(offset)`
+  - `DrinkPrompt()`
+  - `EnableEagleeye(player, enable)`
+  - `HandleEagleEyeAccess()`
+  - `LoadAnim(dic)`
+  - `RemoveWeapon(weaponName)`
+  - `SetFixed(self, offset, value, code)`
+  - `ShouldEnableEagleEye(job)`
+  - `StartWash(dic, anim)`
+  - `WashPrompt()`
+  - `_ef(big)`
+  - `_ib(o, l, t)`
+  - `canInteract(_, distance)`
+  - `givePlayerWeapon(weaponName, attachPoint)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+  - `updatePermissionLevel()`
+  - `whenKeyJustPressed(key)`
+- events_registered (18):
+  - `KickForAFK`
+  - `RSGCore:Client:OnJobUpdate`
+  - `RSGCore:Client:OnPermissionUpdate`
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `RSGCore:Client:OnPlayerUnload`
+  - `onResourceStart`
+  - `onResourceStop`
+  - `rsg-bandana:client:ToggleBandana`
+  - `rsg-core:client:RemoveWeaponFromTab`
+  - `rsg-discord:getdata`
+  - `rsg-discord:receivedata`
+  - `rsg-essentials:client:pvpToggle`
+  - `rsg-log:server:CreateLog`
+  - `rsg-river:client:drink`
+  - `rsg-river:client:lavati`
+  - `rsg-waterpump:client:canteenfill`
+  - `rsg-waterpump:client:drinking`
+  - `txAdmin:events:scheduledRestart`
+- events_triggered (6):
+  - `HideAllUI`
+  - `chat:addSuggestion`
+  - `hud:client:UpdateCleanliness`
+  - `hud:client:UpdateThirst`
+  - `rsg-log:server:CreateLog`
+  - `rsg-river:client:drink`
+- server_events_triggered (3):
+  - `KickForAFK`
+  - `rsg-canteen:server:givefullcanteen`
+  - `rsg-discord:getdata`
+- client_events_triggered (2):
+  - `rsg-bandana:client:ToggleBandana`
+  - `rsg-discord:receivedata`
+- commands (2):
+  - `bandana`
+  - `testwebhook`
+- register_commands (1):
+  - `hideui`
+- callbacks (1):
+  - `rsg-afkkick:server:GetPermissions`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (3):
+  - `callbacks`
+  - `inventory_hasitem`
+  - `statebags`
+
+### rsg-fishing
+
+- URL: https://github.com/Rexshack-RedM/rsg-fishing
+- Lua files: 5
+
+- functions (33):
+  - `CheckVersion()`
+  - `FISHING_GET_BOBBER_HANDLE()`
+  - `FISHING_GET_CALCULATED_FISH_WEIGHT()`
+  - `FISHING_GET_FISH_HANDLE()`
+  - `FISHING_GET_F_(f)`
+  - `FISHING_GET_F_9()`
+  - `FISHING_GET_HOOK_HANDLE()`
+  - `FISHING_GET_LINE_DISTANCE()`
+  - `FISHING_GET_MAX_THROWING_DISTANCE()`
+  - `FISHING_GET_MINIGAME_STATE()`
+  - `FISHING_GET_SCRIPT_TIMER()`
+  - `FISHING_GET_TRANSITION_FLAG()`
+  - `FISHING_HAS_MINIGAME_ON()`
+  - `FISHING_SET_CALCULATED_FISH_WEIGHT(v)`
+  - `FISHING_SET_FISH_HANDLE(v)`
+  - `FISHING_SET_F_(f, v)`
+  - `FISHING_SET_LINE_DISTANCE(v)`
+  - `FISHING_SET_ROD_POSITION_LR(v)`
+  - `FISHING_SET_ROD_POSITION_UD(v)`
+  - `FISHING_SET_ROD_WEIGHT(v)`
+  - `FISHING_SET_TRANSITION_FLAG(v)`
+  - `FishModelToSomeSortOfWeightIndex(fishModel)`
+  - `GET_TASK_FISHING_DATA()`
+  - `GetMinMaxWeightForWeightIndex(index)`
+  - `GetNearbyFishs(coords, radius)`
+  - `GetRandomFishWeightForWeightIndex(index)`
+  - `SET_TASK_FISHING_DATA()`
+  - `initBait()`
+  - `isFishInterested(fishModel)`
+  - `isVersionOutdated(current, latest)`
+  - `prepareMyPrompt()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (5):
+  - `onResourceStart`
+  - `onResourceStop`
+  - `rsg-fishing:FishToInventory`
+  - `rsg-fishing:client:usebait`
+  - `rsg-fishing:server:removeBaitItem`
+- events_triggered (1):
+  - `rsg-log:server:CreateLog`
+- server_events_triggered (2):
+  - `rsg-fishing:FishToInventory`
+  - `rsg-fishing:server:removeBaitItem`
+- client_events_triggered (3):
+  - `ox_lib:notify`
+  - `rsg-fishing:client:usebait`
+  - `rsg-inventory:client:ItemBox`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (3):
+  - `cooldown_table`
+  - `distance_vector_math`
+  - `validate_player`
+
+### rsg-gangmenu
+
+- URL: https://github.com/Rexshack-RedM/rsg-gangmenu
+- Lua files: 5
+
+- functions (10):
+  - `AddGangMoney(account, amount)`
+  - `CheckVersion()`
+  - `CreateGangBlips()`
+  - `GetGangAccount(account)`
+  - `RemoveGangMoney(account, amount)`
+  - `comma_valueGang(amount)`
+  - `isVersionOutdated(current, latest)`
+  - `onBack()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (18):
+  - `RSGCore:Client:OnGangUpdate`
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `onResourceStart`
+  - `rsg-gangmenu:client:HireMenu`
+  - `rsg-gangmenu:client:ManageEmployee`
+  - `rsg-gangmenu:client:SocetyDeposit`
+  - `rsg-gangmenu:client:SocetyWithDraw`
+  - `rsg-gangmenu:client:SocietyMenu`
+  - `rsg-gangmenu:client:Stash`
+  - `rsg-gangmenu:client:commandmenu`
+  - `rsg-gangmenu:client:employeelist`
+  - `rsg-gangmenu:client:mainmenu`
+  - `rsg-gangmenu:server:FireMember`
+  - `rsg-gangmenu:server:GradeUpdate`
+  - `rsg-gangmenu:server:HireMember`
+  - `rsg-gangmenu:server:depositMoney`
+  - `rsg-gangmenu:server:openinventory`
+  - `rsg-gangmenu:server:withdrawMoney`
+- events_triggered (2):
+  - `rsg-gangmenu:client:commandmenu`
+  - `rsg-log:server:CreateLog`
+- server_events_triggered (3):
+  - `rsg-gangmenu:server:depositMoney`
+  - `rsg-gangmenu:server:openinventory`
+  - `rsg-gangmenu:server:withdrawMoney`
+- client_events_triggered (1):
+  - `ox_lib:notify`
+- commands (1):
+  - `removegang`
+- register_commands (1):
+  - `gangmenu`
+- callbacks (3):
+  - `rsg-gangmenu:getplayers`
+  - `rsg-gangmenu:server:GetAccount`
+  - `rsg-gangmenu:server:GetEmployees`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (5):
+  - `callbacks`
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `prompts`
+  - `validate_player`
+
+### rsg-horses
+
+- URL: https://github.com/Rexshack-RedM/rsg-horses
+- Lua files: 14
+
+- functions (66):
+  - `BondingLevels()`
+  - `CalculateHorseLevel(xp)`
+  - `CalculateHorseMovePrice(fromCoords, toCoords)`
+  - `CalculatePrice(comp, initial)`
+  - `CameraPromptHorse(horses)`
+  - `CheckVersion()`
+  - `ClampValue(value, min, max)`
+  - `CleanupAnimalInfoHud()`
+  - `CustomHorse(horses, data)`
+  - `DataView.ArrayBuffer(length)`
+  - `DataView.Wrap(blob)`
+  - `DataView:Buffer()`
+  - `DataView:ByteLength()`
+  - `DataView:ByteOffset()`
+  - `DataView:SubView(offset)`
+  - `Flee()`
+  - `GenerateHorseid()`
+  - `GetHorseCoatFromModel(hModel)`
+  - `GetLedHorseFromPed(ped)`
+  - `GetLevelProgress(xp)`
+  - `GetNearestInteractableObject(forward)`
+  - `HandleObjectInteraction(thorse)`
+  - `HandleWaterInteraction(thorse)`
+  - `HorseActions(target, dict, anim)`
+  - `HorseOptions(data)`
+  - `IsPedLeadingHorse(ped)`
+  - `IsPedReadyToRender(...)`
+  - `ListenForPromptEvent(iEventGroup, hWhichEvent, iEventDataSize, tOutTable)`
+  - `MainMenu(horses, horsedata)`
+  - `NearNPC(npcmodel, npccoords, heading)`
+  - `PerformHorseAction(thorse, anim, obj, forward)`
+  - `PlacePedOnGroundProperly(hPed)`
+  - `PromptCustom()`
+  - `SelectDestinationStable(horseId, currentStableId)`
+  - `SetAnimalInfoCardActive(b, iEntity)`
+  - `SetClosestStableLocation()`
+  - `SetFixed(self, offset, value, code)`
+  - `SetupActionPrompt()`
+  - `SetupHorsePrompts()`
+  - `ShowAnimalDetailsOnCard(iEntity)`
+  - `ShowHorseDetailsOnCard(iEntity, hModel)`
+  - `SpawnHorse()`
+  - `SpawnHorses(horsemodel, horsecoords, heading)`
+  - `TaskStopLeadingHorse(ped)`
+  - `TradeHorse()`
+  - `UpdateAnimalInfoThisFrame()`
+  - `UpdatePedVariation(ped)`
+  - `UpkeepInterval()`
+  - `ValidateComponents(components)`
+  - `VerifyHorseOwnership(citizenid, horseid)`
+  - `_ef(big)`
+  - `_ib(o, l, t)`
+  - `bigInt(text)`
+  - `createCamera(horses, horsesdata)`
+  - `getComponentHash(category, value)`
+  - `getControlOfEntity(entity)`
+  - `isVersionOutdated(current, latest)`
+  - `moveHorseToPlayer()`
+  - `newpoint.onEnter(self)`
+  - `newpoint.onExit(self)`
+  - `onBack()`
+  - `onSelect()`
+  - `printLog(type, message)`
+  - `setPedDefaultOutfit(model)`
+  - `splitVersion(v)`
+  - `table.copy(t)`
+- events_registered (22):
+  - `onResourceStop`
+  - `rsg-horses:client:FleeHorse`
+  - `rsg-horses:client:MenuDel`
+  - `rsg-horses:client:OpenHorseShop`
+  - `rsg-horses:client:SpawnHorse`
+  - `rsg-horses:client:custShop`
+  - `rsg-horses:client:equipHorseLantern`
+  - `rsg-horses:client:gethorselocation`
+  - `rsg-horses:client:inventoryHorse`
+  - `rsg-horses:client:menu`
+  - `rsg-horses:client:movehorse`
+  - `rsg-horses:client:playerbrushhorse`
+  - `rsg-horses:client:playerfeedhorse`
+  - `rsg-horses:client:revivehorse`
+  - `rsg-horses:client:stablemenu`
+  - `rsg-horses:client:storehorse`
+  - `rsg-horses:client:tradehorse`
+  - `rsg-horses:server:AcceptTrade`
+  - `rsg-horses:server:SaveComponents`
+  - `rsg-horses:server:TradeHorse`
+  - `rsg-horses:server:openShop`
+  - `rsg-horses:server:openhorseinventory`
+- events_triggered (4):
+  - `rsg-horses:client:inventoryHorse`
+  - `rsg-horses:client:stablemenu`
+  - `rsg-log:server:CreateLog`
+  - `rsg-menubase:getData`
+- server_events_triggered (16):
+  - `rsg-horses:renameHorse`
+  - `rsg-horses:server:AcceptTrade`
+  - `rsg-horses:server:BuyHorse`
+  - `rsg-horses:server:HorseDied`
+  - `rsg-horses:server:MoveHorse`
+  - `rsg-horses:server:SaveComponents`
+  - `rsg-horses:server:SetHoresActive`
+  - `rsg-horses:server:SetHoresUnActive`
+  - `rsg-horses:server:SetPlayerBucket`
+  - `rsg-horses:server:TradeHorse`
+  - `rsg-horses:server:deletehorse`
+  - `rsg-horses:server:fleeStoreHorse`
+  - `rsg-horses:server:openShop`
+  - `rsg-horses:server:openhorseinventory`
+  - `rsg-horses:server:revivehorse`
+  - `rsg-horses:server:sethorseAttributes`
+- client_events_triggered (7):
+  - `ox_lib:notify`
+  - `rsg-horses:client:equipHorseLantern`
+  - `rsg-horses:client:gethorselocation`
+  - `rsg-horses:client:playerbrushhorse`
+  - `rsg-horses:client:playerfeedhorse`
+  - `rsg-horses:client:revivehorse`
+  - `rsg-inventory:client:ItemBox`
+- commands (2):
+  - `accepttrade`
+  - `findhorse`
+- register_commands (1):
+  - `sethorsename`
+- callbacks (3):
+  - `rsg-horses:server:CheckComponents`
+  - `rsg-horses:server:GetActiveHorse`
+  - `rsg-horses:server:GetAllHorses`
+- client_callbacks (0):
+  - (none)
+- useable_items (9):
+  - `haysnack`
+  - `horse_apple`
+  - `horse_brush`
+  - `horse_carrot`
+  - `horse_lantern`
+  - `horse_reviver`
+  - `horse_stimulant`
+  - `horsemeal`
+  - `sugarcube`
+- exports (3):
+  - `CheckActiveHorse`
+  - `CheckHorseBondingLevel`
+  - `CheckHorseLevel`
+- logic_patterns (7):
+  - `callbacks`
+  - `distance_vector_math`
+  - `inventory_hasitem`
+  - `money_add_remove`
+  - `prompts`
+  - `statebags`
+  - `validate_player`
+
+### rsg-hud
+
+- URL: https://github.com/Rexshack-RedM/rsg-hud
+- Lua files: 5
+
+- functions (10):
+  - `CheckVersion()`
+  - `GetEffectInterval(stresslevel)`
+  - `GetShakeIntensity(stresslevel)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `sendLocalesToNUI()`
+  - `setupLoginWatcher()`
+  - `splitVersion(v)`
+  - `updateNeed(key, value, reduce)`
+  - `updateStress(amount, isGain)`
+- events_registered (11):
+  - `HideAllUI`
+  - `hud:client:GainStress`
+  - `hud:client:OnMoneyChange`
+  - `hud:client:RelieveStress`
+  - `hud:client:ShowAccounts`
+  - `hud:client:ToggleEditMode`
+  - `hud:client:UpdateCleanliness`
+  - `hud:client:UpdateHunger`
+  - `hud:client:UpdateNeeds`
+  - `hud:client:UpdateStress`
+  - `hud:client:UpdateThirst`
+- events_triggered (2):
+  - `hud:client:GainStress`
+  - `hud:client:ToggleEditMode`
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (1):
+  - `hud:client:ShowAccounts`
+- commands (2):
+  - `bloodmoney`
+  - `cash`
+- register_commands (2):
+  - `edithud`
+  - `resethud`
+- callbacks (1):
+  - `hud:server:getoutlawstatus`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (2):
+  - `GetCurrentTemperature`
+  - `GetOutlawStatus`
+- logic_patterns (3):
+  - `callbacks`
+  - `statebags`
+  - `validate_player`
+
+### rsg-inventory
+
+- URL: https://github.com/Rexshack-RedM/rsg-inventory
+- Lua files: 29
+
+- functions (86):
+  - `AddItem(item, amount, slot, info)`
+  - `AddItem(item, amount, slot, info, reason)`
+  - `CheckVersion()`
+  - `ClearInventory(filterItems)`
+  - `CreateItemDrop(coords, itemData, shouldRemoveFromInventory, source)`
+  - `Drops.GetDrops()`
+  - `Drops.ResetPlayerState()`
+  - `GetClosestPlayerWithin(maxDistance)`
+  - `GetItemByName(item)`
+  - `GetItemBySlot(slot)`
+  - `GetItemsByName(item)`
+  - `GetNearbyPlayers(maxDistance)`
+  - `GetPlayerFromServerID(serverId)`
+  - `HasItem(items, amount)`
+  - `Helpers.CreateDropId(dropId)`
+  - `Helpers.ParseDecayRate(name)`
+  - `Inventory.AddItem(identifier, item, amount, slot, info, reason)`
+  - `Inventory.CanAddItem(source, item, amount)`
+  - `Inventory.CanPlayerUseInventory()`
+  - `Inventory.CheckItemDecay(item, itemInfo, currentTime, decayRateModifier)`
+  - `Inventory.CheckItemsDecay(items, decayRateModifier)`
+  - `Inventory.CheckPlayerItemDecay(player, item)`
+  - `Inventory.CheckPlayerItemsDecay(player)`
+  - `Inventory.CheckWeapon(source, item)`
+  - `Inventory.ClearInventory(source, filterItems)`
+  - `Inventory.ClearStash(identifier)`
+  - `Inventory.CloseInventory(source, identifier)`
+  - `Inventory.CreateInventory(identifier, data)`
+  - `Inventory.DeleteInventory(identifier)`
+  - `Inventory.ForceDropItem(source, item, amount, info, reason)`
+  - `Inventory.GetCoords(inventoryId, src)`
+  - `Inventory.GetFirstFreeSlot(items, maxSlots)`
+  - `Inventory.GetFirstSlotByItem(items, itemName)`
+  - `Inventory.GetFirstSlotByItemWithQuality(items, itemName, quality)`
+  - `Inventory.GetFreeWeight(source)`
+  - `Inventory.GetIdentifier(inventoryId, src)`
+  - `Inventory.GetInventory(identifier)`
+  - `Inventory.GetItem(inventoryId, src, slot)`
+  - `Inventory.GetItemByName(source, item)`
+  - `Inventory.GetItemBySlot(source, slot)`
+  - `Inventory.GetItemCount(source, items)`
+  - `Inventory.GetItemWeight(itemName)`
+  - `Inventory.GetItemsByName(source, item)`
+  - `Inventory.GetSlots(identifier)`
+  - `Inventory.GetSlotsByItem(items, itemName)`
+  - `Inventory.GetTotalWeight(items)`
+  - `Inventory.HasItem(source, items, amount)`
+  - `Inventory.InitializeInventory(inventoryId, data)`
+  - `Inventory.LoadInventory(source, citizenid)`
+  - `Inventory.OpenInventory(source, identifier, data)`
+  - `Inventory.OpenInventoryById(source, targetId)`
+  - `Inventory.RemoveItem(identifier, item, amount, slot, reason, isMove)`
+  - `Inventory.SaveInventory(source, offline)`
+  - `Inventory.SaveStash(identifier)`
+  - `Inventory.SetInventory(source, items)`
+  - `Inventory.SetItemData(source, itemName, key, val)`
+  - `Inventory.UseHotbarItem(slot)`
+  - `Inventory.UseItem(itemName, ...)`
+  - `L(k, d)`
+  - `RemoveItem(item, amount, slot)`
+  - `RemoveItem(item, amount, slot, reason)`
+  - `SetInventory(items)`
+  - `Shops.CreateShop(shopData)`
+  - `Shops.DoesShopExist(shopName)`
+  - `Shops.LoadItemsInStock()`
+  - `Shops.OpenShop(source, name)`
+  - `Shops.RestockShop(shopName, percentage)`
+  - `Shops.SaveItemsInStock()`
+  - `Shops.SetupShopItems(shopItems, shopData)`
+  - `addItemToInventory(target, itemData, amount, info, context)`
+  - `buildLabels()`
+  - `canOpen()`
+  - `getMeta()`
+  - `getPlayer(source, notifyIfMissing)`
+  - `isArray(t)`
+  - `isVersionOutdated(current, latest)`
+  - `notify(source, messageKey, type)`
+  - `notifyHotbarSpamProtection()`
+  - `notifyNoPlayer()`
+  - `notifyPlayer(source, messageKey, type)`
+  - `onSelect()`
+  - `onSelect(data)`
+  - `openErrorNotify()`
+  - `printLog(type, message)`
+  - `sendItemBox()`
+  - `splitVersion(v)`
+- events_registered (24):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `RSGCore:Client:OnPlayerUnload`
+  - `RSGCore:Server:PlayerLoaded`
+  - `onResourceStart`
+  - `onResourceStop`
+  - `playerDropped`
+  - `rsg-inventory:client:ItemBox`
+  - `rsg-inventory:client:closeInv`
+  - `rsg-inventory:client:giveAnim`
+  - `rsg-inventory:client:hotbar`
+  - `rsg-inventory:client:openInventory`
+  - `rsg-inventory:client:removeDropTarget`
+  - `rsg-inventory:client:setupDropTarget`
+  - `rsg-inventory:client:updateHotbar`
+  - `rsg-inventory:client:updateInventory`
+  - `rsg-inventory:server:SetInventoryData`
+  - `rsg-inventory:server:closeInventory`
+  - `rsg-inventory:server:openDrop`
+  - `rsg-inventory:server:openPlayerInventory`
+  - `rsg-inventory:server:openStash`
+  - `rsg-inventory:server:openVending`
+  - `rsg-inventory:server:updateHotbar`
+  - `rsg-inventory:server:useItem`
+  - `txAdmin:events:serverShuttingDown`
+- events_triggered (2):
+  - `rsg-inventory:server:itemRemovedFromPlayerInventory`
+  - `rsg-log:server:CreateLog`
+- server_events_triggered (6):
+  - `rsg-inventory:server:SetInventoryData`
+  - `rsg-inventory:server:closeInventory`
+  - `rsg-inventory:server:openDrop`
+  - `rsg-inventory:server:openVending`
+  - `rsg-inventory:server:updateHotbar`
+  - `rsg-inventory:server:useItem`
+- client_events_triggered (15):
+  - `lib:notify`
+  - `ox_lib:notify`
+  - `rsg-core:client:RemoveWeaponFromTab`
+  - `rsg-inventory:client:ItemBox`
+  - `rsg-inventory:client:closeInv`
+  - `rsg-inventory:client:giveAnim`
+  - `rsg-inventory:client:hotbar`
+  - `rsg-inventory:client:openInventory`
+  - `rsg-inventory:client:removeDropTarget`
+  - `rsg-inventory:client:setupDropTarget`
+  - `rsg-inventory:client:updateHotbar`
+  - `rsg-inventory:client:updateInventory`
+  - `rsg-weapons:client:UseEquipment`
+  - `rsg-weapons:client:UseThrownWeapon`
+  - `rsg-weapons:client:UseWeapon`
+- commands (0):
+  - (none)
+- register_commands (2):
+  - `serversidehotbar`
+  - `slot_`
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (33):
+  - `AddItem`
+  - `CanAddItem`
+  - `ClearInventory`
+  - `ClearStash`
+  - `CloseInventory`
+  - `CreateInventory`
+  - `CreateShop`
+  - `DeleteInventory`
+  - `DoesShopExist`
+  - `ForceDropItem`
+  - `GetFirstSlotByItem`
+  - `GetFreeWeight`
+  - `GetInventory`
+  - `GetItemByName`
+  - `GetItemBySlot`
+  - `GetItemCount`
+  - `GetItemWeight`
+  - `GetItemsByName`
+  - `GetSlots`
+  - `GetSlotsByItem`
+  - `GetTotalWeight`
+  - `HasItem`
+  - `LoadInventory`
+  - `OpenInventory`
+  - `OpenInventoryById`
+  - `OpenShop`
+  - `RemoveItem`
+  - `RestockShop`
+  - `SaveInventory`
+  - `SaveStash`
+  - `SetInventory`
+  - `SetItemData`
+  - `UseItem`
+- logic_patterns (5):
+  - `cooldown_table`
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `statebags`
+  - `validate_player`
+
+### rsg-lawman
+
+- URL: https://github.com/Rexshack-RedM/rsg-lawman
+- Lua files: 5
+
+- functions (9):
+  - `CheckVersion()`
+  - `GetClosestTown(coords)`
+  - `GetLocationName(coords)`
+  - `IsEntityAnimal(entity)`
+  - `isVersionOutdated(current, latest)`
+  - `jailPlayerByPlayer(targetPlayer, byPlayer, minutes)`
+  - `onSelect()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (20):
+  - `rsg-lawman:client:ToggleDuty`
+  - `rsg-lawman:client:cuffplayer`
+  - `rsg-lawman:client:escortplayer`
+  - `rsg-lawman:client:getcuffed`
+  - `rsg-lawman:client:getescorted`
+  - `rsg-lawman:client:jailplayer`
+  - `rsg-lawman:client:lawbadge`
+  - `rsg-lawman:client:lawmanAlert`
+  - `rsg-lawman:client:mainmenu`
+  - `rsg-lawman:client:openarmoury`
+  - `rsg-lawman:client:openstorage`
+  - `rsg-lawman:client:searchplayer`
+  - `rsg-lawman:client:sendtojail`
+  - `rsg-lawman:server:SearchPlayer`
+  - `rsg-lawman:server:cuffplayer`
+  - `rsg-lawman:server:escortplayer`
+  - `rsg-lawman:server:jailplayer`
+  - `rsg-lawman:server:lawmanAlert`
+  - `rsg-lawman:server:setescortstatus`
+  - `rsg-lawman:server:sethandcuffstatus`
+- events_triggered (3):
+  - `hospital:client:isEscorted`
+  - `rsg-lawman:client:openarmoury`
+  - `rsg-prison:client:Enter`
+- server_events_triggered (11):
+  - `InteractSound_SV:PlayWithinDistance`
+  - `RSGCore:ToggleDuty`
+  - `rsg-lawman:server:SearchPlayer`
+  - `rsg-lawman:server:cuffplayer`
+  - `rsg-lawman:server:escortplayer`
+  - `rsg-lawman:server:jailplayer`
+  - `rsg-lawman:server:lawmanAlert`
+  - `rsg-lawman:server:setescortstatus`
+  - `rsg-lawman:server:sethandcuffstatus`
+  - `rsg-lawman:server:storage`
+  - `rsg-shops:server:openstore`
+- client_events_triggered (10):
+  - `ox_lib:notify`
+  - `rsg-lawman:client:cuffplayer`
+  - `rsg-lawman:client:escortplayer`
+  - `rsg-lawman:client:getcuffed`
+  - `rsg-lawman:client:getescorted`
+  - `rsg-lawman:client:lawbadge`
+  - `rsg-lawman:client:lawmanAlert`
+  - `rsg-lawman:client:searchplayer`
+  - `rsg-lawman:client:sendtojail`
+  - `rsg-prison:client:freedom`
+- commands (7):
+  - `cuff`
+  - `escort`
+  - `jail`
+  - `lawbadge`
+  - `searchplayer`
+  - `testalert`
+  - `unjail`
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `rsg-lawman:server:getlaw`
+- client_callbacks (0):
+  - (none)
+- useable_items (1):
+  - `handcuffs`
+- exports (0):
+  - (none)
+- logic_patterns (6):
+  - `callbacks`
+  - `cooldown_table`
+  - `distance_vector_math`
+  - `inventory_hasitem`
+  - `prompts`
+  - `validate_player`
+
+### rsg-loading
+
+- URL: https://github.com/Rexshack-RedM/rsg-loading
+- Lua files: 1
+
+- functions (0):
+  - (none)
+- events_registered (0):
+  - (none)
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### rsg-lockpick
+
+- URL: https://github.com/Rexshack-RedM/rsg-lockpick
+- Lua files: 2
+
+- functions (1):
+  - `openLockpick(bool)`
+- events_registered (1):
+  - `rsg-lockpick:client:openLockpick`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### rsg-medic
+
+- URL: https://github.com/Rexshack-RedM/rsg-medic
+- Lua files: 6
+
+- functions (6):
+  - `CheckVersion()`
+  - `PlayerDeath()`
+  - `SetClosestRespawn()`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (23):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `onResourceStop`
+  - `rsg-medic:client:DeathCam`
+  - `rsg-medic:client:GetMedicsOnDuty`
+  - `rsg-medic:client:HealInjuries`
+  - `rsg-medic:client:KillPlayer`
+  - `rsg-medic:client:OpenMedicSupplies`
+  - `rsg-medic:client:RevivePlayer`
+  - `rsg-medic:client:ToggleDuty`
+  - `rsg-medic:client:TreatWounds`
+  - `rsg-medic:client:adminHeal`
+  - `rsg-medic:client:adminRevive`
+  - `rsg-medic:client:mainmenu`
+  - `rsg-medic:client:medicAlert`
+  - `rsg-medic:client:playerRevive`
+  - `rsg-medic:client:revive`
+  - `rsg-medic:client:storage`
+  - `rsg-medic:client:usebandage`
+  - `rsg-medic:server:RevivePlayer`
+  - `rsg-medic:server:TreatWounds`
+  - `rsg-medic:server:deathactions`
+  - `rsg-medic:server:medicAlert`
+  - `rsg-medic:server:openstash`
+- events_triggered (5):
+  - `hud:client:UpdateNeeds`
+  - `hud:client:UpdateStress`
+  - `rsg-medic:client:DeathCam`
+  - `rsg-medic:client:GetMedicsOnDuty`
+  - `rsg-medic:client:revive`
+- server_events_triggered (11):
+  - `RSGCore:Server:SetMetaData`
+  - `RSGCore:ToggleDuty`
+  - `rsg-log:server:CreateLog`
+  - `rsg-medic:server:RevivePlayer`
+  - `rsg-medic:server:TreatWounds`
+  - `rsg-medic:server:deathactions`
+  - `rsg-medic:server:medicAlert`
+  - `rsg-medic:server:openstash`
+  - `rsg-medic:server:removeitem`
+  - `rsg-prison:server:resetoutlawstatus`
+  - `rsg-shops:server:openstore`
+- client_events_triggered (9):
+  - `ox_lib:notify`
+  - `rsg-inventory:client:ItemBox`
+  - `rsg-medic:client:HealInjuries`
+  - `rsg-medic:client:KillPlayer`
+  - `rsg-medic:client:adminHeal`
+  - `rsg-medic:client:adminRevive`
+  - `rsg-medic:client:medicAlert`
+  - `rsg-medic:client:playerRevive`
+  - `rsg-medic:client:usebandage`
+- commands (3):
+  - `heal`
+  - `kill`
+  - `revive`
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `rsg-medic:server:getmedics`
+- client_callbacks (0):
+  - (none)
+- useable_items (1):
+  - `bandage`
+- exports (0):
+  - (none)
+- logic_patterns (7):
+  - `callbacks`
+  - `distance_vector_math`
+  - `inventory_hasitem`
+  - `money_add_remove`
+  - `prompts`
+  - `statebags`
+  - `validate_player`
+
+### rsg-menubase
+
+- URL: https://github.com/Rexshack-RedM/rsg-menubase
+- Lua files: 4
+
+- functions (23):
+  - `CheckVersion()`
+  - `MenuData.Close(type, namespace, name)`
+  - `MenuData.CloseAll()`
+  - `MenuData.GetOpened(type, namespace, name)`
+  - `MenuData.GetOpenedMenus()`
+  - `MenuData.IsOpen(type, namespace, name)`
+  - `MenuData.Open(type, namespace, name, data, submit, cancel, change, close)`
+  - `MenuData.ReOpen(oldMenu)`
+  - `close(namespace, name)`
+  - `isVersionOutdated(current, latest)`
+  - `menu.addNewElement(element)`
+  - `menu.close()`
+  - `menu.refresh()`
+  - `menu.removeElement(query)`
+  - `menu.removeElementByIndex(index, stop)`
+  - `menu.removeElementByValue(value, stop)`
+  - `menu.setElement(i, key, val)`
+  - `menu.setElements(newElements)`
+  - `menu.setTitle(val)`
+  - `menu.update(query, newData)`
+  - `open(namespace, name, data)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (2):
+  - `onClientResourceStart`
+  - `rsg-menubase:getData`
+- events_triggered (1):
+  - `menuapi:closemenu`
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (1):
+  - `GetMenuData`
+- logic_patterns (1):
+  - `statebags`
+
+### rsg-multicharacter
+
+- URL: https://github.com/Rexshack-RedM/rsg-multicharacter
+- Lua files: 14
+
+- functions (12):
+  - `CheckVersion()`
+  - `GenerateHorseid()`
+  - `GiveStarterItems(source)`
+  - `baseModel(sex)`
+  - `cleanPed(ped)`
+  - `initializePedModel(appearanceData, coords, heading)`
+  - `isVersionOutdated(current, latest)`
+  - `loadModel(model)`
+  - `openCharMenu(bool)`
+  - `printLog(type, message)`
+  - `skyCam(bool)`
+  - `splitVersion(v)`
+- events_registered (10):
+  - `RSGCore:Server:OnPlayerUnload`
+  - `RSGCore:Server:PlayerLoaded`
+  - `onResourceStop`
+  - `rsg-multicharacter:client:chooseChar`
+  - `rsg-multicharacter:client:closeNUI`
+  - `rsg-multicharacter:client:unstick`
+  - `rsg-multicharacter:server:createCharacter`
+  - `rsg-multicharacter:server:deleteCharacter`
+  - `rsg-multicharacter:server:disconnect`
+  - `rsg-multicharacter:server:loadUserData`
+- events_triggered (3):
+  - `rsg-appearance:client:OpenCreator`
+  - `rsg-log:server:CreateLog`
+  - `rsg-multicharacter:client:chooseChar`
+- server_events_triggered (5):
+  - `rsg-appearance:server:LoadClothes`
+  - `rsg-appearance:server:LoadSkin`
+  - `rsg-multicharacter:server:deleteCharacter`
+  - `rsg-multicharacter:server:disconnect`
+  - `rsg-multicharacter:server:loadUserData`
+- client_events_triggered (4):
+  - `rsg-appearance:client:OpenCreator`
+  - `rsg-multicharacter:client:chooseChar`
+  - `rsg-multicharacter:client:closeNUI`
+  - `rsg-spawn:client:setupSpawnUI`
+- commands (2):
+  - `closeNUI`
+  - `logout`
+- register_commands (0):
+  - (none)
+- callbacks (3):
+  - `rsg-multicharacter:server:GetNumberOfCharacters`
+  - `rsg-multicharacter:server:getAppearance`
+  - `rsg-multicharacter:server:setupCharacters`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (4):
+  - `callbacks`
+  - `prompts`
+  - `statebags`
+  - `validate_player`
+
+### rsg-multijob
+
+- URL: https://github.com/Rexshack-RedM/rsg-multijob
+- Lua files: 7
+
+- functions (9):
+  - `CanSetJob(cid, jobName)`
+  - `CheckVersion()`
+  - `GetJobCount(cid)`
+  - `adminRemoveJob(src, id, job)`
+  - `isVersionOutdated(current, latest)`
+  - `onSelect()`
+  - `printLog(type, message)`
+  - `showMultijob()`
+  - `splitVersion(v)`
+- events_registered (7):
+  - `RSGCore:Client:OnJobUpdate`
+  - `rsg-bossmenu:server:FireEmployee`
+  - `rsg-multijob:client:choiceMenu`
+  - `rsg-multijob:client:openmenu`
+  - `rsg-multijob:server:changeJob`
+  - `rsg-multijob:server:deleteJob`
+  - `rsg-multijob:server:newJob`
+- events_triggered (1):
+  - `rsg-multijob:client:openmenu`
+- server_events_triggered (4):
+  - `RSGCore:ToggleDuty`
+  - `rsg-multijob:server:changeJob`
+  - `rsg-multijob:server:deleteJob`
+  - `rsg-multijob:server:newJob`
+- client_events_triggered (3):
+  - `RSGCore:Client:SetDuty`
+  - `ox_lib:notify`
+  - `rsg-multijob:client:openmenu`
+- commands (2):
+  - `myjobs`
+  - `removejob`
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `rsg-multijob:server:checkjobs`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (8):
+  - `AddJobToPlayer`
+  - `CanTakeNewJob`
+  - `GetJobCount`
+  - `GetMaxJobs`
+  - `GetPlayerJobs`
+  - `HasJob`
+  - `OpenMultijobMenu`
+  - `RemoveJobFromPlayer`
+- logic_patterns (2):
+  - `callbacks`
+  - `validate_player`
+
+### rsg-npcs
+
+- URL: https://github.com/Rexshack-RedM/rsg-npcs
+- Lua files: 5
+
+- functions (5):
+  - `CheckVersion()`
+  - `NearPed(model, coords, pedData)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (1):
+  - `onResourceStop`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (1):
+  - `distance_vector_math`
+
+### rsg-playerinfo
+
+- URL: https://github.com/Rexshack-RedM/rsg-playerinfo
+- Lua files: 5
+
+- functions (5):
+  - `CheckVersion()`
+  - `buildOptionsArray(data)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (1):
+  - `rsg-playerstats:client:openPlayerStats`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (1):
+  - `rsg-playerstats:client:openPlayerStats`
+- commands (1):
+  - `info`
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `rsg-playerstats:server:getPlayerData`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (2):
+  - `callbacks`
+  - `validate_player`
+
+### rsg-prison
+
+- URL: https://github.com/Rexshack-RedM/rsg-prison
+- Lua files: 6
+
+- functions (10):
+  - `CheckVersion()`
+  - `NearNPC(npcmodel, npccoords, heading)`
+  - `action()`
+  - `handleJailtime()`
+  - `isVersionOutdated(current, latest)`
+  - `newpoint.onEnter(self)`
+  - `newpoint.onExit(self)`
+  - `onBack()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (18):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `RSGCore:Client:OnPlayerUnload`
+  - `onResourceStart`
+  - `onResourceStop`
+  - `rsg-prison:client:Enter`
+  - `rsg-prison:client:freedom`
+  - `rsg-prison:client:jailZoneInOut`
+  - `rsg-prison:client:menu`
+  - `rsg-prison:client:prisonclothes`
+  - `rsg-prison:client:shop`
+  - `rsg-prison:client:telegrammenu`
+  - `rsg-prison:server:CheckRecordStatus`
+  - `rsg-prison:server:FreePlayer`
+  - `rsg-prison:server:GiveJailItems`
+  - `rsg-prison:server:RemovePlayerJob`
+  - `rsg-prison:server:SaveJailItems`
+  - `rsg-prison:server:resetoutlawstatus`
+  - `rsg-prison:server:updateSentance`
+- events_triggered (5):
+  - `rsg-prison:client:Enter`
+  - `rsg-prison:client:freedom`
+  - `rsg-prison:client:jailZoneInOut`
+  - `rsg-prison:client:menu`
+  - `rsg-prison:client:prisonclothes`
+- server_events_triggered (8):
+  - `InteractSound_SV:PlayWithinDistance`
+  - `rsg-prison:server:FreePlayer`
+  - `rsg-prison:server:GiveJailItems`
+  - `rsg-prison:server:RemovePlayerJob`
+  - `rsg-prison:server:SaveJailItems`
+  - `rsg-prison:server:resetoutlawstatus`
+  - `rsg-prison:server:updateSentance`
+  - `rsg-shops:server:openstore`
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (3):
+  - `money_add_remove`
+  - `statebags`
+  - `validate_player`
+
+### rsg-radialmenu
+
+- URL: https://github.com/Rexshack-RedM/rsg-radialmenu
+- Lua files: 6
+
+- functions (12):
+  - `AddOption(data, id)`
+  - `CheckVersion()`
+  - `RemoveOption(id)`
+  - `SetupJobMenu()`
+  - `SetupRadialMenu()`
+  - `SetupSubItems()`
+  - `deepcopy(orig)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `selectOption(t, t2)`
+  - `setRadialState(bool, sendMessage, delay)`
+  - `splitVersion(v)`
+- events_registered (10):
+  - `rsg-radialmenu:client:SendLawmanEmergencyAlert`
+  - `rsg-radialmenu:client:SendMedicEmergencyAlert`
+  - `rsg-radialmenu:client:noPlayers`
+  - `walkstyles:client:angry`
+  - `walkstyles:client:gold_panner`
+  - `walkstyles:client:lost_Man`
+  - `walkstyles:client:murfree`
+  - `walkstyles:client:normal`
+  - `walkstyles:client:primate`
+  - `walkstyles:client:war_veteran`
+- events_triggered (2):
+  - `rsg-radialmenu:client:onRadialmenuClose`
+  - `rsg-radialmenu:client:onRadialmenuOpen`
+- server_events_triggered (3):
+  - `RSGCore:CallCommand`
+  - `rsg-lawman:server:lawmanAlert`
+  - `rsg-medic:server:medicAlert`
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (2):
+  - `AddOption`
+  - `RemoveOption`
+- logic_patterns (0):
+  - (none)
+
+### rsg-shops
+
+- URL: https://github.com/Rexshack-RedM/rsg-shops
+- Lua files: 5
+
+- functions (7):
+  - `CheckVersion()`
+  - `SetupNPCTarget(npc, shopData)`
+  - `SpawnShopNPC(shopData)`
+  - `isVersionOutdated(current, latest)`
+  - `onSelect()`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (2):
+  - `onResourceStop`
+  - `rsg-shops:server:openstore`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (1):
+  - `rsg-shops:server:openstore`
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (2):
+  - `prompts`
+  - `validate_player`
+
+### rsg-spawn
+
+- URL: https://github.com/Rexshack-RedM/rsg-spawn
+- Lua files: 5
+
+- functions (4):
+  - `CheckVersion()`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (3):
+  - `rsg-spawn:client:existingplayer`
+  - `rsg-spawn:client:newplayer`
+  - `rsg-spawn:client:setupSpawnUI`
+- events_triggered (4):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `rsg-spawn:client:existingplayer`
+  - `rsg-spawn:client:newplayer`
+  - `rsg-weapons:client:AutoDualWield`
+- server_events_triggered (1):
+  - `RSGCore:Server:OnPlayerLoaded`
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### rsg-telegram
+
+- URL: https://github.com/Rexshack-RedM/rsg-telegram
+- Lua files: 7
+
+- functions (8):
+  - `CheckVersion()`
+  - `Debug(args1, args2)`
+  - `IsPlayerAtPostOffice()`
+  - `Prompts()`
+  - `SetPetBehavior(entity)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (26):
+  - `onResourceStop`
+  - `rsg-telegram:client:AddPersonMenu`
+  - `rsg-telegram:client:InboxList`
+  - `rsg-telegram:client:MessageData`
+  - `rsg-telegram:client:OpenAddressbook`
+  - `rsg-telegram:client:OpenTelegram`
+  - `rsg-telegram:client:PickupMessages`
+  - `rsg-telegram:client:ReadMessages`
+  - `rsg-telegram:client:ReceiveMessage`
+  - `rsg-telegram:client:RemovePersonMenu`
+  - `rsg-telegram:client:SpawnBirdForSend`
+  - `rsg-telegram:client:StartBirdDelivery`
+  - `rsg-telegram:client:ViewAddressBook`
+  - `rsg-telegram:client:WriteMessage`
+  - `rsg-telegram:server:CheckInbox`
+  - `rsg-telegram:server:DeleteMessage`
+  - `rsg-telegram:server:DeliverySuccess`
+  - `rsg-telegram:server:GetMessages`
+  - `rsg-telegram:server:MarkAsRead`
+  - `rsg-telegram:server:RemovePerson`
+  - `rsg-telegram:server:SavePerson`
+  - `rsg-telegram:server:SendMessage`
+  - `rsg-telegram:server:SendMessagePostOffice`
+  - `rsg-telegram:server:SendMessageWithBirdPost`
+  - `rsg-telegram:server:ValidateBirdPostSend`
+  - `rsg-telegram:server:pickupMessages`
+- events_triggered (2):
+  - `rsg-telegram:client:OpenTelegram`
+  - `rsg-telegram:client:SpawnBirdForSend`
+- server_events_triggered (11):
+  - `rsg-telegram:server:CheckInbox`
+  - `rsg-telegram:server:DeleteMessage`
+  - `rsg-telegram:server:DeliverySuccess`
+  - `rsg-telegram:server:GetMessages`
+  - `rsg-telegram:server:MarkAsRead`
+  - `rsg-telegram:server:ReadMessage`
+  - `rsg-telegram:server:RemovePerson`
+  - `rsg-telegram:server:SavePerson`
+  - `rsg-telegram:server:SendMessagePostOffice`
+  - `rsg-telegram:server:ValidateBirdPostSend`
+  - `rsg-telegram:server:pickupMessages`
+- client_events_triggered (10):
+  - `ox_lib:notify`
+  - `rsg-inventory:client:ItemBox`
+  - `rsg-telegram:client:InboxList`
+  - `rsg-telegram:client:MessageData`
+  - `rsg-telegram:client:OpenAddressbook`
+  - `rsg-telegram:client:OpenTelegram`
+  - `rsg-telegram:client:ReadMessages`
+  - `rsg-telegram:client:ReceiveMessage`
+  - `rsg-telegram:client:StartBirdDelivery`
+  - `rsg-telegram:client:WriteMessage`
+- commands (2):
+  - `addressbook`
+  - `telegram`
+- register_commands (0):
+  - (none)
+- callbacks (6):
+  - `rsg-telegram:server:GetPlayers`
+  - `rsg-telegram:server:GetPlayersPostOffice`
+  - `rsg-telegram:server:checkWaitingMessages`
+  - `rsg-telegram:server:getAddressbook`
+  - `rsg-telegram:server:getInbox`
+  - `rsg-telegram:server:getTelegramsAmount`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (1):
+  - `IsBirdPostApproaching`
+- logic_patterns (6):
+  - `callbacks`
+  - `distance_vector_math`
+  - `money_add_remove`
+  - `prompts`
+  - `statebags`
+  - `validate_player`
+
+### rsg-versioncheckers
+
+- URL: https://github.com/Rexshack-RedM/rsg-versioncheckers
+- Lua files: 0
+
+- functions (0):
+  - (none)
+- events_registered (0):
+  - (none)
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### rsg-wardrobe
+
+- URL: https://github.com/Rexshack-RedM/rsg-wardrobe
+- Lua files: 5
+
+- functions (4):
+  - `CheckVersion()`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (3):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `rsg-wardrobe:client:OnOffClothing`
+  - `rsg-wardrobe:client:removeAllClothing`
+- events_triggered (0):
+  - (none)
+- server_events_triggered (1):
+  - `rsg-weapons:server:RemoveAllObjects`
+- client_events_triggered (3):
+  - `rsg-appearance:client:ApplyClothes`
+  - `rsg-wardrobe:client:OnOffClothing`
+  - `rsg-wardrobe:client:removeAllClothing`
+- commands (34):
+  - `accessories`
+  - `armor`
+  - `belt`
+  - `boots`
+  - `buckle`
+  - `chaps`
+  - `cloak`
+  - `closedcoat`
+  - `coat`
+  - `collar1`
+  - `collar2`
+  - `dress`
+  - `eyewear`
+  - `gauntlets`
+  - `gloves`
+  - `gunbelt`
+  - `hairaccessories`
+  - `hat`
+  - `leftholster`
+  - `leftring`
+  - `loadouts`
+  - `mask`
+  - `neckties`
+  - `neckwear`
+  - `pants`
+  - `poncho`
+  - `rightring`
+  - `satchels`
+  - `shirt`
+  - `skirt`
+  - `sleeve`
+  - `suspenders`
+  - `undress`
+  - `vest`
+- register_commands (0):
+  - (none)
+- callbacks (1):
+  - `rsg-wardrobe:server:getPlayerSkin`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (2):
+  - `callbacks`
+  - `validate_player`
+
+### rsg-weaponcomp
+
+- URL: https://github.com/Rexshack-RedM/rsg-weaponcomp
+- Lua files: 9
+
+- functions (62):
+  - `AdjustZoom(increase)`
+  - `CalculatePrice(selection)`
+  - `CanPlacePropHere(pos)`
+  - `CheckVersion()`
+  - `ClearCameraPrompts()`
+  - `CreatePropId()`
+  - `CreategunsiteId()`
+  - `DataView.ArrayBuffer(length)`
+  - `DataView.Wrap(blob)`
+  - `DataView:Buffer()`
+  - `DataView:ByteLength()`
+  - `DataView:ByteOffset()`
+  - `DataView:SubView(offset)`
+  - `Del()`
+  - `DrawPropAxes(prop)`
+  - `FreezePlayer()`
+  - `GetAvailableComponents(weaponName, wHash)`
+  - `GetWeaponItemEntry(Player, serial)`
+  - `GetWeaponType(hash)`
+  - `MainWeaponMenu(wname, wHash, serial, propid)`
+  - `OpenComponentMenu(wname, wHash, serial, propid)`
+  - `OpenEngravingMenu(wname, wHash, serial, propid)`
+  - `OpenMaterialMenu(wname, wHash, serial, propid)`
+  - `OpenTintsMenu(wname, wHash, serial, propid)`
+  - `RayCastGamePlayCamera(distance)`
+  - `RegisterCameraPrompts()`
+  - `RegisterPrompt(control, textKey, group, hold)`
+  - `ResetCameraToDefault()`
+  - `RotateCameraAroundWeapon(clockwise)`
+  - `RotateLeft()`
+  - `RotateRight()`
+  - `RotationToDirection(rotation)`
+  - `Set()`
+  - `SetFixed(self, offset, value, code)`
+  - `SetRandomCameraAroundWeapon()`
+  - `StartCamClean(zoom, offset)`
+  - `StartCamOnWeapon(obj, fov)`
+  - `StartPromptThread()`
+  - `UnfreezePlayer()`
+  - `_ef(big)`
+  - `_ib(o, l, t)`
+  - `applyDefaults(obj, wHash)`
+  - `applyWeaponComponent(obj, prevComp, nextComp, wHash)`
+  - `attachComponent(ped, compHash, weaponHash)`
+  - `clearAllComponents(ped, weaponHash)`
+  - `cmpCategories(a,b)`
+  - `getSortedKeys(t)`
+  - `getWeaponStats(wHash)`
+  - `isVersionOutdated(current, latest)`
+  - `mergeComponents(merged, source)`
+  - `onEnter()`
+  - `onExit()`
+  - `onSelect()`
+  - `placeProp(propmodel, item, gunsitename, gunsiteid)`
+  - `playScopeAnim(ped)`
+  - `printLog(type, message)`
+  - `saveWeaponComponents(serial, comps, compslabel, Player)`
+  - `showstats()`
+  - `smoothZoom(cam, fromFov, toFov, duration)`
+  - `spawnWeaponOnProp(propObj, spawnPos, wHash)`
+  - `splitVersion(v)`
+  - `suffixPriority(cat)`
+- events_registered (21):
+  - `onResourceStop`
+  - `rsg-weaponcomp:client:ExitCam`
+  - `rsg-weaponcomp:client:InspectionWeapon`
+  - `rsg-weaponcomp:client:animationSaved`
+  - `rsg-weaponcomp:client:confirmpackup`
+  - `rsg-weaponcomp:client:createprop`
+  - `rsg-weaponcomp:client:equipScope`
+  - `rsg-weaponcomp:client:packupgunsite`
+  - `rsg-weaponcomp:client:reloadWeapon`
+  - `rsg-weaponcomp:client:setupgunzone`
+  - `rsg-weaponcomp:client:startcustom`
+  - `rsg-weaponcomp:client:unequipScope`
+  - `rsg-weaponcomp:client:updatePropData`
+  - `rsg-weaponcomp:server:additem`
+  - `rsg-weaponcomp:server:check_comps`
+  - `rsg-weaponcomp:server:createnewprop`
+  - `rsg-weaponcomp:server:getProps`
+  - `rsg-weaponcomp:server:removeComponents`
+  - `rsg-weaponcomp:server:removegunsiteprops`
+  - `rsg-weaponcomp:server:removeitem`
+  - `rsg-weaponcomp:server:updateProps`
+- events_triggered (14):
+  - `HideAllUI`
+  - `rsg-log:server:CreateLog`
+  - `rsg-menubase:getData`
+  - `rsg-weaponcomp:client:ExitCam`
+  - `rsg-weaponcomp:client:confirmpackup`
+  - `rsg-weaponcomp:client:equipScope`
+  - `rsg-weaponcomp:client:packupgunsite`
+  - `rsg-weaponcomp:client:placegunsiteitem`
+  - `rsg-weaponcomp:client:setupgunzone`
+  - `rsg-weaponcomp:client:startcustom`
+  - `rsg-weaponcomp:client:unequipScope`
+  - `rsg-weaponcomp:server:check_comps`
+  - `rsg-weaponcomp:server:getProps`
+  - `rsg-weaponcomp:server:updateProps`
+- server_events_triggered (8):
+  - `rsg-weaponcomp:server:additem`
+  - `rsg-weaponcomp:server:check_comps`
+  - `rsg-weaponcomp:server:createnewprop`
+  - `rsg-weaponcomp:server:inspectkitConsume`
+  - `rsg-weaponcomp:server:removeComponents`
+  - `rsg-weaponcomp:server:removegunsiteprops`
+  - `rsg-weaponcomp:server:setComponents`
+  - `rsg-weapons:server:repairweapon`
+- client_events_triggered (9):
+  - `ox_lib:notify`
+  - `rNotify:ShowAdvancedRightNotification`
+  - `rsg-inventory:client:ItemBox`
+  - `rsg-weaponcomp:client:ExitCam`
+  - `rsg-weaponcomp:client:InspectionWeapon`
+  - `rsg-weaponcomp:client:animationSaved`
+  - `rsg-weaponcomp:client:createprop`
+  - `rsg-weaponcomp:client:reloadWeapon`
+  - `rsg-weaponcomp:client:updatePropData`
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (5):
+  - `rsg-weaponcomp:server:countprop`
+  - `rsg-weaponcomp:server:equipScope`
+  - `rsg-weaponcomp:server:getItemBySerial`
+  - `rsg-weaponcomp:server:getPlayerWeaponComponents`
+  - `rsg-weaponcomp:server:unequipScope`
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (6):
+  - `callbacks`
+  - `distance_vector_math`
+  - `inventory_hasitem`
+  - `money_add_remove`
+  - `statebags`
+  - `validate_player`
+
+### rsg-weapons
+
+- URL: https://github.com/Rexshack-RedM/rsg-weapons
+- Lua files: 7
+
+- functions (18):
+  - `AddToDegradationQueue(serial)`
+  - `CheckVersion()`
+  - `DataView.ArrayBuffer(length)`
+  - `DataView.Wrap(blob)`
+  - `DataView:Buffer()`
+  - `DataView:ByteLength()`
+  - `DataView:ByteOffset()`
+  - `DataView:SubView(offset)`
+  - `SetFixed(self, offset, value, code)`
+  - `WeaponAPI.EquipWeapon(weaponName, slot, id, hash)`
+  - `WeaponAPI.RemoveWeaponFromPeds(weaponName, serial)`
+  - `_ef(big)`
+  - `_ib(o, l, t)`
+  - `addWardrobeInventoryItem(itemName, slotHash)`
+  - `getGuidFromItemId(inventoryId, itemData, category, slotId)`
+  - `isVersionOutdated(current, latest)`
+  - `printLog(type, message)`
+  - `splitVersion(v)`
+- events_registered (15):
+  - `RSGCore:Client:OnPlayerLoaded`
+  - `onResourceStop`
+  - `rsg-weapons:client:UseEquipment`
+  - `rsg-weapons:client:UseThrownWeapon`
+  - `rsg-weapons:client:UseWeapon`
+  - `rsg-weapons:client:brokenweapon`
+  - `rsg-weapons:client:repairbrokenweapon`
+  - `rsg-weapons:client:repairweapon`
+  - `rsg-weapons:requestToggle`
+  - `rsg-weapons:server:degradeWeapon`
+  - `rsg-weapons:server:removeitem`
+  - `rsg-weapons:server:repairweapon`
+  - `rsg-weapons:server:saveEquippedKnife`
+  - `rsg-weapons:server:saveEquippedWeapon`
+  - `rsg-weapons:toggle`
+- events_triggered (4):
+  - `rsg-weapons:client:UseEquipment`
+  - `rsg-weapons:client:UseWeapon`
+  - `rsg-weapons:client:brokenweapon`
+  - `rsg-weapons:client:repairbrokenweapon`
+- server_events_triggered (8):
+  - `rsg-weaponcomp:server:check_comps`
+  - `rsg-weaponcomp:server:removeComponents`
+  - `rsg-weapons:requestToggle`
+  - `rsg-weapons:server:degradeWeapon`
+  - `rsg-weapons:server:removeitem`
+  - `rsg-weapons:server:repairweapon`
+  - `rsg-weapons:server:saveEquippedKnife`
+  - `rsg-weapons:server:saveEquippedWeapon`
+- client_events_triggered (5):
+  - `ox_lib:notify`
+  - `rsg-inventory:client:ItemBox`
+  - `rsg-weapons:client:UseWeapon`
+  - `rsg-weapons:client:repairweapon`
+  - `rsg-weapons:toggle`
+- commands (0):
+  - (none)
+- register_commands (1):
+  - `infinityammo`
+- callbacks (4):
+  - `rsg-weapons:server:getEquippedKnives`
+  - `rsg-weapons:server:getEquippedWeapons`
+  - `rsg-weapons:server:getWeaponBySerial`
+  - `rsg-weapons:server:getweaponinfo`
+- client_callbacks (0):
+  - (none)
+- useable_items (1):
+  - `weapon_repair_kit`
+- exports (6):
+  - `CheckWeaponSerial`
+  - `EquippedWeapons`
+  - `GetUsedWeapons`
+  - `RemoveWeaponFromPeds`
+  - `UsedWeapons`
+  - `weaponInHands`
+- logic_patterns (4):
+  - `callbacks`
+  - `inventory_hasitem`
+  - `statebags`
+  - `validate_player`
+
+### txAdminRecipe
+
+- URL: https://github.com/Rexshack-RedM/txAdminRecipe
+- Lua files: 0
+
+- functions (0):
+  - (none)
+- events_registered (0):
+  - (none)
+- events_triggered (0):
+  - (none)
+- server_events_triggered (0):
+  - (none)
+- client_events_triggered (0):
+  - (none)
+- commands (0):
+  - (none)
+- register_commands (0):
+  - (none)
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (0):
+  - (none)
+- logic_patterns (0):
+  - (none)
+
+### weathersync
+
+- URL: https://github.com/Rexshack-RedM/weathersync
+- Lua files: 5
+
+- functions (47):
+  - `DHMSToTime(day, hour, minute, second)`
+  - `GetCardinalDirection(h)`
+  - `GetDayOfWeek(day)`
+  - `SetSnowCoverageType(type)`
+  - `TimeToDHMS(time)`
+  - `contains(t, x)`
+  - `createForecast()`
+  - `generateForecast()`
+  - `getTime()`
+  - `getWeather()`
+  - `getWind()`
+  - `isInCayoPerico(x, y, z)`
+  - `isInDesertRegion(x, y, z)`
+  - `isInGuarma(x, y, z)`
+  - `isInNorthernRegion(x, y, z)`
+  - `isInSnowyRegion(x, y, z)`
+  - `isSnowyWeather(weather)`
+  - `log(label, message)`
+  - `nextWeather(weather)`
+  - `nextWindDirection(direction)`
+  - `printMessage(target, message)`
+  - `resetSyncDelay()`
+  - `resetTime()`
+  - `resetTimescale()`
+  - `resetWeather()`
+  - `resetWeatherPattern()`
+  - `resetWind()`
+  - `setMyTime(h, m, s, t)`
+  - `setMyWeather(weather, transition, permanentSnow)`
+  - `setSyncDelay(delay)`
+  - `setSyncEnabled(toggle)`
+  - `setTime(d, h, m, s, t, f)`
+  - `setTime(hour, minute, second, transitionTime, freeze)`
+  - `setTimescale(scale)`
+  - `setWeather(weather, transition, freeze, permSnow)`
+  - `setWeather(weatherType, transitionTime)`
+  - `setWeatherPattern(pattern)`
+  - `setWind(direction, speed, frozen)`
+  - `syncTime(player, tick)`
+  - `syncTimescale(player)`
+  - `syncWeather(player)`
+  - `syncWind(player)`
+  - `toggleSync()`
+  - `translateWeatherForRegion(weather, x, y, z)`
+  - `translateWindForAltitude(direction, speed)`
+  - `updateForecast(forecast)`
+  - `validateWeatherPattern(pattern)`
+- events_registered (27):
+  - `weathersync:changeTime`
+  - `weathersync:changeTimescale`
+  - `weathersync:changeWeather`
+  - `weathersync:changeWind`
+  - `weathersync:init`
+  - `weathersync:openAdminUi`
+  - `weathersync:requestUpdatedAdminUi`
+  - `weathersync:requestUpdatedForecast`
+  - `weathersync:resetSyncDelay`
+  - `weathersync:resetTime`
+  - `weathersync:resetTimescale`
+  - `weathersync:resetWeather`
+  - `weathersync:resetWeatherPattern`
+  - `weathersync:resetWind`
+  - `weathersync:setMyTime`
+  - `weathersync:setMyWeather`
+  - `weathersync:setSyncDelay`
+  - `weathersync:setSyncEnabled`
+  - `weathersync:setTime`
+  - `weathersync:setTimescale`
+  - `weathersync:setWeather`
+  - `weathersync:setWeatherPattern`
+  - `weathersync:setWind`
+  - `weathersync:toggleForecast`
+  - `weathersync:toggleSync`
+  - `weathersync:updateAdminUi`
+  - `weathersync:updateForecast`
+- events_triggered (2):
+  - `chat:addMessage`
+  - `chat:addSuggestion`
+- server_events_triggered (8):
+  - `weathersync:init`
+  - `weathersync:requestUpdatedAdminUi`
+  - `weathersync:requestUpdatedForecast`
+  - `weathersync:setSyncDelay`
+  - `weathersync:setTime`
+  - `weathersync:setTimescale`
+  - `weathersync:setWeather`
+  - `weathersync:setWind`
+- client_events_triggered (12):
+  - `chat:addMessage`
+  - `weathersync:changeTime`
+  - `weathersync:changeTimescale`
+  - `weathersync:changeWeather`
+  - `weathersync:changeWind`
+  - `weathersync:openAdminUi`
+  - `weathersync:setMyTime`
+  - `weathersync:setMyWeather`
+  - `weathersync:toggleForecast`
+  - `weathersync:toggleSync`
+  - `weathersync:updateAdminUi`
+  - `weathersync:updateForecast`
+- commands (0):
+  - (none)
+- register_commands (10):
+  - `forecast`
+  - `mytime`
+  - `myweather`
+  - `syncdelay`
+  - `time`
+  - `timescale`
+  - `weather`
+  - `weathersync`
+  - `weatherui`
+  - `wind`
+- callbacks (0):
+  - (none)
+- client_callbacks (0):
+  - (none)
+- useable_items (0):
+  - (none)
+- exports (21):
+  - `getForecast`
+  - `getTime`
+  - `getWeather`
+  - `getWind`
+  - `isSnowOnGround`
+  - `resetSyncDelay`
+  - `resetTime`
+  - `resetTimescale`
+  - `resetWeather`
+  - `resetWeatherPattern`
+  - `resetWind`
+  - `setMyTime`
+  - `setMyWeather`
+  - `setSyncDelay`
+  - `setSyncEnabled`
+  - `setTime`
+  - `setTimescale`
+  - `setWeather`
+  - `setWeatherPattern`
+  - `setWind`
+  - `toggleSync`
+- logic_patterns (0):
+  - (none)
+

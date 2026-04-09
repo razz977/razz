@@ -170,3 +170,19 @@ Regulament server:
 
 Transforma regulamentul in validari tehnice server-side, logs si restrictii de gameplay.
 ```
+
+## 8) Regulament extins din toate scripturile RSG (Rexshack-RedM)
+
+- Foloseste `RSG_ORG_REGULAMENT_COMPLET.md` ca baza de modele/flow-uri reutilizabile.
+- Pentru lookup complet (absolut toate functiile/evenimentele/exporturile detectate), foloseste:
+  - `RSG_ORG_FUNCTION_INDEX.json`
+- Pentru lista complet ne-trunchiata (repo-cu-repo + aggregate full), foloseste:
+  - `RSG_ORG_REGULAMENT_ABSOLUT_COMPLET.md`
+- Cand ceri cod nou, ordinea obligatorie este:
+  1. `RSG_ORG_FUNCTION_INDEX.json` (functie/event exact)
+  2. `RSG_ORG_REGULAMENT_ABSOLUT_COMPLET.md` (full map)
+  3. `RSG_ORG_REGULAMENT_COMPLET.md` (rezumat practic)
+  4. `RSG_NATIVE_CATALOG.md` (native allowlist)
+  5. acest fisier (`CURSOR_RSG_RULESET.md`)
+
+Regula: daca exista deja model functional in repo-urile RSG scanate, se copiaza/adapteaza acel model in loc sa se inventeze flow nou.
