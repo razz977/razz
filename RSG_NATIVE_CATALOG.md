@@ -22,7 +22,12 @@ Daca un script are nevoie de alt apel, se adauga doar dupa verificare in documen
 ## 2) Vehicle / Model natives
 
 - `GetHashKey(modelName)`
+- `RequestModel(modelHash)`
+- `HasModelLoaded(modelHash)`
+- `IsModelValid(modelHash)`
 - `CreateVehicle(modelHash, x, y, z, heading, isNetwork, netMissionEntity)`
+- `CreatePed(modelHash, x, y, z, heading, isNetwork, bScriptHostPed, p7, p8)`
+- `CreateObject(modelHash, x, y, z, isNetwork, netMissionEntity, dynamic)`
 - `SetPedIntoVehicle(ped, vehicle, seatIndex)`
 - `SetModelAsNoLongerNeeded(modelHash)`
 
@@ -31,6 +36,15 @@ Daca un script are nevoie de alt apel, se adauga doar dupa verificare in documen
 - `DoesBlipExist(blip)`
 - `RemoveBlip(blip)`
 - `SetBlipSprite(blip, spriteHash, p2)`
+- `SetBlipScale(blip, scale)`
+- `SetBlipRoute(blip, enabled)`
+- `BeginTextCommandSetBlipName(type)`
+- `AddTextComponentString(text)`
+- `EndTextCommandSetBlipName(blip)`
+- `AttachEntityToEntity(entity1, entity2, boneIndex, xPos, yPos, zPos, xRot, yRot, zRot, p9, useSoftPinning, collision, isPed, vertexIndex, fixedRot)`
+- `FreezeEntityPosition(entity, toggle)`
+- `SetEntityInvincible(entity, toggle)`
+- `SetBlockingOfNonTemporaryEvents(entity, toggle)`
 - `Citizen.InvokeNative(hash, ...)` (doar in pattern-ul documentat RSG, ex. blip creation)
 - `SendNUIMessage(data)`
 
@@ -44,6 +58,8 @@ Daca un script are nevoie de alt apel, se adauga doar dupa verificare in documen
 - `RegisterCommand(name, handler, restricted)`
 - `DropPlayer(source, reason)`
 - `GetPlayerName(source)`
+- `GetCurrentResourceName()`
+- `IsControlJustPressed(inputGroup, control)`
 
 ## 5) Threads / Timing
 
@@ -72,6 +88,7 @@ Daca un script are nevoie de alt apel, se adauga doar dupa verificare in documen
 ## 8) Animation natives
 
 - `TaskPlayAnim(ped, dict, anim, speed, speedMultiplier, duration, flag, playbackRate, lockX, lockY, lockZ)`
+- `TaskStartScenarioInPlace(ped, scenarioHash, duration, playEnterAnim, p4, p5, p6)`
 - `ClearPedTasks(ped)`
 - `RemoveAnimDict(dict)`
 

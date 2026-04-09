@@ -2,6 +2,7 @@ Config = {}
 
 Config.Debug = false -- Set to true for testing and debug prints; false for production.
 Config.Locale = 'ro' -- Active locale key used for player-facing notifications.
+Config.UseOxTarget = true -- Set true to enable ox_target interaction on dispatcher NPC.
 
 Config.Npc = {
     Model = 'U_M_M_RHDTrainStationWorker_01', -- NPC model used for the transport dispatcher.
