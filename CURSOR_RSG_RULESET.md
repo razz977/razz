@@ -162,6 +162,13 @@ Chei recomandate (din docs): `hunger`, `thirst`, `cleanliness`, `stress`, `healt
 - NU folosi loop-uri `while true do` cu `Wait(0)` fara sleep dinamic.
 - NU folosi money type `bank`.
 - NU folosi native alternative daca exista pattern explicit in docs RSG pentru acel caz.
+- NU adauga functionalitati in afara cerintei userului (scope creep).
+- Daca userul cere doar NPC (sau doar modificare NPC), modifica strict logica relevanta pentru NPC in:
+  - `config.lua`
+  - `client/client.lua`
+  - `server/server.lua` (doar daca este necesara validare server-side)
+- NU adauga sisteme extra (economy, inventory, jobs, callbacks, commands etc.) daca userul nu le-a cerut explicit.
+- Foloseste doar native/functii relevante pentru cerinta curenta; nu introduce apeluri fara legatura cu task-ul.
 
 ## 6) Prompt master pentru Cursor (copy/paste)
 
