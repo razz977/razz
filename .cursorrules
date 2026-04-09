@@ -1,0 +1,26 @@
+Project AI coding rules (RSG-first):
+
+Always follow these files in this exact order before generating code:
+1) RSG_ORG_FUNCTION_INDEX.json
+2) RSG_ORG_REGULAMENT_ABSOLUT_COMPLET.md
+3) RSG_ORG_REGULAMENT_COMPLET.md
+4) RSG_NATIVE_CATALOG.md
+5) CURSOR_RSG_RULESET.md
+6) RSG_ZERO_TO_SCRIPT_PLAYBOOK.md
+
+Mandatory behavior:
+- Reuse existing RSG patterns/functions/events from the indexed files when available.
+- Do not invent alternative flows if an RSG model already exists.
+- Keep sensitive validation server-side only.
+- Never process money/item rewards on client side.
+- Prefer RSG APIs and exports (rsg-core, rsg-inventory, callbacks, prompts, statebags).
+- Use only native patterns allowed by RSG_NATIVE_CATALOG.md.
+- Respect deprecated/forbidden patterns documented in CURSOR_RSG_RULESET.md.
+
+When user provides server rules/regulation:
+- Convert each rule into technical checks (permission, distance, item/money validation, cooldown, logs).
+- Apply those checks in server code paths.
+
+When building from scratch:
+- Follow staged implementation from RSG_ZERO_TO_SCRIPT_PLAYBOOK.md.
+- Implement incrementally (function by function), preserving existing code.
