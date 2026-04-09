@@ -44,36 +44,36 @@ dependencies {
 --[[
 Config = {}
 
-Config.Debug = false
-Config.ActionDistance = 2.0
-Config.CooldownSeconds = 10
-Config.RequiredJob = 'unemployed' -- set to your job
-Config.RequiredItem = 'bread'
-Config.RequiredItemAmount = 1
+Config.Debug = false -- Set to true for testing; false for production.
+Config.ActionDistance = 2.0 -- Maximum distance in meters for interaction validation.
+Config.CooldownSeconds = 10 -- Cooldown per player in seconds between actions.
+Config.RequiredJob = 'unemployed' -- Job name required to use the action.
+Config.RequiredItem = 'bread' -- Item required as action cost.
+Config.RequiredItemAmount = 1 -- Amount required from RequiredItem.
 
 -- Money type must be one of:
 -- cash, valbank, rhobank, blkbank, armbank, bloodmoney
-Config.RewardMoneyType = 'cash'
-Config.RewardMoneyAmount = 5
+Config.RewardMoneyType = 'cash' -- Reward wallet type (do not use deprecated bank).
+Config.RewardMoneyAmount = 5 -- Reward amount given on success.
 
 Config.Prompt = {
-    id = 'template_action_prompt',
-    coords = vector3(-322.5, 773.2, 116.2),
-    label = 'Run Template Action',
-    key = 'E'
+    id = 'template_action_prompt', -- Unique prompt id.
+    coords = vector3(-322.5, 773.2, 116.2), -- Prompt world coordinates.
+    label = 'Run Template Action', -- Prompt label shown to player.
+    key = 'E' -- Keybind key from RSGCore.Shared.Keybinds.
 }
 
 Locales = Locales or {}
 Locales['ro'] = {
-    ['template_title'] = 'Template',
-    ['invalid_keybind'] = 'Keybind invalid in config',
-    ['on_cooldown'] = 'Esti in cooldown',
-    ['too_far'] = 'Esti prea departe',
-    ['missing_job'] = 'Nu ai jobul necesar',
-    ['inventory_full'] = 'Inventar plin',
-    ['invalid_player'] = 'Player invalid',
-    ['missing_item'] = 'Lipseste itemul necesar',
-    ['action_done'] = 'Actiune completata'
+    ['template_title'] = 'Template', -- Notification title.
+    ['invalid_keybind'] = 'Keybind invalid in config', -- Invalid prompt key in config.
+    ['on_cooldown'] = 'Esti in cooldown', -- Action blocked by cooldown.
+    ['too_far'] = 'Esti prea departe', -- Player is outside interaction distance.
+    ['missing_job'] = 'Nu ai jobul necesar', -- Player does not have required job.
+    ['inventory_full'] = 'Inventar plin', -- Inventory has no space for reward.
+    ['invalid_player'] = 'Player invalid', -- Source could not be mapped to player.
+    ['missing_item'] = 'Lipseste itemul necesar', -- Missing required cost item.
+    ['action_done'] = 'Actiune completata' -- Success message.
 }
 ]]
 

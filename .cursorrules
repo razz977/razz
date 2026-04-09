@@ -24,6 +24,8 @@ Mandatory behavior:
   - `locales/ro.lua`
 - All user-facing texts must be centralized in `locales/ro.lua`.
 - Romanian locale text must be written without Romanian diacritics.
+- In `config.lua`, every configurable line must include an inline comment on the same line (not above/below).
+- Keep `config.lua` clean and ordered by sections (General, NPC/Locations, Jobs, Economy, Security, UI/Blips, Debug).
 
 When user provides server rules/regulation:
 - Convert each rule into technical checks (permission, distance, item/money validation, cooldown, logs).
