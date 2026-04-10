@@ -1,14 +1,19 @@
 Project AI coding rules (RSG-first):
 
 Always follow these files in this exact order before generating code:
-1) RSG_ORG_FUNCTION_INDEX.json
-2) RSG_ORG_REGULAMENT_ABSOLUT_COMPLET.md
-3) RSG_ORG_REGULAMENT_COMPLET.md
-4) RSG_DOCS_REGULAMENT_SUPLIMENTAR.md
-5) RSG_DOCS_AUDIT_INDEX.json
-6) RSG_NATIVE_CATALOG.md
-7) CURSOR_RSG_RULESET.md
-8) RSG_ZERO_TO_SCRIPT_PLAYBOOK.md
+1) RSG_UNIFIED_REGULATION.md
+2) RSG_UNIFIED_NATIVE_FUNCTIONS.md
+3) RSG_UNIFIED_FUNCTION_NATIVE_INDEX.json
+4) CURSOR_RSG_RULESET.md
+5) RSG_ZERO_TO_SCRIPT_PLAYBOOK.md
+
+Legacy references (fallback only, keep compatibility):
+- RSG_ORG_FUNCTION_INDEX.json
+- RSG_ORG_REGULAMENT_ABSOLUT_COMPLET.md
+- RSG_ORG_REGULAMENT_COMPLET.md
+- RSG_DOCS_REGULAMENT_SUPLIMENTAR.md
+- RSG_DOCS_AUDIT_INDEX.json
+- RSG_NATIVE_CATALOG.md
 
 Mandatory behavior:
 - Reuse existing RSG patterns/functions/events from the indexed files when available.

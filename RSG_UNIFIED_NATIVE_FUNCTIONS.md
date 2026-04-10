@@ -1,0 +1,1688 @@
+# RSG UNIFIED NATIVES + FUNCTIONS
+
+Sursa: scanare completa `RexShackGaming` + indexurile existente RSG din proiect.
+
+Fisier index complet: `RSG_UNIFIED_FUNCTION_NATIVE_INDEX.json`
+
+## Top native/global calls
+
+- `GetCoreObject` _(repos: 51)_
+- `GetCurrentResourceName` _(repos: 51)_
+- `RegisterNetEvent` _(repos: 50)_
+- `TriggerClientEvent` _(repos: 49)_
+- `Wait` _(repos: 49)_
+- `CheckVersion` _(repos: 48)_
+- `GetResourceMetadata` _(repos: 48)_
+- `PerformHttpRequest` _(repos: 48)_
+- `GetPlayer` _(repos: 47)_
+- `TriggerServerEvent` _(repos: 47)_
+- `CreateThread` _(repos: 45)_
+- `GetEntityCoords` _(repos: 42)_
+- `AddEventHandler` _(repos: 41)_
+- `TriggerEvent` _(repos: 41)_
+- `FreezeEntityPosition` _(repos: 35)_
+- `HasModelLoaded` _(repos: 34)_
+- `RequestModel` _(repos: 34)_
+- `AddItem` _(repos: 33)_
+- `SetEntityAlpha` _(repos: 32)_
+- `SetBlipSprite` _(repos: 30)_
+- `CreatePed` _(repos: 29)_
+- `PlayerPedId` _(repos: 29)_
+- `SetBlipScale` _(repos: 29)_
+- `TriggerCallback` _(repos: 29)_
+- `DeletePed` _(repos: 28)_
+- `InvokeNative` _(repos: 28)_
+- `SetBlockingOfNonTemporaryEvents` _(repos: 28)_
+- `SetEntityInvincible` _(repos: 28)_
+- `SetPedFleeAttributes` _(repos: 26)_
+- `SetRandomOutfitVariation` _(repos: 26)_
+- `DoesEntityExist` _(repos: 25)_
+- `RemoveItem` _(repos: 25)_
+- `SetBlipName` _(repos: 25)_
+- `SetEntityCanBeDamaged` _(repos: 25)_
+- `AddMoney` _(repos: 24)_
+- `BlipAddForCoords` _(repos: 24)_
+- `CreateCallback` _(repos: 24)_
+- `GetGameTimer` _(repos: 23)_
+- `NearPed` _(repos: 23)_
+- `SetPedCanBeTargetted` _(repos: 23)_
+- `HasItem` _(repos: 20)_
+- `RemoveMoney` _(repos: 19)_
+- `SetModelAsNoLongerNeeded` _(repos: 18)_
+- `DeleteEntity` _(repos: 17)_
+- `GetPlayerData` _(repos: 17)_
+- `RegisterServerEvent` _(repos: 17)_
+- `VALUES` _(repos: 17)_
+- `SetEntityAsMissionEntity` _(repos: 16)_
+- `CreateObject` _(repos: 15)_
+- `ClearPedTasks` _(repos: 14)_
+- `DeleteObject` _(repos: 14)_
+- `COUNT` _(repos: 13)_
+- `GetHashKey` _(repos: 12)_
+- `OpenInventory` _(repos: 12)_
+- `CreateUseableItem` _(repos: 11)_
+- `TaskStartScenarioInPlace` _(repos: 11)_
+- `CreateVarString` _(repos: 10)_
+- `AttachEntityToEntity` _(repos: 9)_
+- `GetPlayerPed` _(repos: 9)_
+- `Add` _(repos: 8)_
+- `GetItemCount` _(repos: 8)_
+- `GetPlayerName` _(repos: 8)_
+- `IsControlPressed` _(repos: 8)_
+- `PromptRegisterBegin` _(repos: 8)_
+- `PromptRegisterEnd` _(repos: 8)_
+- `PromptSetControlAction` _(repos: 8)_
+- `PromptSetEnabled` _(repos: 8)_
+- `PromptSetGroup` _(repos: 8)_
+- `PromptSetHoldMode` _(repos: 8)_
+- `PromptSetText` _(repos: 8)_
+- `PromptSetVisible` _(repos: 8)_
+- `RegisterCommand` _(repos: 8)_
+- `SetEntityHeading` _(repos: 8)_
+- `GetRandomIntInRange` _(repos: 7)_
+- `PlaceObjectOnGroundProperly` _(repos: 7)_
+- `PromptHasHoldModeCompleted` _(repos: 7)_
+- `PromptSetActiveGroupThisFrame` _(repos: 7)_
+- `RemoveBlip` _(repos: 7)_
+- `SetCurrentPedWeapon` _(repos: 7)_
+- `CreateShop` _(repos: 6)_
+- `GetEntityHeading` _(repos: 6)_
+- `GetEntityModel` _(repos: 6)_
+- `OpenShop` _(repos: 6)_
+- `PromptSetStandardMode` _(repos: 6)_
+- `SetEntityAsNoLongerNeeded` _(repos: 6)_
+- `GetEntityBoneIndexByName` _(repos: 5)_
+- `GetItemByName` _(repos: 5)_
+- `GetPlayers` _(repos: 5)_
+- `HasAnimDictLoaded` _(repos: 5)_
+- `IsControlJustReleased` _(repos: 5)_
+- `PointerValueIntInitialized` _(repos: 5)_
+- `RequestAnimDict` _(repos: 5)_
+- `SetJob` _(repos: 5)_
+- `TaskPlayAnim` _(repos: 5)_
+- `UseParticleFxAsset` _(repos: 5)_
+- `AddRep` _(repos: 4)_
+- `CanPlacePropHere` _(repos: 4)_
+- `ClearPedTasksImmediately` _(repos: 4)_
+- `CreateVehicle` _(repos: 4)_
+- `Del` _(repos: 4)_
+- `DoScreenFadeIn` _(repos: 4)_
+- `DoesBlipExist` _(repos: 4)_
+- `GetEntityForwardVector` _(repos: 4)_
+- `GetGamePool` _(repos: 4)_
+- `GetRep` _(repos: 4)_
+- `IncreasePlayerXP` _(repos: 4)_
+- `IsDuplicityVersion` _(repos: 4)_
+- `IsEntityDead` _(repos: 4)_
+- `NetworkGetNetworkIdFromEntity` _(repos: 4)_
+- `RotateLeft` _(repos: 4)_
+- `RotateRight` _(repos: 4)_
+- `SendDiscordLog` _(repos: 4)_
+- `Set` _(repos: 4)_
+- `SetEntityCollision` _(repos: 4)_
+- `SetTimeout` _(repos: 4)_
+- `StartParticleFxNonLoopedAtCoord` _(repos: 4)_
+- `AddTargetEntity` _(repos: 3)_
+- `AddVegModifierSphere` _(repos: 3)_
+- `BlipAddModifier` _(repos: 3)_
+- `Create` _(repos: 3)_
+- `DeleteThis` _(repos: 3)_
+- `DeleteVehicle` _(repos: 3)_
+- `DisplayText` _(repos: 3)_
+- `DoScreenFadeOut` _(repos: 3)_
+- `DrawLine` _(repos: 3)_
+- `DrawPropAxes` _(repos: 3)_
+- `GetEntityMatrix` _(repos: 3)_
+- `GetEventAtIndex` _(repos: 3)_
+- `GetGameplayCamCoord` _(repos: 3)_
+- `GetGameplayCamRot` _(repos: 3)_
+- `GetNumberOfEvents` _(repos: 3)_
+- `GetOffsetFromEntityInWorldCoords` _(repos: 3)_
+- `GetPedType` _(repos: 3)_
+- `GetPlayerJob` _(repos: 3)_
+- `GetShapeTestResult` _(repos: 3)_
+- `HasPermission` _(repos: 3)_
+- `IsPlayerAceAllowed` _(repos: 3)_
+- `NPCs` _(repos: 3)_
+- `NetworkRequestControlOfEntity` _(repos: 3)_
+- `O` _(repos: 3)_
+- `PropPlacer` _(repos: 3)_
+- `RayCastGamePlayCamera` _(repos: 3)_
+- `RegisterNUICallback` _(repos: 3)_
+- `RemoveVegModifierSphere` _(repos: 3)_
+- `RotationToDirection` _(repos: 3)_
+- `SendNUIMessage` _(repos: 3)_
+- `SetEntityCoordsNoOffset` _(repos: 3)_
+- `SetEntityVisible` _(repos: 3)_
+- `SetNuiFocus` _(repos: 3)_
+- `SetRelationshipBetweenGroups` _(repos: 3)_
+- `SetTextCentre` _(repos: 3)_
+- `SetTextColor` _(repos: 3)_
+- `SetTextScale` _(repos: 3)_
+- `SetVehicleOnGroundProperly` _(repos: 3)_
+- `StartShapeTestRay` _(repos: 3)_
+- `AddBlacksmithRecipe` _(repos: 2)_
+- `AddCustomRecipe` _(repos: 2)_
+- `AddExampleRecipe` _(repos: 2)_
+- `AddLightPropSetToVehicle` _(repos: 2)_
+- `AddPointToGpsMultiRoute` _(repos: 2)_
+- `AddPropSetForVehicle` _(repos: 2)_
+- `AddRelationshipGroup` _(repos: 2)_
+- `CanCraftItem` _(repos: 2)_
+- `CanTakeNewJob` _(repos: 2)_
+- `CheckPlayerIngredients` _(repos: 2)_
+- `CheckPlayerJob` _(repos: 2)_
+- `CheckPlayerJobRequirement` _(repos: 2)_
+- `ClearGpsMultiRoute` _(repos: 2)_
+- `ClearPedSecondaryTask` _(repos: 2)_
+- `DATE_SUB` _(repos: 2)_
+- `DataViewNativeGetEventData` _(repos: 2)_
+- `DeliveryTimer` _(repos: 2)_
+- `DisableControlAction` _(repos: 2)_
+- `DrawText3D` _(repos: 2)_
+- `EXAMPLES` _(repos: 2)_
+- `FormatTime` _(repos: 2)_
+- `GetClosestObjectOfType` _(repos: 2)_
+- `GetDistance` _(repos: 2)_
+- `GetEntityHealth` _(repos: 2)_
+- `GetEntitySpeed` _(repos: 2)_
+- `GetJobFilteredRecipes` _(repos: 2)_
+- `GetPedRelationshipGroupHash` _(repos: 2)_
+- `GetPlayerCraftingXP` _(repos: 2)_
+- `GetRecipeByItem` _(repos: 2)_
+- `GetRecipeIngredients` _(repos: 2)_
+- `GetRecipeJobRequirement` _(repos: 2)_
+- `GetRecipesByJob` _(repos: 2)_
+- `GetScreenCoordFromWorldCoord` _(repos: 2)_
+- `GivePlayerCraftingXP` _(repos: 2)_
+- `HasNamedPtfxAssetLoaded` _(repos: 2)_
+- `Initialize` _(repos: 2)_
+- `IsDisabledControlJustReleased` _(repos: 2)_
+- `IsEntityInWater` _(repos: 2)_
+- `IsEntityPlayingAnim` _(repos: 2)_
+- `IsModelValid` _(repos: 2)_
+- `IsPedDeadOrDying` _(repos: 2)_
+- `IsPedInAnyVehicle` _(repos: 2)_
+- `IsPedMale` _(repos: 2)_
+- `IsPedOnMount` _(repos: 2)_
+- `IsVehicleDriveable` _(repos: 2)_
+- `Items` _(repos: 2)_
+- `LoadModel` _(repos: 2)_
+- `NOW` _(repos: 2)_
+- `NearNPC` _(repos: 2)_
+- `NetworkRegisterEntityAsNetworked` _(repos: 2)_
+- `OpenCraftingMenu` _(repos: 2)_
+- `PlaceEntityOnGroundProperly` _(repos: 2)_
+- `PlayerId` _(repos: 2)_
+- `ProcessCrafting` _(repos: 2)_
+- `ProcessCraftingWithJobCheck` _(repos: 2)_
+- `PromptDelete` _(repos: 2)_
+- `RandomInt` _(repos: 2)_
+- `RandomStr` _(repos: 2)_
+- `RegisterCategoryMenus` _(repos: 2)_
+- `RemoveJobFromPlayer` _(repos: 2)_
+- `RequestNamedPtfxAsset` _(repos: 2)_
+- `ResultAsLong` _(repos: 2)_
+- `Round` _(repos: 2)_
+- `SendWebhook` _(repos: 2)_
+- `SetEntityCoordsAndHeading` _(repos: 2)_
+- `SetEntityHealth` _(repos: 2)_
+- `SetGpsMultiRouteRender` _(repos: 2)_
+- `SetNetworkIdExistsOnAllMachines` _(repos: 2)_
+- `SetPedCombatAttributes` _(repos: 2)_
+- `SetPedHearingRange` _(repos: 2)_
+- `SetPedKeepTask` _(repos: 2)_
+- `SetPedOutfitPreset` _(repos: 2)_
+- `SetPedRelationshipGroupHash` _(repos: 2)_
+- `SetPedSeeingRange` _(repos: 2)_
+- `SetTextFontForCurrentCommand` _(repos: 2)_
+- `Settings` _(repos: 2)_
+- `ShowMissingItemsNotification` _(repos: 2)_
+- `ShutdownLoadingScreen` _(repos: 2)_
+- `StartGpsMultiRoute` _(repos: 2)_
+- `TaskCombatPed` _(repos: 2)_
+- `TaskSetBlockingOfNonTemporaryEvents` _(repos: 2)_
+- `TaskTurnPedToFaceEntity` _(repos: 2)_
+- `TaskWanderStandard` _(repos: 2)_
+- `URL` _(repos: 2)_
+- `ValidateConfig` _(repos: 2)_
+- `AddBlipForCoord` _(repos: 1)_
+- `AddExplosionWithUserVfx` _(repos: 1)_
+- `AddNPCTargeting` _(repos: 1)_
+- `AddPropToSpatialIndex` _(repos: 1)_
+- `AddTargetModel` _(repos: 1)_
+- `AddTextComponentString` _(repos: 1)_
+- `AddToHistory` _(repos: 1)_
+- `Anim` _(repos: 1)_
+- `Animal` _(repos: 1)_
+- `Animals` _(repos: 1)_
+- `ApplyShopItemToPed` _(repos: 1)_
+- `ArrayBuffer` _(repos: 1)_
+- `Arrow` _(repos: 1)_
+- `AttachPan` _(repos: 1)_
+- `AttemptMine` _(repos: 1)_
+- `Await` _(repos: 1)_
+- `Bass` _(repos: 1)_
+- `BatchUpdateProps` _(repos: 1)_
+- `BeginTextCommandSetBlipName` _(repos: 1)_
+- `BlipAddForEntity` _(repos: 1)_
+- `Breed` _(repos: 1)_
+- `Buffer` _(repos: 1)_
+- `BuildCookingMenus` _(repos: 1)_
+- `BuildCraftingMenus` _(repos: 1)_
+- `BuildEmbed` _(repos: 1)_
+- `ByteLength` _(repos: 1)_
+- `ByteOffset` _(repos: 1)_
+- `Cache` _(repos: 1)_
+- `CacheCleanup` _(repos: 1)_
+- `CalculateDynamicWait` _(repos: 1)_
+- `CalculateTravelCost` _(repos: 1)_
+- `CalculateTravelWaitTime` _(repos: 1)_
+- `CanPanAtLocation` _(repos: 1)_
+- `CanPlantSeedHere` _(repos: 1)_
+- `CanPlayerSpawn` _(repos: 1)_
+- `CanSendWebhook` _(repos: 1)_
+- `Cat` _(repos: 1)_
+- `Catfish` _(repos: 1)_
+- `Chance` _(repos: 1)_
+- `CheckActiveHorse` _(repos: 1)_
+- `CheckSpawnRequests` _(repos: 1)_
+- `CheckSuspiciousActivity` _(repos: 1)_
+- `Clamp` _(repos: 1)_
+- `CleanupAllNPCs` _(repos: 1)_
+- `CleanupAllTrains` _(repos: 1)_
+- `CleanupCampsiteStorage` _(repos: 1)_
+- `CleanupDelivery` _(repos: 1)_
+- `CleanupExistingBuyPointNPCs` _(repos: 1)_
+- `CleanupExistingSalePointNPCs` _(repos: 1)_
+- `CleanupFirework` _(repos: 1)_
+- `CleanupOrphanedEntities` _(repos: 1)_
+- `CleanupPendingRequests` _(repos: 1)_
+- `CleanupPlayerCooldowns` _(repos: 1)_
+- `CleanupPrompts` _(repos: 1)_
+- `CleanupRottedAnimals` _(repos: 1)_
+- `CleanupSpecificNPC` _(repos: 1)_
+- `CleanupStaleData` _(repos: 1)_
+- `CleanupTrain` _(repos: 1)_
+- `CleanupVegModifier` _(repos: 1)_
+- `ClearAll` _(repos: 1)_
+
+## Top function signatures
+
+- `CheckVersion()` _(repos: 48)_
+- `onSelect()` _(repos: 32)_
+- `isVersionOutdated(current, latest)` _(repos: 28)_
+- `printLog(type, message)` _(repos: 28)_
+- `splitVersion(v)` _(repos: 28)_
+- `versionCheckPrint(_type, log)` _(repos: 20)_
+- `onBack()` _(repos: 8)_
+- `NearPed(npcmodel, npccoords)` _(repos: 7)_
+- `compareNames(a, b)` _(repos: 6)_
+- `Del()` _(repos: 4)_
+- `IncreasePlayerXP(source, xpGain, xpType)` _(repos: 4)_
+- `RotateLeft()` _(repos: 4)_
+- `RotateRight()` _(repos: 4)_
+- `Set()` _(repos: 4)_
+- `CanPlacePropHere(pos)` _(repos: 3)_
+- `DrawPropAxes(prop)` _(repos: 3)_
+- `RayCastGamePlayCamera(distance)` _(repos: 3)_
+- `RotationToDirection(rotation)` _(repos: 3)_
+- `onExit()` _(repos: 3)_
+- `secondsToClock(seconds)` _(repos: 3)_
+- `AddBlacksmithRecipe()` _(repos: 2)_
+- `AddExampleRecipe()` _(repos: 2)_
+- `CheckPlayerJobRequirement(source, requiredJob)` _(repos: 2)_
+- `DeleteThis(holding)` _(repos: 2)_
+- `DeliveryTimer(deliverytime, vehicle, endcoords)` _(repos: 2)_
+- `DrawText3D(x, y, z, text)` _(repos: 2)_
+- `NearNPC(npcmodel, npccoords, heading)` _(repos: 2)_
+- `NearPed(npcmodel, npccoords, location)` _(repos: 2)_
+- `RegisterCategoryMenus()` _(repos: 2)_
+- `SendDiscordLog(title, description, fields, color)` _(repos: 2)_
+- `ShowMissingItemsNotification(missingItems)` _(repos: 2)_
+- `Utils.GetDistance(pos1, pos2)` _(repos: 2)_
+- `ValidateConfig()` _(repos: 2)_
+- `action()` _(repos: 2)_
+- `canInteract()` _(repos: 2)_
+- `modelrequest(model)` _(repos: 2)_
+- `newpoint.onEnter(self)` _(repos: 2)_
+- `newpoint.onExit(self)` _(repos: 2)_
+- `onSelect(data)` _(repos: 2)_
+- `placeProp(propmodel, item)` _(repos: 2)_
+- `AddNPCTargeting(ped, location)` _(repos: 1)_
+- `AddPropToSpatialIndex(prop)` _(repos: 1)_
+- `AddToHistory(sender, message, chatType)` _(repos: 1)_
+- `AddVegModifierSphere(...)` _(repos: 1)_
+- `Anim(actor, dict, body, duration, flags, introtiming, exittiming)` _(repos: 1)_
+- `AttachPan()` _(repos: 1)_
+- `AttemptMine(oreType, zoneKey)` _(repos: 1)_
+- `BatchUpdateProps()` _(repos: 1)_
+- `BuildCookingMenus()` _(repos: 1)_
+- `BuildCraftingMenus()` _(repos: 1)_
+- `BuildEmbed(template, fields, description)` _(repos: 1)_
+- `CacheCleanup()` _(repos: 1)_
+- `CalculateDynamicWait(playerPos)` _(repos: 1)_
+- `CanPanAtLocation(coords)` _(repos: 1)_
+- `CanPlacePropHere(playercoords)` _(repos: 1)_
+- `CanPlantSeedHere(propcoords)` _(repos: 1)_
+- `CanSendWebhook()` _(repos: 1)_
+- `CheckSuspiciousActivity(source, xpGained)` _(repos: 1)_
+- `CleanupAllNPCs()` _(repos: 1)_
+- `CleanupAllTrains()` _(repos: 1)_
+- `CleanupCampsiteStorage(campsiteid, playername, citizenid)` _(repos: 1)_
+- `CleanupDelivery()` _(repos: 1)_
+- `CleanupExistingBuyPointNPCs()` _(repos: 1)_
+- `CleanupExistingSalePointNPCs()` _(repos: 1)_
+- `CleanupFirework()` _(repos: 1)_
+- `CleanupPlayerCooldowns()` _(repos: 1)_
+- `CleanupPrompts()` _(repos: 1)_
+- `CleanupRottedAnimals()` _(repos: 1)_
+- `CleanupSpecificNPC(locationId)` _(repos: 1)_
+- `CleanupTrain(trainid)` _(repos: 1)_
+- `CleanupVegModifier(propId)` _(repos: 1)_
+- `CloseChatUI()` _(repos: 1)_
+- `CloseShop()` _(repos: 1)_
+- `CloseShopNUI()` _(repos: 1)_
+- `CountTable(t)` _(repos: 1)_
+- `CreateAnimalId()` _(repos: 1)_
+- `CreateBlackmarketBlips()` _(repos: 1)_
+- `CreateBlackmarketNPC(location)` _(repos: 1)_
+- `CreateCampsiteId()` _(repos: 1)_
+- `CreateCode()` _(repos: 1)_
+- `CreateMarketId()` _(repos: 1)_
+- `CreatePlantId()` _(repos: 1)_
+- `CreatePrompts()` _(repos: 1)_
+- `CreatePropId()` _(repos: 1)_
+- `CreateStockMenuItems(result, isOwner)` _(repos: 1)_
+- `CreateZone(...)` _(repos: 1)_
+- `CrouchAnim()` _(repos: 1)_
+- `DataView.ArrayBuffer(length)` _(repos: 1)_
+- `DataView.Wrap(blob)` _(repos: 1)_
+- `DataView:Buffer()` _(repos: 1)_
+- `DataView:ByteLength()` _(repos: 1)_
+- `DataView:ByteOffset()` _(repos: 1)_
+- `DataView:SubView(offset)` _(repos: 1)_
+- `Debug(...)` _(repos: 1)_
+- `DebugPrint(message)` _(repos: 1)_
+- `DeletePan(entity)` _(repos: 1)_
+- `DeleteThis(holding, modellabel)` _(repos: 1)_
+- `DiscordLog_AdminDelete(adminName, adminCitizenid, adminSteamid, ownerCitizenid, storageId)` _(repos: 1)_
+- `DiscordLog_GuestAdded(ownerName, ownerCitizenid, guestName, guestCitizenid, storageId)` _(repos: 1)_
+- `DiscordLog_GuestRemoved(ownerName, ownerCitizenid, guestName, guestCitizenid, storageId)` _(repos: 1)_
+- `DiscordLog_StorageAccessed(playerName, citizenid, steamid, storageId, ownerName, isGuest)` _(repos: 1)_
+- `DiscordLog_StorageCreated(playerName, citizenid, steamid, storageId, coords)` _(repos: 1)_
+- `DiscordLog_StorageDestroyed(playerName, citizenid, steamid, storageId, coords)` _(repos: 1)_
+- `DisplayMessage(sender, message, chatType)` _(repos: 1)_
+- `DoesItemMeetQuality(src, item, amount)` _(repos: 1)_
+- `DrillingRocks(item, amount)` _(repos: 1)_
+- `DropPrompt(text, button, hold)` _(repos: 1)_
+- `FadeInPed(ped)` _(repos: 1)_
+- `FadeOutPed(ped, callback)` _(repos: 1)_
+- `FilterMessage(message)` _(repos: 1)_
+- `FindPropIndex(marketid)` _(repos: 1)_
+- `FinishMining(success, oreType, zoneKey)` _(repos: 1)_
+- `FormatCookingType(cookingType)` _(repos: 1)_
+- `FormatIngredients(ingredients)` _(repos: 1)_
+- `FormatTime(ms)` _(repos: 1)_
+- `GenerateHorseid()` _(repos: 1)_
+- `GeneratePlate()` _(repos: 1)_
+- `GenerateSecureID()` _(repos: 1)_
+- `GetAnimalDisplayName(model)` _(repos: 1)_
+- `GetAnimalEntityById(animalId)` _(repos: 1)_
+- `GetBreedingCooldown(gender)` _(repos: 1)_
+- `GetGridKey(pos)` _(repos: 1)_
+- `GetJobFilteredRecipes()` _(repos: 1)_
+- `GetJobFilteredRecipes(cookingType)` _(repos: 1)_
+- `GetNearbyAnimals()` _(repos: 1)_
+- `GetNearbyPlayers(source, distance)` _(repos: 1)_
+- `GetNearbyPropsFromGrid(playerPos)` _(repos: 1)_
+- `GetNearestShop(playerCoords)` _(repos: 1)_
+- `GetPlantStageHash(plant)` _(repos: 1)_
+- `GetPlayerActiveWagon(citizenid)` _(repos: 1)_
+- `GetPlayerCoords()` _(repos: 1)_
+- `GetPlayerInfo(source)` _(repos: 1)_
+- `GetPlayerInventory(player)` _(repos: 1)_
+- `GetPlayerJob(source)` _(repos: 1)_
+- `GetPlayerMoney(Player, moneyType)` _(repos: 1)_
+- `GetPlayerName(source)` _(repos: 1)_
+- `GetPlayerWagons(citizenid)` _(repos: 1)_
+- `GoldShake()` _(repos: 1)_
+- `HasReachedMilestone(source, milestone)` _(repos: 1)_
+- `InitializeActiveLocations()` _(repos: 1)_
+- `InitializePrompts()` _(repos: 1)_
+- `InitializeShop()` _(repos: 1)_
+- `IsInGuarma()` _(repos: 1)_
+- `IsItemBlacklisted(item)` _(repos: 1)_
+- `IsNearCampfire()` _(repos: 1)_
+- `IsNearFishmonger(playerCoords)` _(repos: 1)_
+- `IsOnCooldown(source)` _(repos: 1)_
+- `IsPlayerAdmin(source)` _(repos: 1)_
+- `IsPlayerAuthorized(Player)` _(repos: 1)_
+- `IsPlayerBusy()` _(repos: 1)_
+- `IsPlayerOnCooldown(src)` _(repos: 1)_
+- `IsValidAnimal(model)` _(repos: 1)_
+- `IsValidPed(ped)` _(repos: 1)_
+- `IsValidQuality(quality)` _(repos: 1)_
+- `LoadActiveWagonFromDB(citizenid)` _(repos: 1)_
+- `LoadAllWagons()` _(repos: 1)_
+- `LoadModel(model)` _(repos: 1)_
+- `LoadModel(model, timeout)` _(repos: 1)_
+- `LoadPtfxAsset(fxName)` _(repos: 1)_
+- `LogAdminPointAward(adminName, targetName, points)` _(repos: 1)_
+- `LogAdminPointRemoval(adminName, targetName, points)` _(repos: 1)_
+- `LogAnimalRetrieve(src, citizenid, playerName, plate, animalName, remainingCount, maxCount)` _(repos: 1)_
+- `LogAnimalStore(src, citizenid, playerName, plate, animalName, currentCount, maxCount)` _(repos: 1)_
+- `LogCashRedemption(citizenid, charname, rewardLabel, points, amount)` _(repos: 1)_
+- `LogItemRedemption(citizenid, charname, rewardLabel, points, item, amount)` _(repos: 1)_
+- `LogJobApplication(playerName, playerIdentifier, jobName, jobCost)` _(repos: 1)_
+- `LogJobResignation(playerName, playerIdentifier, jobName)` _(repos: 1)_
+- `LogOutlawStatusChange(src, citizenid, outlawStatus, reason)` _(repos: 1)_
+- `LogPointsEarned(citizenid, charname, points)` _(repos: 1)_
+- `LogRedemptionFailed(citizenid, charname, rewardType, rewardLabel, reason)` _(repos: 1)_
+- `LogRedemptionFailure(citizenid, charname, rewardLabel, reason)` _(repos: 1)_
+- `LogRedemptionSuccess(citizenid, charname, rewardType, rewardLabel, amount, points)` _(repos: 1)_
+- `LogStatusCleared(src, citizenid)` _(repos: 1)_
+- `LogWagonPurchase(src, citizenid, playerName, plate, huntingcamp, price)` _(repos: 1)_
+- `LogWagonRepair(src, citizenid, playerName, plate, price)` _(repos: 1)_
+- `LogWagonSale(src, citizenid, playerName, plate, price)` _(repos: 1)_
+- `LogWagonStore(src, citizenid, playerName, plate, location, damaged)` _(repos: 1)_
+- `MarkMilestone(source, milestone)` _(repos: 1)_
+- `NearPed(model, coords, currentport)` _(repos: 1)_
+- `NearPed(npcData)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, horsespawn, horsemodel)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, location, coords)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, location, wagonspawn)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, locationId)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, mineid, jobaccess, scenario)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, npcweapon, npcwander)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, saloonid, jobaccess, name, buyprice)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, scenario, shopIndex)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, speakeasyid, menutype)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, title, storagename, maxweight, slots)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, traderid)` _(repos: 1)_
+- `NearPed(npcmodel, npccoords, vendorid)` _(repos: 1)_
+- `OpenChatUI()` _(repos: 1)_
+- `OpenDoctorMenu()` _(repos: 1)_
+- `OpenEmployeeActionsMenu(ranchid, employee)` _(repos: 1)_
+- `OpenEmployeeDetailsMenu(ranchid, employee)` _(repos: 1)_
+- `OpenHireConfirmDialog(ranchid, player)` _(repos: 1)_
+- `OpenHireMenu(ranchid)` _(repos: 1)_
+- `OpenMedicalShop()` _(repos: 1)_
+- `OpenStaffListMenu(ranchid, staffData)` _(repos: 1)_
+- `PerformanceUtils.Distance.Get2D(pos1, pos2)` _(repos: 1)_
+- `PerformanceUtils.Distance.GetSquared(pos1, pos2)` _(repos: 1)_
+- `PerformanceUtils.Distance.IsWithinThreshold(pos1, pos2, threshold)` _(repos: 1)_
+- `PerformanceUtils.GC.ForceCollect()` _(repos: 1)_
+- `PerformanceUtils.GC.StartPeriodicCleanup()` _(repos: 1)_
+- `PerformanceUtils.Initialize()` _(repos: 1)_
+- `PerformanceUtils.Memory.GetUsage()` _(repos: 1)_
+- `PerformanceUtils.Memory.LogUsage(context)` _(repos: 1)_
+- `PerformanceUtils.ObjectPool.Create(name, factory, reset)` _(repos: 1)_
+- `PerformanceUtils.ObjectPool.Get(name)` _(repos: 1)_
+- `PerformanceUtils.ObjectPool.Return(name, obj)` _(repos: 1)_
+- `PerformanceUtils.Profiler.End(name)` _(repos: 1)_
+- `PerformanceUtils.Profiler.Start(name)` _(repos: 1)_
+- `PerformanceUtils.String.Cache(key, value)` _(repos: 1)_
+- `PerformanceUtils.String.ClearCache()` _(repos: 1)_
+- `PerformanceUtils.String.GetCached(key)` _(repos: 1)_
+- `PlayerHasItemsWorthSaving(inventory)` _(repos: 1)_
+- `PrepareLocationChange(fadeOutTime)` _(repos: 1)_
+- `PrintChatMessage(name, message, color)` _(repos: 1)_
+- `ProcessAnimalSurvival()` _(repos: 1)_
+- `ProcessBreedingPairs(males, females, maxDistance, ranchid)` _(repos: 1)_
+- `ProcessNPCLocation(index, location)` _(repos: 1)_
+- `ProcessReward(src, animalData, quality)` _(repos: 1)_
+- `PropPlacer(outputitem, prophash1, prophash2, prophash3, inputitem)` _(repos: 1)_
+- `PropPlacer(proptype, prop)` _(repos: 1)_
+- `PropPlacer(proptype, prop, item)` _(repos: 1)_
+- `QueuePropUpdate(updateType, propId)` _(repos: 1)_
+- `RemoveBlackmarketBlips()` _(repos: 1)_
+- `RemoveItemsWithQuality(src, item, amount)` _(repos: 1)_
+- `RemovePropFromConfig(marketid)` _(repos: 1)_
+- `RemoveVegModifierSphere(veg_modifier_sphere,p1)` _(repos: 1)_
+- `RequestAndLoadModel(model)` _(repos: 1)_
+- `ResetRateLimit()` _(repos: 1)_
+- `RodeoTimer(stake, horsePed, playerCoords)` _(repos: 1)_
+- `RotateLocations()` _(repos: 1)_
+- `SafeDeletePed(ped)` _(repos: 1)_
+- `SelectOffspringModel(parentModel)` _(repos: 1)_
+- `SendAdminNotification(title, description, fields, color)` _(repos: 1)_
+- `SendCookingCancelledWebhook(source, recipeData)` _(repos: 1)_
+- `SendCookingCompletedWebhook(source, recipeData)` _(repos: 1)_
+- `SendCookingFailedWebhook(source, recipeData, missingItems)` _(repos: 1)_
+- `SendCookingStartedWebhook(source, recipeData)` _(repos: 1)_
+- `SendDiscordLog(title, description, color, fields)` _(repos: 1)_
+- `SendDiscordLog(title, description, color, fields, thumbnail)` _(repos: 1)_
+- `SendDiscordWebhook(playerName, citizenid, itemName, isRareItem, coords, outlawStatus)` _(repos: 1)_
+- `SendJobRestrictedWebhook(source, recipeData, requiredJob)` _(repos: 1)_
+- `SendNotification(src, message, type, duration)` _(repos: 1)_
+- `SendReactMessage(action, data)` _(repos: 1)_
+- `SendRecipeUnlockWebhook(source, recipeName, requiredXP, currentXP)` _(repos: 1)_
+- `SendWebhook(webhook, title, description, color, fields)` _(repos: 1)_
+- `SendWebhook(webhookURL, embeds)` _(repos: 1)_
+- `SendXPGainedWebhook(source, xpGained, newTotal)` _(repos: 1)_
+- `SendXPMilestoneWebhook(source, milestone, totalXP)` _(repos: 1)_
+- `SetClosestStoreLocation()` _(repos: 1)_
+- `SetFixed(self, offset, value, code)` _(repos: 1)_
+- `SetGuarmaWorldhorizonActive(toggle)` _(repos: 1)_
+- `SetPlayerBusy(busy)` _(repos: 1)_
+- `SetWorldMapType(mapType)` _(repos: 1)_
+- `SetWorldWaterType(waterType)` _(repos: 1)_
+- `SetupNPCProperties(ped)` _(repos: 1)_
+- `ShowCookingInfo()` _(repos: 1)_
+- `ShowCraftingInfo()` _(repos: 1)_
+- `ShowDeliveryMenu(location)` _(repos: 1)_
+- `ShowMainMenu()` _(repos: 1)_
+- `ShowNotification(message, type, duration)` _(repos: 1)_
+- `ShowWashMenu()` _(repos: 1)_
+- `SmokePrompt(text, button, hold)` _(repos: 1)_
+- `SpawnController:CanPlayerSpawn(playerId, animalId)` _(repos: 1)_
+- `SpawnController:CleanupStaleData()` _(repos: 1)_
+- `SpawnController:ClearPlayerSpawns(playerId)` _(repos: 1)_
+- `SpawnController:GetPlayerSpawnCount(playerId)` _(repos: 1)_
+- `SpawnController:Initialize()` _(repos: 1)_
+- `SpawnController:RegisterSpawn(playerId, animalId, animalData)` _(repos: 1)_
+- `SpawnController:UnregisterSpawn(animalId)` _(repos: 1)_
+- `SpawnGravestoneAtLocation(coords, gravestoneData)` _(repos: 1)_
+- `SpawnManager:CheckSpawnRequests()` _(repos: 1)_
+- `SpawnManager:CleanupOrphanedEntities()` _(repos: 1)_
+- `SpawnManager:CleanupPendingRequests()` _(repos: 1)_
+- `SpawnManager:ClearAll()` _(repos: 1)_
+- `SpawnManager:ConfigureAnimalEntity(entity, animalData)` _(repos: 1)_
+- `SpawnManager:CreateAnimalEntity(animalData)` _(repos: 1)_
+- `SpawnManager:DespawnAnimal(animalId)` _(repos: 1)_
+- `SpawnManager:GetEntityById(animalId)` _(repos: 1)_
+- `SpawnManager:GetPendingCount()` _(repos: 1)_
+- `SpawnManager:Initialize()` _(repos: 1)_
+- `SpawnManager:IsValidAnimalData(data)` _(repos: 1)_
+- `SpawnManager:RemoveAnimal(animalId)` _(repos: 1)_
+- `SpawnManager:RequestSpawn(animalId, animalData)` _(repos: 1)_
+- `SpawnManager:SetupAnimalInteraction(entity, animalData)` _(repos: 1)_
+- `SpawnManager:SetupAnimalWandering(animalId, entity, animalData)` _(repos: 1)_
+- `SpawnManager:SpawnAnimal(animalId, animalData)` _(repos: 1)_
+- `SpawnManager:StartAnimalWander(animalId, wanderState)` _(repos: 1)_
+- `SpawnManager:StopAnimalWander(animalId, wanderState)` _(repos: 1)_
+- `SpawnManager:UpdateAnimalWander(animalId)` _(repos: 1)_
+- `SpawnRock(coords)` _(repos: 1)_
+- `SpawnTrain(trainid, route, trainhash, startcoords)` _(repos: 1)_
+- `SpawnZombie(model, spawnpoint, outfit)` _(repos: 1)_
+- `StancePrompt(text, button, hold)` _(repos: 1)_
+- `StartBreeding(animal1id, animal2id, isAutomatic)` _(repos: 1)_
+- `StartHerding(animals, herdType)` _(repos: 1)_
+- `StartHuntingPlayerOnDistance()` _(repos: 1)_
+- `StartLocationRotation()` _(repos: 1)_
+- `StartNPCSystem()` _(repos: 1)_
+- `StartPerformanceMonitoring()` _(repos: 1)_
+- `StartWashingProcess(amount, outlawstatus, isWashAll)` _(repos: 1)_
+- `StopAnim(dict, body)` _(repos: 1)_
+- `StopLocationRotation()` _(repos: 1)_
+- `StopNPCSystem()` _(repos: 1)_
+- `SyncOwnedHouses()` _(repos: 1)_
+- `UpdateActiveLocations(newActiveLocations)` _(repos: 1)_
+- `UpdateHerdingMovement()` _(repos: 1)_
+- `UpdateHouseBlips(ownedHouses)` _(repos: 1)_
+- `UpdatePlayerXP()` _(repos: 1)_
+- `Utils.CalculateTravelCost(playerPos, destination)` _(repos: 1)_
+- `Utils.CalculateTravelWaitTime(playerPos, destination)` _(repos: 1)_
+- `Utils.Clamp(value, min, max)` _(repos: 1)_
+- `Utils.ColorText(text, color)` _(repos: 1)_
+- `Utils.DeepCopy(t)` _(repos: 1)_
+- `Utils.FormatMoney(amount)` _(repos: 1)_
+- `Utils.FormatTime(seconds)` _(repos: 1)_
+- `Utils.FormatWaitTime(waitTimeMs)` _(repos: 1)_
+- `Utils.GetDistance2D(pos1, pos2)` _(repos: 1)_
+- `Utils.GetDistanceCategory(distance)` _(repos: 1)_
+- `Utils.GetTimestamp()` _(repos: 1)_
+- `Utils.IsValidAmount(amount, min, max)` _(repos: 1)_
+- `Utils.IsValidCoord(coord)` _(repos: 1)_
+- `Utils.IsValidDestination(destination)` _(repos: 1)_
+- `Utils.IsValidVector4(vec)` _(repos: 1)_
+- `Utils.PrintTable(t, indent)` _(repos: 1)_
+- `Utils.RandomFloat(min, max)` _(repos: 1)_
+- `Utils.Round(number, decimals)` _(repos: 1)_
+- `Utils.Split(str, delimiter)` _(repos: 1)_
+- `Utils.TableCount(t)` _(repos: 1)_
+- `Utils.TableHasValue(t, value)` _(repos: 1)_
+- `Utils.Trim(str)` _(repos: 1)_
+- `ValidatePlantingLocation(coords, citizenid)` _(repos: 1)_
+- `ValidatePlayer(src)` _(repos: 1)_
+- `ValidateWashAmount(amount, playerBloodMoney, isWashAll)` _(repos: 1)_
+- `ValidateWashInput(input, bloodmoney, isWashAll)` _(repos: 1)_
+- `WashBloodMoney()` _(repos: 1)_
+- `WashBloodMoneyAmount(amount, isWashAll)` _(repos: 1)_
+- `WashBloodMoneyCustom(bloodmoney)` _(repos: 1)_
+- `_ef(big)` _(repos: 1)_
+- `_ib(o, l, t)` _(repos: 1)_
+- `addBlipToTrain(blipType,train,blipText)` _(repos: 1)_
+- `addLoyaltyPoints(citizenid, points, charname)` _(repos: 1)_
+- `canInteract(entity)` _(repos: 1)_
+- `canInteract(entity, distance)` _(repos: 1)_
+- `canInteract(entity, distance, coords, name)` _(repos: 1)_
+- `canInteract(entity, distance, coords, name, bone)` _(repos: 1)_
+- `canPlayerEarnPoints(citizenid)` _(repos: 1)_
+- `cleanupPlayerSession(citizenid)` _(repos: 1)_
+- `closeLoyaltyNUI()` _(repos: 1)_
+- `countOwnedSaloons(src)` _(repos: 1)_
+- `createBlips()` _(repos: 1)_
+- `createLoyaltyRecord(citizenid, charname)` _(repos: 1)_
+- `createPrompts()` _(repos: 1)_
+- `finalizeAnimalMenu(menuOptions, freshData, animal)` _(repos: 1)_
+- `findBreedingPartners()` _(repos: 1)_
+- `getAnimalLabel(model)` _(repos: 1)_
+- `getAnimalTypeIcon(animalType)` _(repos: 1)_
+- `getDynamicPrice(itemName, currentStock, lowstock, highstock, basePrice)` _(repos: 1)_
+- `getFreshAnimalData(animalid)` _(repos: 1)_
+- `getGrowthStage(growth)` _(repos: 1)_
+- `getMenuTitle(vendorid)` _(repos: 1)_
+- `getPlayerLoyalty(citizenid)` _(repos: 1)_
+- `getPlayerSession(citizenid)` _(repos: 1)_
+- `getQualityLabel(quality)` _(repos: 1)_
+- `getRandomSex()` _(repos: 1)_
+- `getTopLifetimePlayers()` _(repos: 1)_
+- `getTopLoyaltyPlayers()` _(repos: 1)_
+- `getTrains()` _(repos: 1)_
+- `hasIngredients(src, ingredients)` _(repos: 1)_
+- `initializeMenus()` _(repos: 1)_
+- `initializePlayerSession(citizenid, src)` _(repos: 1)_
+- `isOnRedemptionCooldown(src)` _(repos: 1)_
+- `isPlayerRanchStaff()` _(repos: 1)_
+- `isPlayerRanchStaff(Player)` _(repos: 1)_
+- `isPlayerSaloonOwner(src, saloonid)` _(repos: 1)_
+- `isPlayerSaloonWorker(src, saloonid)` _(repos: 1)_
+- `isSpawnPointClear(spawnPos, checkRadius)` _(repos: 1)_
+- `loadModel(model)` _(repos: 1)_
+- `onClose()` _(repos: 1)_
+- `onEnter()` _(repos: 1)_
+- `openLoyaltyNUI()` _(repos: 1)_
+- `placeProp(propmodel, item, campsitename, campsiteid)` _(repos: 1)_
+- `processAnimalOverviewData(animals)` _(repos: 1)_
+- `pt:nearby()` _(repos: 1)_
+- `pt:onEnter()` _(repos: 1)_
+- `pt:onExit()` _(repos: 1)_
+- `recordPointsEarned(citizenid, pointsEarned)` _(repos: 1)_
+- `removeLoyaltyPoints(citizenid, points)` _(repos: 1)_
+- `safeToNumber(value)` _(repos: 1)_
+- `sendToDiscord(color, name, message, footer, type)` _(repos: 1)_
+- `sendWebhook(webhookUrl, embed)` _(repos: 1)_
+- `setRedemptionCooldown(src)` _(repos: 1)_
+- `setupWaterPropTargets()` _(repos: 1)_
+- `showAnimalOverview(data, ranchid)` _(repos: 1)_
+- `spawnDoctor(cfg)` _(repos: 1)_
+- `table.length(t)` _(repos: 1)_
+- `toLuaTable(data)` _(repos: 1)_
+- `trainChecker(train)` _(repos: 1)_
+- `validateReward(rewardType, rewardIndex)` _(repos: 1)_
+
+## Top callbacks
+
+- `rex-blackmarket:server:bloodmoneycallback` _(repos: 1)_
+- `rex-blackmarket:server:getActiveLocations` _(repos: 1)_
+- `rex-blackmarket:server:getoutlawstatus` _(repos: 1)_
+- `rex-blacksmith:server:checkingredients` _(repos: 1)_
+- `rex-blacksmith:server:checkstock` _(repos: 1)_
+- `rex-blacksmith:server:checkxp` _(repos: 1)_
+- `rex-blacksmith:server:countowned` _(repos: 1)_
+- `rex-blacksmith:server:getblacksmithdata` _(repos: 1)_
+- `rex-blacksmith:server:getmoney` _(repos: 1)_
+- `rex-campfire:server:checkingredients` _(repos: 1)_
+- `rex-camping:server:cookingcheck` _(repos: 1)_
+- `rex-camping:server:countcampitems` _(repos: 1)_
+- `rex-camping:server:countprop` _(repos: 1)_
+- `rex-camping:server:craftingcheck` _(repos: 1)_
+- `rex-camping:server:getAllowedPlayers` _(repos: 1)_
+- `rex-camping:server:getallpropdata` _(repos: 1)_
+- `rex-camping:server:hasAccess` _(repos: 1)_
+- `rex-codes:server:getactivecodes` _(repos: 1)_
+- `rex-cooking:server:checkingredients` _(repos: 1)_
+- `rex-cooking:server:checkjob` _(repos: 1)_
+- `rex-cooking:server:checkxp` _(repos: 1)_
+- `rex-cooking:server:getplayerjob` _(repos: 1)_
+- `rex-crafting:server:checkingredients` _(repos: 1)_
+- `rex-crafting:server:checkjob` _(repos: 1)_
+- `rex-crafting:server:checkxp` _(repos: 1)_
+- `rex-crafting:server:getplayerjob` _(repos: 1)_
+- `rex-farming:server:checkcollectedfertilizer` _(repos: 1)_
+- `rex-farming:server:getplantdata` _(repos: 1)_
+- `rex-houses:server:GetCurrentDoorState` _(repos: 1)_
+- `rex-houses:server:GetDoorState` _(repos: 1)_
+- `rex-houses:server:GetGuestHouseKeys` _(repos: 1)_
+- `rex-houses:server:GetHouseInfo` _(repos: 1)_
+- `rex-houses:server:GetHouseKeys` _(repos: 1)_
+- `rex-houses:server:GetOwnedHouseInfo` _(repos: 1)_
+- `rex-houses:server:GetOwnedHouses` _(repos: 1)_
+- `rex-huntingwagon:server:gettarpinfo` _(repos: 1)_
+- `rex-huntingwagon:server:getwagons` _(repos: 1)_
+- `rex-huntingwagon:server:getwagonstore` _(repos: 1)_
+- `rex-market:server:cashcallback` _(repos: 1)_
+- `rex-market:server:checkblacklist` _(repos: 1)_
+- `rex-market:server:checkquality` _(repos: 1)_
+- `rex-market:server:checkstock` _(repos: 1)_
+- `rex-market:server:countprop` _(repos: 1)_
+- `rex-market:server:getallmarketdata` _(repos: 1)_
+- `rex-market:server:getmarketstalldata` _(repos: 1)_
+- `rex-market:server:getmoney` _(repos: 1)_
+- `rex-mining:server:HasPickaxe` _(repos: 1)_
+- `rex-postal:server:alldata` _(repos: 1)_
+- `rex-postal:server:checkreceivedpackage` _(repos: 1)_
+- `rex-postal:server:checksentpackage` _(repos: 1)_
+- `rex-postal:server:getaddressbook` _(repos: 1)_
+- `rex-ranch:server:countanimals` _(repos: 1)_
+- `rex-ranch:server:getAnimalOverview` _(repos: 1)_
+- `rex-ranch:server:getAnimalProductionStatus` _(repos: 1)_
+- `rex-ranch:server:getAvailableAnimalsForBreeding` _(repos: 1)_
+- `rex-ranch:server:getBreedingStatus` _(repos: 1)_
+- `rex-ranch:server:getNearbyAnimalsForSale` _(repos: 1)_
+- `rex-ranch:server:getNearbyPlayers` _(repos: 1)_
+- `rex-ranch:server:getPregnancyProgress` _(repos: 1)_
+- `rex-ranch:server:getStaffList` _(repos: 1)_
+- `rex-research:server:moneycallback` _(repos: 1)_
+- `rex-rodeo:server:getmoney` _(repos: 1)_
+- `rex-saloon:server:checkstock` _(repos: 1)_
+- `rex-saloon:server:countowned` _(repos: 1)_
+- `rex-saloon:server:getmoney` _(repos: 1)_
+- `rex-saloon:server:getsaloondata` _(repos: 1)_
+- `rex-smelting:server:checkingredients` _(repos: 1)_
+- `rex-speakeasy:server:getAllBrewerData` _(repos: 1)_
+- `rex-storage:server:countprop` _(repos: 1)_
+- `rex-storage:server:getallpropdata` _(repos: 1)_
+- `rex-storage:server:isStorageOwner` _(repos: 1)_
+- `rex-trader:server:traderdata` _(repos: 1)_
+- `rex-trapfishing:server:cashcallback` _(repos: 1)_
+- `rex-trapfishing:server:countprop` _(repos: 1)_
+- `rex-trapfishing:server:getalltrapdata` _(repos: 1)_
+- `rex-wanted:server:getoutlawstatus` _(repos: 1)_
+- `rex-weaponsmith:server:checkingredients` _(repos: 1)_
+- `rex-weaponsmith:server:checkstock` _(repos: 1)_
+- `rex-weaponsmith:server:checkxp` _(repos: 1)_
+- `rex-weaponsmith:server:countowned` _(repos: 1)_
+- `rex-weaponsmith:server:getmoney` _(repos: 1)_
+- `rex-weaponsmith:server:getweaponsmithdata` _(repos: 1)_
+- `rsg-saloon:server:checkingredients` _(repos: 1)_
+
+## Top registered events
+
+- `onResourceStop` _(repos: 36)_
+- `playerDropped` _(repos: 11)_
+- `RSGCore:Client:OnPlayerLoaded` _(repos: 5)_
+- `onResourceStart` _(repos: 5)_
+- `RSGCore:Client:OnPlayerUnload` _(repos: 3)_
+- `example:craft-external` _(repos: 2)_
+- `example:craft-job-restricted` _(repos: 2)_
+- `playerJoining` _(repos: 2)_
+- `RSGCore:Server:OnPlayerLoaded` _(repos: 1)_
+- `playerConnecting` _(repos: 1)_
+- `rex-blackmarket:client:mainmenu` _(repos: 1)_
+- `rex-blackmarket:client:notifyLocationChange` _(repos: 1)_
+- `rex-blackmarket:client:prepareLocationChange` _(repos: 1)_
+- `rex-blackmarket:client:showWashMenu` _(repos: 1)_
+- `rex-blackmarket:client:updateLocations` _(repos: 1)_
+- `rex-blackmarket:client:washbloodmoney` _(repos: 1)_
+- `rex-blackmarket:server:openShop` _(repos: 1)_
+- `rex-blackmarket:server:washmoney` _(repos: 1)_
+- `rex-blacksmith:client:buyitem` _(repos: 1)_
+- `rex-blacksmith:client:craftingmenu` _(repos: 1)_
+- `rex-blacksmith:client:customerviewitems` _(repos: 1)_
+- `rex-blacksmith:client:newstockitem` _(repos: 1)_
+- `rex-blacksmith:client:openblacksmith` _(repos: 1)_
+- `rex-blacksmith:client:opencustomermenu` _(repos: 1)_
+- `rex-blacksmith:client:openjobmenu` _(repos: 1)_
+- `rex-blacksmith:client:openrentjobmenu` _(repos: 1)_
+- `rex-blacksmith:client:ownerstoragemenu` _(repos: 1)_
+- `rex-blacksmith:client:ownerviewitems` _(repos: 1)_
+- `rex-blacksmith:client:payrent` _(repos: 1)_
+- `rex-blacksmith:client:removestockitem` _(repos: 1)_
+- `rex-blacksmith:client:rentblacksmith` _(repos: 1)_
+- `rex-blacksmith:client:rentmenu` _(repos: 1)_
+- `rex-blacksmith:client:storageplayershare` _(repos: 1)_
+- `rex-blacksmith:client:withdrawmoney` _(repos: 1)_
+- `rex-blacksmith:server:addrentmoney` _(repos: 1)_
+- `rex-blacksmith:server:buyitem` _(repos: 1)_
+- `rex-blacksmith:server:newstockitem` _(repos: 1)_
+- `rex-blacksmith:server:removestockitem` _(repos: 1)_
+- `rex-blacksmith:server:rentblacksmith` _(repos: 1)_
+- `rex-blacksmith:server:withdrawfunds` _(repos: 1)_
+- `rex-butcher:client:mainmenu` _(repos: 1)_
+- `rex-butcher:client:sellanimal` _(repos: 1)_
+- `rex-butcher:server:openShop` _(repos: 1)_
+- `rex-butcher:server:reward` _(repos: 1)_
+- `rex-campfire:client:` _(repos: 1)_
+- `rex-campfire:client:cookingmenu` _(repos: 1)_
+- `rex-campfire:client:cookitem` _(repos: 1)_
+- `rex-campfire:client:createcampfire` _(repos: 1)_
+- `rex-campfire:client:destorycampfire` _(repos: 1)_
+- `rex-campfire:client:openmenu` _(repos: 1)_
+- `rex-campfire:client:setupcampfire` _(repos: 1)_
+- `rex-campfire:server:deleteitem` _(repos: 1)_
+- `rex-campfire:server:finishcooking` _(repos: 1)_
+- `rex-camping:client:` _(repos: 1)_
+- `rex-camping:client:addguest` _(repos: 1)_
+- `rex-camping:client:campfiremenu` _(repos: 1)_
+- `rex-camping:client:campsitemainmenu` _(repos: 1)_
+- `rex-camping:client:camptentmenu` _(repos: 1)_
+- `rex-camping:client:checkingredients` _(repos: 1)_
+- `rex-camping:client:confirmpackup` _(repos: 1)_
+- `rex-camping:client:cookingingredients` _(repos: 1)_
+- `rex-camping:client:cookingmainmenu` _(repos: 1)_
+- `rex-camping:client:craftingmenu` _(repos: 1)_
+- `rex-camping:client:createprop` _(repos: 1)_
+- `rex-camping:client:docooking` _(repos: 1)_
+- `rex-camping:client:equipmentmenu` _(repos: 1)_
+- `rex-camping:client:forceRemoveCampsite` _(repos: 1)_
+- `rex-camping:client:manageguests` _(repos: 1)_
+- `rex-camping:client:openinventory` _(repos: 1)_
+- `rex-camping:client:packupcampsite` _(repos: 1)_
+- `rex-camping:client:placecampsiteitem` _(repos: 1)_
+- `rex-camping:client:removeguest` _(repos: 1)_
+- `rex-camping:client:removesingleprop` _(repos: 1)_
+- `rex-camping:client:robcampsite` _(repos: 1)_
+- `rex-camping:client:setupcampzone` _(repos: 1)_
+- `rex-camping:client:updatePropData` _(repos: 1)_
+- `rex-camping:server:addAllowedPlayer` _(repos: 1)_
+- `rex-camping:server:additem` _(repos: 1)_
+- `rex-camping:server:createnewitem` _(repos: 1)_
+- `rex-camping:server:createnewprop` _(repos: 1)_
+- `rex-camping:server:finishcooking` _(repos: 1)_
+- `rex-camping:server:finishcrafting` _(repos: 1)_
+- `rex-camping:server:getProps` _(repos: 1)_
+- `rex-camping:server:removeAllowedPlayer` _(repos: 1)_
+- `rex-camping:server:removecampsiteprops` _(repos: 1)_
+- `rex-camping:server:removeitem` _(repos: 1)_
+- `rex-camping:server:removesingleprop` _(repos: 1)_
+- `rex-camping:server:robcampsite` _(repos: 1)_
+- `rex-camping:server:updateProps` _(repos: 1)_
+- `rex-chat:admin` _(repos: 1)_
+- `rex-chat:job` _(repos: 1)_
+- `rex-chat:local` _(repos: 1)_
+- `rex-chat:ooc` _(repos: 1)_
+- `rex-chat:receiveAdmin` _(repos: 1)_
+- `rex-chat:receiveCommand` _(repos: 1)_
+- `rex-chat:receiveJob` _(repos: 1)_
+- `rex-chat:receiveLocal` _(repos: 1)_
+- `rex-chat:receiveOOC` _(repos: 1)_
+- `rex-chat:receiveShout` _(repos: 1)_
+- `rex-chat:receiveWhisper` _(repos: 1)_
+- `rex-chat:shout` _(repos: 1)_
+- `rex-chat:whisper` _(repos: 1)_
+- `rex-codes:client:horsecodecreator` _(repos: 1)_
+- `rex-codes:client:itemcodecreator` _(repos: 1)_
+- `rex-codes:client:moneycodecreator` _(repos: 1)_
+- `rex-codes:client:opencodemenu` _(repos: 1)_
+- `rex-codes:client:viewactivecodes` _(repos: 1)_
+- `rex-codes:server:createhorsecode` _(repos: 1)_
+- `rex-codes:server:createitemcode` _(repos: 1)_
+- `rex-codes:server:createmoneycode` _(repos: 1)_
+- `rex-contraband:client:dealer:delivery` _(repos: 1)_
+- `rex-contraband:client:dealer:startselling` _(repos: 1)_
+- `rex-contraband:server:dealer:dotrade` _(repos: 1)_
+- `rex-contraband:server:dealer:updateoutlawstatus` _(repos: 1)_
+- `rex-cooking:client:` _(repos: 1)_
+- `rex-cooking:client:cookingmenu` _(repos: 1)_
+- `rex-cooking:client:cookitem` _(repos: 1)_
+- `rex-cooking:server:cookingcancelled` _(repos: 1)_
+- `rex-cooking:server:cookingfailed` _(repos: 1)_
+- `rex-cooking:server:cookingstarted` _(repos: 1)_
+- `rex-cooking:server:finishcooking` _(repos: 1)_
+- `rex-crafting:client:` _(repos: 1)_
+- `rex-crafting:client:craftingmenu` _(repos: 1)_
+- `rex-crafting:client:craftitem` _(repos: 1)_
+- `rex-crafting:server:finishcrafting` _(repos: 1)_
+- `rex-deathloot:client:openGravestone` _(repos: 1)_
+- `rex-deathloot:client:removeGravestone` _(repos: 1)_
+- `rex-deathloot:client:showMenu` _(repos: 1)_
+- `rex-deathloot:client:spawnGravestone` _(repos: 1)_
+- `rex-deathloot:server:createGravestone` _(repos: 1)_
+- `rex-deathloot:server:openGravestoneMenu` _(repos: 1)_
+- `rex-deathloot:server:retrieveItems` _(repos: 1)_
+- `rex-deathloot:server:takeItem` _(repos: 1)_
+- `rex-delivery:client:vehiclespawn` _(repos: 1)_
+- `rex-delivery:server:givereward` _(repos: 1)_
+- `rex-digging:client:dig` _(repos: 1)_
+- `rex-digging:server:givereward` _(repos: 1)_
+- `rex-farming:client:collectfertilizer` _(repos: 1)_
+- `rex-farming:client:collectwater` _(repos: 1)_
+- `rex-farming:client:destroyplant` _(repos: 1)_
+- `rex-farming:client:feedplant` _(repos: 1)_
+- `rex-farming:client:fillbucketfromwater` _(repos: 1)_
+- `rex-farming:client:harvestplant` _(repos: 1)_
+- `rex-farming:client:plantmenu` _(repos: 1)_
+- `rex-farming:client:plantnewseed` _(repos: 1)_
+- `rex-farming:client:preplantseed` _(repos: 1)_
+- `rex-farming:client:removePlantObject` _(repos: 1)_
+- `rex-farming:client:updatePlantData` _(repos: 1)_
+- `rex-farming:client:waterplant` _(repos: 1)_
+- `rex-farming:server:PlantRemoved` _(repos: 1)_
+- `rex-farming:server:collectedfertilizer` _(repos: 1)_
+- `rex-farming:server:destroydeadplant` _(repos: 1)_
+- `rex-farming:server:destroyplant` _(repos: 1)_
+- `rex-farming:server:feedPlant` _(repos: 1)_
+- `rex-farming:server:getPlants` _(repos: 1)_
+- `rex-farming:server:giveitem` _(repos: 1)_
+- `rex-farming:server:harvestPlant` _(repos: 1)_
+- `rex-farming:server:plantnewseed` _(repos: 1)_
+- `rex-farming:server:refreshwaterbucket` _(repos: 1)_
+- `rex-farming:server:removeitem` _(repos: 1)_
+- `rex-farming:server:savePlant` _(repos: 1)_
+- `rex-farming:server:updateFarmPlants` _(repos: 1)_
+- `rex-farming:server:updatePlants` _(repos: 1)_
+- `rex-farming:server:waterPlant` _(repos: 1)_
+- `rex-fasttravel:client:doTravel` _(repos: 1)_
+- `rex-fasttravel:client:menu` _(repos: 1)_
+- `rex-fasttravel:server:buyticket` _(repos: 1)_
+- `rex-fireworks:client:big_fireworks_players` _(repos: 1)_
+- `rex-fireworks:client:display` _(repos: 1)_
+- `rex-fireworks:client:display_big_firework` _(repos: 1)_
+- `rex-fireworks:client:display_small_firework` _(repos: 1)_
+- `rex-fireworks:client:firework_big` _(repos: 1)_
+- `rex-fireworks:client:firework_small` _(repos: 1)_
+- `rex-fireworks:client:small_fireworks_players` _(repos: 1)_
+- `rex-fireworks:server:display` _(repos: 1)_
+- `rex-fireworks:server:players` _(repos: 1)_
+- `rex-fishmonger:client:mainmenu` _(repos: 1)_
+- `rex-fishmonger:client:playerprocessfish` _(repos: 1)_
+- `rex-fishmonger:client:processfish` _(repos: 1)_
+- `rex-fishmonger:client:selltofishmonger` _(repos: 1)_
+- `rex-fishmonger:server:openShop` _(repos: 1)_
+- `rex-goldpanning:client:startgoldpanning` _(repos: 1)_
+- `rex-guarma:client:buyticket` _(repos: 1)_
+- `rex-guarma:client:mainmenu` _(repos: 1)_
+- `rex-guarma:client:performTravel` _(repos: 1)_
+- `rex-guarma:server:buyticket` _(repos: 1)_
+- `rex-guarma:server:requestTravel` _(repos: 1)_
+- `rex-halloween:client:resetweather` _(repos: 1)_
+- `rex-halloween:client:weather` _(repos: 1)_
+- `rex-horsetrainer:server:updatexp` _(repos: 1)_
+- `rex-houses:client:GetSpecificDoorState` _(repos: 1)_
+- `rex-houses:client:SyncOwnedHouses` _(repos: 1)_
+- `rex-houses:client:UpdateHouseBlip` _(repos: 1)_
+- `rex-houses:client:UpdateHouseBlips` _(repos: 1)_
+- `rex-houses:client:addcredit` _(repos: 1)_
+- `rex-houses:client:addguest` _(repos: 1)_
+- `rex-houses:client:agentmenu` _(repos: 1)_
+- `rex-houses:client:buymenu` _(repos: 1)_
+- `rex-houses:client:creditmenu` _(repos: 1)_
+- `rex-houses:client:guestmenu` _(repos: 1)_
+- `rex-houses:client:housemenu` _(repos: 1)_
+- `rex-houses:client:priceupdate` _(repos: 1)_
+- `rex-houses:client:removecredit` _(repos: 1)_
+- `rex-houses:client:removeguest` _(repos: 1)_
+- `rex-houses:client:sellmenu` _(repos: 1)_
+- `rex-houses:client:storage` _(repos: 1)_
+- `rex-houses:client:toggledoor` _(repos: 1)_
+- `rex-houses:server:GetSpecificDoorState` _(repos: 1)_
+- `rex-houses:server:OpenStorage` _(repos: 1)_
+- `rex-houses:server:RemoveOwnedHouse` _(repos: 1)_
+- `rex-houses:server:RequestOwnedHouses` _(repos: 1)_
+- `rex-houses:server:SyncAllHouses` _(repos: 1)_
+- `rex-houses:server:UpdateDoorState` _(repos: 1)_
+- `rex-houses:server:UpdateDoorStateRestart` _(repos: 1)_
+- `rex-houses:server:UpdateOwnedHouse` _(repos: 1)_
+- `rex-houses:server:addcredit` _(repos: 1)_
+- `rex-houses:server:addguest` _(repos: 1)_
+- `rex-houses:server:handlePriceUpdate` _(repos: 1)_
+- `rex-houses:server:removecredit` _(repos: 1)_
+- `rex-houses:server:removeguest` _(repos: 1)_
+- `rex-hunting:server:giverewards` _(repos: 1)_
+- `rex-huntingwagon:client:addanimal` _(repos: 1)_
+- `rex-huntingwagon:client:cleanupDisconnectedWagon` _(repos: 1)_
+- `rex-huntingwagon:client:fixwagon` _(repos: 1)_
+- `rex-huntingwagon:client:getHuntingWagonInventory` _(repos: 1)_
+- `rex-huntingwagon:client:getHuntingWagonStore` _(repos: 1)_
+- `rex-huntingwagon:client:openhuntermenu` _(repos: 1)_
+- `rex-huntingwagon:client:openmenu` _(repos: 1)_
+- `rex-huntingwagon:client:repairwagon` _(repos: 1)_
+- `rex-huntingwagon:client:sellwagoncheck` _(repos: 1)_
+- `rex-huntingwagon:client:spawnSelectedWagon` _(repos: 1)_
+- `rex-huntingwagon:client:spawnwagon` _(repos: 1)_
+- `rex-huntingwagon:client:storewagon` _(repos: 1)_
+- `rex-huntingwagon:client:takeoutanimal` _(repos: 1)_
+- `rex-huntingwagon:server:openShop` _(repos: 1)_
+- `rex-lootnpc:server:givereward` _(repos: 1)_
+- `rex-market:client:buyshopitem` _(repos: 1)_
+- `rex-market:client:checkmoney` _(repos: 1)_
+- `rex-market:client:createprop` _(repos: 1)_
+- `rex-market:client:customerviewshopitems` _(repos: 1)_
+- `rex-market:client:maintenance` _(repos: 1)_
+- `rex-market:client:newstockitem` _(repos: 1)_
+- `rex-market:client:openmarket` _(repos: 1)_
+- `rex-market:client:openownermenu` _(repos: 1)_
+- `rex-market:client:ownerviewshopitems` _(repos: 1)_
+- `rex-market:client:packupmarket` _(repos: 1)_
+- `rex-market:client:placenewprop` _(repos: 1)_
+- `rex-market:client:removePropObject` _(repos: 1)_
+- `rex-market:client:removestockitem` _(repos: 1)_
+- `rex-market:client:repairmarketstall` _(repos: 1)_
+- `rex-market:client:updatePropData` _(repos: 1)_
+- `rex-market:server:PropRemoved` _(repos: 1)_
+- `rex-market:server:buyitemamount` _(repos: 1)_
+- `rex-market:server:destroyProp` _(repos: 1)_
+- `rex-market:server:getProps` _(repos: 1)_
+- `rex-market:server:newProp` _(repos: 1)_
+- `rex-market:server:newstockitem` _(repos: 1)_
+- `rex-market:server:removestockitem` _(repos: 1)_
+- `rex-market:server:repairmarketstall` _(repos: 1)_
+- `rex-market:server:saveProp` _(repos: 1)_
+- `rex-market:server:updateProps` _(repos: 1)_
+- `rex-market:server:withdrawfunds` _(repos: 1)_
+- `rex-mining:client:animation` _(repos: 1)_
+- `rex-mining:client:dodrilling` _(repos: 1)_
+- `rex-mining:client:drillrocksinput` _(repos: 1)_
+- `rex-mining:client:miningmenu` _(repos: 1)_
+- `rex-mining:client:openFormanMenu` _(repos: 1)_
+- `rex-mining:client:openMinerMenu` _(repos: 1)_
+- `rex-mining:client:openRecruitMenu` _(repos: 1)_
+- `rex-mining:server:MineReward` _(repos: 1)_
+- `rex-mining:server:finishdrilling` _(repos: 1)_
+- `rex-mining:server:openMinerStorage` _(repos: 1)_
+- `rex-mining:server:openRecruitStorage` _(repos: 1)_
+- `rex-npcdoctor:client:heal` _(repos: 1)_
+- `rex-npcdoctor:client:revive` _(repos: 1)_
+- `rex-npcdoctor:server:charge` _(repos: 1)_
+- `rex-npcdoctor:server:purchaseItem` _(repos: 1)_
+- `rex-pocketwatch:client:inspectwatch` _(repos: 1)_
+- `rex-postal:client:checkreceivedpackages` _(repos: 1)_
+- `rex-postal:client:checksendpackage` _(repos: 1)_
+- `rex-postal:client:checksentpackages` _(repos: 1)_
+- `rex-postal:client:collectpackage` _(repos: 1)_
+- `rex-postal:client:collectpayment` _(repos: 1)_
+- `rex-postal:client:openpostal` _(repos: 1)_
+- `rex-postal:client:sendpackage` _(repos: 1)_
+- `rex-postal:server:collectpayment` _(repos: 1)_
+- `rex-postal:server:makepayment` _(repos: 1)_
+- `rex-postal:server:sendpackage` _(repos: 1)_
+- `rex-ranch:client:actionsmenu` _(repos: 1)_
+- `rex-ranch:client:animalfollow` _(repos: 1)_
+- `rex-ranch:client:animalmenu` _(repos: 1)_
+- `rex-ranch:client:checkProducts` _(repos: 1)_
+- `rex-ranch:client:clearAnimalSelection` _(repos: 1)_
+- `rex-ranch:client:collectProduct` _(repos: 1)_
+- `rex-ranch:client:confirmBreeding` _(repos: 1)_
+- `rex-ranch:client:confirmBuyAnimal` _(repos: 1)_
+- `rex-ranch:client:confirmSale` _(repos: 1)_
+- `rex-ranch:client:confirmSellAll` _(repos: 1)_
+- `rex-ranch:client:feedAnimal` _(repos: 1)_
+- `rex-ranch:client:findBreedingPartner` _(repos: 1)_
+- `rex-ranch:client:openAnimalOverview` _(repos: 1)_
+- `rex-ranch:client:openBuyMenu` _(repos: 1)_
+- `rex-ranch:client:openHerdingMenu` _(repos: 1)_
+- `rex-ranch:client:openSaleMenu` _(repos: 1)_
+- `rex-ranch:client:openStaffManagement` _(repos: 1)_
+- `rex-ranch:client:openmanagermenu` _(repos: 1)_
+- `rex-ranch:client:openranch` _(repos: 1)_
+- `rex-ranch:client:openranchhandmenu` _(repos: 1)_
+- `rex-ranch:client:opentraineemenu` _(repos: 1)_
+- `rex-ranch:client:refreshAnimals` _(repos: 1)_
+- `rex-ranch:client:refreshSingleAnimal` _(repos: 1)_
+- `rex-ranch:client:removeAnimal` _(repos: 1)_
+- `rex-ranch:client:setAnimalTransporting` _(repos: 1)_
+- `rex-ranch:client:showAnimalDetails` _(repos: 1)_
+- `rex-ranch:client:showAnimalFilters` _(repos: 1)_
+- `rex-ranch:client:showAnimalSummary` _(repos: 1)_
+- `rex-ranch:client:showAnimalsByType` _(repos: 1)_
+- `rex-ranch:client:showFilteredAnimals` _(repos: 1)_
+- `rex-ranch:client:showIndividualSelectionMenu` _(repos: 1)_
+- `rex-ranch:client:showRanchAnimals` _(repos: 1)_
+- `rex-ranch:client:showSalePoints` _(repos: 1)_
+- `rex-ranch:client:showTypeMenu` _(repos: 1)_
+- `rex-ranch:client:spawnAnimalDenied` _(repos: 1)_
+- `rex-ranch:client:spawnAnimalGranted` _(repos: 1)_
+- `rex-ranch:client:spawnAnimals` _(repos: 1)_
+- `rex-ranch:client:startDistanceHerding` _(repos: 1)_
+- `rex-ranch:client:startSelectedHerding` _(repos: 1)_
+- `rex-ranch:client:startTypeHerding` _(repos: 1)_
+- `rex-ranch:client:stopHerding` _(repos: 1)_
+- `rex-ranch:client:toggleAnimalSelection` _(repos: 1)_
+- `rex-ranch:client:updateAnimalStatus` _(repos: 1)_
+- `rex-ranch:client:waterAnimal` _(repos: 1)_
+- `rex-ranch:server:buyAnimal` _(repos: 1)_
+- `rex-ranch:server:collectProduct` _(repos: 1)_
+- `rex-ranch:server:demoteEmployee` _(repos: 1)_
+- `rex-ranch:server:feedAnimal` _(repos: 1)_
+- `rex-ranch:server:fillWaterBucket` _(repos: 1)_
+- `rex-ranch:server:fireEmployee` _(repos: 1)_
+- `rex-ranch:server:hireEmployee` _(repos: 1)_
+- `rex-ranch:server:promoteEmployee` _(repos: 1)_
+- `rex-ranch:server:ranchstorage` _(repos: 1)_
+- `rex-ranch:server:refreshAnimals` _(repos: 1)_
+- `rex-ranch:server:reportDespawn` _(repos: 1)_
+- `rex-ranch:server:requestAnimalSpawn` _(repos: 1)_
+- `rex-ranch:server:saveAnimalPosition` _(repos: 1)_
+- `rex-ranch:server:sellAllAnimals` _(repos: 1)_
+- `rex-ranch:server:sellAnimal` _(repos: 1)_
+- `rex-ranch:server:startBreeding` _(repos: 1)_
+- `rex-ranch:server:waterAnimal` _(repos: 1)_
+- `rex-research:client:blueprintcopies` _(repos: 1)_
+- `rex-research:client:makeblueprints` _(repos: 1)_
+- `rex-research:client:researchmenu` _(repos: 1)_
+- `rex-research:server:finishcopy` _(repos: 1)_
+- `rex-research:server:openshop` _(repos: 1)_
+- `rex-rodeo:client:choosestake` _(repos: 1)_
+- `rex-rodeo:client:startrodeo` _(repos: 1)_
+- `rex-rodeo:server:paydoublestake` _(repos: 1)_
+- `rex-rodeo:server:paystake` _(repos: 1)_
+- `rex-saloon:client:` _(repos: 1)_
+- `rex-saloon:client:buyitem` _(repos: 1)_
+- `rex-saloon:client:checkingredients` _(repos: 1)_
+- `rex-saloon:client:craftingmenu` _(repos: 1)_
+- `rex-saloon:client:customerviewitems` _(repos: 1)_
+- `rex-saloon:client:newstockitem` _(repos: 1)_
+- `rex-saloon:client:opencustomermenu` _(repos: 1)_
+- `rex-saloon:client:openjobmenu` _(repos: 1)_
+- `rex-saloon:client:openrentjobmenu` _(repos: 1)_
+- `rex-saloon:client:opensaloon` _(repos: 1)_
+- `rex-saloon:client:ownerstoragemenu` _(repos: 1)_
+- `rex-saloon:client:ownerviewitems` _(repos: 1)_
+- `rex-saloon:client:payrent` _(repos: 1)_
+- `rex-saloon:client:removestockitem` _(repos: 1)_
+- `rex-saloon:client:rentmenu` _(repos: 1)_
+- `rex-saloon:client:rentsaloon` _(repos: 1)_
+- `rex-saloon:client:storagebartray` _(repos: 1)_
+- `rex-saloon:client:storagebrewing` _(repos: 1)_
+- `rex-saloon:client:storagestock` _(repos: 1)_
+- `rex-saloon:client:withdrawmoney` _(repos: 1)_
+- `rex-saloon:server:addrentmoney` _(repos: 1)_
+- `rex-saloon:server:buyitem` _(repos: 1)_
+- `rex-saloon:server:finishcrafting` _(repos: 1)_
+- `rex-saloon:server:newstockitem` _(repos: 1)_
+- `rex-saloon:server:removestockitem` _(repos: 1)_
+- `rex-saloon:server:rentsaloon` _(repos: 1)_
+- `rex-saloon:server:withdrawfunds` _(repos: 1)_
+- `rex-sellvendor:client:openmenu` _(repos: 1)_
+- `rex-sellvendor:client:sellcount` _(repos: 1)_
+- `rex-sellvendor:server:sellitem` _(repos: 1)_
+- `rex-smelting:client:` _(repos: 1)_
+- `rex-smelting:client:smeltingmenu` _(repos: 1)_
+- `rex-smelting:client:smeltitem` _(repos: 1)_
+- `rex-smelting:server:finishsmelting` _(repos: 1)_
+- `rex-smoking:client:chewingtobacco` _(repos: 1)_
+- `rex-smoking:client:cigar` _(repos: 1)_
+- `rex-smoking:client:cigarette` _(repos: 1)_
+- `rex-smoking:client:pipe` _(repos: 1)_
+- `rex-speakeasy:client:addingredience` _(repos: 1)_
+- `rex-speakeasy:client:addstock` _(repos: 1)_
+- `rex-speakeasy:client:brewermenu` _(repos: 1)_
+- `rex-speakeasy:client:collectproduct` _(repos: 1)_
+- `rex-speakeasy:client:deliverymenu` _(repos: 1)_
+- `rex-speakeasy:client:distributionmenu` _(repos: 1)_
+- `rex-speakeasy:client:goodsInStore` _(repos: 1)_
+- `rex-speakeasy:client:goodsOutStore` _(repos: 1)_
+- `rex-speakeasy:client:makecards` _(repos: 1)_
+- `rex-speakeasy:client:managermenu` _(repos: 1)_
+- `rex-speakeasy:client:startdelivery` _(repos: 1)_
+- `rex-speakeasy:client:useteleport` _(repos: 1)_
+- `rex-speakeasy:server:addproduct` _(repos: 1)_
+- `rex-speakeasy:server:addstock` _(repos: 1)_
+- `rex-speakeasy:server:addstockproduct` _(repos: 1)_
+- `rex-speakeasy:server:collectproduct` _(repos: 1)_
+- `rex-speakeasy:server:diliverysuccess` _(repos: 1)_
+- `rex-speakeasy:server:membershipcards` _(repos: 1)_
+- `rex-speakeasy:server:removestock` _(repos: 1)_
+- `rex-storage:client:adminDeleteMode` _(repos: 1)_
+- `rex-storage:client:createstorage` _(repos: 1)_
+- `rex-storage:client:destroystorage` _(repos: 1)_
+- `rex-storage:client:manageGuests` _(repos: 1)_
+- `rex-storage:client:openStorageMenu` _(repos: 1)_
+- `rex-storage:client:placeNewProp` _(repos: 1)_
+- `rex-storage:client:removePropObject` _(repos: 1)_
+- `rex-storage:client:updatePropData` _(repos: 1)_
+- `rex-storage:server:PropRemoved` _(repos: 1)_
+- `rex-storage:server:addGuest` _(repos: 1)_
+- `rex-storage:server:adminDeleteStorage` _(repos: 1)_
+- `rex-storage:server:destroyProp` _(repos: 1)_
+- `rex-storage:server:getProps` _(repos: 1)_
+- `rex-storage:server:newProp` _(repos: 1)_
+- `rex-storage:server:openstorage` _(repos: 1)_
+- `rex-storage:server:removeGuest` _(repos: 1)_
+- `rex-storage:server:removeitem` _(repos: 1)_
+- `rex-storage:server:saveProp` _(repos: 1)_
+- `rex-storage:server:updateCampProps` _(repos: 1)_
+- `rex-storage:server:updateProps` _(repos: 1)_
+- `rex-townhall:client:applyjob` _(repos: 1)_
+- `rex-townhall:client:confirmjob` _(repos: 1)_
+- `rex-townhall:client:jobsmenu` _(repos: 1)_
+- `rex-townhall:client:leavejob` _(repos: 1)_
+- `rex-townhall:client:mainmenu` _(repos: 1)_
+- `rex-townhall:server:applyjob` _(repos: 1)_
+- `rex-townhall:server:leavejob` _(repos: 1)_
+- `rex-trader:client:addtradeitem` _(repos: 1)_
+- `rex-trader:client:buycount` _(repos: 1)_
+- `rex-trader:client:buymenu` _(repos: 1)_
+- `rex-trader:client:sellcount` _(repos: 1)_
+- `rex-trader:client:sellmenu` _(repos: 1)_
+- `rex-trader:server:additem` _(repos: 1)_
+- `rex-trader:server:buyitem` _(repos: 1)_
+- `rex-trader:server:sellitem` _(repos: 1)_
+- `rex-trains:client:cleanupOrphanedTrains` _(repos: 1)_
+- `rex-trains:client:startroute` _(repos: 1)_
+- `rex-trains:client:trackswithches` _(repos: 1)_
+- `rex-trains:server:registerTrain` _(repos: 1)_
+- `rex-trains:server:requestCleanup` _(repos: 1)_
+- `rex-trains:server:unregisterTrain` _(repos: 1)_
+- `rex-trapfishing:client:addbait` _(repos: 1)_
+- `rex-trapfishing:client:checktrap` _(repos: 1)_
+- `rex-trapfishing:client:createprop` _(repos: 1)_
+- `rex-trapfishing:client:emptytrap` _(repos: 1)_
+- `rex-trapfishing:client:pickuptrap` _(repos: 1)_
+- `rex-trapfishing:client:placeNewProp` _(repos: 1)_
+- `rex-trapfishing:client:removePropObject` _(repos: 1)_
+- `rex-trapfishing:client:repairtrap` _(repos: 1)_
+- `rex-trapfishing:client:updatePropData` _(repos: 1)_
+- `rex-trapfishing:server:PropRemoved` _(repos: 1)_
+- `rex-trapfishing:server:addbait` _(repos: 1)_
+- `rex-trapfishing:server:destroyProp` _(repos: 1)_
+- `rex-trapfishing:server:emptytrap` _(repos: 1)_
+- `rex-trapfishing:server:getProps` _(repos: 1)_
+- `rex-trapfishing:server:newProp` _(repos: 1)_
+- `rex-trapfishing:server:repairtrap` _(repos: 1)_
+- `rex-trapfishing:server:saveProp` _(repos: 1)_
+- `rex-trapfishing:server:updateProps` _(repos: 1)_
+- `rex-trapper:client:mainmenu` _(repos: 1)_
+- `rex-trapper:client:selltotrapper` _(repos: 1)_
+- `rex-trapper:server:givereward` _(repos: 1)_
+- `rex-trapper:server:openShop` _(repos: 1)_
+- `rex-trapper:server:sellitems` _(repos: 1)_
+- `rex-wagons:activeWagonSet` _(repos: 1)_
+- `rex-wagons:callWagonFailedServer` _(repos: 1)_
+- `rex-wagons:deleteWagon` _(repos: 1)_
+- `rex-wagons:doSpawnWagon` _(repos: 1)_
+- `rex-wagons:forceCleanup` _(repos: 1)_
+- `rex-wagons:getAvailableWagons` _(repos: 1)_
+- `rex-wagons:getShopData` _(repos: 1)_
+- `rex-wagons:getTransferData` _(repos: 1)_
+- `rex-wagons:openShop` _(repos: 1)_
+- `rex-wagons:purchaseSuccess` _(repos: 1)_
+- `rex-wagons:purchaseWagon` _(repos: 1)_
+- `rex-wagons:receiveTransferData` _(repos: 1)_
+- `rex-wagons:sendUIMessage` _(repos: 1)_
+- `rex-wagons:server:openStorage` _(repos: 1)_
+- `rex-wagons:setActiveWagon` _(repos: 1)_
+- `rex-wagons:setShopData` _(repos: 1)_
+- `rex-wagons:setShopLocation` _(repos: 1)_
+- `rex-wagons:showTransferOptions` _(repos: 1)_
+- `rex-wagons:spawnWagon` _(repos: 1)_
+- `rex-wagons:spawnWagonNearPlayer` _(repos: 1)_
+- `rex-wagons:storeWagon` _(repos: 1)_
+
+## Top exports
+
+- `AddCustomRecipe` _(repos: 2)_
+- `CheckPlayerIngredients` _(repos: 2)_
+- `CheckPlayerJob` _(repos: 2)_
+- `GetPlayerJob` _(repos: 2)_
+- `GetRecipeByItem` _(repos: 2)_
+- `GetRecipeIngredients` _(repos: 2)_
+- `GetRecipeJobRequirement` _(repos: 2)_
+- `GetRecipesByJob` _(repos: 2)_
+- `AddPlayerOutlawStatus` _(repos: 1)_
+- `CanCookItem` _(repos: 1)_
+- `CanCraftItem` _(repos: 1)_
+- `CleanupAllTrains` _(repos: 1)_
+- `CleanupTrain` _(repos: 1)_
+- `ClearPlayerOutlawStatus` _(repos: 1)_
+- `CreateZone` _(repos: 1)_
+- `ForceCleanupTrain` _(repos: 1)_
+- `GetActiveTrain` _(repos: 1)_
+- `GetActiveTrains` _(repos: 1)_
+- `GetAnimalDataCache` _(repos: 1)_
+- `GetAnimalEntityById` _(repos: 1)_
+- `GetCookingCategories` _(repos: 1)_
+- `GetCookingLocations` _(repos: 1)_
+- `GetCookingRecipes` _(repos: 1)_
+- `GetCraftingCategories` _(repos: 1)_
+- `GetCraftingLocations` _(repos: 1)_
+- `GetCraftingRecipes` _(repos: 1)_
+- `GetOutlawStatus` _(repos: 1)_
+- `GetPlayerCookingXP` _(repos: 1)_
+- `GetPlayerCraftingXP` _(repos: 1)_
+- `GetPlayerOutlawStatus` _(repos: 1)_
+- `GetRecipesByCookingType` _(repos: 1)_
+- `GetRegisteredTrains` _(repos: 1)_
+- `GetSpawnedPedCount` _(repos: 1)_
+- `GetSpawnedPeds` _(repos: 1)_
+- `GetUtils` _(repos: 1)_
+- `GivePlayerCookingXP` _(repos: 1)_
+- `GivePlayerCraftingXP` _(repos: 1)_
+- `IsHostile` _(repos: 1)_
+- `IsNearCookingLocation` _(repos: 1)_
+- `IsNearCraftingLocation` _(repos: 1)_
+- `OpenCookingMenu` _(repos: 1)_
+- `OpenCraftingMenu` _(repos: 1)_
+- `ProcessCooking` _(repos: 1)_
+- `ProcessCookingWithJobCheck` _(repos: 1)_
+- `ProcessCrafting` _(repos: 1)_
+- `ProcessCraftingWithJobCheck` _(repos: 1)_
+- `RemovePlayerOutlawStatus` _(repos: 1)_
+- `SendDiscordWebhook` _(repos: 1)_
+- `SetPlayerOutlawStatus` _(repos: 1)_
+- `addAnimalToRanch` _(repos: 1)_
+- `addLoyaltyPoints` _(repos: 1)_
+- `canInteractWithAnimal` _(repos: 1)_
+- `getAllBuyPointLocations` _(repos: 1)_
+- `getAllRanchLocations` _(repos: 1)_
+- `getAllSalePointLocations` _(repos: 1)_
+- `getAnimalData` _(repos: 1)_
+- `getAnimalProductInfo` _(repos: 1)_
+- `getBreedingConfig` _(repos: 1)_
+- `getLifetimeLoyaltyPoints` _(repos: 1)_
+- `getLocalPlayerRanchId` _(repos: 1)_
+- `getLoyaltyPoints` _(repos: 1)_
+- `getNearestRanch` _(repos: 1)_
+- `getNearestWaterSource` _(repos: 1)_
+- `getPlayerJobGrade` _(repos: 1)_
+- `getPlayerRanchId` _(repos: 1)_
+- `getRanchAnimalCount` _(repos: 1)_
+- `getRanchAnimals` _(repos: 1)_
+- `getRanchLocation` _(repos: 1)_
+- `getRanchStatistics` _(repos: 1)_
+- `getStaffCount` _(repos: 1)_
+- `hasPermission` _(repos: 1)_
+- `isLocalPlayerRanchStaff` _(repos: 1)_
+- `isNearRanch` _(repos: 1)_
+- `isPlayerRanchStaff` _(repos: 1)_
+- `placeProp` _(repos: 1)_
+- `removeAnimalFromRanch` _(repos: 1)_
+- `removeLoyaltyPoints` _(repos: 1)_
+- `updateAnimalStats` _(repos: 1)_
+
+## Top config keys
+
+- `DistanceSpawn` _(repos: 25)_
+- `FadeIn` _(repos: 25)_
+- `Blip` _(repos: 14)_
+- `Debug` _(repos: 11)_
+- `Image` _(repos: 9)_
+- `EnableTarget` _(repos: 8)_
+- `Keybind` _(repos: 8)_
+- `PromptCancelName` _(repos: 6)_
+- `PromptGroupName` _(repos: 6)_
+- `PromptPlaceName` _(repos: 6)_
+- `PromptRotateLeft` _(repos: 6)_
+- `PromptRotateRight` _(repos: 6)_
+- `EnableServerNotify` _(repos: 5)_
+- `Money` _(repos: 5)_
+- `ServerNotify` _(repos: 5)_
+- `Img` _(repos: 4)_
+- `KeyBind` _(repos: 4)_
+- `PlayerProps` _(repos: 4)_
+- `StorageMaxSlots` _(repos: 4)_
+- `StorageMaxWeight` _(repos: 4)_
+- `WebhookName` _(repos: 4)_
+- `Discord` _(repos: 3)_
+- `DiscordColor` _(repos: 3)_
+- `DiscordWebhook` _(repos: 3)_
+- `EnableRentSystem` _(repos: 3)_
+- `EnableVegModifier` _(repos: 3)_
+- `ForwardDistance` _(repos: 3)_
+- `LicenseRequired` _(repos: 3)_
+- `MaxRent` _(repos: 3)_
+- `Performance` _(repos: 3)_
+- `PlaceDistance` _(repos: 3)_
+- `RentPerHour` _(repos: 3)_
+- `RentStartup` _(repos: 3)_
+- `SellTime` _(repos: 3)_
+- `StockMaxSlots` _(repos: 3)_
+- `StockMaxWeight` _(repos: 3)_
+- `UpdateInterval` _(repos: 3)_
+- `WebhookColour` _(repos: 3)_
+- `WebhookTitle` _(repos: 3)_
+- `Animal` _(repos: 2)_
+- `Animals` _(repos: 2)_
+- `CallLawChance` _(repos: 2)_
+- `CollectTime` _(repos: 2)_
+- `Cooking` _(repos: 2)_
+- `CraftingMaxSlots` _(repos: 2)_
+- `CraftingMaxWeight` _(repos: 2)_
+- `CraftingName` _(repos: 2)_
+- `CronJob` _(repos: 2)_
+- `DiscordAvatar` _(repos: 2)_
+- `DiscordBotName` _(repos: 2)_
+- `EnableDiscordLogs` _(repos: 2)_
+- `InteractionDistance` _(repos: 2)_
+- `Lang1` _(repos: 2)_
+- `LawAlertActive` _(repos: 2)_
+- `LawAlertChance` _(repos: 2)_
+- `LawmanOnDuty` _(repos: 2)_
+- `MaxConcurrentFades` _(repos: 2)_
+- `ModelTimeout` _(repos: 2)_
+- `NotificationDuration` _(repos: 2)_
+- `PlayerShareMaxSlots` _(repos: 2)_
+- `PlayerShareMaxWeight` _(repos: 2)_
+- `PlayerShareName` _(repos: 2)_
+- `Pricing` _(repos: 2)_
+- `RepairCost` _(repos: 2)_
+- `StockName` _(repos: 2)_
+- `WaterProps` _(repos: 2)_
+- `WaterTypes` _(repos: 2)_
+- `ANIMAL_ID_MAX` _(repos: 1)_
+- `ANIMAL_ID_MIN` _(repos: 1)_
+- `AgePricing` _(repos: 1)_
+- `AllowMultipleWagons` _(repos: 1)_
+- `AllowedItems` _(repos: 1)_
+- `AnimalCronJob` _(repos: 1)_
+- `AnimalDistanceSpawn` _(repos: 1)_
+- `AnimalFadeIn` _(repos: 1)_
+- `AnimalHashLookup` _(repos: 1)_
+- `AnimalProducts` _(repos: 1)_
+- `AnimalSaleDistance` _(repos: 1)_
+- `AnimalWanderingEnabled` _(repos: 1)_
+- `AnnesburgCoords` _(repos: 1)_
+- `AnywhereRewardChance` _(repos: 1)_
+- `ArmadilloCoords` _(repos: 1)_
+- `AttackPlayersBasedOnDistance` _(repos: 1)_
+- `AutoMount` _(repos: 1)_
+- `AutomaticBreedingCheckInterval` _(repos: 1)_
+- `AutomaticBreedingEnabled` _(repos: 1)_
+- `AutomaticBreedingMaxDistance` _(repos: 1)_
+- `AutomaticBreedingNotifications` _(repos: 1)_
+- `AvailableWagons` _(repos: 1)_
+- `BanditLocations` _(repos: 1)_
+- `BarTrayMaxSlots` _(repos: 1)_
+- `BarTrayMaxWeight` _(repos: 1)_
+- `BaseReward` _(repos: 1)_
+- `BaseSellPrices` _(repos: 1)_
+- `BenedictCoords` _(repos: 1)_
+- `BigFireworkTime` _(repos: 1)_
+- `BlacklistItems` _(repos: 1)_
+- `BlackmarketLocations` _(repos: 1)_
+- `BlacksmithCronJob` _(repos: 1)_
+- `BlacksmithLocations` _(repos: 1)_
+- `BlackwaterCoords` _(repos: 1)_
+- `BlipSprite` _(repos: 1)_
+- `BlipUpdateInterval` _(repos: 1)_
+- `BlueCrabChance` _(repos: 1)_
+- `Blueprints` _(repos: 1)_
+- `BreedingConfig` _(repos: 1)_
+- `BreedingCooldown` _(repos: 1)_
+- `BreedingDistance` _(repos: 1)_
+- `BreedingEnabled` _(repos: 1)_
+- `BrewingMaxSlots` _(repos: 1)_
+- `BrewingMaxWeight` _(repos: 1)_
+- `BullBuyPrice` _(repos: 1)_
+- `BullSellPrice` _(repos: 1)_
+- `ButcherLocations` _(repos: 1)_
+- `BuyCooldown` _(repos: 1)_
+- `BuyPointLocations` _(repos: 1)_
+- `BuyPointSpawnDistance` _(repos: 1)_
+- `Buytime` _(repos: 1)_
+- `CallWagon` _(repos: 1)_
+- `CampfireProp` _(repos: 1)_
+- `CampingCrafting` _(repos: 1)_
+- `CampingCronJob` _(repos: 1)_
+- `CampingZoneSize` _(repos: 1)_
+- `CardCreationCost` _(repos: 1)_
+- `CargoPerUnit` _(repos: 1)_
+- `CashRewards` _(repos: 1)_
+- `CattailDeliveryLocations` _(repos: 1)_
+- `CattailMinDelivery` _(repos: 1)_
+- `ChargeOnServer` _(repos: 1)_
+- `CheckSpawnDistance` _(repos: 1)_
+- `ChewingRelieveStress` _(repos: 1)_
+- `ChopTreeTime` _(repos: 1)_
+- `CigarRelieveStress` _(repos: 1)_
+- `CigaretteRelieveStress` _(repos: 1)_
+- `ClearWantedOnDeath` _(repos: 1)_
+- `CollectFertilizerTime` _(repos: 1)_
+- `CollectWaterTime` _(repos: 1)_
+- `CommonMaxMoneyReward` _(repos: 1)_
+- `CommonMinMoneyReward` _(repos: 1)_
+- `CommonRewardItems` _(repos: 1)_
+- `CookingLocations` _(repos: 1)_
+- `CookingProps` _(repos: 1)_
+- `CookingPublicUse` _(repos: 1)_
+- `CookingRecipes` _(repos: 1)_
+- `CookingTypes` _(repos: 1)_
+- `Cooldown` _(repos: 1)_
+- `CooldownTime` _(repos: 1)_
+- `CopyTime` _(repos: 1)_
+- `CornAmount` _(repos: 1)_
+- `CowBuyPrice` _(repos: 1)_
+- `CowSellPrice` _(repos: 1)_
+- `CrabChance` _(repos: 1)_
+- `CraftTableProp` _(repos: 1)_
+- `Crafting` _(repos: 1)_
+- `CraftingLocations` _(repos: 1)_
+- `CraftingPublicUse` _(repos: 1)_
+- `CrayfishChance` _(repos: 1)_
+- `CreditWarning` _(repos: 1)_
+- `CronNotification` _(repos: 1)_
+- `Database` _(repos: 1)_
+- `DeadPlantTime` _(repos: 1)_
+- `DefaultStable` _(repos: 1)_
+- `DeliveryLocations` _(repos: 1)_
+- `DeliveryTime` _(repos: 1)_
+- `DestinationMarker` _(repos: 1)_
+- `DestroyTime` _(repos: 1)_
+- `DevMode` _(repos: 1)_
+- `DiscordBotAvatar` _(repos: 1)_
+- `DiscordFooter` _(repos: 1)_
+- `DiscordTitle` _(repos: 1)_
+- `DiscordWebhookURL` _(repos: 1)_
+- `Displays` _(repos: 1)_
+- `DistanceAttackData` _(repos: 1)_
+- `DistanceReward` _(repos: 1)_
+- `DistanceThreshold` _(repos: 1)_
+- `Doctors` _(repos: 1)_
+- `DrawTextDistance` _(repos: 1)_
+- `DrillTime` _(repos: 1)_
+- `DynamicPricing` _(repos: 1)_
+- `DynamicWaitTime` _(repos: 1)_
+- `EmeraldCoords` _(repos: 1)_
+- `EnableBlacklist` _(repos: 1)_
+- `EnableDiscordWebhook` _(repos: 1)_
+- `EnableGovenor` _(repos: 1)_
+- `EnableItemWhitelist` _(repos: 1)_
+- `EnableMoneyReward` _(repos: 1)_
+- `EnableQualityCheck` _(repos: 1)_
+- `EnableSound` _(repos: 1)_
+- `EstateAgents` _(repos: 1)_
+- `Events` _(repos: 1)_
+- `FALLBACK_ID_SUFFIX_MAX` _(repos: 1)_
+- `FALLBACK_ID_SUFFIX_MIN` _(repos: 1)_
+- `FadeIncrement` _(repos: 1)_
+- `FarmItems` _(repos: 1)_
+- `FarmPlants` _(repos: 1)_
+- `FarmingCronJob` _(repos: 1)_
+- `FarmingZone` _(repos: 1)_
+- `FastTravel` _(repos: 1)_
+- `FastTravelLocations` _(repos: 1)_
+- `FeatherPrice` _(repos: 1)_
+- `FeedItem` _(repos: 1)_
+- `FertilizerProps` _(repos: 1)_
+- `FireProp` _(repos: 1)_
+- `FishMongerLocations` _(repos: 1)_
+- `FishTrap` _(repos: 1)_
+- `FlagProp` _(repos: 1)_
+- `GemChance` _(repos: 1)_
+- `GemOutputs` _(repos: 1)_
+- `GenderRatios` _(repos: 1)_
+- `GenderSpecificCooldowns` _(repos: 1)_
+- `GoldChance` _(repos: 1)_
+- `GoodMultiplier` _(repos: 1)_
+- `GoodPeltPrice` _(repos: 1)_
+- `GoodsInMaxSlots` _(repos: 1)_
+- `GoodsInMaxWeight` _(repos: 1)_
+- `GoodsOutMaxSlots` _(repos: 1)_
+- `GoodsOutMaxWeight` _(repos: 1)_
+- `GraveRewardChance` _(repos: 1)_
+- `GravestoneBlip` _(repos: 1)_
+- `GravestoneDistance` _(repos: 1)_
+- `GravestoneExpireTime` _(repos: 1)_
+- `GravestoneModel` _(repos: 1)_
+- `Gravestones` _(repos: 1)_
+- `GraveyardItems` _(repos: 1)_
+- `GrowAnywhere` _(repos: 1)_
+- `GrowthBoostMax` _(repos: 1)_
+- `GrowthBoostMin` _(repos: 1)_
+- `GrowthIncrease` _(repos: 1)_
+- `HalloweenWeather` _(repos: 1)_
+- `HandoverTime` _(repos: 1)_
+- `HanoverDeliveryLocations` _(repos: 1)_
+- `HanoverMinDelivery` _(repos: 1)_
+- `HealPrice` _(repos: 1)_
+- `HealthCheckInterval` _(repos: 1)_
+- `HealthDecayRate` _(repos: 1)_
+- `HealthRegenerationRate` _(repos: 1)_
+- `HerdingDistance` _(repos: 1)_
+- `HerdingEnabled` _(repos: 1)_
+- `HerdingFollowDistance` _(repos: 1)_
+- `HerdingMaxAnimals` _(repos: 1)_
+- `HerdingSpeed` _(repos: 1)_
+- `HerdingTimeout` _(repos: 1)_
+- `HerdingTool` _(repos: 1)_
+- `HitchPostProp` _(repos: 1)_
+- `HoleDistance` _(repos: 1)_
+- `Horses` _(repos: 1)_
+- `HouseDoors` _(repos: 1)_
+- `Houses` _(repos: 1)_
+- `HungerDecayRate` _(repos: 1)_
+- `HungerDecrease` _(repos: 1)_
+- `HungerIncrease` _(repos: 1)_
+- `HunterLocations` _(repos: 1)_
+- `ImmediateHealthBoost` _(repos: 1)_
+- `IndividualSelectionEnabled` _(repos: 1)_
+- `InteractKey` _(repos: 1)_
+- `ItemRewards` _(repos: 1)_
+- `JobChangeCooldown` _(repos: 1)_
+- `JobLockMining` _(repos: 1)_
+- `Jobs` _(repos: 1)_
+- `JugAmount` _(repos: 1)_
+- `KeepMoneyOnDeath` _(repos: 1)_
+- `LandTaxPerCycle` _(repos: 1)_
+- `LargeRewardAmount` _(repos: 1)_
+- `LawAlert` _(repos: 1)_
+- `LeadingWait` _(repos: 1)_
+- `LegendaryPeltPrice` _(repos: 1)_
+- `LemoyneDeliveryLocations` _(repos: 1)_
+- `LemoyneMinDelivery` _(repos: 1)_
+- `LoadNotification` _(repos: 1)_
+- `LobsterChance` _(repos: 1)_
+- `LocationCheckInterval` _(repos: 1)_
+- `LocationRotation` _(repos: 1)_
+- `LogEvents` _(repos: 1)_
+- `LogRareOnly` _(repos: 1)_
+- `Loyalty` _(repos: 1)_
+- `MAX_ID_LENGTH` _(repos: 1)_
+- `MakeTime` _(repos: 1)_
+- `ManzanitaMinDelivery` _(repos: 1)_
+- `ManzanitaPostDeliveryLocations` _(repos: 1)_
+- `MarketProp` _(repos: 1)_
+- `MashPerBatch` _(repos: 1)_
+- `MaxBlacksmiths` _(repos: 1)_
+- `MaxBreedingAge` _(repos: 1)_
+- `MaxBuyAmount` _(repos: 1)_
+- `MaxCampsites` _(repos: 1)_
+- `MaxCargo` _(repos: 1)_
+- `MaxCatch` _(repos: 1)_
+- `MaxCorn` _(repos: 1)_
+- `MaxCraftTable` _(repos: 1)_
+- `MaxFire` _(repos: 1)_
+- `MaxHitchPost` _(repos: 1)_
+- `MaxJug` _(repos: 1)_
+- `MaxMarkets` _(repos: 1)_
+- `MaxModelLoadAttempts` _(repos: 1)_
+- `MaxMoonshine` _(repos: 1)_
+- `MaxOutlawAdd` _(repos: 1)_
+- `MaxPlantCount` _(repos: 1)_
+- `MaxRanchAnimals` _(repos: 1)_
+- `MaxRewardAmount` _(repos: 1)_
+- `MaxSaloons` _(repos: 1)_
+
