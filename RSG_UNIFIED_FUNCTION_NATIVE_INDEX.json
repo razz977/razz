@@ -7450,7 +7450,8 @@
       "CanPlacePropHere(pos)": [
         "rex-camping",
         "rex-market",
-        "rex-storage"
+        "rex-storage",
+        "rsg-weaponcomp"
       ],
       "CanPlantSeedHere(propcoords)": [
         "rex-farming"
@@ -7466,6 +7467,10 @@
         "rex-cooking"
       ],
       "CheckVersion()": [
+        "interact-sound",
+        "ox_doorlock",
+        "ox_target",
+        "redm-ipls",
         "rex-blackmarket",
         "rex-blacksmith",
         "rex-butcher",
@@ -7513,7 +7518,40 @@
         "rex-wanted",
         "rex-warehouse",
         "rex-weaponsmith",
-        "rex-woodcutter"
+        "rex-woodcutter",
+        "rsg-adminmenu",
+        "rsg-ammo",
+        "rsg-animations",
+        "rsg-appearance",
+        "rsg-banking",
+        "rsg-barbers",
+        "rsg-bathing",
+        "rsg-bossmenu",
+        "rsg-canteen",
+        "rsg-consume",
+        "rsg-core",
+        "rsg-doorlock",
+        "rsg-essentials",
+        "rsg-fishing",
+        "rsg-gangmenu",
+        "rsg-horses",
+        "rsg-hud",
+        "rsg-inventory",
+        "rsg-lawman",
+        "rsg-medic",
+        "rsg-menubase",
+        "rsg-multicharacter",
+        "rsg-multijob",
+        "rsg-npcs",
+        "rsg-playerinfo",
+        "rsg-prison",
+        "rsg-radialmenu",
+        "rsg-shops",
+        "rsg-spawn",
+        "rsg-telegram",
+        "rsg-wardrobe",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "CleanupAllNPCs()": [
         "rex-blackmarket"
@@ -7591,7 +7629,8 @@
         "rex-market"
       ],
       "CreatePropId()": [
-        "rex-camping"
+        "rex-camping",
+        "rsg-weaponcomp"
       ],
       "CreateStockMenuItems(result, isOwner)": [
         "rex-market"
@@ -7603,22 +7642,46 @@
         "rex-goldpanning"
       ],
       "DataView.ArrayBuffer(length)": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "DataView.Wrap(blob)": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "DataView:Buffer()": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "DataView:ByteLength()": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "DataView:ByteOffset()": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "DataView:SubView(offset)": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "Debug(...)": [
         "rex-farming"
@@ -7630,7 +7693,8 @@
         "rex-campfire",
         "rex-camping",
         "rex-storage",
-        "rex-trapfishing"
+        "rex-trapfishing",
+        "rsg-weaponcomp"
       ],
       "DeletePan(entity)": [
         "rex-goldpanning"
@@ -7673,11 +7737,13 @@
       "DrawPropAxes(prop)": [
         "rex-campfire",
         "rex-camping",
-        "rex-market"
+        "rex-market",
+        "rsg-weaponcomp"
       ],
       "DrawText3D(x, y, z, text)": [
         "rex-delivery",
-        "rex-speakeasy"
+        "rex-speakeasy",
+        "rsg-adminmenu"
       ],
       "DrillingRocks(item, amount)": [
         "rex-mining"
@@ -7710,7 +7776,9 @@
         "rex-cooking"
       ],
       "GenerateHorseid()": [
-        "rex-codes"
+        "rex-codes",
+        "rsg-horses",
+        "rsg-multicharacter"
       ],
       "GeneratePlate()": [
         "rex-huntingwagon"
@@ -7839,7 +7907,8 @@
         "rex-wagons"
       ],
       "LoadModel(model)": [
-        "rex-goldpanning"
+        "rex-goldpanning",
+        "rsg-bathing"
       ],
       "LoadModel(model, timeout)": [
         "rex-blackmarket"
@@ -7906,7 +7975,9 @@
       ],
       "NearNPC(npcmodel, npccoords, heading)": [
         "rex-blacksmith",
-        "rex-weaponsmith"
+        "rex-weaponsmith",
+        "rsg-horses",
+        "rsg-prison"
       ],
       "NearPed(model, coords, currentport)": [
         "rex-guarma"
@@ -8071,7 +8142,8 @@
       "RayCastGamePlayCamera(distance)": [
         "rex-campfire",
         "rex-camping",
-        "rex-market"
+        "rex-market",
+        "rsg-weaponcomp"
       ],
       "RegisterCategoryMenus()": [
         "rex-cooking",
@@ -8102,7 +8174,8 @@
         "rex-campfire",
         "rex-camping",
         "rex-storage",
-        "rex-trapfishing"
+        "rex-trapfishing",
+        "rsg-weaponcomp"
       ],
       "RotateLocations()": [
         "rex-blackmarket"
@@ -8111,12 +8184,14 @@
         "rex-campfire",
         "rex-camping",
         "rex-storage",
-        "rex-trapfishing"
+        "rex-trapfishing",
+        "rsg-weaponcomp"
       ],
       "RotationToDirection(rotation)": [
         "rex-campfire",
         "rex-camping",
-        "rex-market"
+        "rex-market",
+        "rsg-weaponcomp"
       ],
       "SafeDeletePed(ped)": [
         "rex-blackmarket"
@@ -8180,13 +8255,18 @@
         "rex-campfire",
         "rex-camping",
         "rex-storage",
-        "rex-trapfishing"
+        "rex-trapfishing",
+        "rsg-weaponcomp"
       ],
       "SetClosestStoreLocation()": [
         "rex-huntingwagon"
       ],
       "SetFixed(self, offset, value, code)": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "SetGuarmaWorldhorizonActive(toggle)": [
         "rex-guarma"
@@ -8462,14 +8542,23 @@
         "rex-blackmarket"
       ],
       "_ef(big)": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "_ib(o, l, t)": [
-        "rex-lootnpc"
+        "rex-lootnpc",
+        "rsg-essentials",
+        "rsg-horses",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "action()": [
         "rex-houses",
-        "rex-postal"
+        "rex-postal",
+        "rsg-prison"
       ],
       "addBlipToTrain(blipType,train,blipText)": [
         "rex-trains"
@@ -8508,7 +8597,8 @@
         "rex-market",
         "rex-postal",
         "rex-saloon",
-        "rex-weaponsmith"
+        "rex-weaponsmith",
+        "rsg-adminmenu"
       ],
       "countOwnedSaloons(src)": [
         "rex-saloon"
@@ -8595,6 +8685,10 @@
         "rex-wagons"
       ],
       "isVersionOutdated(current, latest)": [
+        "interact-sound",
+        "ox_doorlock",
+        "ox_target",
+        "redm-ipls",
         "rex-butcher",
         "rex-campfire",
         "rex-chat",
@@ -8622,22 +8716,61 @@
         "rex-trapper",
         "rex-wagons",
         "rex-wanted",
-        "rex-woodcutter"
+        "rex-woodcutter",
+        "rsg-adminmenu",
+        "rsg-ammo",
+        "rsg-animations",
+        "rsg-appearance",
+        "rsg-banking",
+        "rsg-barbers",
+        "rsg-bathing",
+        "rsg-bossmenu",
+        "rsg-canteen",
+        "rsg-consume",
+        "rsg-core",
+        "rsg-doorlock",
+        "rsg-essentials",
+        "rsg-fishing",
+        "rsg-gangmenu",
+        "rsg-horses",
+        "rsg-hud",
+        "rsg-inventory",
+        "rsg-lawman",
+        "rsg-medic",
+        "rsg-menubase",
+        "rsg-multicharacter",
+        "rsg-multijob",
+        "rsg-npcs",
+        "rsg-playerinfo",
+        "rsg-prison",
+        "rsg-radialmenu",
+        "rsg-shops",
+        "rsg-spawn",
+        "rsg-telegram",
+        "rsg-wardrobe",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "loadModel(model)": [
-        "rex-npcdoctor"
+        "rex-npcdoctor",
+        "rsg-multicharacter"
       ],
       "modelrequest(model)": [
         "rex-storage",
-        "rex-trapfishing"
+        "rex-trapfishing",
+        "rsg-appearance"
       ],
       "newpoint.onEnter(self)": [
         "rex-blacksmith",
-        "rex-weaponsmith"
+        "rex-weaponsmith",
+        "rsg-horses",
+        "rsg-prison"
       ],
       "newpoint.onExit(self)": [
         "rex-blacksmith",
-        "rex-weaponsmith"
+        "rex-weaponsmith",
+        "rsg-horses",
+        "rsg-prison"
       ],
       "onBack()": [
         "rex-campfire",
@@ -8647,18 +8780,25 @@
         "rex-crafting",
         "rex-saloon",
         "rex-smelting",
-        "rex-weaponsmith"
+        "rex-weaponsmith",
+        "rsg-adminmenu",
+        "rsg-bossmenu",
+        "rsg-gangmenu",
+        "rsg-horses",
+        "rsg-prison"
       ],
       "onClose()": [
         "rex-delivery"
       ],
       "onEnter()": [
-        "rex-camping"
+        "rex-camping",
+        "rsg-weaponcomp"
       ],
       "onExit()": [
         "rex-camping",
         "rex-farming",
-        "rex-npcdoctor"
+        "rex-npcdoctor",
+        "rsg-weaponcomp"
       ],
       "onSelect()": [
         "rex-blackmarket",
@@ -8692,11 +8832,22 @@
         "rex-trapper",
         "rex-wagons",
         "rex-warehouse",
-        "rex-weaponsmith"
+        "rex-weaponsmith",
+        "rsg-adminmenu",
+        "rsg-banking",
+        "rsg-barbers",
+        "rsg-horses",
+        "rsg-inventory",
+        "rsg-lawman",
+        "rsg-multijob",
+        "rsg-shops",
+        "rsg-weaponcomp"
       ],
       "onSelect(data)": [
         "rex-deathloot",
-        "rex-ranch"
+        "rex-ranch",
+        "rsg-banking",
+        "rsg-inventory"
       ],
       "openLoyaltyNUI()": [
         "rex-loyalty"
@@ -8709,6 +8860,10 @@
         "rex-camping"
       ],
       "printLog(type, message)": [
+        "interact-sound",
+        "ox_doorlock",
+        "ox_target",
+        "redm-ipls",
         "rex-butcher",
         "rex-campfire",
         "rex-chat",
@@ -8736,7 +8891,40 @@
         "rex-trapper",
         "rex-wagons",
         "rex-wanted",
-        "rex-woodcutter"
+        "rex-woodcutter",
+        "rsg-adminmenu",
+        "rsg-ammo",
+        "rsg-animations",
+        "rsg-appearance",
+        "rsg-banking",
+        "rsg-barbers",
+        "rsg-bathing",
+        "rsg-bossmenu",
+        "rsg-canteen",
+        "rsg-consume",
+        "rsg-core",
+        "rsg-doorlock",
+        "rsg-essentials",
+        "rsg-fishing",
+        "rsg-gangmenu",
+        "rsg-horses",
+        "rsg-hud",
+        "rsg-inventory",
+        "rsg-lawman",
+        "rsg-medic",
+        "rsg-menubase",
+        "rsg-multicharacter",
+        "rsg-multijob",
+        "rsg-npcs",
+        "rsg-playerinfo",
+        "rsg-prison",
+        "rsg-radialmenu",
+        "rsg-shops",
+        "rsg-spawn",
+        "rsg-telegram",
+        "rsg-wardrobe",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "processAnimalOverviewData(animals)": [
         "rex-ranch"
@@ -8783,6 +8971,10 @@
         "rex-npcdoctor"
       ],
       "splitVersion(v)": [
+        "interact-sound",
+        "ox_doorlock",
+        "ox_target",
+        "redm-ipls",
         "rex-butcher",
         "rex-campfire",
         "rex-chat",
@@ -8810,7 +9002,40 @@
         "rex-trapper",
         "rex-wagons",
         "rex-wanted",
-        "rex-woodcutter"
+        "rex-woodcutter",
+        "rsg-adminmenu",
+        "rsg-ammo",
+        "rsg-animations",
+        "rsg-appearance",
+        "rsg-banking",
+        "rsg-barbers",
+        "rsg-bathing",
+        "rsg-bossmenu",
+        "rsg-canteen",
+        "rsg-consume",
+        "rsg-core",
+        "rsg-doorlock",
+        "rsg-essentials",
+        "rsg-fishing",
+        "rsg-gangmenu",
+        "rsg-horses",
+        "rsg-hud",
+        "rsg-inventory",
+        "rsg-lawman",
+        "rsg-medic",
+        "rsg-menubase",
+        "rsg-multicharacter",
+        "rsg-multijob",
+        "rsg-npcs",
+        "rsg-playerinfo",
+        "rsg-prison",
+        "rsg-radialmenu",
+        "rsg-shops",
+        "rsg-spawn",
+        "rsg-telegram",
+        "rsg-wardrobe",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "table.length(t)": [
         "rex-market"
@@ -8845,23 +9070,3312 @@
         "rex-townhall",
         "rex-warehouse",
         "rex-weaponsmith"
+      ],
+      "Action(name, animscene, town, cam)": [
+        "rsg-bathing"
+      ],
+      "ActionCleanup()": [
+        "progressbar"
+      ],
+      "ActionStart()": [
+        "progressbar"
+      ],
+      "ActivateInteriorEntitySets(interior, name, sets)": [
+        "redm-ipls"
+      ],
+      "AddGang(gangName, gang)": [
+        "rsg-core"
+      ],
+      "AddGangMoney(account, amount)": [
+        "rsg-gangmenu"
+      ],
+      "AddGangs(gangs)": [
+        "rsg-core"
+      ],
+      "AddItem(item, amount, slot, info)": [
+        "rsg-inventory"
+      ],
+      "AddItem(item, amount, slot, info, reason)": [
+        "rsg-inventory"
+      ],
+      "AddItem(itemName, item)": [
+        "rsg-core"
+      ],
+      "AddItems(items)": [
+        "rsg-core"
+      ],
+      "AddJob(jobName, job)": [
+        "rsg-core"
+      ],
+      "AddJobs(jobs)": [
+        "rsg-core"
+      ],
+      "AddMoney(account, amount)": [
+        "rsg-bossmenu"
+      ],
+      "AddOption(data, id)": [
+        "rsg-radialmenu"
+      ],
+      "AddToDegradationQueue(serial)": [
+        "rsg-weapons"
+      ],
+      "AdjustZoom(increase)": [
+        "rsg-weaponcomp"
+      ],
+      "Anim(animDict, animName, duration, flags, introtiming, exittiming)": [
+        "rsg-animations"
+      ],
+      "ApplyOverlays(overlayTarget)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "ApplySkin()": [
+        "rsg-appearance"
+      ],
+      "ApplySkinMultiChar(SkinData, Target, ClothesData)": [
+        "rsg-appearance"
+      ],
+      "BanPlayer(src)": [
+        "rsg-adminmenu"
+      ],
+      "BondingLevels()": [
+        "rsg-horses"
+      ],
+      "BuildHashLookup()": [
+        "rsg-appearance"
+      ],
+      "CalculateHorseLevel(xp)": [
+        "rsg-horses"
+      ],
+      "CalculateHorseMovePrice(fromCoords, toCoords)": [
+        "rsg-horses"
+      ],
+      "CalculatePrice(comp, initial)": [
+        "rsg-horses"
+      ],
+      "CalculatePrice(newClothes, currentClothes, isMale)": [
+        "rsg-appearance"
+      ],
+      "CalculatePrice(selection)": [
+        "rsg-weaponcomp"
+      ],
+      "CameraPromptHorse(horses)": [
+        "rsg-horses"
+      ],
+      "CanSetJob(cid, jobName)": [
+        "rsg-multijob"
+      ],
+      "Cancel()": [
+        "progressbar"
+      ],
+      "Change(id, category, change_type)": [
+        "rsg-appearance"
+      ],
+      "ChangeOverlays(name, visibility, tx_id, tx_normal, tx_material, tx_color_type, tx_opacity, tx_unk, palette_id,\n    palette_color_primary, palette_color_secondary, palette_color_tertiary, var, opacity)": [
+        "rsg-appearance"
+      ],
+      "ChangeOverlays(name, visibility, tx_id, tx_normal, tx_material, tx_color_type, tx_opacity, tx_unk, palette_id, palette_color_primary, palette_color_secondary, palette_color_tertiary, var, opacity)": [
+        "rsg-barbers"
+      ],
+      "ClampValue(value, min, max)": [
+        "rsg-horses"
+      ],
+      "CleanupAnimalInfoHud()": [
+        "rsg-horses"
+      ],
+      "ClearCameraPrompts()": [
+        "rsg-weaponcomp"
+      ],
+      "ClearInterval(id)": [
+        "ox_lib"
+      ],
+      "ClearInventory(filterItems)": [
+        "rsg-inventory"
+      ],
+      "CloseBathDoors()": [
+        "rsg-bathing"
+      ],
+      "ClothingLight()": [
+        "rsg-appearance"
+      ],
+      "ConvertCacheToHash(ClothesCache)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "ConvertHashToCache(hashBasedClothes, isMale)": [
+        "rsg-appearance"
+      ],
+      "CopyCoords(data)": [
+        "rsg-adminmenu"
+      ],
+      "CreateBlips()": [
+        "rsg-appearance",
+        "rsg-bathing"
+      ],
+      "CreateGangBlips()": [
+        "rsg-gangmenu"
+      ],
+      "CreateItemDrop(coords, itemData, shouldRemoveFromInventory, source)": [
+        "rsg-inventory"
+      ],
+      "CreatePedAtCoords(model, coords, isNetworked)": [
+        "rsg-appearance"
+      ],
+      "CreategunsiteId()": [
+        "rsg-weaponcomp"
+      ],
+      "CustomHorse(horses, data)": [
+        "rsg-horses"
+      ],
+      "DHMSToTime(day, hour, minute, second)": [
+        "weathersync"
+      ],
+      "DataStream.New(view)": [
+        "rsg-essentials"
+      ],
+      "Debug(args1, args2)": [
+        "rsg-telegram"
+      ],
+      "DisableActions(ped)": [
+        "progressbar"
+      ],
+      "DoesPlayerHaveItem(player, items, removeItem)": [
+        "ox_doorlock"
+      ],
+      "Draw3DText(coords, str)": [
+        "rsg-core"
+      ],
+      "DrawText3D(x, y, z, text, color)": [
+        "rsg-appearance"
+      ],
+      "DressCharacter()": [
+        "rsg-bathing"
+      ],
+      "DrinkPrompt()": [
+        "rsg-essentials"
+      ],
+      "Drops.GetDrops()": [
+        "rsg-inventory"
+      ],
+      "Drops.ResetPlayerState()": [
+        "rsg-inventory"
+      ],
+      "EnableEagleeye(player, enable)": [
+        "rsg-essentials"
+      ],
+      "EndCharacterCreatorCam(anim, anim1)": [
+        "rsg-appearance"
+      ],
+      "ExitBathing(animscene, town, cam)": [
+        "rsg-bathing"
+      ],
+      "ExitPremiumBath(animscene, town, cam, disableScrub)": [
+        "rsg-bathing"
+      ],
+      "ExploitBan(playerId, origin)": [
+        "rsg-core"
+      ],
+      "FISHING_GET_BOBBER_HANDLE()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_CALCULATED_FISH_WEIGHT()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_FISH_HANDLE()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_F_(f)": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_F_9()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_HOOK_HANDLE()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_LINE_DISTANCE()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_MAX_THROWING_DISTANCE()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_MINIGAME_STATE()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_SCRIPT_TIMER()": [
+        "rsg-fishing"
+      ],
+      "FISHING_GET_TRANSITION_FLAG()": [
+        "rsg-fishing"
+      ],
+      "FISHING_HAS_MINIGAME_ON()": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_CALCULATED_FISH_WEIGHT(v)": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_FISH_HANDLE(v)": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_F_(f, v)": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_LINE_DISTANCE(v)": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_ROD_POSITION_LR(v)": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_ROD_POSITION_UD(v)": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_ROD_WEIGHT(v)": [
+        "rsg-fishing"
+      ],
+      "FISHING_SET_TRANSITION_FLAG(v)": [
+        "rsg-fishing"
+      ],
+      "Finish()": [
+        "progressbar"
+      ],
+      "FirstMenu()": [
+        "rsg-appearance"
+      ],
+      "FishModelToSomeSortOfWeightIndex(fishModel)": [
+        "rsg-fishing"
+      ],
+      "FixIssues(target)": [
+        "rsg-appearance"
+      ],
+      "Flee()": [
+        "rsg-horses"
+      ],
+      "FotoMugshots()": [
+        "rsg-appearance"
+      ],
+      "FreezePlayer()": [
+        "rsg-weaponcomp"
+      ],
+      "GET_TASK_FISHING_DATA()": [
+        "rsg-fishing"
+      ],
+      "GenerateCSRFToken()": [
+        "rsg-core"
+      ],
+      "GenerateMenu()": [
+        "rsg-appearance"
+      ],
+      "GetAccount(account)": [
+        "rsg-bossmenu"
+      ],
+      "GetActivePlayers()": [
+        "ox_lib"
+      ],
+      "GetAvailableComponents(weaponName, wHash)": [
+        "rsg-weaponcomp"
+      ],
+      "GetCardinalDirection(h)": [
+        "weathersync"
+      ],
+      "GetCharacterId(player)": [
+        "ox_doorlock"
+      ],
+      "GetClosestConsumer()": [
+        "rsg-appearance",
+        "rsg-bathing"
+      ],
+      "GetClosestPlayerWithin(maxDistance)": [
+        "rsg-inventory"
+      ],
+      "GetClosestTown(coords)": [
+        "rsg-lawman"
+      ],
+      "GetCoreVersion(InvokingResource)": [
+        "rsg-core"
+      ],
+      "GetDayOfWeek(day)": [
+        "weathersync"
+      ],
+      "GetDescriptionLayout(value, price)": [
+        "rsg-appearance"
+      ],
+      "GetEffectInterval(stresslevel)": [
+        "rsg-hud"
+      ],
+      "GetGamePool(poolName)": [
+        "ox_lib"
+      ],
+      "GetGangAccount(account)": [
+        "rsg-gangmenu"
+      ],
+      "GetGender()": [
+        "rsg-appearance"
+      ],
+      "GetHashHead(aMale,num,color)": [
+        "rsg-appearance"
+      ],
+      "GetHeadIndex(ped)": [
+        "rsg-appearance"
+      ],
+      "GetHorseCoatFromModel(hModel)": [
+        "rsg-horses"
+      ],
+      "GetItemByName(item)": [
+        "rsg-inventory"
+      ],
+      "GetItemBySlot(slot)": [
+        "rsg-inventory"
+      ],
+      "GetItemsByName(item)": [
+        "rsg-inventory"
+      ],
+      "GetJobCount(cid)": [
+        "rsg-multijob"
+      ],
+      "GetLedHorseFromPed(ped)": [
+        "rsg-horses"
+      ],
+      "GetLevelProgress(xp)": [
+        "rsg-horses"
+      ],
+      "GetLocationName(coords)": [
+        "rsg-lawman"
+      ],
+      "GetMaxTexturesForModel(category, model)": [
+        "rsg-barbers"
+      ],
+      "GetMaxTexturesForModel(category, model, isClothing)": [
+        "rsg-appearance"
+      ],
+      "GetMetaPedAssetGuids(ped, index)": [
+        "rsg-appearance"
+      ],
+      "GetMinMaxWeightForWeightIndex(index)": [
+        "rsg-fishing"
+      ],
+      "GetNearbyFishs(coords, radius)": [
+        "rsg-fishing"
+      ],
+      "GetNearbyPlayers(maxDistance)": [
+        "rsg-inventory"
+      ],
+      "GetNearbyPlayers(source)": [
+        "rsg-adminmenu"
+      ],
+      "GetNearestInteractableObject(forward)": [
+        "rsg-horses"
+      ],
+      "GetOverlayData()": [
+        "rsg-barbers"
+      ],
+      "GetPedModel(sex)": [
+        "rsg-appearance"
+      ],
+      "GetPlayer(_)": [
+        "ox_doorlock"
+      ],
+      "GetPlayerDiscord(src)": [
+        "rsg-adminmenu"
+      ],
+      "GetPlayerFromServerID(serverId)": [
+        "rsg-inventory"
+      ],
+      "GetRandomFishWeightForWeightIndex(index)": [
+        "rsg-fishing"
+      ],
+      "GetShakeIntensity(stresslevel)": [
+        "rsg-hud"
+      ],
+      "GetSkinColorFromBodySize(body, color)": [
+        "rsg-appearance"
+      ],
+      "GetWeaponItemEntry(Player, serial)": [
+        "rsg-weaponcomp"
+      ],
+      "GetWeaponType(hash)": [
+        "rsg-weaponcomp"
+      ],
+      "GiveStarterItems(source)": [
+        "rsg-multicharacter"
+      ],
+      "HandleEagleEyeAccess()": [
+        "rsg-essentials"
+      ],
+      "HandleObjectInteraction(thorse)": [
+        "rsg-horses"
+      ],
+      "HandleWaterInteraction(thorse)": [
+        "rsg-horses"
+      ],
+      "HasBodyComponentsLoaded(target, hair, beard)": [
+        "rsg-appearance"
+      ],
+      "HasItem(items, amount)": [
+        "rsg-inventory"
+      ],
+      "Helpers.CreateDropId(dropId)": [
+        "rsg-inventory"
+      ],
+      "Helpers.ParseDecayRate(name)": [
+        "rsg-inventory"
+      ],
+      "HorseActions(target, dict, anim)": [
+        "rsg-horses"
+      ],
+      "HorseOptions(data)": [
+        "rsg-horses"
+      ],
+      "InitializeAllCategories(cache, isMale)": [
+        "rsg-appearance"
+      ],
+      "Inventory.AddItem(identifier, item, amount, slot, info, reason)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CanAddItem(source, item, amount)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CanPlayerUseInventory()": [
+        "rsg-inventory"
+      ],
+      "Inventory.CheckItemDecay(item, itemInfo, currentTime, decayRateModifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CheckItemsDecay(items, decayRateModifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CheckPlayerItemDecay(player, item)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CheckPlayerItemsDecay(player)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CheckWeapon(source, item)": [
+        "rsg-inventory"
+      ],
+      "Inventory.ClearInventory(source, filterItems)": [
+        "rsg-inventory"
+      ],
+      "Inventory.ClearStash(identifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CloseInventory(source, identifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.CreateInventory(identifier, data)": [
+        "rsg-inventory"
+      ],
+      "Inventory.DeleteInventory(identifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.ForceDropItem(source, item, amount, info, reason)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetCoords(inventoryId, src)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetFirstFreeSlot(items, maxSlots)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetFirstSlotByItem(items, itemName)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetFirstSlotByItemWithQuality(items, itemName, quality)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetFreeWeight(source)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetIdentifier(inventoryId, src)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetInventory(identifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetItem(inventoryId, src, slot)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetItemByName(source, item)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetItemBySlot(source, slot)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetItemCount(source, items)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetItemWeight(itemName)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetItemsByName(source, item)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetSlots(identifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetSlotsByItem(items, itemName)": [
+        "rsg-inventory"
+      ],
+      "Inventory.GetTotalWeight(items)": [
+        "rsg-inventory"
+      ],
+      "Inventory.HasItem(source, items, amount)": [
+        "rsg-inventory"
+      ],
+      "Inventory.InitializeInventory(inventoryId, data)": [
+        "rsg-inventory"
+      ],
+      "Inventory.LoadInventory(source, citizenid)": [
+        "rsg-inventory"
+      ],
+      "Inventory.OpenInventory(source, identifier, data)": [
+        "rsg-inventory"
+      ],
+      "Inventory.OpenInventoryById(source, targetId)": [
+        "rsg-inventory"
+      ],
+      "Inventory.RemoveItem(identifier, item, amount, slot, reason, isMove)": [
+        "rsg-inventory"
+      ],
+      "Inventory.SaveInventory(source, offline)": [
+        "rsg-inventory"
+      ],
+      "Inventory.SaveStash(identifier)": [
+        "rsg-inventory"
+      ],
+      "Inventory.SetInventory(source, items)": [
+        "rsg-inventory"
+      ],
+      "Inventory.SetItemData(source, itemName, key, val)": [
+        "rsg-inventory"
+      ],
+      "Inventory.UseHotbarItem(slot)": [
+        "rsg-inventory"
+      ],
+      "Inventory.UseItem(itemName, ...)": [
+        "rsg-inventory"
+      ],
+      "IsAuthorized(jobName, doorID)": [
+        "rsg-doorlock"
+      ],
+      "IsEntityAnimal(entity)": [
+        "rsg-lawman"
+      ],
+      "IsPedLeadingHorse(ped)": [
+        "rsg-horses"
+      ],
+      "IsPedReadyToRender(...)": [
+        "rsg-horses"
+      ],
+      "IsPlayerAtPostOffice()": [
+        "rsg-telegram"
+      ],
+      "IsPlayerInGroup(player, filter)": [
+        "ox_doorlock"
+      ],
+      "IsPromptCompleted(name)": [
+        "rsg-appearance",
+        "rsg-bathing"
+      ],
+      "IsPromptEnabled(name)": [
+        "rsg-bathing"
+      ],
+      "L(k, d)": [
+        "rsg-inventory"
+      ],
+      "ListenForPromptEvent(iEventGroup, hWhichEvent, iEventDataSize, tOutTable)": [
+        "rsg-horses"
+      ],
+      "LoadAllStreamings()": [
+        "rsg-bathing"
+      ],
+      "LoadAnim(dic)": [
+        "rsg-essentials"
+      ],
+      "LoadAnimationDic(dict)": [
+        "rsg-adminmenu"
+      ],
+      "LoadBeard(target, data)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "LoadBodyFeature(target, data, bodyFeatureTable)": [
+        "rsg-appearance"
+      ],
+      "LoadBoody(target, data)": [
+        "rsg-appearance"
+      ],
+      "LoadEyes(target, data)": [
+        "rsg-appearance"
+      ],
+      "LoadFeatures(target, data)": [
+        "rsg-appearance"
+      ],
+      "LoadHair(target, data)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "LoadHead(target, data)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "LoadHeight(target, data)": [
+        "rsg-appearance"
+      ],
+      "LoadModel(modelHash)": [
+        "rsg-canteen"
+      ],
+      "LoadModel(target, model)": [
+        "rsg-appearance"
+      ],
+      "LoadOverlays(target, data)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "LoadPlayer(model)": [
+        "rsg-appearance"
+      ],
+      "Locale.new(_, opts)": [
+        "rsg-core"
+      ],
+      "Locale:clear()": [
+        "rsg-core"
+      ],
+      "Locale:delete(phraseTarget, prefix)": [
+        "rsg-core"
+      ],
+      "Locale:extend(phrases, prefix)": [
+        "rsg-core"
+      ],
+      "Locale:has(key)": [
+        "rsg-core"
+      ],
+      "Locale:locale(newLocale)": [
+        "rsg-core"
+      ],
+      "Locale:replace(phrases)": [
+        "rsg-core"
+      ],
+      "Locale:t(key, subs)": [
+        "rsg-core"
+      ],
+      "MainMenu()": [
+        "rsg-appearance"
+      ],
+      "MainMenu(Target)": [
+        "rsg-barbers"
+      ],
+      "MainMenu(horses, horsedata)": [
+        "rsg-horses"
+      ],
+      "MainWeaponMenu(wname, wHash, serial, propid)": [
+        "rsg-weaponcomp"
+      ],
+      "MenuData.Close(type, namespace, name)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "MenuData.CloseAll()": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "MenuData.GetOpened(type, namespace, name)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "MenuData.GetOpenedMenus()": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "MenuData.IsOpen(type, namespace, name)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "MenuData.Open(type, namespace, name, data, submit, cancel, change, close)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "MenuData.ReOpen(oldMenu)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "MenuUpdateClothes(data, menu)": [
+        "rsg-appearance"
+      ],
+      "NativeFixMeshIssues(ped, categoryHash)": [
+        "rsg-appearance"
+      ],
+      "NativeGetPedComponentCategory(isFemale, componentHash)": [
+        "rsg-appearance"
+      ],
+      "NativeHasPedComponentLoaded(ped)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "NativeSetPedComponentEnabled(ped, componentHash, immediately, isMp)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "NativeSetPedComponentEnabledClothes(ped, componentHash, immediately, isMp)": [
+        "rsg-appearance"
+      ],
+      "NativeSetPedFaceFeature(ped, index, value)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "NativeSetTextureOutfitTints(ped,category,palette,tint0,tint1,tint2)": [
+        "rsg-appearance"
+      ],
+      "NativeUpdatePedVariation(ped)": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "NearPed(model, coords, pedData)": [
+        "rsg-npcs"
+      ],
+      "NearPed(npcmodel, npccoords, barberid)": [
+        "rsg-barbers"
+      ],
+      "NearPed(npcmodel, npccoords, moneytype)": [
+        "rsg-banking"
+      ],
+      "OpenBodyMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenCateogry(menu_catagory)": [
+        "rsg-appearance"
+      ],
+      "OpenCheekbonesMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenChinMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenCloakroom()": [
+        "rsg-appearance"
+      ],
+      "OpenClothingMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenComponentMenu(wname, wHash, serial, propid)": [
+        "rsg-weaponcomp"
+      ],
+      "OpenDefectsMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenEarsMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenEngravingMenu(wname, wHash, serial, propid)": [
+        "rsg-weaponcomp"
+      ],
+      "OpenEyebrowsMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenEyelidsMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenEyesMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenFaceMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenGiveMoneyMenu(targetPlayerId)": [
+        "rsg-banking"
+      ],
+      "OpenHairMenu()": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "OpenJawMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenMakeupMenu()": [
+        "rsg-appearance",
+        "rsg-barbers"
+      ],
+      "OpenMaterialMenu(wname, wHash, serial, propid)": [
+        "rsg-weaponcomp"
+      ],
+      "OpenMouthMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenNoseMenu()": [
+        "rsg-appearance"
+      ],
+      "OpenTintsMenu(wname, wHash, serial, propid)": [
+        "rsg-weaponcomp"
+      ],
+      "Outfits()": [
+        "rsg-appearance"
+      ],
+      "OutfitsManage(outfit, id)": [
+        "rsg-appearance"
+      ],
+      "OxSelector:addSet(setName, items)": [
+        "ox_lib"
+      ],
+      "OxSelector:constructor(sets)": [
+        "ox_lib"
+      ],
+      "OxSelector:getAllSets()": [
+        "ox_lib"
+      ],
+      "OxSelector:getRandom(setName)": [
+        "ox_lib"
+      ],
+      "OxSelector:getRandomAmount(setName, count)": [
+        "ox_lib"
+      ],
+      "OxSelector:getRandomWeighted(setName)": [
+        "ox_lib"
+      ],
+      "OxSelector:getRandomWeightedAmount(setName, count)": [
+        "ox_lib"
+      ],
+      "OxSelector:getSet(setName)": [
+        "ox_lib"
+      ],
+      "OxSelector:removeSet(setName)": [
+        "ox_lib"
+      ],
+      "OxSelector:updateSet(setName, newItems)": [
+        "ox_lib"
+      ],
+      "OxTask:getAbsoluteNextTime()": [
+        "ox_lib"
+      ],
+      "OxTask:getNextTime()": [
+        "ox_lib"
+      ],
+      "OxTask:getTimeAsString(timestamp)": [
+        "ox_lib"
+      ],
+      "OxTask:run()": [
+        "ox_lib"
+      ],
+      "OxTask:scheduleTask()": [
+        "ox_lib"
+      ],
+      "OxTask:stop(msg)": [
+        "ox_lib"
+      ],
+      "PaycheckInterval()": [
+        "rsg-core"
+      ],
+      "PerformHorseAction(thorse, anim, obj, forward)": [
+        "rsg-horses"
+      ],
+      "PlacePedOnGroundProperly(hPed)": [
+        "rsg-horses"
+      ],
+      "PlacePedOnGroundProperly(ped, coord)": [
+        "rsg-core"
+      ],
+      "PlayerDeath()": [
+        "rsg-medic"
+      ],
+      "PopulateClothingCache(loadedClothes, isMale)": [
+        "rsg-appearance"
+      ],
+      "PrepareCreatorMusic()": [
+        "rsg-appearance"
+      ],
+      "Process(action, start, tick, finish)": [
+        "progressbar"
+      ],
+      "Progress(action, finish)": [
+        "progressbar"
+      ],
+      "ProgressWithStartAndTick(action, start, tick, finish)": [
+        "progressbar"
+      ],
+      "ProgressWithStartEvent(action, start, finish)": [
+        "progressbar"
+      ],
+      "ProgressWithTickEvent(action, tick, finish)": [
+        "progressbar"
+      ],
+      "PromptCustom()": [
+        "rsg-horses"
+      ],
+      "Prompts()": [
+        "rsg-telegram"
+      ],
+      "RSGCore.Commands.Add(name, help, arguments, argsrequired, callback, permission, ...)": [
+        "rsg-core"
+      ],
+      "RSGCore.Commands.Refresh(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Debug(resource, obj, depth)": [
+        "rsg-core"
+      ],
+      "RSGCore.Debug(tbl, indent)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.AddPermission(source, permission)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.AddPlayerField(ids, fieldName, data)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.AddPlayerMethod(ids, methodName, handler)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.AttachProp(ped, model, boneId, x, y, z, xR, yR, zR, vertex)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.CanUseItem(item)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.ChangeSlots(source, slots)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.ChangeWeight(source, weight)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.CreateAccountNumber()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.CreateCallback(name, cb)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.CreateClientCallback(name, cb)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.CreateUseableItem(item, data)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.CreateVehicle(source, model, vehtype, coords, warp)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.DeleteVehicle(vehicle)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.DrawText(x, y, width, height, scale, r, g, b, a, text)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.DrawText3D(x, y, z, text)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetBoneDistance(entity, boneType, boneIndex)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetBucketObjects()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetCardinalDirection(entity)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestBone(entity, list)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestObject(coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestObject(source, coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestPed(coords, ignoreList)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestPed(source, coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestPlayer(coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestPlayer(source, coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestVehicle(coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetClosestVehicle(source, coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetCoords(entity)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetCurrentTime()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetDatabaseInfo()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetDutyCount(job)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetEntitiesInBucket(bucket)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetGroundHash(entity)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetGroundZCoord(coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetIdentifier(source, idtype)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetObjects()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetOfflinePlayerByCitizenId(citizenid)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPeds(ignoreList)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPermission(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlate(vehicle)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayer(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayerByAccount(account)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayerByCharInfo(property, value)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayerByCitizenId(citizenid)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayerByLicense(license)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayerData(cb)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayers()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayersFromCoords(coords, distance)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayersInBucket(bucket)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetPlayersOnDuty(job)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetRSGPlayers()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetSource(identifier)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetStreetNametAtCoords(coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetVehicleLabel(vehicle)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetVehicleProperties(vehicle)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetVehicles()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.GetZoneAtCoords(coords)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.HasItem(items, amount)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.HasItem(source, items, amount)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.HasPermission(source, permission)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.IsLicenseInUse(license)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.IsOptin(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.IsPlayerBanned(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.IsWearingGloves()": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.IsWhitelisted(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.Kick(source, reason, setKickReason, deferrals)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.LookAtEntity(entity, timeout, speed)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.PlayAnim(animDict, animName, upperbodyOnly, duration)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.PrepForSQL(source, data, pattern)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.RemovePermission(source, permission)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.SetEntityBucket(entity, bucket)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.SetPlayerBucket(source, bucket)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.SetVehicleProperties(vehicle, props)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.SpawnClear(coords, radius)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.SpawnVehicle(model, cb, coords, isnetworked, teleportInto)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.SpawnVehicle(source, model, coords, warp)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.StartParticleAtCoord(dict, ptName, looped, coords, rot, scale, alpha, color, duration)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.StartParticleOnEntity(dict, ptName, looped, entity, bone, offset, rot, scale, alpha, color, evolution, duration)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.ToggleOptin(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.TriggerCallback(name, cb, ...)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.TriggerCallback(name, source, cb, ...)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.TriggerClientCallback(name, cb, ...)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.TriggerClientCallback(name, source, cb, ...)": [
+        "rsg-core"
+      ],
+      "RSGCore.Functions.UseItem(source, item)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.CheckPlayerData(source, PlayerData)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.CreateCitizenId()": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.CreateFingerId()": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.CreatePlayer(PlayerData, Offline)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.CreateSerialNumber()": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.CreateWalletId()": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.DeleteCharacter(source, citizenid)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.ForceDeleteCharacter(citizenid)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.GetFirstSlotByItem(items, itemName)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.GetOfflinePlayer(citizenid)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.GetOfflinePlayerByLicense(license)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.GetPlayerByLicense(license)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.GetSlotsByItem(items, itemName)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.GetTotalWeight(items)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.Login(source, citizenid, newData)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.Logout(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.Save(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.SaveInventory(source)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.SaveOffline(PlayerData)": [
+        "rsg-core"
+      ],
+      "RSGCore.Player.SaveOfflineInventory(PlayerData)": [
+        "rsg-core"
+      ],
+      "RSGCore.ShowError(resource, msg)": [
+        "rsg-core"
+      ],
+      "RSGCore.ShowSuccess(resource, msg)": [
+        "rsg-core"
+      ],
+      "RSGShared.ChangeVehicleExtra(vehicle, extra, enable)": [
+        "rsg-core"
+      ],
+      "RSGShared.FirstToUpper(value)": [
+        "rsg-core"
+      ],
+      "RSGShared.RandomInt(length)": [
+        "rsg-core"
+      ],
+      "RSGShared.RandomStr(length)": [
+        "rsg-core"
+      ],
+      "RSGShared.Round(value, numDecimalPlaces)": [
+        "rsg-core"
+      ],
+      "RSGShared.SetDefaultVehicleExtras(vehicle, config)": [
+        "rsg-core"
+      ],
+      "RSGShared.SplitStr(str, delimiter)": [
+        "rsg-core"
+      ],
+      "RSGShared.Trim(value)": [
+        "rsg-core"
+      ],
+      "RefillCanteen(src, fromItem)": [
+        "rsg-canteen"
+      ],
+      "RegisterCameraPrompts()": [
+        "rsg-weaponcomp"
+      ],
+      "RegisterCommand(commandName, callback, restricted)": [
+        "ox_lib"
+      ],
+      "RegisterPrompt(control, textKey, group, hold)": [
+        "rsg-weaponcomp"
+      ],
+      "RegisterPrompts()": [
+        "rsg-appearance",
+        "rsg-bathing"
+      ],
+      "RemoveGang(gangName)": [
+        "rsg-core"
+      ],
+      "RemoveGangMoney(account, amount)": [
+        "rsg-gangmenu"
+      ],
+      "RemoveImaps()": [
+        "rsg-appearance"
+      ],
+      "RemoveItem(item, amount, slot)": [
+        "rsg-inventory"
+      ],
+      "RemoveItem(item, amount, slot, reason)": [
+        "rsg-inventory"
+      ],
+      "RemoveItem(itemName)": [
+        "rsg-core"
+      ],
+      "RemoveItem(playerId, item, slot)": [
+        "ox_doorlock"
+      ],
+      "RemoveJob(jobName)": [
+        "rsg-core"
+      ],
+      "RemoveMoney(account, amount)": [
+        "rsg-bossmenu"
+      ],
+      "RemoveOption(id)": [
+        "rsg-radialmenu"
+      ],
+      "RemoveWeapon(weaponName)": [
+        "rsg-essentials"
+      ],
+      "ResetCameraToDefault()": [
+        "rsg-weaponcomp"
+      ],
+      "RotateCameraAroundWeapon(clockwise)": [
+        "rsg-weaponcomp"
+      ],
+      "SET_TASK_FISHING_DATA()": [
+        "rsg-fishing"
+      ],
+      "SelectDestinationStable(horseId, currentStableId)": [
+        "rsg-horses"
+      ],
+      "SendDiscordWebhook(playerName, targetName, amount, transactionType)": [
+        "rsg-banking"
+      ],
+      "SendDiscordWebhook(webhookUrl, embed, includeMention)": [
+        "rsg-adminmenu"
+      ],
+      "SetAnimalInfoCardActive(b, iEntity)": [
+        "rsg-horses"
+      ],
+      "SetCamFocusDistance(cam, focus)": [
+        "rsg-appearance"
+      ],
+      "SetClosestRespawn()": [
+        "rsg-medic"
+      ],
+      "SetClosestStableLocation()": [
+        "rsg-horses"
+      ],
+      "SetCurrentCleaniest(rag, value)": [
+        "rsg-bathing"
+      ],
+      "SetField(fieldName, data)": [
+        "rsg-core"
+      ],
+      "SetInterval(callback, interval, ...)": [
+        "ox_lib"
+      ],
+      "SetInventory(items)": [
+        "rsg-inventory"
+      ],
+      "SetMethod(methodName, handler)": [
+        "rsg-core"
+      ],
+      "SetPetBehavior(entity)": [
+        "rsg-telegram"
+      ],
+      "SetRandomCameraAroundWeapon()": [
+        "rsg-weaponcomp"
+      ],
+      "SetSnowCoverageType(type)": [
+        "weathersync"
+      ],
+      "Setup()": [
+        "rsg-appearance"
+      ],
+      "SetupActionPrompt()": [
+        "rsg-horses"
+      ],
+      "SetupHorsePrompts()": [
+        "rsg-horses"
+      ],
+      "SetupJobMenu()": [
+        "rsg-radialmenu"
+      ],
+      "SetupNPCTarget(npc, shopData)": [
+        "rsg-shops"
+      ],
+      "SetupRadialMenu()": [
+        "rsg-radialmenu"
+      ],
+      "SetupScenes(string)": [
+        "rsg-appearance"
+      ],
+      "SetupSubItems()": [
+        "rsg-radialmenu"
+      ],
+      "Shops.CreateShop(shopData)": [
+        "rsg-inventory"
+      ],
+      "Shops.DoesShopExist(shopName)": [
+        "rsg-inventory"
+      ],
+      "Shops.LoadItemsInStock()": [
+        "rsg-inventory"
+      ],
+      "Shops.OpenShop(source, name)": [
+        "rsg-inventory"
+      ],
+      "Shops.RestockShop(shopName, percentage)": [
+        "rsg-inventory"
+      ],
+      "Shops.SaveItemsInStock()": [
+        "rsg-inventory"
+      ],
+      "Shops.SetupShopItems(shopItems, shopData)": [
+        "rsg-inventory"
+      ],
+      "ShouldEnableEagleEye(job)": [
+        "rsg-essentials"
+      ],
+      "ShowAnimalDetailsOnCard(iEntity)": [
+        "rsg-horses"
+      ],
+      "ShowBusyspinnerWithText(text)": [
+        "rsg-appearance"
+      ],
+      "ShowHorseDetailsOnCard(iEntity, hModel)": [
+        "rsg-horses"
+      ],
+      "SpawnHorse()": [
+        "rsg-horses"
+      ],
+      "SpawnHorses(horsemodel, horsecoords, heading)": [
+        "rsg-horses"
+      ],
+      "SpawnPeds()": [
+        "rsg-appearance"
+      ],
+      "SpawnShopNPC(shopData)": [
+        "rsg-shops"
+      ],
+      "StartCamClean(zoom, offset)": [
+        "rsg-weaponcomp"
+      ],
+      "StartCamOnWeapon(obj, fov)": [
+        "rsg-weaponcomp"
+      ],
+      "StartCharacterCreatorCamera(selected, camera)": [
+        "rsg-appearance"
+      ],
+      "StartCreator()": [
+        "rsg-appearance"
+      ],
+      "StartPromptThread()": [
+        "rsg-weaponcomp"
+      ],
+      "StartPrompts()": [
+        "rsg-appearance"
+      ],
+      "StartSelectCam()": [
+        "rsg-appearance"
+      ],
+      "StartWash(dic, anim)": [
+        "rsg-essentials"
+      ],
+      "SynchronizeMoneyItems(playerData)": [
+        "rsg-core"
+      ],
+      "TakePhoto()": [
+        "rsg-appearance"
+      ],
+      "TaskStopLeadingHorse(ped)": [
+        "rsg-horses"
+      ],
+      "TeleportAndFade(coords4, resetCoords)": [
+        "rsg-appearance"
+      ],
+      "TimeToDHMS(time)": [
+        "weathersync"
+      ],
+      "TogglePrompts(data, state)": [
+        "rsg-appearance",
+        "rsg-bathing"
+      ],
+      "TradeHorse()": [
+        "rsg-horses"
+      ],
+      "UndressCharacter()": [
+        "rsg-bathing"
+      ],
+      "UnfreezePlayer()": [
+        "rsg-weaponcomp"
+      ],
+      "UnloadAllStreamings()": [
+        "rsg-bathing"
+      ],
+      "UpdateAnimalInfoThisFrame()": [
+        "rsg-horses"
+      ],
+      "UpdateGang(gangName, gang)": [
+        "rsg-core"
+      ],
+      "UpdateItem(itemName, item)": [
+        "rsg-core"
+      ],
+      "UpdateJob(jobName, job)": [
+        "rsg-core"
+      ],
+      "UpdatePedVariation(ped)": [
+        "rsg-horses"
+      ],
+      "UpkeepInterval()": [
+        "rsg-horses"
+      ],
+      "ValidateComponents(components)": [
+        "rsg-horses"
+      ],
+      "ValidateImageUrl(url)": [
+        "rsg-adminmenu"
+      ],
+      "VerifyHorseOwnership(citizenid, horseid)": [
+        "rsg-horses"
+      ],
+      "WashPrompt()": [
+        "rsg-essentials"
+      ],
+      "WeaponAPI.EquipWeapon(weaponName, slot, id, hash)": [
+        "rsg-weapons"
+      ],
+      "WeaponAPI.RemoveWeaponFromPeds(weaponName, serial)": [
+        "rsg-weapons"
+      ],
+      "__call()": [
+        "ox_lib"
+      ],
+      "__call(_, event, delay, cb, ...)": [
+        "ox_lib"
+      ],
+      "__call(_, event, playerId, cb, ...)": [
+        "ox_lib"
+      ],
+      "__call(self, key, func, timeout)": [
+        "ox_lib"
+      ],
+      "__index(self, index)": [
+        "ox_lib",
+        "ox_target"
+      ],
+      "__index(self, key)": [
+        "ox_lib"
+      ],
+      "__len()": [
+        "ox_lib"
+      ],
+      "__newindex(self, index, value)": [
+        "ox_lib",
+        "ox_target"
+      ],
+      "__newindex(self, key, fn)": [
+        "ox_lib"
+      ],
+      "__pairs()": [
+        "ox_lib"
+      ],
+      "_generateAmmoTypesTable()": [
+        "rsg-ammo"
+      ],
+      "account()": [
+        "rsg-core"
+      ],
+      "addCustomKeybind(data)": [
+        "ox_target"
+      ],
+      "addDoorlock(data)": [
+        "ox_doorlock"
+      ],
+      "addItemToInventory(target, itemData, amount, info, context)": [
+        "rsg-inventory"
+      ],
+      "addTarget(target, options, resource)": [
+        "ox_target"
+      ],
+      "addWardrobeInventoryItem(itemName, slotHash)": [
+        "rsg-weapons"
+      ],
+      "adminRemoveJob(src, id, job)": [
+        "rsg-multijob"
+      ],
+      "allowAce(allow)": [
+        "ox_lib"
+      ],
+      "api.addBoxZone(data)": [
+        "ox_target"
+      ],
+      "api.addEntity(arr, options)": [
+        "ox_target"
+      ],
+      "api.addGlobalObject(options)": [
+        "ox_target"
+      ],
+      "api.addGlobalOption(options)": [
+        "ox_target"
+      ],
+      "api.addGlobalPed(options)": [
+        "ox_target"
+      ],
+      "api.addGlobalPlayer(options)": [
+        "ox_target"
+      ],
+      "api.addGlobalVehicle(options)": [
+        "ox_target"
+      ],
+      "api.addLocalEntity(arr, options)": [
+        "ox_target"
+      ],
+      "api.addModel(arr, options)": [
+        "ox_target"
+      ],
+      "api.addPolyZone(data)": [
+        "ox_target"
+      ],
+      "api.addSphereZone(data)": [
+        "ox_target"
+      ],
+      "api.disableTargeting(value)": [
+        "ox_target"
+      ],
+      "api.getTargetOptions(entity, _type, model)": [
+        "ox_target"
+      ],
+      "api.isActive()": [
+        "ox_target"
+      ],
+      "api.removeEntity(arr, options)": [
+        "ox_target"
+      ],
+      "api.removeGlobalObject(options)": [
+        "ox_target"
+      ],
+      "api.removeGlobalOption(options)": [
+        "ox_target"
+      ],
+      "api.removeGlobalPed(options)": [
+        "ox_target"
+      ],
+      "api.removeGlobalPlayer(options)": [
+        "ox_target"
+      ],
+      "api.removeGlobalVehicle(options)": [
+        "ox_target"
+      ],
+      "api.removeLocalEntity(arr, options)": [
+        "ox_target"
+      ],
+      "api.removeModel(arr, options)": [
+        "ox_target"
+      ],
+      "api.removeZone(id, suppressWarning)": [
+        "ox_target"
+      ],
+      "api.zoneExists(id)": [
+        "ox_target"
+      ],
+      "applyDefaults(obj, wHash)": [
+        "rsg-weaponcomp"
+      ],
+      "applyDefaults(playerData, defaults)": [
+        "rsg-core"
+      ],
+      "applyEffect(effectName)": [
+        "rsg-consume"
+      ],
+      "applyWeaponComponent(obj, prevComp, nextComp, wHash)": [
+        "rsg-weaponcomp"
+      ],
+      "assertType(id, var, expected)": [
+        "ox_lib"
+      ],
+      "attachComponent(ped, compHash, weaponHash)": [
+        "rsg-weaponcomp"
+      ],
+      "attachProp(ped, propName, boneName, x, y, z, rotX, rotY, rotZ)": [
+        "rsg-consume"
+      ],
+      "badResponse(endpoint, status, response)": [
+        "ox_lib"
+      ],
+      "base64encode(data)": [
+        "ox_lib"
+      ],
+      "baseModel(sex)": [
+        "rsg-multicharacter"
+      ],
+      "bigInt(text)": [
+        "rsg-horses"
+      ],
+      "bloodtype()": [
+        "rsg-core"
+      ],
+      "box(data)": [
+        "ox_lib"
+      ],
+      "buildLabels()": [
+        "rsg-inventory"
+      ],
+      "buildOptionsArray(data)": [
+        "rsg-playerinfo"
+      ],
+      "cache(key, func, timeout)": [
+        "ox_lib"
+      ],
+      "cache:set(key, value)": [
+        "ox_lib"
+      ],
+      "calculateTotal(dollars, cents)": [
+        "rsg-core"
+      ],
+      "calculateTotalWeight(set)": [
+        "ox_lib"
+      ],
+      "call(self, index, ...)": [
+        "ox_lib"
+      ],
+      "callbackResponse(success, result, ...)": [
+        "ox_lib"
+      ],
+      "camera(zoom, offset)": [
+        "rsg-appearance"
+      ],
+      "canAddAmmo(ammoType, amount)": [
+        "rsg-ammo"
+      ],
+      "canInteract(_, distance)": [
+        "rsg-essentials"
+      ],
+      "canOpen()": [
+        "rsg-inventory"
+      ],
+      "canPickLock(entity)": [
+        "ox_doorlock"
+      ],
+      "cancel()": [
+        "chat-redm"
+      ],
+      "changeText(text, position)": [
+        "rsg-core"
+      ],
+      "chatSuggestion(name, parameters, help)": [
+        "ox_lib"
+      ],
+      "checkOptions(options)": [
+        "ox_target"
+      ],
+      "checkStrings(input)": [
+        "rsg-appearance"
+      ],
+      "citizenid()": [
+        "rsg-core"
+      ],
+      "cleanPed(ped)": [
+        "rsg-multicharacter"
+      ],
+      "clearAllComponents(ped, weaponHash)": [
+        "rsg-weaponcomp"
+      ],
+      "close(namespace, name)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "closeContext(_, cb, onExit)": [
+        "ox_lib"
+      ],
+      "closeCreator(cancel)": [
+        "ox_lib"
+      ],
+      "cmpCategories(a,b)": [
+        "rsg-weaponcomp"
+      ],
+      "comma_value(amount)": [
+        "rsg-bossmenu"
+      ],
+      "comma_valueGang(amount)": [
+        "rsg-gangmenu"
+      ],
+      "commandHandler(source, args, raw)": [
+        "ox_lib"
+      ],
+      "contains(self, coords, updateDistance)": [
+        "ox_lib"
+      ],
+      "contains(t, x)": [
+        "weathersync"
+      ],
+      "contains(tbl, value)": [
+        "ox_lib"
+      ],
+      "convert(options)": [
+        "ox_target"
+      ],
+      "convertArgs(argsTable)": [
+        "ox_lib"
+      ],
+      "convertDDTagsToKVP(tags)": [
+        "ox_lib"
+      ],
+      "convertToVector(coords)": [
+        "ox_lib"
+      ],
+      "createCamera(horses, horsesdata)": [
+        "rsg-horses"
+      ],
+      "createDoor(door)": [
+        "ox_doorlock"
+      ],
+      "createDoor(id, door, name)": [
+        "ox_doorlock"
+      ],
+      "createForecast()": [
+        "weathersync"
+      ],
+      "createPrompt(name, coords, key, text, options)": [
+        "rsg-core"
+      ],
+      "createPromptGroup(group, label, coords, prompts)": [
+        "rsg-core"
+      ],
+      "createProp(ped, prop)": [
+        "ox_lib"
+      ],
+      "debug(...)": [
+        "ox_lib"
+      ],
+      "debugPoly(self)": [
+        "ox_lib"
+      ],
+      "debugSphere(self)": [
+        "ox_lib"
+      ],
+      "deepcopy(orig)": [
+        "rsg-appearance",
+        "rsg-radialmenu"
+      ],
+      "deleteProgressProps(serverId)": [
+        "ox_lib"
+      ],
+      "deletePrompt(name)": [
+        "rsg-core"
+      ],
+      "deletePromptGroup(name)": [
+        "rsg-core"
+      ],
+      "destory()": [
+        "rsg-appearance"
+      ],
+      "disableControls:Add(...)": [
+        "ox_lib"
+      ],
+      "disableControls:Clear(...)": [
+        "ox_lib"
+      ],
+      "disableControls:Remove(...)": [
+        "ox_lib"
+      ],
+      "drawLines()": [
+        "ox_lib"
+      ],
+      "drawRectangle(rec)": [
+        "ox_lib"
+      ],
+      "drawText(text, position)": [
+        "rsg-core"
+      ],
+      "encodeData(door)": [
+        "ox_doorlock"
+      ],
+      "entityIsNotDoor(data)": [
+        "ox_doorlock"
+      ],
+      "error(...)": [
+        "ox_lib"
+      ],
+      "eventTimer(event, delay)": [
+        "ox_lib"
+      ],
+      "executeOptions(options)": [
+        "rsg-core"
+      ],
+      "exportHandler(exportName, func)": [
+        "ox_target"
+      ],
+      "fingerprint()": [
+        "rsg-core"
+      ],
+      "firstToUpper(str)": [
+        "ox_lib"
+      ],
+      "flattenDict(source, target, prefix)": [
+        "ox_lib"
+      ],
+      "flattenTableToArray(tbl)": [
+        "ox_doorlock"
+      ],
+      "formatNumber(num)": [
+        "ox_lib"
+      ],
+      "formatTags(source, tags)": [
+        "ox_lib"
+      ],
+      "generateForecast()": [
+        "weathersync"
+      ],
+      "getAlphanumeric()": [
+        "ox_lib"
+      ],
+      "getAuthorizationHeader(user, password)": [
+        "ox_lib"
+      ],
+      "getComponentHash(category, value)": [
+        "rsg-horses"
+      ],
+      "getConstructor(class)": [
+        "ox_lib"
+      ],
+      "getControlOfEntity(entity)": [
+        "rsg-horses"
+      ],
+      "getDoor(door)": [
+        "ox_doorlock"
+      ],
+      "getDoorFromEntity(data)": [
+        "ox_doorlock"
+      ],
+      "getDoorHandPoint(entity)": [
+        "ox_doorlock"
+      ],
+      "getDoorHashFromEntity(entity)": [
+        "ox_doorlock"
+      ],
+      "getEntityCenterCoords(entity)": [
+        "ox_doorlock"
+      ],
+      "getForwardVector()": [
+        "ox_lib"
+      ],
+      "getGridDimensions(point, length, width)": [
+        "ox_lib"
+      ],
+      "getGuidFromItemId(inventoryId, itemData, category, slotId)": [
+        "rsg-weapons"
+      ],
+      "getInt()": [
+        "ox_lib"
+      ],
+      "getInventoryMoney(playerData)": [
+        "rsg-core"
+      ],
+      "getLetter()": [
+        "ox_lib"
+      ],
+      "getLowerLetter()": [
+        "ox_lib"
+      ],
+      "getMatchingPlayers(seObject)": [
+        "chat-redm"
+      ],
+      "getMaxDaysInMonth(month, year)": [
+        "ox_lib"
+      ],
+      "getMeta()": [
+        "rsg-inventory"
+      ],
+      "getModuleInfo(modName)": [
+        "ox_lib"
+      ],
+      "getParts(number)": [
+        "rsg-core"
+      ],
+      "getPed()": [
+        "rsg-consume"
+      ],
+      "getPlayer(source, notifyIfMissing)": [
+        "rsg-inventory"
+      ],
+      "getPrintLevelFromConvar()": [
+        "ox_lib"
+      ],
+      "getPrompt()": [
+        "rsg-core"
+      ],
+      "getPromptGroup()": [
+        "rsg-core"
+      ],
+      "getRelativePos(origin, point, theta)": [
+        "ox_lib"
+      ],
+      "getResponse(option, server)": [
+        "ox_target"
+      ],
+      "getSortedKeys(t)": [
+        "rsg-weaponcomp"
+      ],
+      "getTime()": [
+        "weathersync"
+      ],
+      "getTimeUnit(value, unit)": [
+        "ox_lib"
+      ],
+      "getTriangles(polygon)": [
+        "ox_lib"
+      ],
+      "getWeaponStats(wHash)": [
+        "rsg-weaponcomp"
+      ],
+      "getWeather()": [
+        "weathersync"
+      ],
+      "getWind()": [
+        "weathersync"
+      ],
+      "givePlayerWeapon(weaponName, attachPoint)": [
+        "rsg-essentials"
+      ],
+      "handleAddMoney(src, moneytype, amount)": [
+        "rsg-core"
+      ],
+      "handleConsumption(itemName, type)": [
+        "rsg-consume"
+      ],
+      "handleDrunk(ped)": [
+        "rsg-consume"
+      ],
+      "handleException(reason, value)": [
+        "ox_lib"
+      ],
+      "handleJailtime()": [
+        "rsg-prison"
+      ],
+      "handlePassOut(ped)": [
+        "rsg-consume"
+      ],
+      "handleRemoveMoney(src, moneytype, amount)": [
+        "rsg-core"
+      ],
+      "handleSetMoney(src, moneytype, amount)": [
+        "rsg-core"
+      ],
+      "handleSober(ped)": [
+        "rsg-consume"
+      ],
+      "hasRemovePoint(entry)": [
+        "ox_lib"
+      ],
+      "hideText()": [
+        "rsg-core"
+      ],
+      "info(...)": [
+        "ox_lib"
+      ],
+      "initBait()": [
+        "rsg-fishing"
+      ],
+      "initializePedModel(appearanceData, coords, heading)": [
+        "rsg-multicharacter"
+      ],
+      "insideSphere(self, coords, updateDistance)": [
+        "ox_lib"
+      ],
+      "interpolateTable(start, finish, factor)": [
+        "ox_lib"
+      ],
+      "interruptProgress(data)": [
+        "ox_lib"
+      ],
+      "isArray(t)": [
+        "rsg-inventory"
+      ],
+      "isAuthorised(playerId, door, lockpick)": [
+        "ox_doorlock"
+      ],
+      "isFishInterested(fishModel)": [
+        "rsg-fishing"
+      ],
+      "isHashAvailable(hash)": [
+        "ox_target"
+      ],
+      "isInCayoPerico(x, y, z)": [
+        "weathersync"
+      ],
+      "isInDesertRegion(x, y, z)": [
+        "weathersync"
+      ],
+      "isInGuarma(x, y, z)": [
+        "weathersync"
+      ],
+      "isInNorthernRegion(x, y, z)": [
+        "weathersync"
+      ],
+      "isInSnowyRegion(x, y, z)": [
+        "weathersync"
+      ],
+      "isPauseMenuOrMapActive()": [
+        "ox_target"
+      ],
+      "isSnowyWeather(weather)": [
+        "weathersync"
+      ],
+      "isValueInRange(value, unit)": [
+        "ox_lib"
+      ],
+      "jailPlayerByPlayer(targetPlayer, byPlayer, minutes)": [
+        "rsg-lawman"
+      ],
+      "keyPressed()": [
+        "rsg-core"
+      ],
+      "keybind_mt:__index(index)": [
+        "ox_lib"
+      ],
+      "keybind_mt:disable(toggle)": [
+        "ox_lib"
+      ],
+      "keybind_mt:getCurrentKey()": [
+        "ox_lib"
+      ],
+      "keybind_mt:isControlPressed()": [
+        "ox_lib"
+      ],
+      "lib.__addCommand(group, name, callback, parameters, help)": [
+        "ox_lib"
+      ],
+      "lib.addAce(principal, ace, allow)": [
+        "ox_lib"
+      ],
+      "lib.addCommand(commandName, properties, cb, ...)": [
+        "ox_lib"
+      ],
+      "lib.addKeybind(data)": [
+        "ox_lib"
+      ],
+      "lib.addPrincipal(child, parent)": [
+        "ox_lib"
+      ],
+      "lib.addRadialItem(items)": [
+        "ox_lib"
+      ],
+      "lib.alertDialog(data, timeout)": [
+        "ox_lib"
+      ],
+      "lib.array.isArray(tbl)": [
+        "ox_lib"
+      ],
+      "lib.array:__newindex(index, value)": [
+        "ox_lib"
+      ],
+      "lib.array:at(index)": [
+        "ox_lib"
+      ],
+      "lib.array:constructor(...)": [
+        "ox_lib"
+      ],
+      "lib.array:every(testFn)": [
+        "ox_lib"
+      ],
+      "lib.array:fill(value, start, endIndex)": [
+        "ox_lib"
+      ],
+      "lib.array:filter(testFn)": [
+        "ox_lib"
+      ],
+      "lib.array:find(testFn, last)": [
+        "ox_lib"
+      ],
+      "lib.array:findIndex(testFn, last)": [
+        "ox_lib"
+      ],
+      "lib.array:forEach(cb)": [
+        "ox_lib"
+      ],
+      "lib.array:from(iter)": [
+        "ox_lib"
+      ],
+      "lib.array:includes(element, fromIndex)": [
+        "ox_lib"
+      ],
+      "lib.array:indexOf(value, last)": [
+        "ox_lib"
+      ],
+      "lib.array:join(seperator)": [
+        "ox_lib"
+      ],
+      "lib.array:map(cb)": [
+        "ox_lib"
+      ],
+      "lib.array:merge(...)": [
+        "ox_lib"
+      ],
+      "lib.array:pop()": [
+        "ox_lib"
+      ],
+      "lib.array:push(...)": [
+        "ox_lib"
+      ],
+      "lib.array:reduce(reducer, initialValue, reverse)": [
+        "ox_lib"
+      ],
+      "lib.array:reverse()": [
+        "ox_lib"
+      ],
+      "lib.array:shift()": [
+        "ox_lib"
+      ],
+      "lib.array:slice(start, finish)": [
+        "ox_lib"
+      ],
+      "lib.array:toReversed()": [
+        "ox_lib"
+      ],
+      "lib.array:unshift(...)": [
+        "ox_lib"
+      ],
+      "lib.cache(key)": [
+        "ox_lib"
+      ],
+      "lib.callback.await(event, delay, ...)": [
+        "ox_lib"
+      ],
+      "lib.callback.await(event, playerId, ...)": [
+        "ox_lib"
+      ],
+      "lib.callback.register(name, cb)": [
+        "ox_lib"
+      ],
+      "lib.cancelProgress()": [
+        "ox_lib"
+      ],
+      "lib.cancelSkillCheck()": [
+        "ox_lib"
+      ],
+      "lib.checkDependency(resource, minimumVersion, printMessage)": [
+        "ox_lib"
+      ],
+      "lib.class(name, super)": [
+        "ox_lib"
+      ],
+      "lib.clearRadialItems()": [
+        "ox_lib"
+      ],
+      "lib.closeAlertDialog(reason)": [
+        "ox_lib"
+      ],
+      "lib.closeInputDialog()": [
+        "ox_lib"
+      ],
+      "lib.cron.new(expression, job, options)": [
+        "ox_lib"
+      ],
+      "lib.defaultNotify(data)": [
+        "ox_lib"
+      ],
+      "lib.disableRadial(state)": [
+        "ox_lib"
+      ],
+      "lib.dui:constructor(data)": [
+        "ox_lib"
+      ],
+      "lib.dui:remove()": [
+        "ox_lib"
+      ],
+      "lib.dui:sendMessage(message)": [
+        "ox_lib"
+      ],
+      "lib.dui:sendMouseDown(button)": [
+        "ox_lib"
+      ],
+      "lib.dui:sendMouseMove(x, y)": [
+        "ox_lib"
+      ],
+      "lib.dui:sendMouseUp(button)": [
+        "ox_lib"
+      ],
+      "lib.dui:sendMouseWheel(deltaX, deltaY)": [
+        "ox_lib"
+      ],
+      "lib.dui:setUrl(url)": [
+        "ox_lib"
+      ],
+      "lib.getClosestObject(coords, maxDistance)": [
+        "ox_lib"
+      ],
+      "lib.getClosestPed(coords, maxDistance)": [
+        "ox_lib"
+      ],
+      "lib.getClosestPlayer(coords, maxDistance, ignorePlayerId)": [
+        "ox_lib"
+      ],
+      "lib.getClosestPlayer(coords, maxDistance, includePlayer)": [
+        "ox_lib"
+      ],
+      "lib.getClosestVehicle(coords, maxDistance, includePlayerVehicle)": [
+        "ox_lib"
+      ],
+      "lib.getCurrentRadialId()": [
+        "ox_lib"
+      ],
+      "lib.getFilesInDirectory(path, pattern)": [
+        "ox_lib"
+      ],
+      "lib.getLocale(resource, key)": [
+        "ox_lib"
+      ],
+      "lib.getLocaleKey()": [
+        "ox_lib"
+      ],
+      "lib.getLocales()": [
+        "ox_lib"
+      ],
+      "lib.getNearbyObjects(coords, maxDistance)": [
+        "ox_lib"
+      ],
+      "lib.getNearbyPeds(coords, maxDistance)": [
+        "ox_lib"
+      ],
+      "lib.getNearbyPlayers(coords, maxDistance)": [
+        "ox_lib"
+      ],
+      "lib.getNearbyPlayers(coords, maxDistance, includePlayer)": [
+        "ox_lib"
+      ],
+      "lib.getNearbyVehicles(coords, maxDistance, includePlayerVehicle)": [
+        "ox_lib"
+      ],
+      "lib.getOpenContextMenu()": [
+        "ox_lib"
+      ],
+      "lib.getOpenMenu()": [
+        "ox_lib"
+      ],
+      "lib.getRelativeCoords(coords, rotation, offset)": [
+        "ox_lib"
+      ],
+      "lib.getVehicleProperties(vehicle)": [
+        "ox_lib"
+      ],
+      "lib.grid.addEntry(entry)": [
+        "ox_lib"
+      ],
+      "lib.grid.getCell(point)": [
+        "ox_lib"
+      ],
+      "lib.grid.getCellPosition(point)": [
+        "ox_lib"
+      ],
+      "lib.grid.getNearbyEntries(point, filter)": [
+        "ox_lib"
+      ],
+      "lib.grid.removeEntry(entry)": [
+        "ox_lib"
+      ],
+      "lib.hasLoaded()": [
+        "ox_lib"
+      ],
+      "lib.hideContext(onExit)": [
+        "ox_lib"
+      ],
+      "lib.hideMenu(onExit)": [
+        "ox_lib"
+      ],
+      "lib.hideRadial()": [
+        "ox_lib"
+      ],
+      "lib.hideTextUI()": [
+        "ox_lib"
+      ],
+      "lib.inputDialog(heading, rows, options)": [
+        "ox_lib"
+      ],
+      "lib.isCallbackValid(callbackName)": [
+        "ox_lib"
+      ],
+      "lib.isTextUIOpen()": [
+        "ox_lib"
+      ],
+      "lib.load(filePath, env)": [
+        "ox_lib"
+      ],
+      "lib.loadJson(filePath)": [
+        "ox_lib"
+      ],
+      "lib.locale(key)": [
+        "ox_lib"
+      ],
+      "lib.logger(source, event, message, ...)": [
+        "ox_lib"
+      ],
+      "lib.marker.new(options)": [
+        "ox_lib"
+      ],
+      "lib.notify(data)": [
+        "ox_lib"
+      ],
+      "lib.notify(playerId, data)": [
+        "ox_lib"
+      ],
+      "lib.onCache(key, cb)": [
+        "ox_lib"
+      ],
+      "lib.playAnim(ped, animDictionary, animationName, blendInSpeed, blendOutSpeed, duration, animFlags, startPhase, phaseControlled, controlFlags, overrideCloneUpdate)": [
+        "ox_lib"
+      ],
+      "lib.points.getAllPoints()": [
+        "ox_lib"
+      ],
+      "lib.points.getClosestPoint()": [
+        "ox_lib"
+      ],
+      "lib.points.getNearbyPoints()": [
+        "ox_lib"
+      ],
+      "lib.points.new(...)": [
+        "ox_lib"
+      ],
+      "lib.progressActive()": [
+        "ox_lib"
+      ],
+      "lib.progressBar(data)": [
+        "ox_lib"
+      ],
+      "lib.progressCircle(data)": [
+        "ox_lib"
+      ],
+      "lib.raycast.fromCamera(flags, ignore, distance)": [
+        "ox_lib"
+      ],
+      "lib.raycast.fromCoords(coords, destination, flags, ignore)": [
+        "ox_lib"
+      ],
+      "lib.registerContext(context)": [
+        "ox_lib"
+      ],
+      "lib.registerMenu(data, cb)": [
+        "ox_lib"
+      ],
+      "lib.registerRadial(radial)": [
+        "ox_lib"
+      ],
+      "lib.removeAce(principal, ace, allow)": [
+        "ox_lib"
+      ],
+      "lib.removePrincipal(child, parent)": [
+        "ox_lib"
+      ],
+      "lib.removeRadialItem(id)": [
+        "ox_lib"
+      ],
+      "lib.requestAnimDict(animDict, timeout)": [
+        "ox_lib"
+      ],
+      "lib.requestAnimSet(animSet, timeout)": [
+        "ox_lib"
+      ],
+      "lib.requestAudioBank(audioBank, timeout)": [
+        "ox_lib"
+      ],
+      "lib.requestModel(model, timeout)": [
+        "ox_lib"
+      ],
+      "lib.requestNamedPtfxAsset(ptFxName, timeout)": [
+        "ox_lib"
+      ],
+      "lib.requestScaleformMovie(scaleformName, timeout)": [
+        "ox_lib"
+      ],
+      "lib.requestStreamedTextureDict(textureDict, timeout)": [
+        "ox_lib"
+      ],
+      "lib.requestWeaponAsset(weaponType, timeout, weaponResourceFlags, extraWeaponComponentFlags)": [
+        "ox_lib"
+      ],
+      "lib.require(modName)": [
+        "ox_lib"
+      ],
+      "lib.resetNuiFocus()": [
+        "ox_lib"
+      ],
+      "lib.scaleform:callMethod(name, args, returnValue)": [
+        "ox_lib"
+      ],
+      "lib.scaleform:constructor(details)": [
+        "ox_lib"
+      ],
+      "lib.scaleform:dispose()": [
+        "ox_lib"
+      ],
+      "lib.scaleform:draw()": [
+        "ox_lib"
+      ],
+      "lib.scaleform:isDrawing()": [
+        "ox_lib"
+      ],
+      "lib.scaleform:setFullScreen(isFullscreen)": [
+        "ox_lib"
+      ],
+      "lib.scaleform:setProperties(x, y, width, height)": [
+        "ox_lib"
+      ],
+      "lib.scaleform:setRenderTarget(name, model)": [
+        "ox_lib"
+      ],
+      "lib.scaleform:startDrawing()": [
+        "ox_lib"
+      ],
+      "lib.scaleform:stopDrawing()": [
+        "ox_lib"
+      ],
+      "lib.setClipboard(value)": [
+        "ox_lib"
+      ],
+      "lib.setLocale(key)": [
+        "ox_lib"
+      ],
+      "lib.setMenuOptions(id, options, index)": [
+        "ox_lib"
+      ],
+      "lib.setNuiFocus(allowInput, disableCursor)": [
+        "ox_lib"
+      ],
+      "lib.setValidCallback(callbackName, isValid)": [
+        "ox_lib"
+      ],
+      "lib.setVehicleProperties(vehicle, props)": [
+        "ox_lib"
+      ],
+      "lib.setVehicleProperties(vehicle, props, fixVehicle)": [
+        "ox_lib"
+      ],
+      "lib.showContext(id)": [
+        "ox_lib"
+      ],
+      "lib.showMenu(id, startIndex)": [
+        "ox_lib"
+      ],
+      "lib.showTextUI(text, options)": [
+        "ox_lib"
+      ],
+      "lib.skillCheck(difficulty, inputs)": [
+        "ox_lib"
+      ],
+      "lib.skillCheckActive()": [
+        "ox_lib"
+      ],
+      "lib.streamingRequest(request, hasLoaded, assetType, asset, timeout, ...)": [
+        "ox_lib"
+      ],
+      "lib.timer(time, onEnd, async)": [
+        "ox_lib"
+      ],
+      "lib.triggerClientEvent(eventName, targetIds, ...)": [
+        "ox_lib"
+      ],
+      "lib.versionCheck(repository)": [
+        "ox_lib"
+      ],
+      "lib.waitFor(cb, errMessage, timeout)": [
+        "ox_lib"
+      ],
+      "lib.zones.box(data)": [
+        "ox_lib"
+      ],
+      "lib.zones.getAllZones()": [
+        "ox_lib"
+      ],
+      "lib.zones.getCurrentZones()": [
+        "ox_lib"
+      ],
+      "lib.zones.getNearbyZones()": [
+        "ox_lib"
+      ],
+      "lib.zones.poly(data)": [
+        "ox_lib"
+      ],
+      "lib.zones.sphere(data)": [
+        "ox_lib"
+      ],
+      "libPrint(level, ...)": [
+        "ox_lib"
+      ],
+      "loadAnimDict(dict)": [
+        "progressbar"
+      ],
+      "loadLocale(key)": [
+        "ox_lib"
+      ],
+      "loadLocaleFile(key)": [
+        "ox_lib"
+      ],
+      "loadModule(modName, env)": [
+        "ox_lib"
+      ],
+      "loadModule(self, module)": [
+        "ox_lib"
+      ],
+      "locale(str, ...)": [
+        "ox_lib"
+      ],
+      "log(label, message)": [
+        "weathersync"
+      ],
+      "map(tbl, fn)": [
+        "ox_lib"
+      ],
+      "marker_mt:draw()": [
+        "ox_lib"
+      ],
+      "math.clamp(val, lower, upper)": [
+        "ox_lib"
+      ],
+      "math.groupdigits(number, seperator)": [
+        "ox_lib"
+      ],
+      "math.hextorgb(input)": [
+        "ox_lib"
+      ],
+      "math.interp(start, finish, factor)": [
+        "ox_lib"
+      ],
+      "math.lerp(start, finish, duration)": [
+        "ox_lib"
+      ],
+      "math.normaltorotation(input)": [
+        "ox_lib"
+      ],
+      "math.round(value, places)": [
+        "ox_lib"
+      ],
+      "math.tohex(n, upper)": [
+        "ox_lib"
+      ],
+      "math.torgba(input)": [
+        "ox_lib"
+      ],
+      "math.toscalars(input, min, max, round)": [
+        "ox_lib"
+      ],
+      "math.tovector(input, min, max, round)": [
+        "ox_lib"
+      ],
+      "menu.addNewElement(element)": [
+        "rsg-menubase"
+      ],
+      "menu.close()": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "menu.refresh()": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "menu.removeElement(query)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "menu.removeElementByIndex(index, stop)": [
+        "rsg-menubase"
+      ],
+      "menu.removeElementByValue(value, stop)": [
+        "rsg-menubase"
+      ],
+      "menu.setElement(i, key, val)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "menu.setElements(newElements)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "menu.setTitle(val)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "menu.update(query, newData)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "mergeComponents(merged, source)": [
+        "rsg-weaponcomp"
+      ],
+      "method(...)": [
+        "ox_lib"
+      ],
+      "mixins.new(class, ...)": [
+        "ox_lib"
+      ],
+      "mixins:instanceOf(class)": [
+        "ox_lib"
+      ],
+      "mixins:isClass(class)": [
+        "ox_lib"
+      ],
+      "money()": [
+        "rsg-core"
+      ],
+      "moveHorseToPlayer()": [
+        "rsg-horses"
+      ],
+      "nextFreePoint(points, b, len)": [
+        "ox_lib"
+      ],
+      "nextWeather(weather)": [
+        "weathersync"
+      ],
+      "nextWindDirection(direction)": [
+        "weathersync"
+      ],
+      "noop()": [
+        "ox_lib"
+      ],
+      "notify(source, messageKey, type)": [
+        "rsg-inventory"
+      ],
+      "notifyHotbarSpamProtection()": [
+        "rsg-inventory"
+      ],
+      "notifyNoPlayer()": [
+        "rsg-inventory"
+      ],
+      "notifyPlayer(source, messageKey, type)": [
+        "rsg-inventory"
+      ],
+      "onPlayerConnecting(name, _, deferrals)": [
+        "rsg-core"
+      ],
+      "onPlayerLoaded()": [
+        "rsg-ammo"
+      ],
+      "onPressed()": [
+        "ox_lib"
+      ],
+      "open(namespace, name, data)": [
+        "menu_base",
+        "rsg-menubase"
+      ],
+      "openCharMenu(bool)": [
+        "rsg-multicharacter"
+      ],
+      "openErrorNotify()": [
+        "rsg-inventory"
+      ],
+      "openLockpick(bool)": [
+        "rsg-lockpick"
+      ],
+      "openUi(id)": [
+        "ox_doorlock"
+      ],
+      "options_mt:set(entity, _type, model)": [
+        "ox_target"
+      ],
+      "options_mt:wipe()": [
+        "ox_target"
+      ],
+      "package.searchpath(name, path)": [
+        "ox_lib"
+      ],
+      "pairsByKeys(t, f)": [
+        "rsg-appearance"
+      ],
+      "parseArguments(source, args, raw, params)": [
+        "ox_lib"
+      ],
+      "parseCron(value, unit)": [
+        "ox_lib"
+      ],
+      "parseNumber(input, min, max, round)": [
+        "ox_lib"
+      ],
+      "pickLock(entity)": [
+        "ox_doorlock"
+      ],
+      "placeProp(propmodel, item, gunsitename, gunsiteid)": [
+        "rsg-weaponcomp"
+      ],
+      "playAnim(ped, dict, anim, flag, duration)": [
+        "rsg-consume"
+      ],
+      "playScopeAnim(ped)": [
+        "rsg-weaponcomp"
+      ],
+      "poly(data)": [
+        "ox_lib"
+      ],
+      "prepareMyPrompt()": [
+        "rsg-fishing"
+      ],
+      "printMessage(target, message)": [
+        "weathersync"
+      ],
+      "rawset(tbl, index, value)": [
+        "ox_lib"
+      ],
+      "refreshCommands()": [
+        "chat-redm"
+      ],
+      "refreshCommands(player)": [
+        "chat-redm"
+      ],
+      "refreshRadial(menuId)": [
+        "ox_lib"
+      ],
+      "refreshThemes()": [
+        "chat-redm"
+      ],
+      "registerConsumables(category, clientEvent)": [
+        "rsg-consume"
+      ],
+      "removeAllItems(itemName)": [
+        "rsg-core"
+      ],
+      "removeColorCodes(str)": [
+        "ox_lib"
+      ],
+      "removeItems(player, itemName, amountToRemove)": [
+        "rsg-core"
+      ],
+      "removePoint(self)": [
+        "ox_lib"
+      ],
+      "removeResourceGlobals(resource, target)": [
+        "ox_target"
+      ],
+      "removeResourceTargets(resource, target)": [
+        "ox_target"
+      ],
+      "removeTarget(target, remove, resource, showWarning)": [
+        "ox_target"
+      ],
+      "removeZone(zone)": [
+        "ox_lib"
+      ],
+      "resetSyncDelay()": [
+        "weathersync"
+      ],
+      "resetTime()": [
+        "weathersync"
+      ],
+      "resetTimescale()": [
+        "weathersync"
+      ],
+      "resetWeather()": [
+        "weathersync"
+      ],
+      "resetWeatherPattern()": [
+        "weathersync"
+      ],
+      "resetWind()": [
+        "weathersync"
+      ],
+      "retrieveReturnValue(expectedType)": [
+        "ox_lib"
+      ],
+      "reversedipairs(t)": [
+        "rsg-appearance"
+      ],
+      "reversedipairsiter(t, i)": [
+        "rsg-appearance"
+      ],
+      "round(num, numDecimalPlaces)": [
+        "rsg-adminmenu"
+      ],
+      "round(number)": [
+        "ox_lib"
+      ],
+      "routeMessage(source, author, message, mode, fromConsole)": [
+        "chat-redm"
+      ],
+      "safeDelete(obj)": [
+        "rsg-consume"
+      ],
+      "safeGetKvp(fn, key, default)": [
+        "ox_lib"
+      ],
+      "saveWeaponComponents(serial, comps, compslabel, Player)": [
+        "rsg-weaponcomp"
+      ],
+      "selectOption(t, t2)": [
+        "rsg-radialmenu"
+      ],
+      "self.Functions.AddField(fieldName, data)": [
+        "rsg-core"
+      ],
+      "self.Functions.AddMethod(methodName, handler)": [
+        "rsg-core"
+      ],
+      "self.Functions.AddMoney(moneytype, amount, reason)": [
+        "rsg-core"
+      ],
+      "self.Functions.AddRep(rep, amount)": [
+        "rsg-core"
+      ],
+      "self.Functions.GetMetaData(meta)": [
+        "rsg-core"
+      ],
+      "self.Functions.GetMoney(moneytype)": [
+        "rsg-core"
+      ],
+      "self.Functions.GetRep(rep)": [
+        "rsg-core"
+      ],
+      "self.Functions.HasItem(items, amount)": [
+        "rsg-core"
+      ],
+      "self.Functions.InitializeStateBags()": [
+        "rsg-core"
+      ],
+      "self.Functions.Logout()": [
+        "rsg-core"
+      ],
+      "self.Functions.PersistStateBags()": [
+        "rsg-core"
+      ],
+      "self.Functions.RemoveMoney(moneytype, amount, reason)": [
+        "rsg-core"
+      ],
+      "self.Functions.RemoveRep(rep, amount)": [
+        "rsg-core"
+      ],
+      "self.Functions.Save()": [
+        "rsg-core"
+      ],
+      "self.Functions.SetGang(gang, grade)": [
+        "rsg-core"
+      ],
+      "self.Functions.SetJob(job, grade)": [
+        "rsg-core"
+      ],
+      "self.Functions.SetJobDuty(onDuty)": [
+        "rsg-core"
+      ],
+      "self.Functions.SetMetaData(meta, val)": [
+        "rsg-core"
+      ],
+      "self.Functions.SetMoney(moneytype, amount, reason)": [
+        "rsg-core"
+      ],
+      "self.Functions.SetPlayerData(key, val)": [
+        "rsg-core"
+      ],
+      "self.Functions.UpdatePlayerData()": [
+        "rsg-core"
+      ],
+      "sendItemBox()": [
+        "rsg-inventory"
+      ],
+      "sendLocalesToNUI()": [
+        "rsg-hud"
+      ],
+      "set(key, value)": [
+        "ox_lib"
+      ],
+      "setDebug(self, bool, colour)": [
+        "ox_lib"
+      ],
+      "setDoorState(id, state, lockpick)": [
+        "ox_doorlock"
+      ],
+      "setDrunkEffect(ped, level)": [
+        "rsg-consume"
+      ],
+      "setMyTime(h, m, s, t)": [
+        "weathersync"
+      ],
+      "setMyWeather(weather, transition, permanentSnow)": [
+        "weathersync"
+      ],
+      "setPedDefaultOutfit(model)": [
+        "rsg-horses"
+      ],
+      "setPlayerItems()": [
+        "ox_target"
+      ],
+      "setRadialState(bool, sendMessage, delay)": [
+        "rsg-radialmenu"
+      ],
+      "setRouting(target)": [
+        "chat-redm"
+      ],
+      "setSeObject(object)": [
+        "chat-redm"
+      ],
+      "setSyncDelay(delay)": [
+        "weathersync"
+      ],
+      "setSyncEnabled(toggle)": [
+        "weathersync"
+      ],
+      "setTime(d, h, m, s, t, f)": [
+        "weathersync"
+      ],
+      "setTime(hour, minute, second, transitionTime, freeze)": [
+        "weathersync"
+      ],
+      "setTimescale(scale)": [
+        "weathersync"
+      ],
+      "setWeather(weather, transition, freeze, permSnow)": [
+        "weathersync"
+      ],
+      "setWeather(weatherType, transitionTime)": [
+        "weathersync"
+      ],
+      "setWeatherPattern(pattern)": [
+        "weathersync"
+      ],
+      "setWind(direction, speed, frozen)": [
+        "weathersync"
+      ],
+      "setZone(data)": [
+        "ox_lib"
+      ],
+      "setupLoginWatcher()": [
+        "rsg-hud"
+      ],
+      "setupPrompt(prompt)": [
+        "rsg-core"
+      ],
+      "setupPromptGroup(prompt)": [
+        "rsg-core"
+      ],
+      "shouldHide(option, distance, endCoords, entityHit, entityType, entityModel)": [
+        "ox_target"
+      ],
+      "showMultijob()": [
+        "rsg-multijob"
+      ],
+      "showRadial(id, option)": [
+        "ox_lib"
+      ],
+      "showstats()": [
+        "rsg-weaponcomp"
+      ],
+      "shuffle(tbl)": [
+        "ox_lib"
+      ],
+      "skyCam(bool)": [
+        "rsg-multicharacter"
+      ],
+      "smoothZoom(cam, fromFov, toFov, duration)": [
+        "rsg-weaponcomp"
+      ],
+      "spawnWeaponOnProp(propObj, spawnPos, wHash)": [
+        "rsg-weaponcomp"
+      ],
+      "sphere(data)": [
+        "ox_lib"
+      ],
+      "startCreator(arg, useLast)": [
+        "ox_lib"
+      ],
+      "startProgress(data)": [
+        "ox_lib"
+      ],
+      "startTargeting()": [
+        "ox_target"
+      ],
+      "state.isActive()": [
+        "ox_target"
+      ],
+      "state.isDisabled()": [
+        "ox_target"
+      ],
+      "state.isNuiFocused()": [
+        "ox_target"
+      ],
+      "state.setActive(value)": [
+        "ox_target"
+      ],
+      "state.setDisabled(value)": [
+        "ox_target"
+      ],
+      "state.setNuiFocus(value, cursor)": [
+        "ox_target"
+      ],
+      "stopEffect(effectName)": [
+        "rsg-consume"
+      ],
+      "string.random(pattern, length)": [
+        "ox_lib"
+      ],
+      "suffixPriority(cat)": [
+        "rsg-weaponcomp"
+      ],
+      "syncTime(player, tick)": [
+        "weathersync"
+      ],
+      "syncTimescale(player)": [
+        "weathersync"
+      ],
+      "syncWeather(player)": [
+        "weathersync"
+      ],
+      "syncWind(player)": [
+        "weathersync"
+      ],
+      "tPrint(tbl, indent)": [
+        "rsg-core"
+      ],
+      "table.copy(t)": [
+        "rsg-horses"
+      ],
+      "table.freeze(tbl)": [
+        "ox_lib"
+      ],
+      "table.isfrozen(tbl)": [
+        "ox_lib"
+      ],
+      "table_deepclone(tbl)": [
+        "ox_lib"
+      ],
+      "table_matches(t1, t2)": [
+        "ox_lib"
+      ],
+      "table_merge(t1, t2, addDuplicateNumbers)": [
+        "ox_lib"
+      ],
+      "timer:constructor(time, onEnd, async)": [
+        "ox_lib"
+      ],
+      "timer:forceEnd(triggerOnEnd)": [
+        "ox_lib"
+      ],
+      "timer:getTimeLeft(format)": [
+        "ox_lib"
+      ],
+      "timer:isPaused()": [
+        "ox_lib"
+      ],
+      "timer:pause()": [
+        "ox_lib"
+      ],
+      "timer:play()": [
+        "ox_lib"
+      ],
+      "timer:restart(async)": [
+        "ox_lib"
+      ],
+      "timer:run()": [
+        "ox_lib"
+      ],
+      "timer:start(async)": [
+        "ox_lib"
+      ],
+      "toVector(coords)": [
+        "ox_lib"
+      ],
+      "toggleSync()": [
+        "weathersync"
+      ],
+      "translateKey(phrase, subs)": [
+        "rsg-core"
+      ],
+      "translateWeatherForRegion(weather, x, y, z)": [
+        "weathersync"
+      ],
+      "translateWindForAltitude(direction, speed)": [
+        "weathersync"
+      ],
+      "triggerClientCallback(_, event, playerId, cb, ...)": [
+        "ox_lib"
+      ],
+      "triggerServerCallback(_, event, delay, cb, ...)": [
+        "ox_lib"
+      ],
+      "typeError(variable, expected, received)": [
+        "ox_target"
+      ],
+      "unableToSplit(polygon)": [
+        "ox_lib"
+      ],
+      "unregisterHooks(resource)": [
+        "chat-redm"
+      ],
+      "updateForecast(forecast)": [
+        "weathersync"
+      ],
+      "updateMessage(t)": [
+        "chat-redm"
+      ],
+      "updateNeed(key, value, reduce)": [
+        "rsg-hud"
+      ],
+      "updatePermissionLevel()": [
+        "rsg-essentials"
+      ],
+      "updateStress(amount, isGain)": [
+        "rsg-hud"
+      ],
+      "updateText()": [
+        "ox_lib"
+      ],
+      "useArrowItem(source, item, ammoType)": [
+        "rsg-ammo"
+      ],
+      "useClosestDoor()": [
+        "ox_doorlock"
+      ],
+      "utils.drawZoneSprites(dict, texture)": [
+        "ox_target"
+      ],
+      "utils.getFilesInDirectory(path, pattern)": [
+        "ox_doorlock"
+      ],
+      "utils.getItems()": [
+        "ox_target"
+      ],
+      "utils.getNearbyZones(coords)": [
+        "ox_target"
+      ],
+      "utils.getTexture()": [
+        "ox_target"
+      ],
+      "utils.hasExport(export)": [
+        "ox_target"
+      ],
+      "utils.hasPlayerGotGroup(filter)": [
+        "ox_target"
+      ],
+      "utils.hasPlayerGotItems(filter, hasAny)": [
+        "ox_target"
+      ],
+      "utils.raycastFromCamera(flag)": [
+        "ox_target"
+      ],
+      "utils.warn(msg)": [
+        "ox_target"
+      ],
+      "validateData(key, value)": [
+        "rsg-core"
+      ],
+      "validateWeatherPattern(pattern)": [
+        "weathersync"
+      ],
+      "verbose(...)": [
+        "ox_lib"
+      ],
+      "void()": [
+        "ox_lib"
+      ],
+      "walletid()": [
+        "rsg-core"
+      ],
+      "warn(...)": [
+        "ox_lib"
+      ],
+      "whenKeyJustPressed(key)": [
+        "rsg-essentials"
       ]
     },
     "events_registered": {
       "RSGCore:Client:OnPlayerLoaded": [
+        "ox_target",
         "rex-blackmarket",
         "rex-deathloot",
         "rex-houses",
         "rex-loyalty",
-        "rex-ranch"
+        "rex-ranch",
+        "rsg-ammo",
+        "rsg-appearance",
+        "rsg-banking",
+        "rsg-bossmenu",
+        "rsg-core",
+        "rsg-essentials",
+        "rsg-gangmenu",
+        "rsg-inventory",
+        "rsg-medic",
+        "rsg-prison",
+        "rsg-wardrobe",
+        "rsg-weapons"
       ],
       "RSGCore:Client:OnPlayerUnload": [
         "rex-blackmarket",
         "rex-deathloot",
-        "rex-loyalty"
+        "rex-loyalty",
+        "rsg-appearance",
+        "rsg-core",
+        "rsg-essentials",
+        "rsg-inventory",
+        "rsg-prison"
       ],
       "RSGCore:Server:OnPlayerLoaded": [
-        "rex-halloween"
+        "rex-halloween",
+        "rsg-core"
       ],
       "example:craft-external": [
         "rex-cooking",
@@ -8876,9 +12390,19 @@
         "rex-houses",
         "rex-ranch",
         "rex-trains",
-        "rex-wagons"
+        "rex-wagons",
+        "rsg-ammo",
+        "rsg-bossmenu",
+        "rsg-essentials",
+        "rsg-fishing",
+        "rsg-gangmenu",
+        "rsg-inventory",
+        "rsg-prison"
       ],
       "onResourceStop": [
+        "chat-redm",
+        "ox_doorlock",
+        "ox_lib",
         "rex-blackmarket",
         "rex-blacksmith",
         "rex-butcher",
@@ -8914,12 +12438,35 @@
         "rex-wanted",
         "rex-warehouse",
         "rex-weaponsmith",
-        "rex_zombies"
+        "rex_zombies",
+        "rsg-ammo",
+        "rsg-appearance",
+        "rsg-banking",
+        "rsg-barbers",
+        "rsg-bathing",
+        "rsg-bossmenu",
+        "rsg-core",
+        "rsg-doorlock",
+        "rsg-essentials",
+        "rsg-fishing",
+        "rsg-horses",
+        "rsg-inventory",
+        "rsg-medic",
+        "rsg-multicharacter",
+        "rsg-npcs",
+        "rsg-prison",
+        "rsg-shops",
+        "rsg-telegram",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "playerConnecting": [
-        "rex-houses"
+        "rex-houses",
+        "rsg-core"
       ],
       "playerDropped": [
+        "chat-redm",
+        "ox_lib",
         "rex-butcher",
         "rex-chat",
         "rex-cooking",
@@ -8930,9 +12477,14 @@
         "rex-loyalty",
         "rex-ranch",
         "rex-trains",
-        "rex-wanted"
+        "rex-wanted",
+        "rsg-bathing",
+        "rsg-core",
+        "rsg-inventory"
       ],
       "playerJoining": [
+        "chat-redm",
+        "ox_lib",
         "rex-camping",
         "rex-wagons"
       ],
@@ -10570,14 +14122,1434 @@
       ],
       "yoursurvival:client:nearcampfire": [
         "rex-cooking"
+      ],
+      "HideAllUI": [
+        "rsg-hud"
+      ],
+      "InteractSound_CL:PlayOnAll": [
+        "interact-sound"
+      ],
+      "InteractSound_CL:PlayOnOne": [
+        "interact-sound"
+      ],
+      "InteractSound_CL:PlayWithinDistance": [
+        "interact-sound"
+      ],
+      "InteractSound_SV:PlayOnAll": [
+        "interact-sound"
+      ],
+      "InteractSound_SV:PlayOnOne": [
+        "interact-sound"
+      ],
+      "InteractSound_SV:PlayOnSource": [
+        "interact-sound"
+      ],
+      "InteractSound_SV:PlayWithinDistance": [
+        "interact-sound"
+      ],
+      "KickForAFK": [
+        "rsg-essentials"
+      ],
+      "RSGCore:CallCommand": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:OnGangUpdate": [
+        "rsg-gangmenu"
+      ],
+      "RSGCore:Client:OnJobUpdate": [
+        "rsg-bossmenu",
+        "rsg-essentials",
+        "rsg-multijob"
+      ],
+      "RSGCore:Client:OnPermissionUpdate": [
+        "rsg-essentials"
+      ],
+      "RSGCore:Client:OnSharedUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:OnSharedUpdateMultiple": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:PvpHasToggled": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:SharedUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:TriggerCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:TriggerClientCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:UseItem": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:DeleteVehicle": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:GoToMarker": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:ShowMe3D": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:SpawnVehicle": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:TeleportToCoords": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:TeleportToPlayer": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:ToggleNoClip": [
+        "rsg-core"
+      ],
+      "RSGCore:Player:SetPlayerData": [
+        "ox_target",
+        "rsg-core"
+      ],
+      "RSGCore:Player:UpdatePlayerData": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:AddItem": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:CloseServer": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:KickCSRF": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:OnMoneyChange": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:OnPlayerUnload": [
+        "rsg-multicharacter"
+      ],
+      "RSGCore:Server:OpenServer": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:PlayerLoaded": [
+        "rsg-core",
+        "rsg-inventory",
+        "rsg-multicharacter"
+      ],
+      "RSGCore:Server:RemoveItem": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:SetMetaData": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:TriggerCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:TriggerClientCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:UseItem": [
+        "rsg-core"
+      ],
+      "RSGCore:ToggleDuty": [
+        "rsg-core"
+      ],
+      "RSGCore:UpdatePlayer": [
+        "rsg-core"
+      ],
+      "__cfx_internal:commandFallback": [
+        "chat-redm"
+      ],
+      "__cfx_internal:serverPrint": [
+        "chat-redm"
+      ],
+      "_chat:messageEntered": [
+        "chat-redm"
+      ],
+      "chat:addMessage": [
+        "chat-redm"
+      ],
+      "chat:addMode": [
+        "chat-redm"
+      ],
+      "chat:addSuggestion": [
+        "chat-redm"
+      ],
+      "chat:addSuggestions": [
+        "chat-redm"
+      ],
+      "chat:addTemplate": [
+        "chat-redm"
+      ],
+      "chat:clear": [
+        "chat-redm"
+      ],
+      "chat:init": [
+        "chat-redm"
+      ],
+      "chat:removeMode": [
+        "chat-redm"
+      ],
+      "chat:removeSuggestion": [
+        "chat-redm"
+      ],
+      "chatMessage": [
+        "chat-redm",
+        "rsg-core"
+      ],
+      "hud:client:GainStress": [
+        "rsg-hud"
+      ],
+      "hud:client:OnMoneyChange": [
+        "rsg-hud"
+      ],
+      "hud:client:RelieveStress": [
+        "rsg-hud"
+      ],
+      "hud:client:ShowAccounts": [
+        "rsg-hud"
+      ],
+      "hud:client:ToggleEditMode": [
+        "rsg-hud"
+      ],
+      "hud:client:UpdateCleanliness": [
+        "rsg-hud"
+      ],
+      "hud:client:UpdateHunger": [
+        "rsg-hud"
+      ],
+      "hud:client:UpdateNeeds": [
+        "rsg-hud"
+      ],
+      "hud:client:UpdateStress": [
+        "rsg-hud"
+      ],
+      "hud:client:UpdateThirst": [
+        "rsg-hud"
+      ],
+      "menu_base:getData": [
+        "menu_base"
+      ],
+      "onClientResourceStart": [
+        "chat-redm",
+        "rsg-menubase"
+      ],
+      "onClientResourceStop": [
+        "chat-redm",
+        "ox_lib",
+        "ox_target"
+      ],
+      "onPlayerDropped": [
+        "ox_lib"
+      ],
+      "onServerResourceStart": [
+        "chat-redm"
+      ],
+      "ox_doorlock:breakLockpick": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:editDoorlock": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:setState": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:teleportToDoor": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:triggeredCommand": [
+        "ox_doorlock"
+      ],
+      "ox_inventory:itemCount": [
+        "ox_target"
+      ],
+      "ox_lib:alertDialog": [
+        "ox_lib"
+      ],
+      "ox_lib:defaultNotify": [
+        "ox_lib"
+      ],
+      "ox_lib:notify": [
+        "ox_lib"
+      ],
+      "ox_lib:progressProps": [
+        "ox_lib"
+      ],
+      "ox_lib:saveZone": [
+        "ox_lib"
+      ],
+      "ox_lib:setLocale": [
+        "ox_lib"
+      ],
+      "ox_lib:setVehicleProperties": [
+        "ox_lib"
+      ],
+      "ox_lib:validateCallback": [
+        "ox_lib"
+      ],
+      "ox_target:debug": [
+        "ox_target"
+      ],
+      "ox_target:removeEntity": [
+        "ox_target"
+      ],
+      "ox_target:setEntityHasOptions": [
+        "ox_target"
+      ],
+      "progressbar:client:ProgressWithStartAndTick": [
+        "progressbar"
+      ],
+      "progressbar:client:ProgressWithStartEvent": [
+        "progressbar"
+      ],
+      "progressbar:client:ProgressWithTickEvent": [
+        "progressbar"
+      ],
+      "progressbar:client:ToggleBusyness": [
+        "progressbar"
+      ],
+      "progressbar:client:cancel": [
+        "progressbar"
+      ],
+      "progressbar:client:progress": [
+        "progressbar"
+      ],
+      "rsg-adminmenu:client:adminoptions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:adminreplyreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:adminreportsmenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:adminviewreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:banplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:copycoordsmenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:createreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:deletereport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:devoptions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:dospawnped": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:financesoptions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:gethash": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:giveitem": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:givemoney": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:godmode": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:goinvisible": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:horseoptions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:kickplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:newreportnotification": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:openadminmenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:openreportmenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:playerfire": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:playermenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:playersfinances": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:playersoptions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:playerstroll": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:printlist_full": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:printlist_on": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:removemoney": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:replyreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:reportactions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:reportplayeractions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:reportreplynotification": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:serveroptions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:spawnhorse": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:spawnped": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:spectateplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:startanimation": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:testanimation": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:toggledoorid": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:toggleplayerblips": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:trolloptions": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:viewmyreports": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:viewnearbyplayers": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:viewreportdetails": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:viewreportmessages": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:wildattack": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:banplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:bringplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:claimreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:createreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:deletereport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:financeadd": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:financeremove": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:freezeplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:giveitem": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:gotoplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:kickplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:openinventory": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:playerfire": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:playerinfo": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:playerrevive": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:releasereport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:replyreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:resolvereport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:spectateplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:wildattack": [
+        "rsg-adminmenu"
+      ],
+      "rsg-ammo:client:AddAmmo": [
+        "rsg-ammo"
+      ],
+      "rsg-ammo:client:openAmmoBox": [
+        "rsg-ammo"
+      ],
+      "rsg-ammo:server:openAmmoBox": [
+        "rsg-ammo"
+      ],
+      "rsg-ammo:server:removeitem": [
+        "rsg-ammo"
+      ],
+      "rsg-ammo:server:updateDb": [
+        "rsg-ammo"
+      ],
+      "rsg-animations:client:Open": [
+        "rsg-animations"
+      ],
+      "rsg-animations:server:Favorite": [
+        "rsg-animations"
+      ],
+      "rsg-animations:server:Open": [
+        "rsg-animations"
+      ],
+      "rsg-appearance:client:ApplyClothes": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:client:OpenCreator": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:client:outfits": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:DeleteOutfit": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:LoadSkin": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:SaveSkin": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:SetPlayerBucket": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:deleteSkin": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:saveUseOutfit": [
+        "rsg-appearance"
+      ],
+      "rsg-bandana:client:ToggleBandana": [
+        "rsg-essentials"
+      ],
+      "rsg-banking:client:OpenBanking": [
+        "rsg-banking"
+      ],
+      "rsg-banking:client:UpdateBanking": [
+        "rsg-banking"
+      ],
+      "rsg-banking:client:safedeposit": [
+        "rsg-banking"
+      ],
+      "rsg-banking:server:givemoney": [
+        "rsg-banking"
+      ],
+      "rsg-banking:server:opensafedeposit": [
+        "rsg-banking"
+      ],
+      "rsg-banking:server:transact": [
+        "rsg-banking"
+      ],
+      "rsg-barber:client:menu": [
+        "rsg-barbers"
+      ],
+      "rsg-barber:server:SaveSkin": [
+        "rsg-barbers"
+      ],
+      "rsg-bathing:client:HideDeluxePrompt": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:client:StartBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:client:StartDeluxeBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:server:canEnterBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:server:canEnterDeluxeBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:server:setBathAsFree": [
+        "rsg-bathing"
+      ],
+      "rsg-bossmenu:client:HireMenu": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:client:ManageEmployee": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:client:SocetyDeposit": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:client:SocetyWithDraw": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:client:SocietyMenu": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:client:Stash": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:client:employeelist": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:client:mainmenu": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:FireEmployee": [
+        "rsg-bossmenu",
+        "rsg-multijob"
+      ],
+      "rsg-bossmenu:server:GradeUpdate": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:HireEmployee": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:depositMoney": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:openinventory": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:withdrawMoney": [
+        "rsg-bossmenu"
+      ],
+      "rsg-canteen:client:drink": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:degradecanteen": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:givefullcanteen": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:givefullcanteen25": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:givefullcanteen50": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:givefullcanteen75": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:refillcanteen": [
+        "rsg-canteen"
+      ],
+      "rsg-consume:client:drink": [
+        "rsg-consume"
+      ],
+      "rsg-consume:client:drinkcoffee": [
+        "rsg-consume"
+      ],
+      "rsg-consume:client:eat": [
+        "rsg-consume"
+      ],
+      "rsg-consume:client:eatcanned": [
+        "rsg-consume"
+      ],
+      "rsg-consume:client:stew": [
+        "rsg-consume"
+      ],
+      "rsg-consume:server:removeitem": [
+        "rsg-consume"
+      ],
+      "rsg-core:client:ChangeText": [
+        "rsg-core"
+      ],
+      "rsg-core:client:DrawText": [
+        "rsg-core"
+      ],
+      "rsg-core:client:HideText": [
+        "rsg-core"
+      ],
+      "rsg-core:client:KeyPressed": [
+        "rsg-core"
+      ],
+      "rsg-core:client:RemoveWeaponFromTab": [
+        "rsg-essentials"
+      ],
+      "rsg-discord:getdata": [
+        "rsg-essentials"
+      ],
+      "rsg-discord:receivedata": [
+        "rsg-essentials"
+      ],
+      "rsg-doorlock:changedoor": [
+        "rsg-doorlock"
+      ],
+      "rsg-doorlock:setState": [
+        "rsg-doorlock"
+      ],
+      "rsg-doorlock:updateState": [
+        "rsg-doorlock"
+      ],
+      "rsg-doorlock:updatedoorsv": [
+        "rsg-doorlock"
+      ],
+      "rsg-essentials:client:pvpToggle": [
+        "rsg-essentials"
+      ],
+      "rsg-fishing:FishToInventory": [
+        "rsg-fishing"
+      ],
+      "rsg-fishing:client:usebait": [
+        "rsg-fishing"
+      ],
+      "rsg-fishing:server:removeBaitItem": [
+        "rsg-fishing"
+      ],
+      "rsg-gangmenu:client:HireMenu": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:ManageEmployee": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:SocetyDeposit": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:SocetyWithDraw": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:SocietyMenu": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:Stash": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:commandmenu": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:employeelist": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:client:mainmenu": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:FireMember": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:GradeUpdate": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:HireMember": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:depositMoney": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:openinventory": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:withdrawMoney": [
+        "rsg-gangmenu"
+      ],
+      "rsg-horses:client:FleeHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:MenuDel": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:OpenHorseShop": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:SpawnHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:custShop": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:equipHorseLantern": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:gethorselocation": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:inventoryHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:menu": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:movehorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:playerbrushhorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:playerfeedhorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:revivehorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:stablemenu": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:storehorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:tradehorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:AcceptTrade": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:SaveComponents": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:TradeHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:openShop": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:openhorseinventory": [
+        "rsg-horses"
+      ],
+      "rsg-inventory:client:ItemBox": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:closeInv": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:giveAnim": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:hotbar": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:openInventory": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:removeDropTarget": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:setupDropTarget": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:updateHotbar": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:updateInventory": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:SetInventoryData": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:closeInventory": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:openDrop": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:openPlayerInventory": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:openStash": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:openVending": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:updateHotbar": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:useItem": [
+        "rsg-inventory"
+      ],
+      "rsg-lawman:client:ToggleDuty": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:cuffplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:escortplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:getcuffed": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:getescorted": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:jailplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:lawbadge": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:lawmanAlert": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:mainmenu": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:openarmoury": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:openstorage": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:searchplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:sendtojail": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:SearchPlayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:cuffplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:escortplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:jailplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:lawmanAlert": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:setescortstatus": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:sethandcuffstatus": [
+        "rsg-lawman"
+      ],
+      "rsg-lockpick:client:openLockpick": [
+        "rsg-lockpick"
+      ],
+      "rsg-log:server:CreateLog": [
+        "rsg-essentials"
+      ],
+      "rsg-medic:client:DeathCam": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:GetMedicsOnDuty": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:HealInjuries": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:KillPlayer": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:OpenMedicSupplies": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:RevivePlayer": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:ToggleDuty": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:TreatWounds": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:adminHeal": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:adminRevive": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:mainmenu": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:medicAlert": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:playerRevive": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:revive": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:storage": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:usebandage": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:RevivePlayer": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:TreatWounds": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:deathactions": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:medicAlert": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:openstash": [
+        "rsg-medic"
+      ],
+      "rsg-menubase:getData": [
+        "rsg-menubase"
+      ],
+      "rsg-multicharacter:client:chooseChar": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:client:closeNUI": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:client:unstick": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:createCharacter": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:deleteCharacter": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:disconnect": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:loadUserData": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multijob:client:choiceMenu": [
+        "rsg-multijob"
+      ],
+      "rsg-multijob:client:openmenu": [
+        "rsg-multijob"
+      ],
+      "rsg-multijob:server:changeJob": [
+        "rsg-multijob"
+      ],
+      "rsg-multijob:server:deleteJob": [
+        "rsg-multijob"
+      ],
+      "rsg-multijob:server:newJob": [
+        "rsg-multijob"
+      ],
+      "rsg-playerstats:client:openPlayerStats": [
+        "rsg-playerinfo"
+      ],
+      "rsg-prison:client:Enter": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:freedom": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:jailZoneInOut": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:menu": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:prisonclothes": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:shop": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:telegrammenu": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:CheckRecordStatus": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:FreePlayer": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:GiveJailItems": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:RemovePlayerJob": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:SaveJailItems": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:resetoutlawstatus": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:updateSentance": [
+        "rsg-prison"
+      ],
+      "rsg-radialmenu:client:SendLawmanEmergencyAlert": [
+        "rsg-radialmenu"
+      ],
+      "rsg-radialmenu:client:SendMedicEmergencyAlert": [
+        "rsg-radialmenu"
+      ],
+      "rsg-radialmenu:client:noPlayers": [
+        "rsg-radialmenu"
+      ],
+      "rsg-river:client:drink": [
+        "rsg-essentials"
+      ],
+      "rsg-river:client:lavati": [
+        "rsg-essentials"
+      ],
+      "rsg-shops:server:openstore": [
+        "rsg-shops"
+      ],
+      "rsg-spawn:client:existingplayer": [
+        "rsg-spawn"
+      ],
+      "rsg-spawn:client:newplayer": [
+        "rsg-spawn"
+      ],
+      "rsg-spawn:client:setupSpawnUI": [
+        "rsg-spawn"
+      ],
+      "rsg-telegram:client:AddPersonMenu": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:InboxList": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:MessageData": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:OpenAddressbook": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:OpenTelegram": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:PickupMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:ReadMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:ReceiveMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:RemovePersonMenu": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:SpawnBirdForSend": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:StartBirdDelivery": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:ViewAddressBook": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:WriteMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:CheckInbox": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:DeleteMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:DeliverySuccess": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:GetMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:MarkAsRead": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:RemovePerson": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:SavePerson": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:SendMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:SendMessagePostOffice": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:SendMessageWithBirdPost": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:ValidateBirdPostSend": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:pickupMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-wardrobe:client:OnOffClothing": [
+        "rsg-wardrobe"
+      ],
+      "rsg-wardrobe:client:removeAllClothing": [
+        "rsg-wardrobe"
+      ],
+      "rsg-waterpump:client:canteenfill": [
+        "rsg-essentials"
+      ],
+      "rsg-waterpump:client:drinking": [
+        "rsg-essentials"
+      ],
+      "rsg-weaponcomp:client:ExitCam": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:InspectionWeapon": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:animationSaved": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:confirmpackup": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:createprop": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:equipScope": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:packupgunsite": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:reloadWeapon": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:setupgunzone": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:startcustom": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:unequipScope": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:updatePropData": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:additem": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:check_comps": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:createnewprop": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:getProps": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:removeComponents": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:removegunsiteprops": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:removeitem": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:updateProps": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weapons:client:UseEquipment": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:UseThrownWeapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:UseWeapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:brokenweapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:repairbrokenweapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:repairweapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:requestToggle": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:degradeWeapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:removeitem": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:repairweapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:saveEquippedKnife": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:saveEquippedWeapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:toggle": [
+        "rsg-weapons"
+      ],
+      "txAdmin:events:announcement": [
+        "ox_lib"
+      ],
+      "txAdmin:events:playerDirectMessage": [
+        "ox_lib"
+      ],
+      "txAdmin:events:playerWarned": [
+        "ox_lib"
+      ],
+      "txAdmin:events:scheduledRestart": [
+        "ox_lib",
+        "rsg-essentials"
+      ],
+      "txAdmin:events:serverShuttingDown": [
+        "rsg-inventory"
+      ],
+      "walkstyles:client:angry": [
+        "rsg-radialmenu"
+      ],
+      "walkstyles:client:gold_panner": [
+        "rsg-radialmenu"
+      ],
+      "walkstyles:client:lost_Man": [
+        "rsg-radialmenu"
+      ],
+      "walkstyles:client:murfree": [
+        "rsg-radialmenu"
+      ],
+      "walkstyles:client:normal": [
+        "rsg-radialmenu"
+      ],
+      "walkstyles:client:primate": [
+        "rsg-radialmenu"
+      ],
+      "walkstyles:client:war_veteran": [
+        "rsg-radialmenu"
+      ],
+      "weathersync:changeTime": [
+        "weathersync"
+      ],
+      "weathersync:changeTimescale": [
+        "weathersync"
+      ],
+      "weathersync:changeWeather": [
+        "weathersync"
+      ],
+      "weathersync:changeWind": [
+        "weathersync"
+      ],
+      "weathersync:init": [
+        "weathersync"
+      ],
+      "weathersync:openAdminUi": [
+        "weathersync"
+      ],
+      "weathersync:requestUpdatedAdminUi": [
+        "weathersync"
+      ],
+      "weathersync:requestUpdatedForecast": [
+        "weathersync"
+      ],
+      "weathersync:resetSyncDelay": [
+        "weathersync"
+      ],
+      "weathersync:resetTime": [
+        "weathersync"
+      ],
+      "weathersync:resetTimescale": [
+        "weathersync"
+      ],
+      "weathersync:resetWeather": [
+        "weathersync"
+      ],
+      "weathersync:resetWeatherPattern": [
+        "weathersync"
+      ],
+      "weathersync:resetWind": [
+        "weathersync"
+      ],
+      "weathersync:setMyTime": [
+        "weathersync"
+      ],
+      "weathersync:setMyWeather": [
+        "weathersync"
+      ],
+      "weathersync:setSyncDelay": [
+        "weathersync"
+      ],
+      "weathersync:setSyncEnabled": [
+        "weathersync"
+      ],
+      "weathersync:setTime": [
+        "weathersync"
+      ],
+      "weathersync:setTimescale": [
+        "weathersync"
+      ],
+      "weathersync:setWeather": [
+        "weathersync"
+      ],
+      "weathersync:setWeatherPattern": [
+        "weathersync"
+      ],
+      "weathersync:setWind": [
+        "weathersync"
+      ],
+      "weathersync:toggleForecast": [
+        "weathersync"
+      ],
+      "weathersync:toggleSync": [
+        "weathersync"
+      ],
+      "weathersync:updateAdminUi": [
+        "weathersync"
+      ],
+      "weathersync:updateForecast": [
+        "weathersync"
       ]
     },
     "events_triggered": {
       "chat:addMessage": [
-        "rex-chat"
+        "rex-chat",
+        "weathersync"
       ],
       "hud:client:RelieveStress": [
-        "rex-smoking"
+        "rex-smoking",
+        "rsg-consume"
       ],
       "ox_lib:notify": [
         "rex-fasttravel",
@@ -10949,15 +15921,287 @@
         "rex-smelting",
         "rex-trader",
         "rex-trapfishing",
-        "rex-trapper"
+        "rex-trapper",
+        "rsg-adminmenu",
+        "rsg-bossmenu",
+        "rsg-core",
+        "rsg-essentials",
+        "rsg-fishing",
+        "rsg-gangmenu",
+        "rsg-horses",
+        "rsg-inventory",
+        "rsg-multicharacter",
+        "rsg-weaponcomp"
       ],
       "rsg-medic:client:revive": [
-        "rex-npcdoctor"
+        "rex-npcdoctor",
+        "rsg-medic"
+      ],
+      "HideAllUI": [
+        "rsg-essentials",
+        "rsg-weaponcomp"
+      ],
+      "RSGCore:Client:OnPlayerLoaded": [
+        "rsg-spawn"
+      ],
+      "RSGCore:Client:UpdateObject": [
+        "rsg-core"
+      ],
+      "RSGCore:DebugSomething": [
+        "rsg-core"
+      ],
+      "RSGCore:Notify": [
+        "progressbar"
+      ],
+      "RSGCore:Player:SetPlayerData": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:OnGangUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:OnJobUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:OnMoneyChange": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:OnPlayerUnload": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:PlayerDropped": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:PlayerLoaded": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:SetDuty": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:UpdateObject": [
+        "rsg-core"
+      ],
+      "chat:addSuggestion": [
+        "ox_lib",
+        "rsg-essentials",
+        "weathersync"
+      ],
+      "chat:addSuggestions": [
+        "chat-redm"
+      ],
+      "chat:removeSuggestion": [
+        "ox_lib"
+      ],
+      "chatMessage": [
+        "chat-redm"
+      ],
+      "hospital:client:isEscorted": [
+        "rsg-lawman"
+      ],
+      "hud:client:GainStress": [
+        "rsg-hud"
+      ],
+      "hud:client:ToggleEditMode": [
+        "rsg-hud"
+      ],
+      "hud:client:UpdateCleanliness": [
+        "rsg-bathing",
+        "rsg-essentials"
+      ],
+      "hud:client:UpdateHunger": [
+        "rsg-consume"
+      ],
+      "hud:client:UpdateNeeds": [
+        "rsg-medic"
+      ],
+      "hud:client:UpdateStress": [
+        "rsg-medic"
+      ],
+      "hud:client:UpdateThirst": [
+        "rsg-canteen",
+        "rsg-consume",
+        "rsg-essentials"
+      ],
+      "menu_base:closemenu": [
+        "menu_base"
+      ],
+      "menuapi:closemenu": [
+        "rsg-menubase"
+      ],
+      "ox_doorlock:loaded": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:stateChanged": [
+        "ox_doorlock"
+      ],
+      "ox_lib:setLocale": [
+        "ox_lib"
+      ],
+      "progressbar:client:cancel": [
+        "progressbar"
+      ],
+      "rsg-adminmenu:client:dospawnped": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:playermenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:spawnhorse": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:startanimation": [
+        "rsg-adminmenu"
+      ],
+      "rsg-appearance:client:ApplyClothes": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:client:OpenCreator": [
+        "rsg-multicharacter"
+      ],
+      "rsg-banking:client:OpenBanking": [
+        "rsg-banking"
+      ],
+      "rsg-banking:client:safedeposit": [
+        "rsg-banking"
+      ],
+      "rsg-barber:client:menu": [
+        "rsg-barbers"
+      ],
+      "rsg-bathing:TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS": [
+        "rsg-bathing"
+      ],
+      "rsg-consume:client:onConsume": [
+        "rsg-consume"
+      ],
+      "rsg-gangmenu:client:commandmenu": [
+        "rsg-gangmenu"
+      ],
+      "rsg-horses:client:FleeHorse": [
+        "rsg-appearance"
+      ],
+      "rsg-horses:client:inventoryHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:stablemenu": [
+        "rsg-horses"
+      ],
+      "rsg-inventory:server:itemRemovedFromPlayerInventory": [
+        "rsg-inventory"
+      ],
+      "rsg-lawman:client:openarmoury": [
+        "rsg-lawman"
+      ],
+      "rsg-medic:client:DeathCam": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:GetMedicsOnDuty": [
+        "rsg-medic"
+      ],
+      "rsg-menubase:getData": [
+        "rsg-appearance",
+        "rsg-barbers",
+        "rsg-horses",
+        "rsg-weaponcomp"
+      ],
+      "rsg-multicharacter:client:chooseChar": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multijob:client:openmenu": [
+        "rsg-multijob"
+      ],
+      "rsg-prison:client:Enter": [
+        "rsg-lawman",
+        "rsg-prison"
+      ],
+      "rsg-prison:client:freedom": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:jailZoneInOut": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:menu": [
+        "rsg-prison"
+      ],
+      "rsg-prison:client:prisonclothes": [
+        "rsg-prison"
+      ],
+      "rsg-radialmenu:client:onRadialmenuClose": [
+        "rsg-radialmenu"
+      ],
+      "rsg-radialmenu:client:onRadialmenuOpen": [
+        "rsg-radialmenu"
+      ],
+      "rsg-river:client:drink": [
+        "rsg-essentials"
+      ],
+      "rsg-spawn:client:existingplayer": [
+        "rsg-spawn"
+      ],
+      "rsg-spawn:client:newplayer": [
+        "rsg-spawn"
+      ],
+      "rsg-telegram:client:OpenTelegram": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:SpawnBirdForSend": [
+        "rsg-telegram"
+      ],
+      "rsg-wardrobe:client:removeAllClothing": [
+        "rsg-bathing"
+      ],
+      "rsg-weaponcomp:client:ExitCam": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:confirmpackup": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:equipScope": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:packupgunsite": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:placegunsiteitem": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:setupgunzone": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:startcustom": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:unequipScope": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:check_comps": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:getProps": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:updateProps": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weapons:client:AutoDualWield": [
+        "rsg-spawn"
+      ],
+      "rsg-weapons:client:UseEquipment": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:UseWeapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:brokenweapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:repairbrokenweapon": [
+        "rsg-weapons"
       ]
     },
     "server_events_triggered": {
       "InteractSound_SV:PlayWithinDistance": [
-        "rex_zombies"
+        "rex_zombies",
+        "rsg-lawman",
+        "rsg-prison"
       ],
       "rex-blackmarket:server:washmoney": [
         "rex-blackmarket"
@@ -11492,7 +16736,9 @@
       ],
       "rsg-lawman:server:lawmanAlert": [
         "rex-contraband",
-        "rex-speakeasy"
+        "rex-speakeasy",
+        "rsg-lawman",
+        "rsg-radialmenu"
       ],
       "rsg-loyalty:server:earnPoints": [
         "rex-loyalty"
@@ -11513,7 +16759,458 @@
         "rex-loyalty"
       ],
       "rsg-medic:server:deathactions": [
-        "rex-npcdoctor"
+        "rex-npcdoctor",
+        "rsg-medic"
+      ],
+      "KickForAFK": [
+        "rsg-essentials"
+      ],
+      "RSGCore:CallCommand": [
+        "rsg-radialmenu"
+      ],
+      "RSGCore:DebugSomething": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:KickCSRF": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:OnPlayerLoaded": [
+        "rsg-spawn"
+      ],
+      "RSGCore:Server:SetMetaData": [
+        "rsg-bathing",
+        "rsg-canteen",
+        "rsg-medic"
+      ],
+      "RSGCore:Server:TriggerCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:Server:TriggerClientCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:ToggleDuty": [
+        "rsg-lawman",
+        "rsg-medic",
+        "rsg-multijob"
+      ],
+      "RSGCore:UpdatePlayer": [
+        "rsg-core"
+      ],
+      "_chat:messageEntered": [
+        "chat-redm"
+      ],
+      "chat:init": [
+        "chat-redm"
+      ],
+      "ox_doorlock:breakLockpick": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:editDoorlock": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:setState": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:teleportToDoor": [
+        "ox_doorlock"
+      ],
+      "ox_lib:progressProps": [
+        "ox_lib"
+      ],
+      "ox_lib:saveZone": [
+        "ox_lib"
+      ],
+      "ox_lib:validateCallback": [
+        "ox_lib"
+      ],
+      "ox_target:setEntityHasOptions": [
+        "ox_target"
+      ],
+      "rsg-adminmenu:server:banplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:createreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:deletereport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:financeadd": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:financeremove": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:giveitem": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:kickplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:replyreport": [
+        "rsg-adminmenu"
+      ],
+      "rsg-ammo:server:openAmmoBox": [
+        "rsg-ammo"
+      ],
+      "rsg-ammo:server:updateDb": [
+        "rsg-ammo"
+      ],
+      "rsg-animations:server:Favorite": [
+        "rsg-animations"
+      ],
+      "rsg-animations:server:Open": [
+        "rsg-animations"
+      ],
+      "rsg-appearance:server:DeleteOutfit": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:LoadClothes": [
+        "rsg-multicharacter"
+      ],
+      "rsg-appearance:server:LoadSkin": [
+        "rsg-barbers",
+        "rsg-multicharacter"
+      ],
+      "rsg-appearance:server:SaveSkin": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:SetPlayerBucket": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:saveOutfit": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:server:saveUseOutfit": [
+        "rsg-appearance"
+      ],
+      "rsg-banking:server:givemoney": [
+        "rsg-banking"
+      ],
+      "rsg-banking:server:opensafedeposit": [
+        "rsg-banking"
+      ],
+      "rsg-banking:server:transact": [
+        "rsg-banking"
+      ],
+      "rsg-barber:server:SaveSkin": [
+        "rsg-barbers"
+      ],
+      "rsg-bathing:server:canEnterBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:server:canEnterDeluxeBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:server:setBathAsFree": [
+        "rsg-bathing"
+      ],
+      "rsg-bossmenu:server:depositMoney": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:openinventory": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:withdrawMoney": [
+        "rsg-bossmenu"
+      ],
+      "rsg-canteen:server:degradecanteen": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:givefullcanteen": [
+        "rsg-canteen",
+        "rsg-essentials"
+      ],
+      "rsg-canteen:server:givefullcanteen25": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:givefullcanteen50": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:server:givefullcanteen75": [
+        "rsg-canteen"
+      ],
+      "rsg-consume:server:removeitem": [
+        "rsg-consume"
+      ],
+      "rsg-discord:getdata": [
+        "rsg-essentials"
+      ],
+      "rsg-doorlock:updateState": [
+        "rsg-doorlock"
+      ],
+      "rsg-doorlock:updatedoorsv": [
+        "rsg-doorlock"
+      ],
+      "rsg-fishing:FishToInventory": [
+        "rsg-fishing"
+      ],
+      "rsg-fishing:server:removeBaitItem": [
+        "rsg-fishing"
+      ],
+      "rsg-gangmenu:server:depositMoney": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:openinventory": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:withdrawMoney": [
+        "rsg-gangmenu"
+      ],
+      "rsg-horses:renameHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:AcceptTrade": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:BuyHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:HorseDied": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:MoveHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:SaveComponents": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:SetHoresActive": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:SetHoresUnActive": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:SetPlayerBucket": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:TradeHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:deletehorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:fleeStoreHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:openShop": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:openhorseinventory": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:revivehorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:sethorseAttributes": [
+        "rsg-horses"
+      ],
+      "rsg-inventory:server:SetInventoryData": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:closeInventory": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:openDrop": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:openVending": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:updateHotbar": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:server:useItem": [
+        "rsg-inventory"
+      ],
+      "rsg-lawman:server:SearchPlayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:cuffplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:escortplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:jailplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:setescortstatus": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:sethandcuffstatus": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:server:storage": [
+        "rsg-lawman"
+      ],
+      "rsg-log:server:CreateLog": [
+        "rsg-adminmenu",
+        "rsg-medic"
+      ],
+      "rsg-medic:server:RevivePlayer": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:TreatWounds": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:medicAlert": [
+        "rsg-medic",
+        "rsg-radialmenu"
+      ],
+      "rsg-medic:server:openstash": [
+        "rsg-medic"
+      ],
+      "rsg-medic:server:removeitem": [
+        "rsg-medic"
+      ],
+      "rsg-multicharacter:server:createCharacter": [
+        "rsg-appearance"
+      ],
+      "rsg-multicharacter:server:deleteCharacter": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:disconnect": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:loadUserData": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multijob:server:changeJob": [
+        "rsg-multijob"
+      ],
+      "rsg-multijob:server:deleteJob": [
+        "rsg-multijob"
+      ],
+      "rsg-multijob:server:newJob": [
+        "rsg-multijob"
+      ],
+      "rsg-prison:server:FreePlayer": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:GiveJailItems": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:RemovePlayerJob": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:SaveJailItems": [
+        "rsg-prison"
+      ],
+      "rsg-prison:server:resetoutlawstatus": [
+        "rsg-medic",
+        "rsg-prison"
+      ],
+      "rsg-prison:server:updateSentance": [
+        "rsg-prison"
+      ],
+      "rsg-shops:server:openstore": [
+        "rsg-lawman",
+        "rsg-medic",
+        "rsg-prison",
+        "rsg-shops"
+      ],
+      "rsg-telegram:server:CheckInbox": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:DeleteMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:DeliverySuccess": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:GetMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:MarkAsRead": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:ReadMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:RemovePerson": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:SavePerson": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:SendMessagePostOffice": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:ValidateBirdPostSend": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:pickupMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-weaponcomp:server:additem": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:check_comps": [
+        "rsg-weaponcomp",
+        "rsg-weapons"
+      ],
+      "rsg-weaponcomp:server:createnewprop": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:inspectkitConsume": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:removeComponents": [
+        "rsg-weaponcomp",
+        "rsg-weapons"
+      ],
+      "rsg-weaponcomp:server:removegunsiteprops": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:setComponents": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weapons:requestToggle": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:RemoveAllObjects": [
+        "rsg-wardrobe"
+      ],
+      "rsg-weapons:server:degradeWeapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:removeitem": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:repairweapon": [
+        "rsg-weaponcomp",
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:saveEquippedKnife": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:saveEquippedWeapon": [
+        "rsg-weapons"
+      ],
+      "weathersync:init": [
+        "weathersync"
+      ],
+      "weathersync:requestUpdatedAdminUi": [
+        "weathersync"
+      ],
+      "weathersync:requestUpdatedForecast": [
+        "weathersync"
+      ],
+      "weathersync:setSyncDelay": [
+        "weathersync"
+      ],
+      "weathersync:setTime": [
+        "weathersync"
+      ],
+      "weathersync:setTimescale": [
+        "weathersync"
+      ],
+      "weathersync:setWeather": [
+        "weathersync"
+      ],
+      "weathersync:setWind": [
+        "weathersync"
       ]
     },
     "client_events_triggered": {
@@ -11521,18 +17218,26 @@
         "rex-smelting"
       ],
       "chat:addMessage": [
+        "chat-redm",
+        "ox_lib",
         "rex-cooking",
         "rex-crafting",
-        "rex-loyalty"
+        "rex-loyalty",
+        "rsg-adminmenu",
+        "rsg-core",
+        "weathersync"
       ],
       "inventory:client:ItemBox": [
+        "ox_doorlock",
         "rex-postal",
         "rex-storage"
       ],
       "lib:notify": [
-        "rex-butcher"
+        "rex-butcher",
+        "rsg-inventory"
       ],
       "ox_lib:notify": [
+        "ox_lib",
         "rex-blackmarket",
         "rex-blacksmith",
         "rex-camping",
@@ -11566,7 +17271,24 @@
         "rex-trapfishing",
         "rex-trapper",
         "rex-wanted",
-        "rex-weaponsmith"
+        "rex-weaponsmith",
+        "rsg-adminmenu",
+        "rsg-appearance",
+        "rsg-barbers",
+        "rsg-bathing",
+        "rsg-bossmenu",
+        "rsg-core",
+        "rsg-doorlock",
+        "rsg-fishing",
+        "rsg-gangmenu",
+        "rsg-horses",
+        "rsg-inventory",
+        "rsg-lawman",
+        "rsg-medic",
+        "rsg-multijob",
+        "rsg-telegram",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "rex-blackmarket:client:notifyLocationChange": [
         "rex-blackmarket"
@@ -11826,7 +17548,17 @@
         "rex-trapfishing",
         "rex-trapper",
         "rex-weaponsmith",
-        "rex-woodcutter"
+        "rex-woodcutter",
+        "rsg-ammo",
+        "rsg-canteen",
+        "rsg-consume",
+        "rsg-fishing",
+        "rsg-horses",
+        "rsg-inventory",
+        "rsg-medic",
+        "rsg-telegram",
+        "rsg-weaponcomp",
+        "rsg-weapons"
       ],
       "rsg-loyalty:client:leaderboardData": [
         "rex-loyalty"
@@ -11842,6 +17574,407 @@
       ],
       "rsg-loyalty:client:updateLoyaltyData": [
         "rex-loyalty"
+      ],
+      "InteractSound_CL:PlayOnAll": [
+        "interact-sound"
+      ],
+      "InteractSound_CL:PlayOnOne": [
+        "interact-sound"
+      ],
+      "InteractSound_CL:PlayWithinDistance": [
+        "interact-sound"
+      ],
+      "InteractSound_CL:PlayWithinDistanceOS": [
+        "interact-sound"
+      ],
+      "RSGCore:Client:OnGangUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:OnJobUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:OnMoneyChange": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:OnPlayerUnload": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:OnSharedUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:OnSharedUpdateMultiple": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:PvpHasToggled": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:SetDuty": [
+        "rsg-core",
+        "rsg-multijob"
+      ],
+      "RSGCore:Client:SharedUpdate": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:TriggerCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:Client:TriggerClientCallback": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:DeleteVehicle": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:GoToMarker": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:ShowMe3D": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:SpawnVehicle": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:TeleportToCoords": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:TeleportToPlayer": [
+        "rsg-core"
+      ],
+      "RSGCore:Command:ToggleNoClip": [
+        "rsg-core"
+      ],
+      "RSGCore:Player:SetPlayerData": [
+        "rsg-core"
+      ],
+      "RSGCore:Player:UpdatePlayerData": [
+        "rsg-core"
+      ],
+      "chat:addMode": [
+        "chat-redm"
+      ],
+      "chat:addSuggestions": [
+        "chat-redm",
+        "ox_lib",
+        "rsg-core"
+      ],
+      "chat:removeMode": [
+        "chat-redm"
+      ],
+      "chat:removeSuggestion": [
+        "rsg-core"
+      ],
+      "chatMessage": [
+        "chat-redm"
+      ],
+      "hud:client:OnMoneyChange": [
+        "rsg-core"
+      ],
+      "hud:client:ShowAccounts": [
+        "rsg-hud"
+      ],
+      "lib.notify": [
+        "rsg-banking"
+      ],
+      "ox_doorlock:editDoorlock": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:setState": [
+        "ox_doorlock"
+      ],
+      "ox_doorlock:triggeredCommand": [
+        "ox_doorlock"
+      ],
+      "ox_lib:alertDialog": [
+        "ox_lib"
+      ],
+      "ox_lib:validateCallback": [
+        "ox_lib"
+      ],
+      "ox_target:removeEntity": [
+        "ox_target"
+      ],
+      "rNotify:ShowAdvancedRightNotification": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-adminmenu:client:newreportnotification": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:openadminmenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:openreportmenu": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:playerfire": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:reportreplynotification": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:spectateplayer": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:client:wildattack": [
+        "rsg-adminmenu"
+      ],
+      "rsg-ammo:client:AddAmmo": [
+        "rsg-ammo"
+      ],
+      "rsg-ammo:client:openAmmoBox": [
+        "rsg-ammo"
+      ],
+      "rsg-animations:client:Open": [
+        "rsg-animations"
+      ],
+      "rsg-appearance:client:ApplyClothes": [
+        "rsg-wardrobe"
+      ],
+      "rsg-appearance:client:ApplySkin": [
+        "rsg-appearance"
+      ],
+      "rsg-appearance:client:OpenCreator": [
+        "rsg-appearance",
+        "rsg-multicharacter"
+      ],
+      "rsg-bandana:client:ToggleBandana": [
+        "rsg-essentials"
+      ],
+      "rsg-banking:client:UpdateBanking": [
+        "rsg-banking"
+      ],
+      "rsg-bathing:client:HideDeluxePrompt": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:client:StartBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bathing:client:StartDeluxeBath": [
+        "rsg-bathing"
+      ],
+      "rsg-bossmenu:client:OpenMenu": [
+        "rsg-bossmenu"
+      ],
+      "rsg-canteen:client:drink": [
+        "rsg-canteen"
+      ],
+      "rsg-canteen:client:fillupcanteen": [
+        "rsg-canteen"
+      ],
+      "rsg-core:client:RemoveWeaponFromTab": [
+        "rsg-inventory"
+      ],
+      "rsg-discord:receivedata": [
+        "rsg-essentials"
+      ],
+      "rsg-doorlock:changedoor": [
+        "rsg-doorlock"
+      ],
+      "rsg-doorlock:setState": [
+        "rsg-doorlock"
+      ],
+      "rsg-fishing:client:usebait": [
+        "rsg-fishing"
+      ],
+      "rsg-horses:client:equipHorseLantern": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:gethorselocation": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:playerbrushhorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:playerfeedhorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:client:revivehorse": [
+        "rsg-horses"
+      ],
+      "rsg-inventory:client:closeInv": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:giveAnim": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:hotbar": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:openInventory": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:removeDropTarget": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:setupDropTarget": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:updateHotbar": [
+        "rsg-inventory"
+      ],
+      "rsg-inventory:client:updateInventory": [
+        "rsg-core",
+        "rsg-inventory"
+      ],
+      "rsg-lawman:client:cuffplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:escortplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:getcuffed": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:getescorted": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:lawbadge": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:lawmanAlert": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:searchplayer": [
+        "rsg-lawman"
+      ],
+      "rsg-lawman:client:sendtojail": [
+        "rsg-lawman"
+      ],
+      "rsg-medic:client:HealInjuries": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:KillPlayer": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:adminHeal": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:adminRevive": [
+        "rsg-adminmenu",
+        "rsg-medic"
+      ],
+      "rsg-medic:client:medicAlert": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:playerRevive": [
+        "rsg-medic"
+      ],
+      "rsg-medic:client:usebandage": [
+        "rsg-medic"
+      ],
+      "rsg-multicharacter:client:chooseChar": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:client:closeNUI": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multijob:client:openmenu": [
+        "rsg-multijob"
+      ],
+      "rsg-playerstats:client:openPlayerStats": [
+        "rsg-playerinfo"
+      ],
+      "rsg-prison:client:freedom": [
+        "rsg-lawman"
+      ],
+      "rsg-spawn:client:setupSpawnUI": [
+        "rsg-appearance",
+        "rsg-multicharacter"
+      ],
+      "rsg-telegram:client:InboxList": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:MessageData": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:OpenAddressbook": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:OpenTelegram": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:ReadMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:ReceiveMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:StartBirdDelivery": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:client:WriteMessage": [
+        "rsg-telegram"
+      ],
+      "rsg-wardrobe:client:OnOffClothing": [
+        "rsg-wardrobe"
+      ],
+      "rsg-wardrobe:client:removeAllClothing": [
+        "rsg-wardrobe"
+      ],
+      "rsg-weaponcomp:client:ExitCam": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:InspectionWeapon": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:animationSaved": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:createprop": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:reloadWeapon": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:client:updatePropData": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weapons:client:UseEquipment": [
+        "rsg-inventory"
+      ],
+      "rsg-weapons:client:UseThrownWeapon": [
+        "rsg-inventory"
+      ],
+      "rsg-weapons:client:UseWeapon": [
+        "rsg-inventory",
+        "rsg-weapons"
+      ],
+      "rsg-weapons:client:repairweapon": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:toggle": [
+        "rsg-weapons"
+      ],
+      "weathersync:changeTime": [
+        "weathersync"
+      ],
+      "weathersync:changeTimescale": [
+        "weathersync"
+      ],
+      "weathersync:changeWeather": [
+        "weathersync"
+      ],
+      "weathersync:changeWind": [
+        "weathersync"
+      ],
+      "weathersync:openAdminUi": [
+        "weathersync"
+      ],
+      "weathersync:setMyTime": [
+        "weathersync"
+      ],
+      "weathersync:setMyWeather": [
+        "weathersync"
+      ],
+      "weathersync:toggleForecast": [
+        "weathersync"
+      ],
+      "weathersync:toggleSync": [
+        "weathersync"
+      ],
+      "weathersync:updateAdminUi": [
+        "weathersync"
+      ],
+      "weathersync:updateForecast": [
+        "weathersync"
       ]
     },
     "commands": {
@@ -11874,6 +18007,261 @@
       ],
       "viewwhitelist": [
         "rex-blacksmith"
+      ],
+      "accepttrade": [
+        "rsg-horses"
+      ],
+      "accessories": [
+        "rsg-wardrobe"
+      ],
+      "addpermission": [
+        "rsg-core"
+      ],
+      "addressbook": [
+        "rsg-telegram"
+      ],
+      "adminmenu": [
+        "rsg-adminmenu"
+      ],
+      "armor": [
+        "rsg-wardrobe"
+      ],
+      "bandana": [
+        "rsg-essentials"
+      ],
+      "belt": [
+        "rsg-wardrobe"
+      ],
+      "bloodmoney": [
+        "rsg-hud"
+      ],
+      "bloodmoneyclip": [
+        "rsg-banking"
+      ],
+      "boots": [
+        "rsg-wardrobe"
+      ],
+      "buckle": [
+        "rsg-wardrobe"
+      ],
+      "cash": [
+        "rsg-hud"
+      ],
+      "chaps": [
+        "rsg-wardrobe"
+      ],
+      "cid": [
+        "rsg-core"
+      ],
+      "cloak": [
+        "rsg-wardrobe"
+      ],
+      "closeNUI": [
+        "rsg-multicharacter"
+      ],
+      "closedcoat": [
+        "rsg-wardrobe"
+      ],
+      "closeserver": [
+        "rsg-core"
+      ],
+      "coat": [
+        "rsg-wardrobe"
+      ],
+      "collar1": [
+        "rsg-wardrobe"
+      ],
+      "collar2": [
+        "rsg-wardrobe"
+      ],
+      "cuff": [
+        "rsg-lawman"
+      ],
+      "dress": [
+        "rsg-wardrobe"
+      ],
+      "dv": [
+        "rsg-core"
+      ],
+      "dvall": [
+        "rsg-core"
+      ],
+      "dvo": [
+        "rsg-core"
+      ],
+      "dvp": [
+        "rsg-core"
+      ],
+      "escort": [
+        "rsg-lawman"
+      ],
+      "eyewear": [
+        "rsg-wardrobe"
+      ],
+      "findhorse": [
+        "rsg-horses"
+      ],
+      "gang": [
+        "rsg-core"
+      ],
+      "gauntlets": [
+        "rsg-wardrobe"
+      ],
+      "givemoney": [
+        "rsg-core"
+      ],
+      "gloves": [
+        "rsg-wardrobe"
+      ],
+      "gunbelt": [
+        "rsg-wardrobe"
+      ],
+      "hairaccessories": [
+        "rsg-wardrobe"
+      ],
+      "hat": [
+        "rsg-wardrobe"
+      ],
+      "heal": [
+        "rsg-medic"
+      ],
+      "id": [
+        "rsg-core"
+      ],
+      "info": [
+        "rsg-playerinfo"
+      ],
+      "jail": [
+        "rsg-lawman"
+      ],
+      "job": [
+        "rsg-core"
+      ],
+      "kill": [
+        "rsg-medic"
+      ],
+      "lawbadge": [
+        "rsg-lawman"
+      ],
+      "leftholster": [
+        "rsg-wardrobe"
+      ],
+      "leftring": [
+        "rsg-wardrobe"
+      ],
+      "loadouts": [
+        "rsg-wardrobe"
+      ],
+      "logout": [
+        "rsg-multicharacter"
+      ],
+      "mask": [
+        "rsg-wardrobe"
+      ],
+      "me": [
+        "rsg-core"
+      ],
+      "moneyclip": [
+        "rsg-banking"
+      ],
+      "myjobs": [
+        "rsg-multijob"
+      ],
+      "neckties": [
+        "rsg-wardrobe"
+      ],
+      "neckwear": [
+        "rsg-wardrobe"
+      ],
+      "noclip": [
+        "rsg-core"
+      ],
+      "ooc": [
+        "rsg-core"
+      ],
+      "openserver": [
+        "rsg-core"
+      ],
+      "pants": [
+        "rsg-wardrobe"
+      ],
+      "poncho": [
+        "rsg-wardrobe"
+      ],
+      "removegang": [
+        "rsg-gangmenu"
+      ],
+      "removejob": [
+        "rsg-multijob"
+      ],
+      "removepermission": [
+        "rsg-core"
+      ],
+      "report": [
+        "rsg-adminmenu"
+      ],
+      "revive": [
+        "rsg-medic"
+      ],
+      "rightring": [
+        "rsg-wardrobe"
+      ],
+      "satchels": [
+        "rsg-wardrobe"
+      ],
+      "searchplayer": [
+        "rsg-lawman"
+      ],
+      "setgang": [
+        "rsg-core"
+      ],
+      "setjob": [
+        "rsg-core"
+      ],
+      "setmoney": [
+        "rsg-core"
+      ],
+      "shirt": [
+        "rsg-wardrobe"
+      ],
+      "skirt": [
+        "rsg-wardrobe"
+      ],
+      "sleeve": [
+        "rsg-wardrobe"
+      ],
+      "suspenders": [
+        "rsg-wardrobe"
+      ],
+      "telegram": [
+        "rsg-telegram"
+      ],
+      "testalert": [
+        "rsg-lawman"
+      ],
+      "testwebhook": [
+        "rsg-essentials"
+      ],
+      "togglepvp": [
+        "rsg-core"
+      ],
+      "tp": [
+        "rsg-core"
+      ],
+      "tpm": [
+        "rsg-core"
+      ],
+      "undress": [
+        "rsg-wardrobe"
+      ],
+      "unjail": [
+        "rsg-lawman"
+      ],
+      "vehicle": [
+        "rsg-core"
+      ],
+      "vest": [
+        "rsg-wardrobe"
       ]
     },
     "register_commands": {
@@ -11972,6 +18360,84 @@
       ],
       "validatemenu": [
         "rex-ranch"
+      ],
+      "+": [
+        "ox_lib"
+      ],
+      "-": [
+        "ox_lib"
+      ],
+      "cancelprogress": [
+        "ox_lib"
+      ],
+      "edithud": [
+        "rsg-hud"
+      ],
+      "forecast": [
+        "weathersync"
+      ],
+      "gangmenu": [
+        "rsg-gangmenu"
+      ],
+      "hideui": [
+        "rsg-essentials"
+      ],
+      "infinityammo": [
+        "rsg-weapons"
+      ],
+      "loadskin": [
+        "rsg-appearance"
+      ],
+      "mytime": [
+        "weathersync"
+      ],
+      "myweather": [
+        "weathersync"
+      ],
+      "ox_lib": [
+        "ox_lib"
+      ],
+      "resethud": [
+        "rsg-hud"
+      ],
+      "say": [
+        "chat-redm"
+      ],
+      "serversidehotbar": [
+        "rsg-inventory"
+      ],
+      "sethorsename": [
+        "rsg-horses"
+      ],
+      "slot_": [
+        "rsg-inventory"
+      ],
+      "syncdelay": [
+        "weathersync"
+      ],
+      "time": [
+        "weathersync"
+      ],
+      "timescale": [
+        "weathersync"
+      ],
+      "toggleChat": [
+        "chat-redm"
+      ],
+      "weather": [
+        "weathersync"
+      ],
+      "weathersync": [
+        "weathersync"
+      ],
+      "weatherui": [
+        "weathersync"
+      ],
+      "wind": [
+        "weathersync"
+      ],
+      "zone": [
+        "ox_lib"
       ]
     },
     "callbacks": {
@@ -12223,6 +18689,135 @@
       ],
       "rsg-saloon:server:checkingredients": [
         "rex-saloon"
+      ],
+      "RSGCore:Server:SpawnVehicle": [
+        "rsg-core"
+      ],
+      "hud:server:getoutlawstatus": [
+        "rsg-hud"
+      ],
+      "rsg-adminmenu:server:getPlayerData": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:getallreports": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:getmyreports": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:getplayerinfo": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:getplayers": [
+        "rsg-adminmenu"
+      ],
+      "rsg-adminmenu:server:getreportdetails": [
+        "rsg-adminmenu"
+      ],
+      "rsg-afkkick:server:GetPermissions": [
+        "rsg-essentials"
+      ],
+      "rsg-ammo:server:initializeDb": [
+        "rsg-ammo"
+      ],
+      "rsg-banking:getBankingInformation": [
+        "rsg-banking"
+      ],
+      "rsg-bossmenu:getplayers": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:GetAccount": [
+        "rsg-bossmenu"
+      ],
+      "rsg-bossmenu:server:GetEmployees": [
+        "rsg-bossmenu"
+      ],
+      "rsg-gangmenu:getplayers": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:GetAccount": [
+        "rsg-gangmenu"
+      ],
+      "rsg-gangmenu:server:GetEmployees": [
+        "rsg-gangmenu"
+      ],
+      "rsg-horses:server:CheckComponents": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:GetActiveHorse": [
+        "rsg-horses"
+      ],
+      "rsg-horses:server:GetAllHorses": [
+        "rsg-horses"
+      ],
+      "rsg-lawman:server:getlaw": [
+        "rsg-lawman"
+      ],
+      "rsg-medic:server:getmedics": [
+        "rsg-medic"
+      ],
+      "rsg-multicharacter:server:GetNumberOfCharacters": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:getAppearance": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multicharacter:server:setupCharacters": [
+        "rsg-multicharacter"
+      ],
+      "rsg-multijob:server:checkjobs": [
+        "rsg-multijob"
+      ],
+      "rsg-playerstats:server:getPlayerData": [
+        "rsg-playerinfo"
+      ],
+      "rsg-telegram:server:GetPlayers": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:GetPlayersPostOffice": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:checkWaitingMessages": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:getAddressbook": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:getInbox": [
+        "rsg-telegram"
+      ],
+      "rsg-telegram:server:getTelegramsAmount": [
+        "rsg-telegram"
+      ],
+      "rsg-wardrobe:server:getPlayerSkin": [
+        "rsg-wardrobe"
+      ],
+      "rsg-weaponcomp:server:countprop": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:equipScope": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:getItemBySerial": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:getPlayerWeaponComponents": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weaponcomp:server:unequipScope": [
+        "rsg-weaponcomp"
+      ],
+      "rsg-weapons:server:getEquippedKnives": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:getEquippedWeapons": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:getWeaponBySerial": [
+        "rsg-weapons"
+      ],
+      "rsg-weapons:server:getweaponinfo": [
+        "rsg-weapons"
       ]
     },
     "client_callbacks": {},
@@ -12316,6 +18911,63 @@
       ],
       "wheatseed": [
         "rex-farming"
+      ],
+      "bandage": [
+        "rsg-medic"
+      ],
+      "blood_money_clip": [
+        "rsg-banking"
+      ],
+      "canteen0": [
+        "rsg-canteen"
+      ],
+      "canteen100": [
+        "rsg-canteen"
+      ],
+      "canteen25": [
+        "rsg-canteen"
+      ],
+      "canteen50": [
+        "rsg-canteen"
+      ],
+      "canteen75": [
+        "rsg-canteen"
+      ],
+      "handcuffs": [
+        "rsg-lawman"
+      ],
+      "haysnack": [
+        "rsg-horses"
+      ],
+      "horse_apple": [
+        "rsg-horses"
+      ],
+      "horse_brush": [
+        "rsg-horses"
+      ],
+      "horse_carrot": [
+        "rsg-horses"
+      ],
+      "horse_lantern": [
+        "rsg-horses"
+      ],
+      "horse_reviver": [
+        "rsg-horses"
+      ],
+      "horse_stimulant": [
+        "rsg-horses"
+      ],
+      "horsemeal": [
+        "rsg-horses"
+      ],
+      "money_clip": [
+        "rsg-banking"
+      ],
+      "sugarcube": [
+        "rsg-horses"
+      ],
+      "weapon_repair_kit": [
+        "rsg-weapons"
       ]
     },
     "exports": {
@@ -12386,7 +19038,8 @@
         "rex-crafting"
       ],
       "GetOutlawStatus": [
-        "rex-wanted"
+        "rex-wanted",
+        "rsg-hud"
       ],
       "GetPlayerCookingXP": [
         "rex-cooking"
@@ -12560,6 +19213,413 @@
       ],
       "updateAnimalStats": [
         "rex-ranch"
+      ],
+      "AddGang": [
+        "rsg-core"
+      ],
+      "AddGangs": [
+        "rsg-core"
+      ],
+      "AddItem": [
+        "rsg-core",
+        "rsg-inventory"
+      ],
+      "AddItems": [
+        "rsg-core"
+      ],
+      "AddJob": [
+        "rsg-core"
+      ],
+      "AddJobToPlayer": [
+        "rsg-multijob"
+      ],
+      "AddJobs": [
+        "rsg-core"
+      ],
+      "AddOption": [
+        "rsg-radialmenu"
+      ],
+      "ApplySkin": [
+        "rsg-appearance"
+      ],
+      "ApplySkinMultiChar": [
+        "rsg-appearance"
+      ],
+      "CanAddItem": [
+        "rsg-inventory"
+      ],
+      "CanTakeNewJob": [
+        "rsg-multijob"
+      ],
+      "ChangeText": [
+        "rsg-core"
+      ],
+      "CheckActiveHorse": [
+        "rsg-horses"
+      ],
+      "CheckHorseBondingLevel": [
+        "rsg-horses"
+      ],
+      "CheckHorseLevel": [
+        "rsg-horses"
+      ],
+      "CheckWeaponSerial": [
+        "rsg-weapons"
+      ],
+      "ClearInventory": [
+        "rsg-inventory"
+      ],
+      "ClearStash": [
+        "rsg-inventory"
+      ],
+      "CloseInventory": [
+        "rsg-inventory"
+      ],
+      "CreateInventory": [
+        "rsg-inventory"
+      ],
+      "CreateShop": [
+        "rsg-inventory"
+      ],
+      "DeleteInventory": [
+        "rsg-inventory"
+      ],
+      "DoesShopExist": [
+        "rsg-inventory"
+      ],
+      "DrawText": [
+        "rsg-core"
+      ],
+      "EquippedWeapons": [
+        "rsg-weapons"
+      ],
+      "ExploitBan": [
+        "rsg-core"
+      ],
+      "ForceDropItem": [
+        "rsg-inventory"
+      ],
+      "GenerateCSRFToken": [
+        "rsg-core"
+      ],
+      "GetAmmoTypes": [
+        "rsg-ammo"
+      ],
+      "GetBodyComponents": [
+        "rsg-appearance"
+      ],
+      "GetBodyCurrentComponentHash": [
+        "rsg-appearance"
+      ],
+      "GetClothesCache": [
+        "rsg-appearance"
+      ],
+      "GetClothesComponentId": [
+        "rsg-appearance"
+      ],
+      "GetClothesComponents": [
+        "rsg-appearance"
+      ],
+      "GetClothesCurrentComponentHash": [
+        "rsg-appearance"
+      ],
+      "GetComponentId": [
+        "rsg-appearance"
+      ],
+      "GetComponentsMax": [
+        "rsg-appearance"
+      ],
+      "GetCoreObject": [
+        "rsg-core"
+      ],
+      "GetCoreVersion": [
+        "rsg-core"
+      ],
+      "GetCurrentTemperature": [
+        "rsg-hud"
+      ],
+      "GetFirstSlotByItem": [
+        "rsg-inventory"
+      ],
+      "GetFreeWeight": [
+        "rsg-inventory"
+      ],
+      "GetInventory": [
+        "rsg-inventory"
+      ],
+      "GetItemByName": [
+        "rsg-inventory"
+      ],
+      "GetItemBySlot": [
+        "rsg-inventory"
+      ],
+      "GetItemCount": [
+        "rsg-inventory"
+      ],
+      "GetItemWeight": [
+        "rsg-inventory"
+      ],
+      "GetItemsByName": [
+        "rsg-inventory"
+      ],
+      "GetJobCount": [
+        "rsg-multijob"
+      ],
+      "GetMaxJobs": [
+        "rsg-multijob"
+      ],
+      "GetMaxTexturesForModel": [
+        "rsg-appearance"
+      ],
+      "GetMenuData": [
+        "rsg-menubase"
+      ],
+      "GetPlayerJobs": [
+        "rsg-multijob"
+      ],
+      "GetSlots": [
+        "rsg-inventory"
+      ],
+      "GetSlotsByItem": [
+        "rsg-inventory"
+      ],
+      "GetTotalWeight": [
+        "rsg-inventory"
+      ],
+      "GetUsedWeapons": [
+        "rsg-weapons"
+      ],
+      "GetWeapons": [
+        "rsg-core"
+      ],
+      "HasItem": [
+        "rsg-inventory"
+      ],
+      "HasJob": [
+        "rsg-multijob"
+      ],
+      "HideText": [
+        "rsg-core"
+      ],
+      "IsBathingActive": [
+        "rsg-bathing"
+      ],
+      "IsBirdPostApproaching": [
+        "rsg-telegram"
+      ],
+      "IsCothingActive": [
+        "rsg-appearance"
+      ],
+      "KeyPressed": [
+        "rsg-core"
+      ],
+      "LoadInventory": [
+        "rsg-inventory"
+      ],
+      "OpenInventory": [
+        "rsg-inventory"
+      ],
+      "OpenInventoryById": [
+        "rsg-inventory"
+      ],
+      "OpenMultijobMenu": [
+        "rsg-multijob"
+      ],
+      "OpenShop": [
+        "rsg-inventory"
+      ],
+      "RemoveGang": [
+        "rsg-core"
+      ],
+      "RemoveItem": [
+        "rsg-core",
+        "rsg-inventory"
+      ],
+      "RemoveJob": [
+        "rsg-core"
+      ],
+      "RemoveJobFromPlayer": [
+        "rsg-multijob"
+      ],
+      "RemoveOption": [
+        "rsg-radialmenu"
+      ],
+      "RemoveWeaponFromPeds": [
+        "rsg-weapons"
+      ],
+      "RestockShop": [
+        "rsg-inventory"
+      ],
+      "SaveInventory": [
+        "rsg-inventory"
+      ],
+      "SaveStash": [
+        "rsg-inventory"
+      ],
+      "SetBeard": [
+        "rsg-appearance"
+      ],
+      "SetFaceOverlays": [
+        "rsg-appearance"
+      ],
+      "SetField": [
+        "rsg-core"
+      ],
+      "SetHair": [
+        "rsg-appearance"
+      ],
+      "SetInventory": [
+        "rsg-inventory"
+      ],
+      "SetItemData": [
+        "rsg-inventory"
+      ],
+      "SetMethod": [
+        "rsg-core"
+      ],
+      "UpdateGang": [
+        "rsg-core"
+      ],
+      "UpdateItem": [
+        "rsg-core"
+      ],
+      "UpdateJob": [
+        "rsg-core"
+      ],
+      "UseItem": [
+        "rsg-inventory"
+      ],
+      "UsedWeapons": [
+        "rsg-weapons"
+      ],
+      "addMessage": [
+        "chat-redm"
+      ],
+      "addSuggestion": [
+        "chat-redm"
+      ],
+      "createPrompt": [
+        "rsg-core"
+      ],
+      "createPromptGroup": [
+        "rsg-core"
+      ],
+      "deletePrompt": [
+        "rsg-core"
+      ],
+      "deletePromptGroup": [
+        "rsg-core"
+      ],
+      "editDoor": [
+        "ox_doorlock"
+      ],
+      "getAllDoors": [
+        "ox_doorlock"
+      ],
+      "getClosestDoor": [
+        "ox_doorlock"
+      ],
+      "getClosestDoorId": [
+        "ox_doorlock"
+      ],
+      "getDoor": [
+        "ox_doorlock"
+      ],
+      "getDoorFromName": [
+        "ox_doorlock"
+      ],
+      "getDoorIdFromEntity": [
+        "ox_doorlock"
+      ],
+      "getForecast": [
+        "weathersync"
+      ],
+      "getLocale": [
+        "ox_lib"
+      ],
+      "getPrompt": [
+        "rsg-core"
+      ],
+      "getPromptGroup": [
+        "rsg-core"
+      ],
+      "getTime": [
+        "weathersync"
+      ],
+      "getWeather": [
+        "weathersync"
+      ],
+      "getWind": [
+        "weathersync"
+      ],
+      "isSnowOnGround": [
+        "weathersync"
+      ],
+      "pickClosestDoor": [
+        "ox_doorlock"
+      ],
+      "registerMessageHook": [
+        "chat-redm"
+      ],
+      "registerMode": [
+        "chat-redm"
+      ],
+      "resetSyncDelay": [
+        "weathersync"
+      ],
+      "resetTime": [
+        "weathersync"
+      ],
+      "resetTimescale": [
+        "weathersync"
+      ],
+      "resetWeather": [
+        "weathersync"
+      ],
+      "resetWeatherPattern": [
+        "weathersync"
+      ],
+      "resetWind": [
+        "weathersync"
+      ],
+      "setDoorState": [
+        "ox_doorlock"
+      ],
+      "setMyTime": [
+        "weathersync"
+      ],
+      "setMyWeather": [
+        "weathersync"
+      ],
+      "setSyncDelay": [
+        "weathersync"
+      ],
+      "setSyncEnabled": [
+        "weathersync"
+      ],
+      "setTime": [
+        "weathersync"
+      ],
+      "setTimescale": [
+        "weathersync"
+      ],
+      "setWeather": [
+        "weathersync"
+      ],
+      "setWeatherPattern": [
+        "weathersync"
+      ],
+      "setWind": [
+        "weathersync"
+      ],
+      "toggleSync": [
+        "weathersync"
+      ],
+      "useClosestDoor": [
+        "ox_doorlock"
+      ],
+      "weaponInHands": [
+        "rsg-weapons"
       ]
     },
     "natives": {
@@ -16656,7 +23716,22 @@
       ],
       "Wrap": [
         "rex-lootnpc"
-      ]
+      ],
+      "Player": [],
+      "SetCanAttackFriendly": [],
+      "Citizen.InvokeNative": [],
+      "SetPedIntoVehicle": [],
+      "RestorePlayerStamina": [],
+      "GetActivePlayers": [],
+      "SetPedSuffersCriticalHits": [],
+      "AddStateBagChangeHandler": [],
+      "NetworkSetFriendlyFireOption": [],
+      "SetPlayerHealthRechargeMultiplier": [],
+      "GetPlayerFromServerId": [],
+      "ClearTimecycleModifier": [],
+      "SetBlipRoute": [],
+      "SetTimecycleModifier": [],
+      "GetClosestVehicle": []
     },
     "config_keys": {
       "ANIMAL_ID_MAX": [
