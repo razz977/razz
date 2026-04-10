@@ -1,0 +1,51 @@
+Project AI coding rules (RSG-first):
+
+Always follow these files in this exact order before generating code:
+1) RSG_UNIFIED_REGULATION.md
+2) RSG_UNIFIED_NATIVE_FUNCTIONS.md
+3) RSG_UNIFIED_FUNCTION_NATIVE_INDEX.json
+4) CURSOR_RSG_RULESET.md
+5) RSG_ZERO_TO_SCRIPT_PLAYBOOK.md
+
+Legacy references (fallback only, keep compatibility):
+- RSG_ORG_FUNCTION_INDEX.json
+- RSG_ORG_REGULAMENT_ABSOLUT_COMPLET.md
+- RSG_ORG_REGULAMENT_COMPLET.md
+- RSG_DOCS_REGULAMENT_SUPLIMENTAR.md
+- RSG_DOCS_AUDIT_INDEX.json
+- RSG_NATIVE_CATALOG.md
+
+Mandatory behavior:
+- Reuse existing RSG patterns/functions/events from the indexed files when available.
+- Do not invent alternative flows if an RSG model already exists.
+- Keep sensitive validation server-side only.
+- Never process money/item rewards on client side.
+- Prefer RSG APIs and exports (rsg-core, rsg-inventory, callbacks, prompts, statebags).
+- Use only native patterns allowed by RSG_NATIVE_CATALOG.md.
+- Respect deprecated/forbidden patterns documented in CURSOR_RSG_RULESET.md.
+- Prefer callbacks for request-response flows and events for one-way flows.
+- Respect lifecycle patterns: OnPlayerLoaded for init and OnPlayerUnload for cleanup.
+- Use StateBags for frequently-read live status sync; avoid event/callback spam in loops.
+- Use mandatory resource file structure:
+  - `fxmanifest.lua` (root)
+  - `config.lua` (root)
+  - `client/client.lua`
+  - `server/server.lua`
+  - `locales/ro.lua`
+- All user-facing texts must be centralized in `locales/ro.lua`.
+- Romanian locale text must be written without Romanian diacritics.
+- In `config.lua`, every configurable line must include an inline comment on the same line (not above/below).
+- Keep `config.lua` clean and ordered by sections (General, NPC/Locations, Jobs, Economy, Security, UI/Blips, Debug).
+- Scope must be strict to the request:
+  - If user asks only "add NPC", implement only NPC-related changes.
+  - If user asks only "modify NPC blip name", change only blip/name-related config/code.
+  - Do not add unrelated systems, helpers, events, callbacks, commands, or dependencies.
+  - Use only relevant functions/natives for the requested feature in config/client/server.
+
+When user provides server rules/regulation:
+- Convert each rule into technical checks (permission, distance, item/money validation, cooldown, logs).
+- Apply those checks in server code paths.
+
+When building from scratch:
+- Follow staged implementation from RSG_ZERO_TO_SCRIPT_PLAYBOOK.md.
+- Implement incrementally (function by function), preserving existing code.
