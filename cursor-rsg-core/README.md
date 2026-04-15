@@ -1,6 +1,6 @@
-## Cursor RSG Core (RedM) - Minimal Pack
+## Cursor RSG Core (RedM) - Full Native Pack
 
-Acest pachet este minimul util pentru a lucra bine cu scripturi RSG in Cursor, fara sa incarci tot repository-ul CFX-Developer-Tools.
+Acest pachet este varianta completa pentru Cursor daca vrei sa generezi scripturi RSG optimizate, inclusiv NUI si cautare in baza de natives.
 
 ### Ce contine
 
@@ -9,20 +9,39 @@ Acest pachet este minimul util pentru a lucra bine cu scripturi RSG in Cursor, f
 - `templates/rsg/client/main.lua` - schelet client
 - `templates/rsg/server/main.lua` - schelet server
 - `prompts/rsg-prompts.md` - prompt-uri gata de folosit in Cursor
+- `.cursor/mcp.json` - configurare MCP pentru Cursor
+- `mcp-server/` - server MCP local cu tools pentru scaffolding, manifest, events, docs, framework detect
+- `mcp-server/data/natives_rdr3.json` - baza de native-uri RDR3 (plus alte date utile)
+- `skills/` - skill-uri utile pentru native lookup, NUI, client-server, performanta, framework detect, fxmanifest
+- `rules/` - reguli de securitate, performanta, manifest si conventii Lua
 
-### Ai nevoie de toate fisierele din repo-ul original?
+### Ce iti ofera concret pentru RSG
 
-Nu. Pentru a scrie scripturi bune pe **RSG**, ai nevoie in principal de:
+1. Lookup rapid de native-uri RDR3 direct din AI
+2. Structura corecta pentru resource-uri RSG
+3. Best practices de securitate server-side
+4. Guidance pentru NUI + comunicare client/server
+5. Reguli de performanta pentru scripturi mai stabile
 
-1. un template corect de resource
-2. reguli bune de generatie cod
-3. prompt-uri clare pentru AI
+### Setup rapid in Cursor
 
-Restul (MCP server complet, skill-uri pentru alte framework-uri, template-uri FiveM) sunt utile, dar optionale pentru fluxul strict RSG.
+1. Deschide folderul `cursor-rsg-core` in Cursor.
+2. Instaleaza dependentele MCP:
+   - `cd mcp-server`
+   - `pip install -r requirements.txt`
+3. Reincarca Cursor. MCP server-ul va porni automat cand tool-urile sunt invocate.
 
-### Cum folosesti rapid
+### Prompt recomandat pentru inceput
 
-1. Deschide acest workspace in Cursor.
-2. Cere in chat:
-   - "Genereaza un resource RedM numit `rsg-hunting` folosind rsg-core, cu config/client/server."
-3. Copiaza resursa rezultata in server-ul tau RedM si adauga `ensure rsg-hunting` in `server.cfg`.
+```text
+Genereaza un resource RedM numit "rsg-hunting" pentru rsg-core, cu NUI complet.
+Include:
+- fxmanifest.lua corect pentru rdr3
+- config.lua
+- client/main.lua
+- server/main.lua
+- html/ui + js + css pentru NUI
+- validari server-side pentru toate reward-urile
+- optimizari de performanta (fara loop-uri inutile)
+- evenimente prefixate cu numele resursei
+```
