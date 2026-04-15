@@ -12,7 +12,7 @@ Acest pachet este varianta completa pentru Cursor daca vrei sa generezi scriptur
 - `.cursor/mcp.json` - configurare MCP pentru Cursor
 - `mcp-server/` - server MCP local cu tools pentru scaffolding, manifest, events, docs, framework detect
 - `mcp-server/data/natives_rdr3.json` - baza de native-uri RDR3 (plus alte date utile)
-- `skills/` - skill-uri utile pentru native lookup, NUI, client-server, performanta, framework detect, fxmanifest
+- `skills/` - skill-uri utile pentru native lookup, NUI, client-server, performanta, framework detect, fxmanifest, database integration
 - `rules/` - reguli de securitate, performanta, manifest si conventii Lua
 
 ### Ce iti ofera concret pentru RSG
@@ -22,6 +22,7 @@ Acest pachet este varianta completa pentru Cursor daca vrei sa generezi scriptur
 3. Best practices de securitate server-side
 4. Guidance pentru NUI + comunicare client/server
 5. Reguli de performanta pentru scripturi mai stabile
+6. Ghid complet pentru integrare baza de date (oxmysql), query patterns si schema patterns
 
 ### Setup rapid in Cursor
 

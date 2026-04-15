@@ -48,7 +48,7 @@ Genereaza un resource RedM numit "rsg-ui-jobs" cu rsg-core si NUI complet:
 - config.lua pentru toggle debug, keybind si limite
 
 Conditii:
-- fara logică sensibila in NUI/client
+- fara logica sensibila in NUI/client
 - explica pe scurt ce ai validat pe server
 ```
 
@@ -60,5 +60,23 @@ Vreau sa folosesti native RDR3 relevante pentru un sistem de interactiune:
 2) apoi genereaza implementarea finala in resource RSG
 3) include fallback-uri daca un native nu returneaza date valide
 4) optimizeaza tick-urile pentru performanta stabila
+```
+
+### 7) RSG + baza de date completa (oxmysql)
+
+```
+Genereaza un resource RedM numit "rsg-crafting" cu rsg-core si oxmysql.
+Include:
+- tabel SQL pentru retete si progres jucator
+- fisier migrations/001_init.sql
+- server/main.lua cu query-uri parametrizate (fara concatenari SQL)
+- tranzactie pentru consum iteme + reward
+- validare stricta pe server pentru toate datele venite din client/NUI
+- endpoint de incarcare a datelor la conectare
+
+Cerintele de siguranta:
+- niciun reward calculat pe client
+- rate limit pe evenimentele care scriu in DB
+- log pentru erori de query
 ```
 
