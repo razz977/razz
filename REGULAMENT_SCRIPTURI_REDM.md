@@ -61,7 +61,8 @@ Reguli:
 - Nu hardcoda in cod: coords, iteme, joburi, preturi, durate, sanse.
 - Tot ce este configurabil merge in `shared/config.lua`.
 - `shared/config.lua` contine doar setari declarative (fara logica de business, fara event handlers, fara functii runtime).
-- Orice valoare operationala trebuie expusa in config: timpi, cooldown, distante, jobs, iteme, reward ranges, blips, prompts, permisiuni, toggles.
+- In config pui doar setari tehnice/structurale: nume NPC, nume blips, coords, iteme, jobs, timpi, sanse, toggles.
+- In config NU pui texte de notificari, prompt-uri, mesaje de eroare sau texte de meniu.
 - Daca fisierul devine mare, separa in module pe responsabilitati.
 - Daca scriptul creeaza resurse runtime, cleanup la stop este obligatoriu.
 
@@ -213,9 +214,15 @@ Regula: pornesti de la pattern-uri validate, nu de la cod improvizat.
 
 ## 8.1 Surse obligatorii natives
 
-- `mcp-server/data/natives_rdr3.json` (CFX-Developer-Tools): 5875 natives, 84 categorii;
+- `redm-reference/redm-natives-complete.json` (obligatoriu principal, local in proiect): 5875 natives, 84 categorii;
 - https://rdr3natives.com/;
 - https://docs.fivem.net/natives/.
+
+Dependenta obligatorie:
+
+- orice script nou sau modificare de feature porneste cu consultarea fisierului `redm-reference/redm-natives-complete.json`;
+- daca fisierul lipseste, task-ul se considera incomplet pana este restaurat;
+- selectie de natives se face prioritar din acest fisier local, apoi se valideaza in sursele online daca e nevoie.
 
 ## 8.2 Reguli tehnice natives
 
@@ -436,7 +443,7 @@ In config trebuie sa poti seta:
 - iteme/cantitati/reward pools;
 - coords/zones/blips/ped spawns;
 - timpi/cooldown/rate limits/distante;
-- chei locale folosite de UI/notificari;
+- nume NPC, nume blips, nume zones/markers;
 - setari NUI/DB daca feature-ul le foloseste.
 
 Nu pui in config:
@@ -444,6 +451,8 @@ Nu pui in config:
 - logica gameplay;
 - evenimente client/server;
 - functii care depind de runtime.
+- texte de notificari/prompt-uri/erori/meniu;
+- chei locale de UI.
 
 ---
 
@@ -457,11 +466,12 @@ Nu pui in config:
 6. Creezi `locales/ro.json` si pui toate textele.
 7. Implementezi server logic (validari + autoritate).
 8. Implementezi client logic (UX, prompt-uri, animatii).
-9. Alegi natives corecte (side + categorie + cleanup).
-10. Optimizezi loop-uri/events/memorie.
-11. Testezi restart resource + edge cases.
-12. Cureti codul mort.
-13. Rulezi checklist-ul de calitate.
+9. Verifici si folosesti `redm-reference/redm-natives-complete.json` pentru selectia de natives.
+10. Alegi natives corecte (side + categorie + cleanup).
+11. Optimizezi loop-uri/events/memorie.
+12. Testezi restart resource + edge cases.
+13. Cureti codul mort.
+14. Rulezi checklist-ul de calitate.
 
 ---
 
@@ -473,6 +483,7 @@ Scriptul este gata doar daca:
 - respecta regulile CFX de manifest, performanta si securitate;
 - are locale `ro.json` complet (fara diacritice);
 - este server-authoritative;
+- foloseste `redm-reference/redm-natives-complete.json` ca sursa obligatorie de natives;
 - foloseste corect natives pentru RedM;
 - nu contine cod mort;
 - nu are hardcoding inutil;

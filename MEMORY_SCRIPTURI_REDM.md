@@ -8,8 +8,9 @@ Scopul este consistenta intre scripturi, eliminarea codului vechi si implementar
 ## 1) Principii fixe
 
 - Server-authoritative: orice logica critica se valideaza pe server.
-- Config-first: in `shared/config.lua` exista doar configurari si toate valorile variabile se seteaza de acolo.
+- Config-first: in `shared/config.lua` exista doar configurari tehnice (nume NPC, blipuri, coords, iteme, timpi, toggle-uri), fara texte.
 - Locale-first: toate textele stau in `locales/ro.json` (romana fara diacritice).
+- Native-file-first: selectia de native se face din `redm-reference/redm-natives-complete.json`, apoi se valideaza in docs oficiale.
 - Refactor continuu: la fiecare modificare se elimina codul vechi/nefolositor dupa verificare referinte.
 - Zero modificari colaterale: schimbi strict ce s-a cerut.
 
@@ -48,7 +49,7 @@ In `shared/config.lua` sunt permise doar:
 - sanse/procente;
 - preturi/reward ranges;
 - modele/animatii/scenario;
-- blip/ui settings;
+- blip settings;
 - mapari de keybind-uri;
 - toggles framework integration.
 
@@ -57,7 +58,16 @@ Nu pui in config:
 - logica operationala;
 - functii de business;
 - event handlers;
+- texte/notificari/prompt-uri/mesaje UI;
 - query-uri SQL hardcoded in afara contextului de setari.
+
+---
+
+## 3.1 Native dependency policy
+
+- Fiecare script nou sau modificat verifica `redm-reference/redm-natives-complete.json`.
+- Pentru fiecare feature se aleg nativele din acest fisier (name/hash/side/category).
+- Daca nativele nu sunt trecute prin aceasta verificare, taskul este incomplet.
 
 ---
 
@@ -68,8 +78,10 @@ Nu pui in config:
 3. Elimin codul vechi/nefolositor (dead code) care ramane dupa schimbare.
 4. Verific sa nu existe notificari hardcodate ramase.
 5. Mut in config orice valoare noua configurabila.
-6. Verific cleanup pentru entities/blips/prompts/NUI focus.
-7. Rulez validare finala pe side-effects.
+6. Confirm ca nu am pus texte in config.
+7. Verific cleanup pentru entities/blips/prompts/NUI focus.
+8. Verific nativele folosite cu `redm-reference/redm-natives-complete.json`.
+9. Rulez validare finala pe side-effects.
 
 ---
 
