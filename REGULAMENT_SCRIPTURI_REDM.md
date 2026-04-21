@@ -1,71 +1,94 @@
-# Regulament pentru creare/modificare scripturi RedM (standard Rex + CFX)
+# Regulament complet pentru scripturi RedM (Rex style + CFX Developer Tools)
 
 ## 1) Scop
 
-Acest regulament defineste standardul obligatoriu pentru scripturile RedM:
+Acest regulament este standardul obligatoriu pentru fiecare script nou sau modificat.
+
+Obiective:
 
 - structura de proiect tip RexShackGaming;
-- cod optimizat, curat, sigur si usor de mentinut;
-- compatibilitate prioritara cu `rsg-core`, cu posibilitate de adaptare pentru `vorp_core`;
-- localizare centralizata in `locales/ro.json` (romana fara diacritice);
-- modificari strict la cerinta, fara schimbari colaterale.
+- cod performant, sigur, modular si usor de mentinut;
+- integrare prioritara cu `rsg-core` si suport optional `vorp_core`;
+- localizare 100% in `locales/ro.json` (romana fara diacritice);
+- proces de lucru complet, bazat pe bune practici din CFX-Developer-Tools;
+- utilizare corecta a tuturor categoriilor de natives RedM relevante.
 
 ---
 
-## 2) Structura obligatorie a scriptului (model Rex)
+## 2) Surse obligatorii folosite pentru acest standard
 
-Orice script nou trebuie sa respecte structura:
+Acest regulament combina informatii din:
+
+- repository-uri RexShackGaming (structura si flow practic de resource RedM);
+- CFX-Developer-Tools:
+  - 9 skills;
+  - 6 rules;
+  - 24 snippets;
+  - 11 templates;
+  - baza de natives RDR3 (5875 natives, 84 categorii);
+  - baza de events (101 evenimente);
+  - standarde manifest, performanta, securitate, state bags, NUI, DB.
+
+---
+
+## 3) Structura obligatorie a scriptului (model Rex)
 
 ```text
 my-script/
 ├── fxmanifest.lua
 ├── client/
 │   ├── client.lua
-│   ├── npcs.lua                 # optional, daca exista NPC logic
-│   └── modules/*.lua            # optional, pe feature-uri
+│   ├── npcs.lua                 # optional
+│   ├── prompts.lua              # optional
+│   └── modules/*.lua            # optional
 ├── server/
 │   ├── server.lua
-│   ├── versionchecker.lua       # recomandat, dupa model Rex
-│   └── modules/*.lua            # optional, pe feature-uri
+│   ├── versionchecker.lua       # recomandat dupa model Rex
+│   └── modules/*.lua            # optional
 ├── shared/
-│   ├── config.lua
-│   └── cleanup.lua              # obligatoriu daca scriptul creeaza entitati/props persistente
+│   ├── config.lua               # obligatoriu
+│   └── cleanup.lua              # obligatoriu daca scriptul creeaza entities/props/blips
 ├── locales/
 │   └── ro.json                  # obligatoriu
-├── installation/                # optional (items/jobs/sql)
+├── installation/                # optional
 │   ├── shared_items.lua
 │   ├── shared_jobs.lua
 │   └── database.sql
-└── README.md                    # recomandat
+└── README.md
 ```
 
 Reguli:
 
-- Nu hardcoda valori importante in client/server (coords, iteme, joburi, timpi, preturi) -> merg in `shared/config.lua`.
-- Split pe module daca fisierul depaseste complexitatea acceptata (single-responsibility).
-- Daca exista props/blips/entities create runtime, trebuie mecanism de cleanup.
+- Nu hardcoda in cod: coords, iteme, joburi, preturi, durate, sanse.
+- Tot ce este configurabil merge in `shared/config.lua`.
+- Daca fisierul devine mare, separa in module pe responsabilitati.
+- Daca scriptul creeaza resurse runtime, cleanup la stop este obligatoriu.
 
 ---
 
-## 3) Manifest standard (Rex style + CFX best practices)
+## 4) Manifest standard (Rex + CFX)
 
-Template de baza pentru RedM + RSG:
+Template recomandat pentru script nou RedM:
 
 ```lua
 fx_version 'cerulean'
-game 'rdr3'
+games { 'rdr3' }
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
 
 name 'my-script'
 author 'YourName/Team'
 description 'Short script description'
 version '1.0.0'
-url 'https://discord.gg/yourdiscord'
+repository 'https://github.com/your/repo'
+
+dependencies {
+    'rsg-core',
+    'ox_lib'
+}
 
 shared_scripts {
     '@ox_lib/init.lua',
-    'shared/config.lua',
-    -- 'shared/cleanup.lua', -- daca este folosit
+    'shared/config.lua'
 }
 
 client_scripts {
@@ -76,11 +99,6 @@ server_scripts {
     'server/*.lua'
 }
 
-dependencies {
-    'rsg-core',
-    'ox_lib'
-}
-
 files {
     'locales/*.json'
 }
@@ -88,30 +106,25 @@ files {
 
 Note:
 
-- Pentru consistenta cu multe scripturi Rex existente se poate pastra `lua54 'yes'` in proiectele legacy.
-- Pentru scripturi noi, preferinta CFX actuala este sa nu depinzi de flaguri legacy inutile.
-- Daca scriptul foloseste inventory/target/mysql, se declara explicit in `dependencies`.
+- Pentru scripturi noi nu se foloseste `lua54 'yes'` (deprecated in standardele CFX moderne).
+- Pentru scripturi Rex legacy, se poate pastra doar daca proiectul existent il foloseste deja.
+- Daca exista NUI, adaugi `ui_page` + toate fisierele in `files`.
+- Daca exista DB, adaugi `@oxmysql/lib/MySQL.lua` in `server_scripts`.
 
 ---
 
-## 4) Localizare obligatorie (cerinta fixa)
+## 5) Localizare obligatorie (cerinta fixa)
 
-### Regula critica
-
-La orice script nou se creeaza obligatoriu:
+La orice script nou se creeaza:
 
 `locales/ro.json`
 
-Conditii:
+Conditii obligatorii:
 
 - limba romana fara diacritice;
-- toate textele de notificari, meniuri, prompt-uri, erori, succes, warning trebuie sa fie in `locales/ro.json`;
-- in cod nu se lasa texte hardcodate (exceptie: fallback tehnic minimal temporar);
-- chei consistente, ex:
-  - `notify_success_mined`
-  - `notify_error_no_item`
-  - `menu_open_storage`
-  - `prompt_press_e`
+- toate notificarile, prompt-urile, meniurile, erorile, textele UI sunt in locale;
+- in cod nu se lasa texte hardcodate, doar chei locale;
+- orice text nou trebuie adaugat in `locales/ro.json`.
 
 Exemplu:
 
@@ -126,125 +139,319 @@ Exemplu:
 
 ---
 
-## 5) Arhitectura client/server
+## 6) Arhitectura client-server obligatorie
 
-### Obligatii
+Reguli:
 
-- Prefix evenimente: `resourceName:eventName` (ex: `rex-mining:server:MineReward`).
-- Serverul este autoritatea finala pentru validari/reward/inventory.
-- In handler server:
-  - prima linie: `local src = source` (sau `local source = source`);
-  - validezi parametrii (tip/range/whitelist);
-  - verifici player-ul si drepturile inainte de orice actiune.
-- Pentru request-response folosesti callback pattern clar.
-- Pentru stare persistenta/sincronizata (nu one-shot), preferi State Bags.
+- Prefix evenimente: `resourceName:eventName`.
+- Serverul este autoritate finala (inventory, rewards, bani, validari).
+- In server event:
+  - prima linie: `local src = source`;
+  - validezi toate argumentele (tip, range, whitelist);
+  - verifici player-ul inainte de orice logica.
+- Request/response se face prin callback pattern.
+- Pentru stare persistenta se prefera State Bags, nu spam de net events.
 
-### Framework policy
+Framework policy:
 
-- Prioritar: `rsg-core` (`exports['rsg-core']:GetCoreObject()`).
-- Optional suport VORP:
-  - `local VORPcore = exports.vorp_core:GetCore()`
-  - adaptoare separate, fara a amesteca haotic API-urile.
-
----
-
-## 6) Regulament natives (RedM/CFX)
-
-### Cerinta "toate nativele"
-
-Setul complet de referinta obligatoriu pentru dezvoltare este:
-
-- https://rdr3natives.com/
-- https://docs.fivem.net/natives/
-
-Regula: orice implementare trebuie sa aleaga native-ul corect ca side (client/server) si categorie.
-
-### Reguli tehnice native
-
-- Nu folosi native server-only pe client si invers.
-- Pentru string literal hashes, preferi backtick compile-time in Lua (ex: `` `p_pickaxe01x` ``), nu `GetHashKey()` repetitiv.
-- Caching pentru rezultate frecvente (ped, coords, entity handles) in loop-uri.
-- Orice entity creat prin native trebuie sters pe `onResourceStop`.
-
-### Categorii native care trebuie verificate in orice script RedM complex
-
-- Player/Ped
-- Entity/Object
-- Tasks/Animation/Scenario
-- Network/Event transport
-- UI/Prompt/Blip/Notification
-- Camera/Audio (daca feature-ul cere)
-- Time/Weather (daca feature-ul cere)
+- prioritar RSG: `exports['rsg-core']:GetCoreObject()`;
+- optional VORP: `exports.vorp_core:GetCore()`;
+- adaptoare separate pentru RSG/VORP (fara amestec haotic de API).
 
 ---
 
-## 7) Performanta (obligatoriu)
+## 7) Standard complet CFX-Developer-Tools de aplicat
 
-Reguli minime:
+### 7.1 Skills care trebuie avute in vedere
 
-- Fiecare `while true` are `Wait(...)`.
-- `Wait(0)` doar pentru draw/per-frame input strict necesar.
-- Distante: `#(a - b)` cu vectori, nu `GetDistanceBetweenCoords`.
-- Evita spam de net events (>1/s/player) fara motiv.
-- Rate limiting pe server pentru actiuni exploatabile.
-- Fara thread-uri inutile; thread separat doar unde aduce claritate/perf.
-- Tinta idle resmon: sub `0.2ms` pentru script bine optimizat.
+1. Resource Scaffolding
+2. Native Functions
+3. fxmanifest
+4. Client-Server Patterns
+5. Framework Detection
+6. Performance Optimization
+7. NUI Development
+8. Database Integration
+9. State Bags
+
+Regula: cand construiesti un script nou, tratezi aceste 9 puncte ca checklist obligatoriu.
+
+### 7.2 Rules care trebuie respectate
+
+1. CFX Lua conventions
+2. CFX JavaScript conventions (daca exista JS)
+3. CFX C# conventions (daca exista C#)
+4. fxmanifest standards
+5. Security best practices
+6. Performance rules
+
+### 7.3 Snippets standard de referinta
+
+Lua snippets utile:
+
+- client-event
+- server-event
+- thread-loop
+- register-command
+- nui-callback
+- export-function
+- config-template
+- state-bag-entity
+- state-bag-player
+- state-bag-handler
+- backtick-hash
+- routing-bucket
+- variable-attributes
+- ace-permissions
+
+Regula: pornesti de la pattern-uri validate, nu de la cod improvizat.
 
 ---
 
-## 8) Securitate (obligatoriu)
+## 8) Natives RedM - proces complet ("tot, tot")
 
-- Never trust client.
-- Verifici `source`, iteme, cantitati, stari, cooldown-uri pe server.
-- Comenzile admin cu permisiuni (`restricted`/ACE).
-- Nu expui logica server-only pe client.
-- Fara token/parole in fisiere resource; se folosesc convars/env.
-- Sanitizare la orice input care ajunge in comenzi/query-uri.
+## 8.1 Surse obligatorii natives
+
+- `mcp-server/data/natives_rdr3.json` (CFX-Developer-Tools): 5875 natives, 84 categorii;
+- https://rdr3natives.com/;
+- https://docs.fivem.net/natives/.
+
+## 8.2 Reguli tehnice natives
+
+- Nu amesteci side-uri (client/server/shared).
+- Pentru string literal hashes in Lua folosesti backtick compile-time.
+- `GetHashKey()` doar cand hash-ul este dinamic, apoi cache-uiesti rezultatul.
+- Orice entity/prop creat prin native trebuie sters la `onResourceStop`.
+- Pentru native neclar, validezi semnatura (params/return/side) inainte de implementare.
+
+## 8.3 Native coverage checklist pe feature
+
+La fiecare feature nou, documentezi intern minim:
+
+- native name;
+- hash;
+- side (client/server/shared);
+- scopul in feature;
+- validari necesare;
+- fallback (daca native-ul esueaza).
+
+## 8.4 Categorii RDR3 native (84) care trebuie luate in calcul
+
+- AICOVERPOINT
+- AITRANSPORT
+- ANIMSCENE
+- ATTRIBUTE
+- AUDIO
+- BADSPORT
+- BOUNTY
+- BRAIN
+- BUILTIN
+- CAM
+- CFX
+- CLOCK
+- COLLECTION
+- COMPANION
+- COMPENDIUM
+- CREW
+- DATABINDING
+- DATAFILE
+- DEBUG
+- DECORATOR
+- DLC
+- ENTITY
+- EVENT
+- FIRE
+- FLOCK
+- GANG
+- GOOGLE_ANALYTICS
+- GRAPHICS
+- HUD
+- IK
+- INTERACTION
+- INTERIOR
+- INVENTORY
+- ITEMDATABASE
+- ITEMSET
+- LAW
+- LOCALIZATION
+- MAP
+- MINIGAME
+- MISC
+- MISSIONDATA
+- MONEY
+- NETSHOPPING
+- NETWORK
+- OBJECT
+- PAD
+- PATHFIND
+- PED
+- PERSCHAR
+- PERSISTENCE
+- PHYSICS
+- PLAYER
+- POPULATION
+- POSSE
+- PROPSET
+- QUEUE
+- RECORDING
+- REPLAY
+- SAVE
+- SCRIPTS
+- SHAPETEST
+- SOCIALCLUB
+- SOCIALCLUBFEED
+- SPACTIONPROXY
+- STATS
+- STREAMING
+- TASK
+- TELEMETRY
+- TXD
+- UIAPPS
+- UIDEBUG
+- UIEVENTS
+- UIFEED
+- UILOG
+- UIPINNING
+- UISTATEMACHINE
+- UISTICKYFEED
+- UITUTORIAL
+- UNLOCK
+- VEHICLE
+- VOLUME
+- WATER
+- WEAPON
+- ZONE
+
+Regula: nu inseamna ca folosesti toate categoriile in orice script, dar verifici categoriile relevante pentru fiecare feature.
 
 ---
 
-## 9) Regulament de modificare script existent (cerinta fixa)
+## 9) Performanta (obligatoriu)
+
+Reguli ferme:
+
+- orice `while true` are `Wait(...)`;
+- `Wait(0)` doar pentru draw/per-frame input;
+- folosesti `#(a - b)` pentru distante;
+- eviti event spam;
+- rate limiting pe server;
+- fara thread-uri inutile;
+- `CreateThread`/`Wait`, nu `Citizen.CreateThread`/`Citizen.Wait`;
+- target `resmon`: sub 0.2ms idle;
+- cleanup complet pe stop resource.
+
+Pattern recomandat: dynamic sleep bazat pe distanta/relevanta.
+
+---
+
+## 10) Securitate (obligatoriu)
+
+- never trust client;
+- validare completa in server handlers;
+- capturezi `source` imediat;
+- verifici owner/permisiuni/job/item/cooldown;
+- comenzi sensibile cu restricted/ACE;
+- fara credientiale in resource files;
+- query-uri SQL doar parametrizate;
+- fara `ExecuteCommand` pe input user nesanitizat.
+
+---
+
+## 11) State Bags (obligatoriu pentru state persistent)
+
+Folosesti:
+
+- `Entity(...).state` pentru entitati;
+- `Player(source).state` pentru player state;
+- `GlobalState` pentru server-wide state.
+
+Reguli:
+
+- nume de chei namespaced (`myresource:key`);
+- nu folosi state bags pentru update per-frame;
+- nu te baza pe client-replicated state pentru logica critica;
+- folosesti change handlers unde ai nevoie de reactii automate.
+
+---
+
+## 12) Database standard (cand scriptul cere persistenta)
+
+Standard DB:
+
+- `oxmysql` (nu mysql-async/ghmattimysql in script nou);
+- query-uri parametrizate;
+- folosesti `MySQL.query.await`, `MySQL.single.await`, `MySQL.scalar.await`, `MySQL.insert.await`, `MySQL.update.await`;
+- index pe coloanele frecvent cautate;
+- migration files versionate.
+
+---
+
+## 13) NUI standard (daca scriptul are UI)
+
+Obligatoriu:
+
+- `ui_page` declarat;
+- toate asset-urile in `files`;
+- `SendNUIMessage` pentru push de date;
+- `RegisterNUICallback` pentru raspunsuri din UI;
+- `SetNuiFocus(false, false)` la inchidere si `onResourceStop`.
+
+---
+
+## 14) Regulament strict pentru modificare script existent (cerinta fixa)
 
 La modificare:
 
-1. Se analizeaza exact cerinta.
-2. Se modifica/adauga strict ce a fost cerut.
-3. Nu se introduc schimbari colaterale fara aprobare.
-4. Se elimina functiile vechi/nefolositoare (dead code), dar doar dupa verificare referinte.
-5. Se pastreaza compatibilitatea cu flow-ul existent.
-6. Se valideaza impactul pe client/server si pe config/locale.
+1. Analizezi exact ce s-a cerut.
+2. Modifici strict ce s-a cerut.
+3. Nu introduci schimbari colaterale.
+4. Elimini functiile vechi/nefolositoare dupa verificare de referinte.
+5. Pastrezi compatibilitatea flow-ului existent.
+6. Actualizezi config/locale daca e necesar.
+7. Verifici ca nu raman notificari hardcodate.
 
-Checklist rapid inainte de final:
+Checklist obligatoriu:
 
 - [ ] Cerinta implementata 1:1
-- [ ] Nu exista schimbari necerute
-- [ ] Functiile legacy inutile eliminate
-- [ ] Nicio notificare hardcodata in cod
+- [ ] Zero schimbari necerute
+- [ ] Dead code eliminat
 - [ ] Toate textele sunt in `locales/ro.json`
 - [ ] Cleanup complet pe stop resource
+- [ ] Event names prefixed corect
+- [ ] Validari server complete
 
 ---
 
-## 10) Standard de calitate finala
+## 15) Workflow complet pentru script nou (de urmat mereu)
 
-Un script este considerat gata doar daca este:
-
-- bine structurat (Rex style);
-- functional end-to-end;
-- optimizat (loop-uri, natives, events, memorie);
-- sigur (server authority + validari);
-- localizat corect (`locales/ro.json`, romana fara diacritice);
-- curat (fara cod mort, fara duplicari inutile).
+1. Definesti cerintele feature-ului.
+2. Alegi framework-ul (`rsg-core` prioritar).
+3. Scaffolding structura Rex.
+4. Scrii `fxmanifest.lua` corect.
+5. Definesti `shared/config.lua`.
+6. Creezi `locales/ro.json` si pui toate textele.
+7. Implementezi server logic (validari + autoritate).
+8. Implementezi client logic (UX, prompt-uri, animatii).
+9. Alegi natives corecte (side + categorie + cleanup).
+10. Optimizezi loop-uri/events/memorie.
+11. Testezi restart resource + edge cases.
+12. Cureti codul mort.
+13. Rulezi checklist-ul de calitate.
 
 ---
 
-## 11) Template minim recomandat pentru pornire rapida
+## 16) Definitia de "script gata de productie"
 
-1. Creezi structura de foldere din sectiunea 2.
-2. Completezi `fxmanifest.lua` pe modelul de mai sus.
-3. Definesti toate setarile in `shared/config.lua`.
-4. Adaugi din prima `locales/ro.json` si pui acolo toate textele.
-5. Construiesti logica server-first (validare + actiuni), apoi client UX.
-6. Adaugi cleanup handlers si testezi resource restart.
+Scriptul este gata doar daca:
 
-Acesta este standardul oficial recomandat pentru scripturi RedM bine structurate si optimizate.
+- respecta structura Rex;
+- respecta regulile CFX de manifest, performanta si securitate;
+- are locale `ro.json` complet (fara diacritice);
+- este server-authoritative;
+- foloseste corect natives pentru RedM;
+- nu contine cod mort;
+- nu are hardcoding inutil;
+- este stabil la restart resource;
+- este usor de extins si mentinut.
+
+Acesta este standardul complet pentru a face scripturi RedM cat mai bune, bine structurate, functionale si optimizate.
