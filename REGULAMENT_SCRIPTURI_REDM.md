@@ -43,7 +43,6 @@ my-script/
 │   └── modules/*.lua            # optional
 ├── server/
 │   ├── server.lua
-│   ├── versionchecker.lua       # recomandat dupa model Rex
 │   └── modules/*.lua            # optional
 ├── shared/
 │   ├── config.lua               # obligatoriu
