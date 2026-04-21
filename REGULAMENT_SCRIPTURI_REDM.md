@@ -60,6 +60,8 @@ Reguli:
 
 - Nu hardcoda in cod: coords, iteme, joburi, preturi, durate, sanse.
 - Tot ce este configurabil merge in `shared/config.lua`.
+- `shared/config.lua` contine doar setari declarative (fara logica de business, fara event handlers, fara functii runtime).
+- Orice valoare operationala trebuie expusa in config: timpi, cooldown, distante, jobs, iteme, reward ranges, blips, prompts, permisiuni, toggles.
 - Daca fisierul devine mare, separa in module pe responsabilitati.
 - Daca scriptul creeaza resurse runtime, cleanup la stop este obligatoriu.
 
@@ -404,20 +406,44 @@ La modificare:
 1. Analizezi exact ce s-a cerut.
 2. Modifici strict ce s-a cerut.
 3. Nu introduci schimbari colaterale.
-4. Elimini functiile vechi/nefolositoare dupa verificare de referinte.
+4. Elimini functiile vechi/nefolositoare la fiecare modificare, dupa verificare de referinte.
 5. Pastrezi compatibilitatea flow-ului existent.
 6. Actualizezi config/locale daca e necesar.
 7. Verifici ca nu raman notificari hardcodate.
+8. Daca o functie/variabila/modul nu mai este folosit dupa schimbare, se sterge in acelasi task.
 
 Checklist obligatoriu:
 
 - [ ] Cerinta implementata 1:1
 - [ ] Zero schimbari necerute
 - [ ] Dead code eliminat
+- [ ] Functii/variabile/module vechi si nefolositoare sterse
 - [ ] Toate textele sunt in `locales/ro.json`
 - [ ] Cleanup complet pe stop resource
 - [ ] Event names prefixed corect
 - [ ] Validari server complete
+
+---
+
+## 14.1 Politica Config-First (obligatorie)
+
+Regula fixa: in `shared/config.lua` stau doar configurari.
+
+In config trebuie sa poti seta:
+
+- toggles generale (`Config.Debug`, `Config.UseTarget`, `Config.JobLock`);
+- joburi/grade/permisiuni;
+- iteme/cantitati/reward pools;
+- coords/zones/blips/ped spawns;
+- timpi/cooldown/rate limits/distante;
+- chei locale folosite de UI/notificari;
+- setari NUI/DB daca feature-ul le foloseste.
+
+Nu pui in config:
+
+- logica gameplay;
+- evenimente client/server;
+- functii care depind de runtime.
 
 ---
 
