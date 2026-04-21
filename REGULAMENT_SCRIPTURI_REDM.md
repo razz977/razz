@@ -210,9 +210,63 @@ Regula: pornesti de la pattern-uri validate, nu de la cod improvizat.
 
 ---
 
-## 8) Natives RedM - proces complet ("tot, tot")
+## 8) Standard comentarii Rex (obligatoriu)
 
-## 8.1 Surse obligatorii natives
+Comentariile trebuie scrise in stilul Rex si respectate in toate fisierele Lua.
+
+### 8.1 Format pentru sectiuni principale
+
+Model obligatoriu:
+
+```lua
+-----------------------------------------------
+-- descriere scurta sectiune
+-----------------------------------------------
+```
+
+Reguli:
+
+- linia de sus si jos doar cu `-`;
+- textul comentariului pe linia din mijloc, prefix `-- `;
+- descriere scurta si clara, fara fraze lungi;
+- un spatiu liber inainte si dupa blocul de comentariu.
+
+### 8.2 Format pentru sub-sectiuni (ex: config grupat)
+
+Model acceptat (ca in scripturile Rex):
+
+```lua
+---------------------------------
+-- settings
+---------------------------------
+```
+
+si pentru delimitari interne:
+
+```lua
+--------------------------
+-- annesburg mine
+--------------------------
+```
+
+### 8.3 Reguli pentru comentarii inline
+
+- inline doar cand clarifica unitati sau context rapid (`-- ms`, `-- required item`);
+- fara comentarii redundante de tipul "set variable";
+- comentariile raman consecvente ca stil (scurte, clare, tehnice).
+
+### 8.4 Reguli de consistenta
+
+- acelasi stil in `client`, `server`, `shared/config`;
+- fara amestec de stiluri decorative diferite;
+- daca modifici o sectiune, actualizezi comentariul sa reflecte exact logica noua;
+- daca stergi cod, stergi si comentariile ramase fara corespondent.
+
+---
+
+## 9) Natives RedM - proces complet ("tot, tot")
+
+## 9.1 Surse obligatorii natives
 
 - `redm-reference/redm-natives-complete.json` (obligatoriu principal, local in proiect): 5875 natives, 84 categorii;
 - https://rdr3natives.com/;
@@ -224,7 +278,7 @@ Dependenta obligatorie:
 - daca fisierul lipseste, task-ul se considera incomplet pana este restaurat;
 - selectie de natives se face prioritar din acest fisier local, apoi se valideaza in sursele online daca e nevoie.
 
-## 8.2 Reguli tehnice natives
+## 9.2 Reguli tehnice natives
 
 - Nu amesteci side-uri (client/server/shared).
 - Pentru string literal hashes in Lua folosesti backtick compile-time.
@@ -232,7 +286,7 @@ Dependenta obligatorie:
 - Orice entity/prop creat prin native trebuie sters la `onResourceStop`.
 - Pentru native neclar, validezi semnatura (params/return/side) inainte de implementare.
 
-## 8.3 Native coverage checklist pe feature
+## 9.3 Native coverage checklist pe feature
 
 La fiecare feature nou, documentezi intern minim:
 
@@ -243,7 +297,7 @@ La fiecare feature nou, documentezi intern minim:
 - validari necesare;
 - fallback (daca native-ul esueaza).
 
-## 8.4 Categorii RDR3 native (84) care trebuie luate in calcul
+## 9.4 Categorii RDR3 native (84) care trebuie luate in calcul
 
 - AICOVERPOINT
 - AITRANSPORT
@@ -334,7 +388,7 @@ Regula: nu inseamna ca folosesti toate categoriile in orice script, dar verifici
 
 ---
 
-## 9) Performanta (obligatoriu)
+## 10) Performanta (obligatoriu)
 
 Reguli ferme:
 
@@ -352,7 +406,7 @@ Pattern recomandat: dynamic sleep bazat pe distanta/relevanta.
 
 ---
 
-## 10) Securitate (obligatoriu)
+## 11) Securitate (obligatoriu)
 
 - never trust client;
 - validare completa in server handlers;
@@ -365,7 +419,7 @@ Pattern recomandat: dynamic sleep bazat pe distanta/relevanta.
 
 ---
 
-## 11) State Bags (obligatoriu pentru state persistent)
+## 12) State Bags (obligatoriu pentru state persistent)
 
 Folosesti:
 
@@ -382,7 +436,7 @@ Reguli:
 
 ---
 
-## 12) Database standard (cand scriptul cere persistenta)
+## 13) Database standard (cand scriptul cere persistenta)
 
 Standard DB:
 
@@ -394,7 +448,7 @@ Standard DB:
 
 ---
 
-## 13) NUI standard (daca scriptul are UI)
+## 14) NUI standard (daca scriptul are UI)
 
 Obligatoriu:
 
@@ -406,7 +460,7 @@ Obligatoriu:
 
 ---
 
-## 14) Regulament strict pentru modificare script existent (cerinta fixa)
+## 15) Regulament strict pentru modificare script existent (cerinta fixa)
 
 La modificare:
 
@@ -432,7 +486,7 @@ Checklist obligatoriu:
 
 ---
 
-## 14.1 Politica Config-First (obligatorie)
+## 15.1 Politica Config-First (obligatorie)
 
 Regula fixa: in `shared/config.lua` stau doar configurari.
 
@@ -456,7 +510,7 @@ Nu pui in config:
 
 ---
 
-## 15) Workflow complet pentru script nou (de urmat mereu)
+## 16) Workflow complet pentru script nou (de urmat mereu)
 
 1. Definesti cerintele feature-ului.
 2. Alegi framework-ul (`rsg-core` prioritar).
@@ -475,7 +529,7 @@ Nu pui in config:
 
 ---
 
-## 16) Definitia de "script gata de productie"
+## 17) Definitia de "script gata de productie"
 
 Scriptul este gata doar daca:
 

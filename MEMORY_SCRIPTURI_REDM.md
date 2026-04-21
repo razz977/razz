@@ -11,6 +11,7 @@ Scopul este consistenta intre scripturi, eliminarea codului vechi si implementar
 - Config-first: in `shared/config.lua` exista doar configurari tehnice (nume NPC, blipuri, coords, iteme, timpi, toggle-uri), fara texte.
 - Locale-first: toate textele stau in `locales/ro.json` (romana fara diacritice).
 - Native-file-first: selectia de native se face din `redm-reference/redm-natives-complete.json`, apoi se valideaza in docs oficiale.
+- Comentarii Rex-style: titluri de sectiuni cu delimitator de linii si descriere scurta pe `--`.
 - Refactor continuu: la fiecare modificare se elimina codul vechi/nefolositor dupa verificare referinte.
 - Zero modificari colaterale: schimbi strict ce s-a cerut.
 
